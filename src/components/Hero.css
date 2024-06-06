@@ -1,0 +1,61 @@
+#hero {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+  }
+  
+  #hero:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero .container {
+    padding-top: 1px;
+  
+    padding-left:20px;
+    padding-right:20px;
+  }
+  
+  .carousel-caption h5 {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+  }
+  
+  
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-height: 800px) {
+    #hero {
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    #hero {
+      height: auto;
+    }
+  
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  
+ 

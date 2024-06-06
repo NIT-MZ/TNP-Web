@@ -1,0 +1,115 @@
+.about{
+  width : 90%;
+  margin: 0 auto;
+  /* background-color: gray; */
+}
+.about .content h3 {
+    font-weight: 600;
+    color: #43920D;
+    font-size: 26px;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    padding-left: 28px;
+    position: relative;
+  }
+  
+  .about .content ul li+li {
+    margin-top: 10px;
+  }
+  
+  .about .content ul i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #43920D;
+    line-height: 1;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .about .content .btn-learn-more {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 5px;
+    transition: 0.3s;
+    line-height: 1;
+    color: #2487ce;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    margin-top: 6px;
+    border: 2px solid #2487ce;
+  }
+  
+  .about .content .btn-learn-more:hover {
+    background: #43920D;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .director-message-container{
+    width: 60%;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+  }
+
+  .director-message-container-title{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #124265;
+  }
+
+  .director-message-container .row{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .member-info{
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .director-message{
+    font-size: 14px;
+    color: #919191;
+  }
+
+  @media (max-width: 768px) {
+    .director-message-container{
+      width: 90%;
+      margin: 0 auto;
+      /* background-color: gray; */
+      display: flex;
+      flex-direction : column;
+      align-items: center;
+      padding: 50px 10px 0 10px;
+      
+    }
+
+    .member{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* background-color: gray;       */
+    }
+  }

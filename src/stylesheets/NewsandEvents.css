@@ -1,0 +1,103 @@
+section {
+  /* padding: 20px 0; */
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f8fbfe;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #124265;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #919191;
+}
+
+
+
+#atAGlance .card {
+    height: 85vh;
+    overflow-y: scroll !important;
+    margin: 0 0.5rem;
+    border-radius: 0.25rem;
+  }
+  #atAGlance .card .card-header {
+   
+    z-index: 997;
+    color: #fff;
+  }
+  #atAGlance .card-body {
+    text-align: left;
+  }
+  #atAGlance .card-body .card-text  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #atAGlance .card-body .card-text  ul li {
+    padding-left: 28px;
+    position: relative;
+  }
+  
+  #atAGlance .card-body.card-text  ul li+li {
+    margin-top: 10px;
+  }
+  
+  #atAGlance .card-body .card-text  ul i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #43920D;
+    line-height: 1;
+  }
+  
+  #atAGlance .card-body .card-text ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+  }
+  #atAGlance .card-body .card-text ul li a:hover {
+    color: #43920D;
+  }
+
+  .events-section-container{
+    /* background-color: gray; */
+    width: 40%;
+  }
+
+  .atAGlance{
+    /* background-color: blue; */
+    width: 100%;
+  }
+
+  .at-a-glance-title{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #124265;
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    .events-section-container{
+      /* background-color: gray; */
+      width: 100%;
+    }
+  }

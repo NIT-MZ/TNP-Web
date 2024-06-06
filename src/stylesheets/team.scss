@@ -1,0 +1,119 @@
+.team-container {
+    // background-color: aqua;
+    text-align: center;
+}
+
+.team-container-title{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #124265;
+}
+
+.team-container-sub-title{
+    width: 85%;
+    margin: auto;
+    text-align: start;
+    font-weight: 700;
+    padding: 25px 0 0 0;
+}
+
+.team-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    border-radius: 10px;
+    // background-color: antiquewhite;
+}
+
+.team-card {
+    position: relative;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 30px 15px;
+    // background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border: 5px solid rgb(255, 255, 255);
+    // background-color: blueviolet;
+}
+
+.team-card-bottom {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    width: 240px;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+    background-color: rgb(62, 62, 62);
+    opacity: 0.7;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.team-card-bottom-on-hover {
+    width: 241px;
+    min-height: 10vh;
+    position: absolute;
+    bottom: 0;
+    // background: #f1eeee;
+    // opacity: 0.7;
+    transition: transform 0.5s;
+    transform: scaleY(0);
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0 0 5px 5px;
+    // color: #000000;
+    background-color: rgb(62, 62, 62);
+    opacity: 0.7;
+    color: #ffffff;
+    // font-size: 1.2rem;
+}
+
+.team-card:hover .team-card-bottom {
+    display: none;
+}
+
+.team-card:hover .team-card-bottom-on-hover {
+    transform: scaleY(1);
+}
+
+@media (max-width: 798px) {
+    .team-container {
+        // background-color: aqua;
+        padding: 50px 0 0 0;
+        text-align: center;
+    //     background-position: center;
+    // position: relative;
+    // overflow-x: scroll;
+    }
+    .team-card-container{ 
+        width: 90%;           
+        display: flex;
+        flex-wrap: nowrap;
+        object-fit: contain;
+        // flex-wrap: initial;
+        // background-color: aquamarine;
+        overflow: hidden;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        // overflow-x: auto;
+    }
+    .team-card {
+        height: 300px;
+        min-width: 250px;
+    }
+}
