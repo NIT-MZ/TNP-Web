@@ -101,3 +101,15 @@ section {
       width: 100%;
     }
   }
+
+  .link-button {
+    background: none;
+    border: none;
+    font-weight: 600;
+    text-align: justify;
+    /* color: blue; */
+    /* text-decoration: underline; */
+    cursor: pointer;
+    padding: 0;
+  }
+  

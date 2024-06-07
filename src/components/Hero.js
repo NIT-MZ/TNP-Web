@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+
 const Hero = () => {
   return (
     <div>
@@ -11,73 +12,21 @@ const Hero = () => {
         >
           <div
             id="carouselExampleIndicators"
-            className="carousel slide
-          carousel-fade"
+            className="carousel slide carousel-fade"
             data-bs-ride="carousel"
           >
             <div className="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                className="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="4"
-                aria-label="Slide 5"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="5"
-                aria-label="Slide 6"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="6"
-                aria-label="Slide 7"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="7"
-                aria-label="Slide 8"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="8"
-                aria-label="Slide 9"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="9"
-                aria-label="Slide 10"
-              ></button>
+              {Array.from({ length: 10 }).map((_, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to={index}
+                  className={index === 0 ? 'active' : ''}
+                  aria-current={index === 0 ? 'true' : undefined}
+                  aria-label={`Slide ${index + 1}`}
+                ></button>
+              ))}
             </div>
             <div className="carousel-inner">
               <div className="carousel-item active" data-bs-interval="3000">
@@ -116,7 +65,7 @@ const Hero = () => {
                 <div className="carousel-caption d-none d-md-block">
                   <h5>
                     NIT Mizoram T&P Officials visited IIT Madras on Students'
-                    Exchange and met the Dean (Academic){" "}
+                    Exchange and met the Dean (Academic)
                   </h5>
                 </div>
               </div>
@@ -134,10 +83,10 @@ const Hero = () => {
                 <img
                   className="d-block w-100"
                   src="assets/img/carousel/Sports.webp"
-                  alt="bashant panchatmi "
+                  alt="bashant panchatmi"
                 />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5></h5>
+                  <h5>Sports Event</h5>
                 </div>
               </div>
 
@@ -145,7 +94,7 @@ const Hero = () => {
                 <img
                   className="d-block w-100"
                   src="assets/img/carousel/TCS_seminar.webp"
-                  alt="TCS SEMINAR "
+                  alt="TCS SEMINAR"
                 />
                 <div className="carousel-caption d-none d-md-block">
                   <h5>TCS SEMINAR ON TCS NQT PROGRAM</h5>
@@ -155,11 +104,12 @@ const Hero = () => {
               <div className="carousel-item" data-bs-interval="3000">
                 <img
                   className="d-block w-100"
-                  src="assets\img\carousel\IMG_20240316_163221.webp
-                "
-                  alt="bashant panchatmi "
+                  src="assets/img/carousel/IMG_20240316_163221.webp"
+                  alt="bashant panchatmi"
                 />
-                <div className="carousel-caption d-none d-md-block"></div>
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Bashant Panchatmi Event</h5>
+                </div>
               </div>
             </div>
             <button
@@ -191,22 +141,24 @@ const Hero = () => {
       </section>
 
       <section className="marquee">
-        <marquee behavior="scroll" direction="right">
-          <h6>
-            <a href="" target="_blank">
-              Registration and JNF for TCS Hiring{" "}
-              <span className="badge bg-danger">New</span>
-            </a>
-          </h6>
-        </marquee>
-        <marquee behavior="scroll" direction="left">
-          <h6>
-            <a href="" target="_blank">
-              Registration and JNF For vedanta{" "}
-              <span className="badge bg-danger">New</span>
-            </a>
-          </h6>
-        </marquee>
+        <div className="marquee-wrapper">
+          <div className="marquee-content-1">
+            <h6>
+              <a href="https://example.com/tcs-hiring" target="_blank" rel="noopener noreferrer">
+                Registration and JNF for TCS Hiring
+                <span className="badge bg-danger">New</span>
+              </a>
+            </h6>
+            </div>
+            <div className="marquee-content-2">
+            <h6>
+              <a href="https://example.com/vedanta" target="_blank" rel="noopener noreferrer">
+                Registration and JNF For Vedanta
+                <span className="badge bg-danger">New</span>
+              </a>
+            </h6>
+          </div>
+        </div>
       </section>
     </div>
   );

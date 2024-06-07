@@ -58,4 +58,40 @@
     }
   }
   
- 
+  .marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+    background: #f8f9fa;
+    padding: 10px 0;
+  }
+  
+  .marquee-content-1 {
+    display: flex;
+    justify-content: space-around;
+    animation: scroll-left 25s linear infinite;
+  }
+
+  .marquee-content-2 {
+    display: flex;
+    justify-content: space-around;
+    animation: scroll-right 25s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  

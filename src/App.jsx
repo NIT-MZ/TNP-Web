@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/MainComponent/Navbar.js";
 import HomePage from "./pages/HomePage.js";
 import UserContextProvider from "./context/UserContextProvider.jsx";
-import Hero from "./components/Hero.js";
+// import Hero from "./components/Hero.js";
 import FooterSection from "./components/FooterSection.js";
 import EventsList from "./pages/Events.js";
 import EventPage from "./pages/Event_Page.js";

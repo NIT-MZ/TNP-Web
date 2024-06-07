@@ -1,5 +1,7 @@
 import React from "react";
 import "../stylesheets/About.css";
+
+
 const About = () => {
   return (
     <section id="about" className="about">
@@ -56,7 +58,7 @@ const About = () => {
                     <img
                       className="w-[250px] h-auto"
                       src="assets/img/tnp_team/image1.webp"
-                      alt="TPO'S PHOTO"
+                      alt="TPO'S"
                     />
                   </div>
                   <div className="member-info">

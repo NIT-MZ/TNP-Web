@@ -16,7 +16,7 @@ const DirectorsMessage = () => {
                             <img
                                 className="w-[250px] h-auto"
                                 src="assets/img/tnp_team/Director.webp"
-                                alt="Director's Photo"
+                                alt="Director's"
                             />
                         </div>
                         <div className="member-info">
