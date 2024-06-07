@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-            <form method="post" role="form" className="php-email-form" id="contact-form" onSubmit={handleSubmit}>
+            <form method="post" className="php-email-form" id="contact-form" onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col-md-6 form-group mt-3">
                   <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
