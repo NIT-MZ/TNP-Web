@@ -6,7 +6,7 @@ import UserContextProvider from "./context/UserContextProvider.jsx";
 // import Hero from "./components/Hero.js";
 import FooterSection from "./components/FooterSection.js";
 import EventsList from "./pages/Events.js";
-import EventPage from "./pages/Event_Page.js";
+import Internships from "./pages/Internships.js";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Routes>
            <Route path="/" element={<HomePage />} /> 
            <Route path="/events" element={<EventsList />} /> 
-           <Route path="/events/:id" component={EventPage} />
+           <Route path="/internship" element={<Internships />} /> 
         </Routes>
 
         <FooterSection />

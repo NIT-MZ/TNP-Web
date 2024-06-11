@@ -66,11 +66,11 @@ const Navbar = () => {
                 </p>
               </a>
 
-              <a href="#clients" className=" hover:font-semibold">
+              {/* <a href="#clients" className=" hover:font-semibold">
                 <p className="mx-1 text-[2vw] md:text-lg text-white">
                   Why recruit us
                 </p>
-              </a>
+              </a> */}
 
               <a
                 href="#team"
@@ -78,10 +78,20 @@ const Navbar = () => {
               >
                 <p className="mx-1 text-[2vw] md:text-lg text-white">Team</p>
               </a>
+              <Link to='/internship'
+                className="hover:text-pink-300 hover:font-semibold"
+              >
+                <p className="mx-1 text-[2vw] md:text-lg text-white">Internships</p>
+                </Link>
               <Link to='/events'
                 className="hover:text-pink-300 hover:font-semibold"
               >
                 <p className="mx-1 text-[2vw] md:text-lg text-white">Events</p>
+                </Link>
+                <Link to='https://www.nitmz.ac.in/uploaded_files/NITMZ_brochure-revised.pdf'
+                className="hover:text-pink-300 hover:font-semibold"
+              >
+                <p className="mx-1 text-[2vw] md:text-lg text-white">Brochure</p>
                 </Link>
               <a
                 href="#contact"
