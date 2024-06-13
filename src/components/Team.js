@@ -308,7 +308,7 @@ const Team = () => {
       name: "Sourabh Kumar ",
       position: "Media Members",
       branch: "CE",
-      linkedin: " ",
+      linkedin: "https://www.linkedin.com/in/sourabh-kumar-4960121b3 ",
       image_name: "sourabh_kumar.png",
     },
     {
