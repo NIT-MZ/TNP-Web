@@ -1,7 +1,6 @@
 import React from "react";
 import "../stylesheets/About.css";
 
-
 const About = () => {
   return (
     <section id="about" className="about">
@@ -9,7 +8,7 @@ const About = () => {
         <div className="section-title">
           <div className="message">
             <h2 style={{ paddingTop: "35px" }}>
-              MESSAGE FROM TPO
+              MESSAGE FROM TRAINING & PLACEMENT OFFICE
             </h2>
             <div className="row">
               <div className="col-lg-9 col-md-6">
@@ -65,7 +64,11 @@ const About = () => {
                     <h4>Dr. Sukanta Roy</h4>
                     <span>
                       Faculty In-charge (FIC), Training and Placement Office
-                      Chairman
+                      Chairman <br />
+                    </span>
+                    <span>
+                      Email: tnp@nitmz.ac.in
+                      <br /> Contact: +91-9035385841{" "}
                     </span>
                   </div>
                 </div>

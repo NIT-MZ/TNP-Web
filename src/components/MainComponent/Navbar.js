@@ -49,22 +49,22 @@ const Navbar = () => {
           <div className="w-full md:flex md:items-center md:justify-between md:w-auto">
             <div className="sm-8 md:w-full w-full py-2 justify-evenly text-white lg:font-semibold font-semibold text-[14px] lg:p-1 lg:text-sm md:text-sm flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf]  md:h-12 flex-nowrap">
               <Link to="/" className="hover:text-white hover:font-semibold">
-                <p className="mx-1 text-[1.4vw] md:text-lg text-white\">Home</p>
+                <p className="mx-1 text-[1.8vw] md:text-lg text-white\">Home</p>
               </Link>
               <a href="#clients" className=" hover:font-semibold">
-                <p className=" text-[1.4vw] md:text-lg text-white">
+                <p className=" text-[1.8vw] md:text-lg text-white">
                   Past Recruiters
                 </p>
               </a>
 
               <a href="#atAGlance" className=" hover:font-semibold">
-                <p className=" text-[1.4vw] md:text-lg text-white">
+                <p className=" text-[1.8vw] md:text-lg text-white">
                   News and Notice
                 </p>
               </a>
 
               {/* <a href="#clients" className=" hover:font-semibold">
-                <p className="mx-1 text-[1.4vw] md:text-lg text-white">
+                <p className="mx-1 text-[1.8vw] md:text-lg text-white">
                   Why recruit us
                 </p>
               </a> */}
@@ -73,13 +73,13 @@ const Navbar = () => {
                 href="#team"
                 className="hover:text-pink-300 hover:font-semibold"
               >
-                <p className="text-[1.4vw] md:text-lg text-white">Team</p>
+                <p className="text-[1.8vw] md:text-lg text-white">Team</p>
               </a>
               <Link
                 to="/internship"
                 className="hover:text-pink-300 hover:font-semibold"
               >
-                <p className="text-[1.4vw] md:text-lg text-white">
+                <p className="text-[1.8vw] md:text-lg text-white">
                   Internships
                 </p>
               </Link>
@@ -87,7 +87,7 @@ const Navbar = () => {
                 to="/events"
                 className="hover:text-pink-300 hover:font-semibold"
               >
-                <p className=" text-[1.4vw] md:text-lg text-white">
+                <p className=" text-[1.8vw] md:text-lg text-white">
                   Student Activities
                 </p>
               </Link>
@@ -95,13 +95,13 @@ const Navbar = () => {
                 to="https://www.nitmz.ac.in/uploaded_files/NITMZ_brochure-revised.pdf"
                 className="hover:text-pink-300 hover:font-semibold"
               >
-                <p className="text-[1.4vw] md:text-lg text-white">Brochure</p>
+                <p className="text-[1.8vw] md:text-lg text-white">Brochure</p>
               </Link>
               <a
                 href="#contact"
                 className="hover:text-green-200 hover:font-semibold"
               >
-                <p className=" text-[1.4vw] md:text-lg text-white">
+                <p className=" text-[1.8vw] md:text-lg text-white">
                   Contact Us{" "}
                 </p>
               </a>

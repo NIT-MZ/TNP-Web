@@ -169,8 +169,8 @@ const Team = () => {
       name: "Kishor Malakar",
       position: "Activity Coordinator",
       branch: "MT CIR",
-      linkedin: "",
-      image_name: "dummy.png",
+      linkedin: "https://www.linkedin.com/in/kishor-malakar-757045203",
+      image_name: "kisor_malakar.png",
     },
   ];
 
@@ -226,7 +226,7 @@ const Team = () => {
       position: "Executive Members",
       branch: "CS",
       linkedin: "https://www.linkedin.com/in/rahul-kumar-8a9a7825b ",
-      image_name: "dummy.png",
+      image_name: "jyoti.png",
     },
     {
       name: "Prachi Gupta",
@@ -301,15 +301,15 @@ const Team = () => {
       name: "Ayush Anand",
       position: "Media Members",
       branch: "CSE",
-      linkedin: "",
-      image_name: "dummy.png",
+      linkedin: "www.linkedin.com/in/ayushanandd",
+      image_name: "ayush_anand.png",
     },
     {
       name: "Sourabh Kumar ",
       position: "Media Members",
       branch: "CE",
       linkedin: " ",
-      image_name: "dummy.png",
+      image_name: "sourabh_kumar.png",
     },
     {
       name: "Anand Rao Bauddh",
@@ -323,7 +323,7 @@ const Team = () => {
       position: "Media Members",
       branch: "EE",
       linkedin: "  ",
-      image_name: "dummy.png",
+      image_name: "priyanshu.png",
     },
   ];
 
@@ -331,7 +331,7 @@ const Team = () => {
     <div className="team-container" id="team">
       <h2 className="team-container-title">OUR TEAM</h2>
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        HEAD'S
+        Training & Placement Office
       </h4>
       <div className="team-card-container">
         {/* Mapping over the teamMembers array to generate card elements */}
@@ -410,7 +410,11 @@ const Team = () => {
                   <img
                     src="assets/img/team/linkedin.png"
                     alt="LinkedIn"
-                    style={{ width: "20px", height: "20px", marginLeft: "10px" }}
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      marginLeft: "10px",
+                    }}
                   />
                 </a>
               </div>
@@ -455,7 +459,11 @@ const Team = () => {
                   <img
                     src="assets/img/team/linkedin.png"
                     alt="LinkedIn"
-                    style={{ width: "20px", height: "20px", marginLeft: "10px" }}
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      marginLeft: "10px",
+                    }}
                   />
                 </a>
               </div>
@@ -499,7 +507,11 @@ const Team = () => {
                   <img
                     src="assets/img/team/linkedin.png"
                     alt="LinkedIn"
-                    style={{ width: "20px", height: "20px", marginLeft: "10px" }}
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      marginLeft: "10px",
+                    }}
                   />
                 </a>
               </div>
@@ -544,7 +556,11 @@ const Team = () => {
                   <img
                     src="assets/img/team/linkedin.png"
                     alt="LinkedIn"
-                    style={{ width: "20px", height: "20px", marginLeft: "10px" }}
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      marginLeft: "10px",
+                    }}
                   />
                 </a>
               </div>
@@ -589,7 +605,11 @@ const Team = () => {
                   <img
                     src="assets/img/team/linkedin.png"
                     alt="LinkedIn"
-                    style={{ width: "20px", height: "20px", marginLeft: "10px" }}
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      marginLeft: "10px",
+                    }}
                   />
                 </a>
               </div>
@@ -635,7 +655,11 @@ const Team = () => {
                   <img
                     src="assets/img/team/linkedin.png"
                     alt="LinkedIn"
-                    style={{ width: "20px", height: "20px", marginLeft: "10px" }}
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      marginLeft: "10px",
+                    }}
                   />
                 </a>
               </div>
@@ -681,7 +705,11 @@ const Team = () => {
                   <img
                     src="assets/img/team/linkedin.png"
                     alt="LinkedIn"
-                    style={{ width: "20px", height: "20px", marginLeft: "10px" }}
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      marginLeft: "10px",
+                    }}
                   />
                 </a>
               </div>
