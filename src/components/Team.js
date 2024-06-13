@@ -225,7 +225,7 @@ const Team = () => {
       name: "Jyoti",
       position: "Executive Members",
       branch: "CS",
-      linkedin: "https://www.linkedin.com/in/rahul-kumar-8a9a7825b ",
+      linkedin: "https://www.linkedin.com/in/jyoti-yadav-910441260/ ",
       image_name: "jyoti.png",
     },
     {
