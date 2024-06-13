@@ -47,7 +47,7 @@ const Navbar = () => {
         </div>
         <nav>
           <div className="w-full md:flex md:items-center md:justify-between md:w-auto">
-            <div className="sm-8 md:w-full w-full py-2 justify-evenly text-white lg:font-semibold font-extralight text-xs lg:p-1 lg:text-sm md:text-sm flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf]  md:h-12 flex-wrap">
+            <div className="sm-8 md:w-full w-full py-2 justify-evenly text-white lg:font-semibold font-semibold text-8px lg:p-1 lg:text-sm md:text-sm flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf]  md:h-12 flex-wrap">
               <Link to="/" className="hover:text-white hover:font-semibold">
                 <p className="mx-1 text-[2vw] md:text-lg text-white\">Home</p>
               </Link>
