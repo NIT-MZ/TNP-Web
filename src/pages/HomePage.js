@@ -19,8 +19,8 @@ const HomePage = () => {
     <div>
       <Hero />
       <div className="home-page-top-section">
-      <NewsandEvents />
         <DirectorsMessage />
+        <NewsandEvents />
       </div>
       <About />
       <Counts />

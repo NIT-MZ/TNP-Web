@@ -1,12 +1,12 @@
 import React from "react";
-import "../stylesheets/NewsandEvents.css";
+import "../stylesheets/NewsandEvents.scss";
 
 const NewsandEvents = () => {
   return (
     <div className="events-section-container">
       <section id="atAGlance" className="atAGlance" data-aos="fade-up">
         <div className="section-title">
-          <div className="at-a-glance-title">At a Glance</div>
+          <div className="at-a-glance-title">News and Notices</div>
           <p className="font-bold">
             Various activities happening in & around the campus by Training &
             Placement Cell of NIT Mizoram

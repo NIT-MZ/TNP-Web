@@ -30,8 +30,8 @@ const Contact = () => {
                 </i>
                 <h4>Location:</h4>
                 <p>
-                  Training and Placement Office Academic Block-11, NIT Mizoram
-                  Chaltlang Ding di Veng, Chaltlang Aizawl, Mizoram – 796012
+                  Training and Placement Office, Academic Block-11, NIT Mizoram,
+                  Chaltlang Ding di Veng, Chaltlang, Aizawl, Mizoram – 796012
                 </p>
               </div>
               <div className="email">

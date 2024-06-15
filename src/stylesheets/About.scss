@@ -1,0 +1,124 @@
+.about-container{
+  width: 100%;
+  // background-color: aquamarine;
+}
+
+.message{
+  width: 100%;
+  flex-direction: column;
+  // background-color: aqua;
+}
+
+.message h2{
+  font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+    padding-bottom: 0;
+    color: #124265;
+    text-align: center;
+    width: 90%;
+}
+
+.message .row{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  // background-color: brown;
+  color: #919191;
+}
+.about-member{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  // background-color: #919191;
+}
+
+  
+  .director-message-container{
+    width: 50%;
+    // background-color: gray;
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    // box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 5px;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .director-message-container-title{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #124265;
+  }
+
+  .director-message-container .row{
+    width: 100%;
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dir-img-container{
+    width: 90%;
+    // background-color: antiquewhite;
+  }
+
+  .member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: #919191;
+  }
+
+  .director-img{
+    min-width: 250px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .member-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    // background-color: #43920D;
+  }
+
+  .director-message{
+    font-size: 14px;
+    color: #919191;
+    width: 90%;
+    // background-color: brown;
+  }
+
+  @media (max-width: 768px) {
+    .director-message-container{
+      width: 100%;
+      margin: 0 auto;
+      /* background-color: gray; */
+      display: flex;
+      flex-direction : column;
+      align-items: center;
+      // padding: 50px 10px 0 10px;      
+    }
+
+    .member{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* background-color: gray;       */
+    }
+    .member-img{
+      margin-top: 15px;
+    }
+  }

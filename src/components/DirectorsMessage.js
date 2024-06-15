@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesheets/About.css";
+import "../stylesheets/About.scss";
 
 const DirectorsMessage = () => {
     return (
@@ -7,14 +7,14 @@ const DirectorsMessage = () => {
             <h2 className="director-message-container-title">From Director's Desk</h2>
             <div className="row">
                 <div
-                    className="col-lg-3 col-md-6 d-flex"
+                    className="dir-img-container"
                     data-aos="fade-up"
                     data-aos-delay="100"
                 >
                     <div className="member">
                         <div className="member-img">
                             <img
-                                className="w-[250px] h-auto"
+                                className="director-img"
                                 src="assets/img/tnp_team/Director.webp"
                                 alt="Director's"
                             />

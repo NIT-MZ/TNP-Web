@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import ImageComponent from "./ImageComponent";
 import "aos/dist/aos.css";
-import "../stylesheets/Clients.css";
+import "../stylesheets/Clients.scss";
 const TrainingandRecruitingPartners = () => {
   useEffect(() => {
     const offset = window.innerWidth < 768 ? 50 : 200; // adjust values as needed

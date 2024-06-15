@@ -110,9 +110,9 @@ const EventsList = () => {
 
   return (
     <div className="events-list">
-      <div className="events-title">EVENTS</div>
+      <div className="events-title">STUDENT ACTIVITIES</div>
       <div className="container">
-        <h2 className="events-subtitle">Upcoming Event</h2>
+        <h2 className="events-subtitle">Upcoming Activities</h2>
         <div className="events-container">
           {upcomingEvents.map(event => (
             <div className="events-card" key={event.id} onClick={() => handleClickOpen(event)}>
@@ -129,7 +129,7 @@ const EventsList = () => {
       </div>
 
       <div className="container">
-        <h2 className="events-subtitle">Recent Events</h2>
+        <h2 className="events-subtitle">Recent Activities</h2>
         <div className="events-container">
           {recentEvents.map(event => (
             <div className="events-card" key={event.id} onClick={() => handleClickOpen(event)}>

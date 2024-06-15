@@ -1,11 +1,11 @@
 import React from "react";
-import "../stylesheets/About.css";
+import "../stylesheets/About.scss";
 
 const About = () => {
   return (
-    <section id="about" className="about">
-      <div className="container" data-aos="fade-up">
-        <div className="section-title">
+    // <section id="about" className="about">
+      <div className="about-container" data-aos="fade-up">
+        {/* <div className="section-title"> */}
           <div className="message">
             <h2 style={{ paddingTop: "35px" }}>
               MESSAGE FROM TRAINING & PLACEMENT OFFICE
@@ -49,7 +49,7 @@ const About = () => {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <div className="member">
+                <div className="about-member">
                   <div
                     className="member-img"
                     style={{ border: "2px solid #ccc", padding: "10px" }}
@@ -67,7 +67,7 @@ const About = () => {
                       Chairman <br />
                     </span>
                     <span>
-                      Email: tnp@nitmz.ac.in
+                      Email: sukanta.me@nitmz.ac.in / tnp@nitmz.ac.in
                       <br /> Contact: +91-9035385841{" "}
                     </span>
                   </div>
@@ -75,9 +75,9 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
-    </section>
+    // </section>
   );
 };
 

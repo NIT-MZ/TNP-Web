@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesheets/Counts.css";
+import "../stylesheets/Counts.scss";
 // import UserContext from "../context/UserContext";
 
 const CTAsection = () => {
