@@ -2,6 +2,7 @@
     width: 100%;
     height: 75vh;
     position: relative;
+    /* background-color: purple; */
   }
   
   #hero:before {
@@ -15,11 +16,14 @@
   }
   
   #hero .container {
-    padding-top: 1px;
+    /* padding-top: 1px; */
   
-    padding-left:20px;
-    padding-right:20px;
+    /* padding-left:20px; */
+    /* padding-right:20px; */
+    /* background-color: red; */
+    width: 100%;
   }
+
   
   .carousel-caption h5 {
     font-family: 'Baloo Bhai 2', cursive;
@@ -45,6 +49,7 @@
   @media (max-width: 992px) {
     #hero {
       height: auto;
+      background-color: pink;
     }
   
     #hero h1 {

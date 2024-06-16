@@ -63,14 +63,6 @@ const Team = () => {
 
   const graduateExecutives = [
     {
-      name: "Avishek Gope",
-      position: "Graduate Executive",
-      branch: "CSE",
-      phone: "+91-9264270247",
-      linkedin: "",
-      image_name: "avishek_gope.png",
-    },
-    {
       name: "Ayush Raj",
       position: "Graduate Executive",
       branch: "ECE",
@@ -82,19 +74,11 @@ const Team = () => {
 
   const studentPlacementcordinators = [
     {
-      name: "Vikash Kumar",
+      name: "Shubham Kumar",
       position: "Placement Coordinator",
-      branch: "ME",
-      linkedin: "",
-      image_name: "vikash_kumar.png",
-      designation: "Team Lead",
-    },
-    {
-      name: "Sanjeevni Joshi",
-      position: "Placement Coordinator",
-      branch: "ECE",
-      linkedin: "https://www.linkedin.com/in/sanjeevni-joshi-927737221",
-      image_name: "sanjeevani_joshi1.png",
+      branch: "CE",
+      linkedin: "https://www.linkedin.com/in/shubham-kumar-477826271",
+      image_name: "shubham_kumar1.png",
     },
     {
       name: "Siddharth Bhatt",
@@ -103,13 +87,12 @@ const Team = () => {
       linkedin: "",
       image_name: "siddharth_bhatt1.png",
     },
-
     {
-      name: "Shubham Kumar",
+      name: "Sanjeevni Joshi",
       position: "Placement Coordinator",
-      branch: "CE",
-      linkedin: "https://www.linkedin.com/in/shubham-kumar-477826271",
-      image_name: "shubham_kumar1.png",
+      branch: "ECE",
+      linkedin: "https://www.linkedin.com/in/sanjeevni-joshi-927737221",
+      image_name: "sanjeevani_joshi1.png",
     },
 
     {
@@ -120,6 +103,15 @@ const Team = () => {
       image_name: "pratimaprit.png",
     },
     {
+      name: "Vikash Kumar",
+      position: "Placement Coordinator",
+      branch: "ME",
+      linkedin: "",
+      image_name: "vikash_kumar.png",
+      designation: "Team Lead",
+    },
+    
+    {
       name: "Shashank Shekhar",
       position: "Placement-Coordinator",
       branch: "MT CIR",
@@ -129,6 +121,13 @@ const Team = () => {
   ];
 
   const studentActivityCoordinators2025 = [
+    {
+      name: "Rahul Kumar Prajapati ",
+      position: "Activity Coordinator",
+      branch: "CE",
+      linkedin: "",
+      image_name: "dummy.png",
+    },
     {
       name: "Khushbu Kumari",
       position: " Activity Coordinator",
@@ -159,13 +158,6 @@ const Team = () => {
       image_name: "vishal_singh.png",
     },
     {
-      name: "Rahul Kumar Prajapati ",
-      position: "Activity Coordinator",
-      branch: "CE",
-      linkedin: "",
-      image_name: "dummy.png",
-    },
-    {
       name: "Kishor Malakar",
       position: "Activity Coordinator",
       branch: "MT CIR",
@@ -176,11 +168,32 @@ const Team = () => {
 
   const studentActivityCoordinators2026 = [
     {
+      name: "Rahul Kumar",
+      position: "Activity Coordinator",
+      branch: "CE",
+      linkedin: "https://www.linkedin.com/in/rahul-kumar-8a9a7825b ",
+      image_name: "rahul_kumar1.png",
+    },
+    {
+      name: "Md.Sibtain",
+      position: "Activity Coordinator",
+      branch: "CSE",
+      linkedin: "",
+      image_name: "md_sibtain1.png",
+    },
+    {
       name: "Suman Kumar Verma",
       position: "Activity Cordinator",
       branch: "ECE",
       linkedin: "https://www.linkedin.com/in/shashwatest ",
       image_name: "Suman_kumar_Verma.png",
+    },
+    {
+      name: "Rohit Kumar Gupta ",
+      position: "Activity Coordinator",
+      branch: "EEE",
+      linkedin: "https://www.linkedin.com/in/rohit-kumar-gupta-33719624b",
+      image_name: "Rohit_kumar.jpg",
     },
     {
       name: "Abhinav Gupta",
@@ -190,57 +203,22 @@ const Team = () => {
       image_name: "abhinav1new.png",
     },
 
-    {
-      name: "Md.Sibtain",
-      position: "Activity Coordinator",
-      branch: "CSE",
-      linkedin: "",
-      image_name: "md_sibtain1.png",
-    },
-    {
-      name: "Rahul Kumar",
-      position: "Activity Coordinator",
-      branch: "CE",
-      linkedin: "https://www.linkedin.com/in/rahul-kumar-8a9a7825b ",
-      image_name: "rahul_kumar1.png",
-    },
-    {
-      name: "Rohit Kumar Gupta ",
-      position: "Activity Coordinator",
-      branch: "EEE",
-      linkedin: "https://www.linkedin.com/in/rohit-kumar-gupta-33719624b",
-      image_name: "Rohit_kumar.jpg",
-    },
   ];
 
   const executiveMembers = [
     {
-      name: "Shashank Kumar Singh",
-      position: "Executive Members",
-      branch: "ME",
-      linkedin: "https://www.linkedin.com/in/shashank-kumar-singh-655432230 ",
-      image_name: "shashank_kumar1.jpg",
-    },
-    {
       name: "Jyoti",
       position: "Executive Members",
-      branch: "CS",
+      branch: "CSE",
       linkedin: "https://www.linkedin.com/in/jyoti-yadav-910441260/ ",
       image_name: "jyoti.png",
     },
     {
       name: "Prachi Gupta",
       position: "Executive Members",
-      branch: "EC",
+      branch: "ECE",
       linkedin: "https://www.linkedin.com/in/prachi-gupta-a82918232 ",
       image_name: "prachi.png",
-    },
-    {
-      name: "Chandni Kumari",
-      position: "Executive Members",
-      branch: "ME",
-      linkedin: "https://www.linkedin.com/in/chandni-kumari-a9b969250  ",
-      image_name: "chandni_kumari1.png",
     },
     {
       name: "Kanahiya Kumar",
@@ -249,30 +227,25 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/kanhaiya-kumar-586542248 ",
       image_name: "kanahiya_kumar1.jpg",
     },
+    {
+      name: "Shashank Kumar Singh",
+      position: "Executive Members",
+      branch: "ME",
+      linkedin: "https://www.linkedin.com/in/shashank-kumar-singh-655432230 ",
+      image_name: "shashank_kumar1.jpg",
+    },
+    
+    {
+      name: "Chandni Kumari",
+      position: "Executive Members",
+      branch: "ME",
+      linkedin: "https://www.linkedin.com/in/chandni-kumari-a9b969250  ",
+      image_name: "chandni_kumari1.png",
+    },
+    
   ];
 
   const associateMembers = [
-    {
-      name: "Khushi Singh",
-      position: "Associate Members",
-      branch: "ME",
-      linkedin: "https://www.linkedin.com/in/khushi-singh-a298ab1b1",
-      image_name: "khushi_singh.png",
-    },
-    {
-      name: "Tanmay_kumar",
-      position: "Associate Members",
-      branch: "CS",
-      linkedin: "https://www.linkedin.com/in/tanmay-kumar-4360a9256 ",
-      image_name: "tanmay_kumar1.png",
-    },
-    {
-      name: "Ashwini",
-      position: "Associate Members",
-      branch: "EC",
-      linkedin: "",
-      image_name: "dummy.png",
-    },
     {
       name: "Mudavath Pooja",
       position: "Associate Members",
@@ -281,21 +254,44 @@ const Team = () => {
       image_name: "pooja1.png",
     },
     {
+      name: "Tanmay_kumar",
+      position: "Associate Members",
+      branch: "CSE",
+      linkedin: "https://www.linkedin.com/in/tanmay-kumar-4360a9256 ",
+      image_name: "tanmay_kumar1.png",
+    },
+    {
+      name: "Ashwini",
+      position: "Associate Members",
+      branch: "ECE",
+      linkedin: "",
+      image_name: "dummy.png",
+    },
+    
+    {
       name: "Soundarya M.",
       position: "Associate Members",
       branch: "EE",
       linkedin: " ",
       image_name: "dummy.png",
     },
+    {
+      name: "Khushi Singh",
+      position: "Associate Members",
+      branch: "ME",
+      linkedin: "https://www.linkedin.com/in/khushi-singh-a298ab1b1",
+      image_name: "khushi_singh.png",
+    },
+    
   ];
 
   const mediaMembers = [
     {
-      name: "Dharmendra Chaudhry",
-      position: "Media Team Lead",
-      branch: "ECE",
-      linkedin: " ",
-      image_name: "Dharmendra.jpg",
+      name: "Sourabh Kumar ",
+      position: "Media Members",
+      branch: "CE",
+      linkedin: "https://www.linkedin.com/in/sourabh-kumar-4960121b3 ",
+      image_name: "sourabh_kumar.png",
     },
     {
       name: "Ayush Anand",
@@ -305,18 +301,11 @@ const Team = () => {
       image_name: "ayush_anand.png",
     },
     {
-      name: "Sourabh Kumar ",
-      position: "Media Members",
-      branch: "CE",
-      linkedin: "https://www.linkedin.com/in/sourabh-kumar-4960121b3 ",
-      image_name: "sourabh_kumar.png",
-    },
-    {
-      name: "Anand Rao Bauddh",
-      position: "Media Members",
-      branch: "ME",
-      linkedin: "",
-      image_name: "dummy.png",
+      name: "Dharmendra Chaudhry",
+      position: "Media Team Lead",
+      branch: "ECE",
+      linkedin: " ",
+      image_name: "Dharmendra.jpg",
     },
     {
       name: "Priyanshu Ranjan",
@@ -324,7 +313,15 @@ const Team = () => {
       branch: "EE",
       linkedin: "  ",
       image_name: "priyanshu.png",
+    },    
+    {
+      name: "Anand Rao Bauddh",
+      position: "Media Members",
+      branch: "ME",
+      linkedin: "",
+      image_name: "dummy.png",
     },
+    
   ];
 
   return (

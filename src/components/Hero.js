@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="carousel-inner">
               <div className="carousel-item active" data-bs-interval="3000">
                 <img
-                  className="d-block w-100"
+                  className="d-block carousel-img"
                   src="assets/img/carousel/IPR.webp"
                   alt="IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS"
                 />

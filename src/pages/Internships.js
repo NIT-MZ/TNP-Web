@@ -45,14 +45,14 @@ const Internships = () => {
       <div className="internship-title">Internships</div>
       <div className="internship-details-card-container">
         {companies.map((company, index) => (
-          <div key={index} className="internship-details-card" data-aos="fade-up">
+          <div key={index} className="internship-details-card">
             <div
               className="internship-company"
               style={{
                 backgroundImage: `url(${company.imageUrl})`,
               }}
             ></div>
-            <div className="internship-details">
+            <div className="internship-details" data-aos="fade-right">
               <div className="company-name">{company.name}</div>
               <div className="students-placed">
                 <div>Students Placed </div><div className="intern-numbers"><AnimateValue start={0} end={company.studentsPlaced} duration={2000} /><div className="bottom-border"></div><div className="bottom-border-below"></div></div>
