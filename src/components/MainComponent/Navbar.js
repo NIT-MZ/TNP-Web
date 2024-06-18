@@ -38,7 +38,7 @@ const Navbar = () => {
     <div>
       <div className="md:hidden shadow-md w-full bg-gradient-to-r from-[#ffdd76] to-[#87ed33] border-b-4 border-green-600">
         <div className="flex flex-col lg:justify-evenly">
-          <div className="md:flex md:justify-between md:p-4 px-3 lg:justify-around">
+          <div className="md:flex md:justify-between md:p-4 px-3 pt-1 lg:justify-around">
             <div className="md:pl-4">
               <img
                 src="https://www.vidyavision.com/CollegeUploads/Logos/2017-23-5-16-27-56_nit-mizoram-logo.png"
@@ -68,7 +68,7 @@ const Navbar = () => {
               ref={menuRef}
               className="md:hidden absolute inset-y-0 right-0 w-3/4  shadow-md rounded-l-lg transition-transform duration-300 z-50"
             >
-              <div className="bg-white hover:bg-green-300 bg-opacity-100 px-2 py-4 space-y-2">
+              <div className="bg-green-200 hover:bg-green-300 bg-opacity-100 px-2 py-4 space-y-2">
                 <Link
                   to="/"
                   onClick={toggleMenu}
@@ -179,7 +179,7 @@ const Navbar = () => {
                 <p className="  lg:text-md text-10px font-semibold lg:font-bold md:font-semibold 2xl:text-2xl md:text-xl text-xs">
                   National Institute of Technology, Mizoram
                 </p>
-                <p className="hidden md:flex text-black lg:font-medium text-8px lg:text-sm 2xl:text-lg md:text-sm lg:mt-2 mx-2 lg:mx-4 font-extralight text-[10px]">
+                <p className="  text-black lg:font-medium text-8px lg:text-sm 2xl:text-lg md:text-sm lg:mt-2 mx-2 lg:mx-4 font-extralight text-[10px]">
                   (An Institution of National Importance under the Ministry of
                   Education, Govt. of India)
                 </p>
