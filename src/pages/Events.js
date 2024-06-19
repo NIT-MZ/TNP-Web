@@ -81,7 +81,7 @@ const formatDate = (dateString) => {
   const month = date.toLocaleString('default', { month: 'long' }).substring(0, 3);
   return (
     <div>
-      <div style={{ color: "orange", fontWeight: "bold" }}>{day}</div>
+      <div style={{ color: "orange", fontWeight: "bold", fontSize: "2rem" }}>{day}</div>
       <div>{month}</div>
       <div className="day-underline"></div>
     </div>

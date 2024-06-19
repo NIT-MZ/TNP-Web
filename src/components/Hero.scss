@@ -2,7 +2,6 @@
     width: 100%;
     height: 75vh;
     position: relative;
-    /* background-color: purple; */
   }
   
   #hero:before {
@@ -49,7 +48,6 @@
   @media (max-width: 992px) {
     #hero {
       height: auto;
-      background-color: pink;
     }
   
     #hero h1 {

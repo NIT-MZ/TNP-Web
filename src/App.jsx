@@ -7,6 +7,7 @@ import UserContextProvider from "./context/UserContextProvider.jsx";
 import FooterSection from "./components/FooterSection.js";
 import EventsList from "./pages/Events.js";
 import Internships from "./pages/Internships.js";
+import ForRecruiters from "./pages/ForRecruiters.js";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
            <Route path="/" element={<HomePage />} /> 
            <Route path="/events" element={<EventsList />} /> 
            <Route path="/internship" element={<Internships />} /> 
+           <Route path="/recruiters" element={<ForRecruiters />} /> 
         </Routes>
 
         <FooterSection />

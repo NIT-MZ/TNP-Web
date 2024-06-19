@@ -1,0 +1,102 @@
+.recruiters-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recruitment-title{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #124265;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.recruiter-procedure-card-container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: center;
+    // align-content: space-around;
+    // background-color: aquamarine;
+    // align-items: center;
+}
+
+.recruiter-procedure-card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px 30px;
+    // background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+.rpc1{
+    margin: 20px 30px;
+}
+
+.recruiter-procedure-card-title{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.recruiter-procedure-card-content{
+    margin: 10px;
+    text-align: justify;
+}
+
+.recruiter-registration-button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #87ed33;
+}
+
+
+.recruitment-procedure-card {
+    width: 90%;
+    // flex: 1 1 calc(33.33% - 10px);
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.recruiter-procedure-list-custom{
+    background-color: #ffdd76;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    // color: #fff;
+}
+
+@media (min-width: 1024px) {
+    .recruitment-procedure-card{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+  }
