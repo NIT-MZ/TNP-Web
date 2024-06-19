@@ -8,6 +8,7 @@ import FooterSection from "./components/FooterSection.js";
 import EventsList from "./pages/Events.js";
 import Internships from "./pages/Internships.js";
 import ForRecruiters from "./pages/ForRecruiters.js";
+import Jaf from "./components/JAF.js";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
            <Route path="/events" element={<EventsList />} /> 
            <Route path="/internship" element={<Internships />} /> 
            <Route path="/recruiters" element={<ForRecruiters />} /> 
+           <Route path="/jaf" element={<Jaf />} /> 
         </Routes>
 
         <FooterSection />
