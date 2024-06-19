@@ -284,6 +284,13 @@ const Team = () => {
 
   const mediaMembers = [
     {
+      name: "Dharmendra Chaudhry",
+      position: "Media Team Lead",
+      branch: "ECE",
+      linkedin: " ",
+      image_name: "Dharmendra.jpeg",
+    },
+    {
       name: "Sourabh Kumar ",
       position: "Media Members",
       branch: "CE",
@@ -297,13 +304,7 @@ const Team = () => {
       linkedin: "www.linkedin.com/in/ayushanandd",
       image_name: "ayush_anand.png",
     },
-    {
-      name: "Dharmendra Chaudhry",
-      position: "Media Team Lead",
-      branch: "ECE",
-      linkedin: " ",
-      image_name: "Dharmendra.jpg",
-    },
+
     {
       name: "Priyanshu Ranjan",
       position: "Media Members",

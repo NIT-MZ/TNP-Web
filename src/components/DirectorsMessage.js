@@ -34,7 +34,7 @@ const DirectorsMessage = () => {
             Engineering, Sciences, Humanities and Social Sciences. The Institute
             is working untiringly to impart quality education that keeps pace
             with the latest advances in research and development activities. The
-            year ’23-’24 saw 85% Campus Placements. 5 students from the present
+            year ’23-’24 saw 86% Campus Placements. 5 students from the present
             3rd year BTechs are going to IIT Madras for their 4th year study and
             PhD. 4 times increase in Sponsored projects and Consultancy observed
             in ’23-’24. 100% Intern offer issued from top-notch companies and
