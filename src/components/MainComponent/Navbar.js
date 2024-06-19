@@ -76,6 +76,14 @@ const Navbar = () => {
                 <p className="text-[1.8vw] md:text-lg text-white">Team</p>
               </a>
               <Link
+                to="/recruiters"
+                className="hover:text-pink-300 hover:font-semibold"
+              >
+                <p className="text-[1.8vw] md:text-lg text-white">
+                  For Recruiters
+                </p>
+              </Link>
+              <Link
                 to="/internship"
                 className="hover:text-pink-300 hover:font-semibold"
               >
