@@ -118,4 +118,21 @@ section {
     cursor: pointer;
     padding: 0;
   }
+
+
+  @keyframes scrollBottomToTop {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .news-ticker-vertical {
+    display: flex;
+    flex-direction: column;
+    animation: scrollBottomToTop 20s linear infinite;
+  }
+  
   

@@ -110,7 +110,7 @@ const Team = () => {
       image_name: "vikash_kumar.png",
       designation: "Team Lead",
     },
-    
+
     {
       name: "Shashank Shekhar",
       position: "Placement-Coordinator",
@@ -202,7 +202,6 @@ const Team = () => {
       branch: "ME",
       image_name: "abhinav1new.png",
     },
-
   ];
 
   const executiveMembers = [
@@ -234,7 +233,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/shashank-kumar-singh-655432230 ",
       image_name: "shashank_kumar1.jpg",
     },
-    
+
     {
       name: "Chandni Kumari",
       position: "Executive Members",
@@ -242,7 +241,6 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/chandni-kumari-a9b969250  ",
       image_name: "chandni_kumari1.png",
     },
-    
   ];
 
   const associateMembers = [
@@ -267,13 +265,13 @@ const Team = () => {
       linkedin: "",
       image_name: "dummy.png",
     },
-    
+
     {
       name: "Soundarya M.",
       position: "Associate Members",
       branch: "EE",
       linkedin: " ",
-      image_name: "dummy.png",
+      image_name: "soundarya.jpg",
     },
     {
       name: "Khushi Singh",
@@ -282,10 +280,16 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/khushi-singh-a298ab1b1",
       image_name: "khushi_singh.png",
     },
-    
   ];
 
   const mediaMembers = [
+    {
+      name: "Dharmendra Chaudhry",
+      position: "Media Team Lead",
+      branch: "ECE",
+      linkedin: " ",
+      image_name: "Dharmendra.jpeg",
+    },
     {
       name: "Sourabh Kumar ",
       position: "Media Members",
@@ -300,20 +304,14 @@ const Team = () => {
       linkedin: "www.linkedin.com/in/ayushanandd",
       image_name: "ayush_anand.png",
     },
-    {
-      name: "Dharmendra Chaudhry",
-      position: "Media Team Lead",
-      branch: "ECE",
-      linkedin: " ",
-      image_name: "Dharmendra.jpg",
-    },
+
     {
       name: "Priyanshu Ranjan",
       position: "Media Members",
       branch: "EE",
       linkedin: "  ",
-      image_name: "priyanshu.png",
-    },    
+      image_name: "priyanshu.jpg",
+    },
     {
       name: "Anand Rao Bauddh",
       position: "Media Members",
@@ -321,7 +319,6 @@ const Team = () => {
       linkedin: "",
       image_name: "dummy.png",
     },
-    
   ];
 
   return (
