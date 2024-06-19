@@ -236,7 +236,7 @@ const Navbar = () => {
 
             <a href="#team" className="hover:text-pink-300 hover:font-semibold">
               <p className="text-[1.8vw] md:text-md text-white lg:text-[22px]">
-                Team
+                Office Team
               </p>
             </a>
 

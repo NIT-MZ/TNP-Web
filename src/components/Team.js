@@ -126,7 +126,7 @@ const Team = () => {
       position: "Activity Coordinator",
       branch: "CE",
       linkedin: "",
-      image_name: "dummy.png",
+      image_name: "rahul_p.jpg",
     },
     {
       name: "Khushbu Kumari",
@@ -263,7 +263,7 @@ const Team = () => {
       position: "Associate Members",
       branch: "ECE",
       linkedin: "",
-      image_name: "dummy.png",
+      image_name: "ashwini.jpg",
     },
 
     {
@@ -317,13 +317,13 @@ const Team = () => {
       position: "Media Members",
       branch: "ME",
       linkedin: "",
-      image_name: "dummy.png",
+      image_name: "anand_b.jpg",
     },
   ];
 
   return (
     <div className="team-container" id="team">
-      <h2 className="team-container-title">OUR TEAM</h2>
+      <h2 className="team-container-title">Office TEAM</h2>
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
         Training & Placement Office
       </h4>
