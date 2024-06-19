@@ -26,7 +26,18 @@ const NewsandEvents = () => {
                       rel="noreferrer"
                       target="_blank"
                     >
-                      Students of B.Tech. ECE Placed in Sagacious IP
+                      Sagacious IP conducted Placement Drive at NIT Mizoram on
+                      14.06.2024
+                    </a>
+                  </li>
+                  <li className="list-group-item d-flex justify-content-between align-items-center">
+                    <a
+                      href="https://www.linkedin.com/posts/training-and-placement-cell-nit-mizoram_campusplacements-oncampus-campusrecruitment-activity-7187132863744487424-9V8V?utm_source=share&utm_medium=member_desktop"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Vedanta conducted Placement Drive at NIT Mizoram on
+                      14.06.2024
                     </a>
                   </li>
 
