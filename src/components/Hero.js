@@ -16,14 +16,14 @@ const Hero = () => {
             data-bs-ride="carousel"
           >
             <div className="carousel-indicators">
-              {Array.from({ length: 10 }).map((_, index) => (
+              {Array.from({ length: 6 }).map((_, index) => (
                 <button
                   key={index}
                   type="button"
                   data-bs-target="#carouselExampleIndicators"
                   data-bs-slide-to={index}
-                  className={index === 0 ? 'active' : ''}
-                  aria-current={index === 0 ? 'true' : undefined}
+                  className={index === 0 ? "active" : ""}
+                  aria-current={index === 0 ? "true" : undefined}
                   aria-label={`Slide ${index + 1}`}
                 ></button>
               ))}
@@ -42,7 +42,7 @@ const Hero = () => {
                   </h5>
                 </div>
               </div>
-              <div className="carousel-item" data-bs-interval="3000">
+              {/* <div className="carousel-item" data-bs-interval="3000">
                 <img
                   className="d-block w-100"
                   src="assets/img/carousel/IPR2.webp"
@@ -54,7 +54,7 @@ const Hero = () => {
                     SPECIAL PATENTS AND START-UPS
                   </h5>
                 </div>
-              </div>
+              </div> */}
 
               <div className="carousel-item " data-bs-interval="3000">
                 <img
@@ -108,7 +108,10 @@ const Hero = () => {
                   alt="bashant panchatmi"
                 />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Bashant Panchatmi Event</h5>
+                  <h5>
+                    IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO
+                    SPECIAL PATENTS AND START-UPS
+                  </h5>
                 </div>
               </div>
             </div>
@@ -144,15 +147,23 @@ const Hero = () => {
         <div className="marquee-wrapper">
           <div className="marquee-content-1">
             <h6>
-              <a href="https://example.com/tcs-hiring" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://example.com/tcs-hiring"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Registration and JNF for TCS Hiring
                 <span className="badge bg-danger">New</span>
               </a>
             </h6>
-            </div>
-            <div className="marquee-content-2">
+          </div>
+          <div className="marquee-content-2">
             <h6>
-              <a href="https://example.com/vedanta" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://example.com/vedanta"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Registration and JNF For Vedanta
                 <span className="badge bg-danger">New</span>
               </a>
