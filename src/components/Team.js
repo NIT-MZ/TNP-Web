@@ -162,7 +162,7 @@ const Team = () => {
       position: "Activity Coordinator",
       branch: "MT CIR",
       linkedin: "https://www.linkedin.com/in/kishor-malakar-757045203",
-      image_name: "kisor_malakar.png",
+      image_name: "kishor_malakar.jpg",
     },
   ];
 
