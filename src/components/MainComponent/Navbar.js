@@ -158,14 +158,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="shadow-md w-full bg-gradient-to-r from-[#ffdd76] to-[#87ed33] md:border-b-4 border-green-600 hidden md:block">
+      <div className="shadow-md w-full bg-gradient-to-r from-[#ffdd76] to-[#87ed33]   hidden md:flex">
         <div className="flex flex-col lg:justify-evenly">
           <div className="md:flex md:justify-between md:p-4 p-3 lg:justify-around">
             <div className="md:pl-4">
               <img
                 src="https://www.vidyavision.com/CollegeUploads/Logos/2017-23-5-16-27-56_nit-mizoram-logo.png"
                 alt="NIT Mizoram Logo"
-                className="mt-2 2xl:w-44 2xl:h-44 lg:h-32 sm:h-38 sm:w-38 h-16 w-16 lg:ml-4"
+                className="mt-2 2xl:w-44 2xl:h-44 lg:h-32 h-32 w-32 lg:ml-4"
               />
             </div>
             <div className="lg:ml-24 items-center text-center md:mt-8 mt-2 md:px-4  lg:mt-0 lg:px-8 relative bottom-4 md:static">
@@ -194,7 +194,7 @@ const Navbar = () => {
               <img
                 src="tnplogo.png"
                 alt="tnpLogo"
-                className="hidden md:flex self-center lg:mt-4 mt-12 lg:mx-4 lg:h-44 lg:w-44 pr-2 pb-2 h-16 w-16 sm:h-32 sm:w-32"
+                className="hidden md:flex self-center lg:mt-4 mt-12  md:mt-6 g:mx-4 lg:h-44 lg:w-44 pr-2 pb-2 h-16 w-16 sm:h-32 sm:w-32"
               />
             </div>
           </div>
@@ -203,18 +203,20 @@ const Navbar = () => {
 
       <nav>
         <div className=" hidden w-full md:flex md:items-center md:justify-between md:w-auto">
-          <div className="sm-8 md:w-full w-full py-2 justify-evenly text-white lg:font-semibold font-semibold text-[14px] lg:p-1 lg:text-sm md:text-sm flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf]  md:h-12 flex-nowrap">
+          <div className="  w-full  justify-evenly text-white lg:font-normal md:font-semibold  text-[14px] lg:pt-4 lg:text-sm text-xs flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf] border-b-4  border-green-600 md:h-14 flex-nowrap">
             <Link to="/" className="hover:text-white hover:font-semibold">
-              <p className="mx-1 text-[1.8vw] md:text-lg text-white\">Home</p>
+              <p className="mx-1 text-[1.8vw] md:text-md lg:text-[22px] text-white\">
+                Home
+              </p>
             </Link>
             <a href="#clients" className=" hover:font-semibold">
-              <p className=" text-[1.8vw] md:text-lg text-white">
+              <p className=" text-[1.8vw] md:text-md text-white lg:text-[22px] ">
                 Past Recruiters
               </p>
             </a>
 
             <a href="#atAGlance" className=" hover:font-semibold">
-              <p className=" text-[1.8vw] md:text-lg text-white">
+              <p className=" text-[1.8vw] md:text-md text-white lg:text-[22px] ">
                 News and Notice
               </p>
             </a>
@@ -226,19 +228,23 @@ const Navbar = () => {
               </a> */}
 
             <a href="#team" className="hover:text-pink-300 hover:font-semibold">
-              <p className="text-[1.8vw] md:text-lg text-white">Team</p>
+              <p className="text-[1.8vw] md:text-md text-white lg:text-[22px]">
+                Team
+              </p>
             </a>
             <Link
               to="/internship"
               className="hover:text-pink-300 hover:font-semibold"
             >
-              <p className="text-[1.8vw] md:text-lg text-white">Internships</p>
+              <p className="text-[1.8vw] md:text-md text-white lg:text-[22px] ">
+                Internships
+              </p>
             </Link>
             <Link
               to="/events"
               className="hover:text-pink-300 hover:font-semibold"
             >
-              <p className=" text-[1.8vw] md:text-lg text-white">
+              <p className=" text-[1.8vw] md:text-md text-white lg:text-[22px]">
                 Student Activities
               </p>
             </Link>
@@ -246,13 +252,17 @@ const Navbar = () => {
               to="https://www.nitmz.ac.in/uploaded_files/NITMZ_brochure-revised.pdf"
               className="hover:text-pink-300 hover:font-semibold"
             >
-              <p className="text-[1.8vw] md:text-lg text-white">Brochure</p>
+              <p className="text-[1.8vw] md:text-md text-white lg:text-[22px]">
+                Brochure
+              </p>
             </Link>
             <a
               href="#contact"
               className="hover:text-green-200 hover:font-semibold"
             >
-              <p className=" text-[1.8vw] md:text-lg text-white">Contact Us </p>
+              <p className=" text-[1.8vw] md:text-md text-white lg:text-[22px]">
+                Contact Us{" "}
+              </p>
             </a>
           </div>
         </div>

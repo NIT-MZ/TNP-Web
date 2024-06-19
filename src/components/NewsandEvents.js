@@ -19,7 +19,7 @@ const NewsandEvents = () => {
             </div>
             <div className="card-body">
               <p className="card-text">
-                <ul className="list-group list-group-flush">
+                <ul className="list-group list-group-flush news-ticker-vertical">
                   <li className="list-group-item d-flex justify-content-between align-items-center">
                     <a
                       href="https://www.linkedin.com/posts/training-and-placement-cell-nit-mizoram_campusplacements-oncampus-campusrecruitment-activity-7187132863744487424-9V8V?utm_source=share&utm_medium=member_desktop"
