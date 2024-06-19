@@ -98,6 +98,13 @@ const Navbar = () => {
                   Team
                 </a>
                 <Link
+                  to="/recruiters"
+                  onClick={toggleMenu}
+                  className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
+                >
+                  For Recruiters
+                </Link>
+                <Link
                   to="/internship"
                   onClick={toggleMenu}
                   className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
@@ -232,6 +239,15 @@ const Navbar = () => {
                 Team
               </p>
             </a>
+
+            <Link
+              to="/recruiters"
+              className="hover:text-pink-300 hover:font-semibold"
+            >
+              <p className="text-[1.8vw] md:text-md text-white lg:text-[22px] ">
+                For Recruiters
+              </p>
+            </Link>
             <Link
               to="/internship"
               className="hover:text-pink-300 hover:font-semibold"
