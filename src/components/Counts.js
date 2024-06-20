@@ -11,7 +11,7 @@ const Counts = () => {
               align-items-md-stretch"
           >
             <div class="count-box">
-              <span>85%</span>
+              <span>86%</span>
               <p>Students Placed in Session 2023-24</p>
             </div>
           </div>

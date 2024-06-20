@@ -18,7 +18,7 @@
     padding: 20px;
 }
 
-.internship-details-card-container{
+.internship-details-card-container {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -26,15 +26,17 @@
 }
 
 .internship-details-card {
-    height: 200px;
+    height: auto;
     width: 40%;
     margin: 10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
-.internship-company{
+.internship-company {
     height: 150px;
     min-width: 200px;
     background-size: cover;
@@ -42,20 +44,20 @@
     border-radius: 10px;
 }
 
-.internship-details{
+.internship-details {
     width: auto;
     font-size: 20px;
-    font-weight: bold; 
+    font-weight: bold;
     font-family: sans-serif;
 }
 
-.students-placed{
+.students-placed {
     display: flex;
     align-items: center;
 }
 
-.intern-numbers{
-    width: 50px;
+.intern-numbers {
+    width: 60px;
     height: auto;
     margin-left: 20px;
     font-size: 32px;
@@ -67,16 +69,134 @@
     background-color: rgb(26, 25, 25);
 }
 
-.bottom-border{
+.bottom-border {
     height: 2px;
-    width: 50px;
+    width: 60px;
     background-color: white;
 }
 
-.bottom-border-below{
+.bottom-border-below {
     height: 15px;
-    width: 50px;
+    width: 60px;
     background-color: rgb(26, 25, 25);
+}
+
+.internship-company-images {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.internship-company-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
+
+.internship-company-image:nth-child(1) {
+    left: 0;
+    // top: 0;
+    transform: translate(0, 0);
+}
+
+.internship-company-image:nth-child(2) {
+    left: 30px;
+    transform: translate(0, 0);
+}
+
+.internship-company-image:nth-child(3) {
+    left: 60px;
+    // top: 40px;
+    transform: translate(0, 0);
+}
+
+.internship-company-image:nth-child(4) {
+    left: 90px;
+    // top: 60px;
+    transform: translate(0, 0);
+}
+
+.internship-company-image:nth-child(5) {
+    left: 120px;
+    // top: 60px;
+    transform: translate(0, 0);
+}
+
+.internship-company-image:hover {
+    transform: scale(1.1) translateY(-0.5rem);
+}
+
+.internship-details-card:hover .internship-company-image:not(:hover) {
+    transform: scale(0.9);
+}
+
+.internship-company-image:nth-child(1):hover,
+.internship-company-image:nth-child(2):hover,
+.internship-company-image:nth-child(3):hover,
+.internship-company-image:nth-child(4):hover,
+.internship-company-image:nth-child(5):hover {
+    z-index: 99;
+}
+
+.tpo-testimonial-container {
+    height: auto;
+    width: 70%;
+    border-radius: 20px;
+    margin: 20px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tpo-testimonial {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 221, 118, 1);
+    // margin: 20px 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tpo-testimonial-container-lower {
+    width: 60px;
+    height: 30px;
+    border-top: solid 30px rgba(255, 221, 118, 1);
+    //   border-radius: 20px;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+}
+
+.tpo-image-container {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+}
+
+.tpo-image {
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+
+.tpo-statement {
+    width: 70%;
+    font-size: 1.1rem;
+    text-align: justify;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 @media (max-width: 768px) {
@@ -89,17 +209,35 @@
         justify-content: space-between;
     }
 
-    .internship-details{
+    .internship-details {
         text-align: center;
     }
-    
-    .students-placed{
+
+    .students-placed {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .intern-numbers{
+    .intern-numbers {
         margin-left: 0;
     }
-  }
+
+    .internship-company-images {
+        position: relative;
+        width: 70%;
+    }
+
+    .tpo-testimonial {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tpo-statement {
+        width: 80%;
+        padding: 10px;
+    }
+}
