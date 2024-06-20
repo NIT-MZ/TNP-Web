@@ -209,21 +209,21 @@ const Navbar = () => {
       </div>
 
       <nav>
-        <div className=" hidden w-full md:flex md:items-center md:justify-between md:w-auto">
-          <div className="  w-full  justify-evenly text-white lg:font-normal md:font-semibold  text-[14px] lg:pt-4 lg:text-sm text-xs flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf] border-b-4  border-green-600 md:h-14 flex-nowrap">
+        <div className=" hidden w-full md:flex md:items-center md:align-middle md:justify-between md:w-auto">
+          <div className="  w-full  justify-evenly text-white lg:font-normal  align-middle md:font-normal md:pt-2 text-[14px] lg:pt-4 lg:text-sm text-xs flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf] border-b-4  border-green-600 md:h-10 lg:h-14 flex-nowrap">
             <Link to="/" className="hover:text-white hover:font-semibold">
-              <p className="mx-1 text-[1.8vw] md:text-md lg:text-[22px] text-white\">
+              <p className="mx-1 text-[1.6vw] md:text-sm lg:text-[22px] text-white\">
                 Home
               </p>
             </Link>
             <a href="#clients" className=" hover:font-semibold">
-              <p className=" text-[1.8vw] md:text-md text-white lg:text-[22px] ">
+              <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
                 Past Recruiters
               </p>
             </a>
 
             <a href="#atAGlance" className=" hover:font-semibold">
-              <p className=" text-[1.8vw] md:text-md text-white lg:text-[22px] ">
+              <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
                 News and Notice
               </p>
             </a>
@@ -235,7 +235,7 @@ const Navbar = () => {
               </a> */}
 
             <a href="#team" className="hover:text-pink-300 hover:font-semibold">
-              <p className="text-[1.8vw] md:text-md text-white lg:text-[22px]">
+              <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px]">
                 Office Team
               </p>
             </a>
@@ -244,7 +244,7 @@ const Navbar = () => {
               to="/recruiters"
               className="hover:text-pink-300 hover:font-semibold"
             >
-              <p className="text-[1.8vw] md:text-md text-white lg:text-[22px] ">
+              <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
                 For Recruiters
               </p>
             </Link>
@@ -252,7 +252,7 @@ const Navbar = () => {
               to="/internship"
               className="hover:text-pink-300 hover:font-semibold"
             >
-              <p className="text-[1.8vw] md:text-md text-white lg:text-[22px] ">
+              <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
                 Internships
               </p>
             </Link>
@@ -260,7 +260,7 @@ const Navbar = () => {
               to="/events"
               className="hover:text-pink-300 hover:font-semibold"
             >
-              <p className=" text-[1.8vw] md:text-md text-white lg:text-[22px]">
+              <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px]">
                 Student Activities
               </p>
             </Link>
@@ -268,7 +268,7 @@ const Navbar = () => {
               to="https://www.nitmz.ac.in/uploaded_files/NITMZ_brochure-revised.pdf"
               className="hover:text-pink-300 hover:font-semibold"
             >
-              <p className="text-[1.8vw] md:text-md text-white lg:text-[22px]">
+              <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px]">
                 Brochure
               </p>
             </Link>
@@ -276,7 +276,7 @@ const Navbar = () => {
               href="#contact"
               className="hover:text-green-200 hover:font-semibold"
             >
-              <p className=" text-[1.8vw] md:text-md text-white lg:text-[22px]">
+              <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px]">
                 Contact Us{" "}
               </p>
             </a>
