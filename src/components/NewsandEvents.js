@@ -2,7 +2,7 @@ import React from "react";
 import "../stylesheets/NewsandEvents.scss";
 
 const ListGroupItemClass =
-  "list-group-item d-flex justify-content-between align-items-center";
+  "list-group-item d-flex justify-content-between align-items-center md:font-bold";
 
 const items = [
   "Sagacious IP conducted a placement drive at NIT Mizoram in June 2024.",
