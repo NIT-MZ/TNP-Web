@@ -153,7 +153,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 Registration and JNF for TCS Hiring
-                <span className="badge bg-danger">New</span>
+                <span className="badge bg-success">New</span>
               </a>
             </h6>
           </div>
@@ -165,7 +165,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 Registration and JNF For Vedanta
-                <span className="badge bg-danger">New</span>
+                <span className="badge bg-success">New</span>
               </a>
             </h6>
           </div>
