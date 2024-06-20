@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const menuRef = useRef();
   const buttonRef = useRef();
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -34,8 +34,18 @@ const Navbar = () => {
     };
   }, [isOpen]);
 
+  const handleNavigation = (path, anchor) => {
+    navigate(path);
+    setTimeout(() => {
+      const element = document.getElementById(anchor);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Slight delay to ensure the page has navigated before scrolling
+  };
+
   return (
-    <div>
+    <div className="navbar-container">
       <div className="md:hidden shadow-md w-full bg-gradient-to-r from-[#ffdd76] to-[#87ed33] border-b-4 border-green-600">
         <div className="flex flex-col lg:justify-evenly">
           <div className="md:flex md:justify-between md:p-4 px-3 pt-1 lg:justify-around">
@@ -78,21 +88,21 @@ const Navbar = () => {
                 </Link>
                 <a
                   href="#clients"
-                  onClick={toggleMenu}
+                  onClick={() => handleNavigation("/", "clients")}
                   className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
                 >
                   Past recruiters
                 </a>
                 <a
                   href="#atAGlance"
-                  onClick={toggleMenu}
+                  onClick={() => handleNavigation("/", "atAGlance")}
                   className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
                 >
                   News and Notice
                 </a>
                 <a
                   href="#team"
-                  onClick={toggleMenu}
+                  onClick={() => handleNavigation("/", "team")}
                   className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
                 >
                   Team
@@ -127,7 +137,7 @@ const Navbar = () => {
                 </a>
                 <a
                   href="#contact"
-                  onClick={toggleMenu}
+                  onClick={() => handleNavigation("/", "contact")}
                   className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
                 >
                   Contact Us
@@ -216,66 +226,45 @@ const Navbar = () => {
                 Home
               </p>
             </Link>
-            <a href="#clients" className=" hover:font-semibold">
+            <a href="#clients" onClick={() => handleNavigation("/", "clients")} className="hover:font-semibold">
               <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
                 Past Recruiters
               </p>
             </a>
 
-            <a href="#atAGlance" className=" hover:font-semibold">
+            <a href="#atAGlance" onClick={() => handleNavigation("/", "atAGlance")} className="hover:font-semibold">
               <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
                 News and Notice
               </p>
             </a>
 
-            {/* <a href="#clients" className=" hover:font-semibold">
-                <p className="mx-1 text-[1.8vw] md:text-lg text-white">
-                  Why recruit us
-                </p>
-              </a> */}
-
-            <a href="#team" className="hover:text-pink-300 hover:font-semibold">
+            <a href="#team" onClick={() => handleNavigation("/", "team")} className="hover:font-semibold">
               <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px]">
                 Office Team
               </p>
             </a>
 
-            <Link
-              to="/recruiters"
-              className="hover:text-pink-300 hover:font-semibold"
-            >
+            <Link to="/recruiters" className="hover:text-pink-300 hover:font-semibold">
               <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
                 For Recruiters
               </p>
             </Link>
-            <Link
-              to="/internship"
-              className="hover:text-pink-300 hover:font-semibold"
-            >
+            <Link to="/internship" className="hover:text-pink-300 hover:font-semibold">
               <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
                 Internships
               </p>
             </Link>
-            <Link
-              to="/events"
-              className="hover:text-pink-300 hover:font-semibold"
-            >
+            <Link to="/events" className="hover:text-pink-300 hover:font-semibold">
               <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px]">
                 Student Activities
               </p>
             </Link>
-            <Link
-              to="https://www.nitmz.ac.in/uploaded_files/NITMZ_brochure-revised.pdf"
-              className="hover:text-pink-300 hover:font-semibold"
-            >
+            <Link to="https://www.nitmz.ac.in/uploaded_files/NITMZ_brochure-revised.pdf" className="hover:text-pink-300 hover:font-semibold">
               <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px]">
                 Brochure
               </p>
             </Link>
-            <a
-              href="#contact"
-              className="hover:text-green-200 hover:font-semibold"
-            >
+            <a href="#contact" onClick={() => handleNavigation("/", "contact")} className="hover:text-green-200 hover:font-semibold">
               <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px]">
                 Contact Us{" "}
               </p>
