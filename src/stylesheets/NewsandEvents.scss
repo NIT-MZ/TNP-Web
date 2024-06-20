@@ -31,7 +31,7 @@ section {
 
 #atAGlance .card {
     height: 85vh;
-    overflow-y: scroll !important;
+overflow-y: hidden;
     margin: 0 0.5rem;
     border-radius: 0.25rem;
   }
@@ -60,7 +60,7 @@ section {
   #atAGlance .card-body .card-text  ul i {
     position: absolute;
     left: 0;
-    top: 2px;
+    top: 3px;
     font-size: 20px;
     color: #43920D;
     line-height: 1;
@@ -87,7 +87,7 @@ section {
   }
 
   .at-a-glance-title{
-    font-size: 32px;
+    font-size: 44px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -147,7 +147,7 @@ section {
   }
   
   .news-ticker-vertical-content .gap {
-    height: 30vh /* Adjust this value for the desired gap size */
+    height: 15vh /* Adjust this value for the desired gap size */
   }
   
   /* Responsive adjustments */

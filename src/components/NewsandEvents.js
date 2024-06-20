@@ -2,7 +2,7 @@ import React from "react";
 import "../stylesheets/NewsandEvents.scss";
 
 const ListGroupItemClass =
-  "list-group-item d-flex justify-content-between align-items-center md:font-bold";
+  "list-group-item d-flex justify-content-between align-items-center md:font-bold ";
 
 const items = [
   "Sagacious IP conducted a placement drive at NIT Mizoram in June 2024.",
@@ -90,13 +90,13 @@ const NewsandEvents = () => {
         <div className="card-group text-center">
           <div className="card mb-3">
             <div className="card-header sticky-top bg-gradient-to-r from-[#f3c031] to-[#43920d]">
-              <h5 className="card-title">News & Notice</h5>
+              <h4 className="card-title text-lg">News & Notice</h4>
             </div>
             <div className="card-body">
               <p className="card-text">
                 <div className="news-ticker-vertical">
                   <div className="news-ticker-vertical-content">
-                    <ul className="list-group list-group-flush">
+                    <ul className="list-group list-group-flush ">
                       {items.map((item, index) => (
                         <li key={index} className={ListGroupItemClass}>
                           {item}
