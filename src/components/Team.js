@@ -323,7 +323,7 @@ const Team = () => {
 
   return (
     <div className="team-container" id="team">
-      <h2 className="team-container-title">Office TEAM</h2>
+      <h2 className="team-container-title  py-2">Office TEAM</h2>
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
         Training & Placement Office
       </h4>
