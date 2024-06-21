@@ -62,17 +62,7 @@ const Counts = () => {
               align-items-md-stretch"
             >
               <div className="count-box">
-                <span>
-                  {counterOn && (
-                    <CountUp
-                      start={0}
-                      end={14.5}
-                      duration={2}
-                      delay={0}
-                      decimals={1}
-                    ></CountUp>
-                  )}
-                </span>
+                <span>14.5</span>
                 <p>Highest Package of B.Tech. Students (in LPA)</p>
               </div>
             </div>
@@ -82,17 +72,7 @@ const Counts = () => {
               align-items-md-stretch"
             >
               <div className="count-box">
-                <span>
-                  {" "}
-                  {counterOn && (
-                    <CountUp
-                      start={0}
-                      end={19}
-                      duration={2}
-                      delay={0}
-                    ></CountUp>
-                  )}
-                </span>
+                <span>19</span>
                 <a href="https://NIT Mizoram.ac.in/mous/">
                   <p>MoU & Training Programs Signed with Other Institutions</p>
                 </a>
