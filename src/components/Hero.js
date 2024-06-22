@@ -1,6 +1,50 @@
 import React from "react";
 import "./Hero.scss";
 
+const carouselItems = [
+  {
+    src: "assets/img/carousel/IPR.webp",
+    alt: "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
+    caption: "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
+  },
+  {
+    src: "assets/img/carousel/Faculties photo.webp",
+    alt: "MEETING WITH DEAN ACADEMIC OF IIT MADRAS",
+    caption: "NIT Mizoram T&P Officials visited IIT Madras on Students' Exchange and met the Dean (Academic)",
+  },
+  {
+    src: "assets/img/carousel/UAE parliament.webp",
+    alt: "UNITED NATIONS MODEL CONFERENCE",
+    caption: "UNITED NATIONS MODEL CONFERENCE",
+  },
+  {
+    src: "assets/img/carousel/Sports.webp",
+    alt: "bashant panchatmi",
+    caption: "Sports Event",
+  },
+  {
+    src: "assets/img/carousel/TCS_seminar.webp",
+    alt: "TCS SEMINAR",
+    caption: "TCS SEMINAR ON TCS NQT PROGRAM",
+  },
+  {
+    src: "assets/img/carousel/IMG_20240316_163221.webp",
+    alt: "bashant panchatmi",
+    caption: "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
+  },
+];
+
+const marqueeLinks = [
+  {
+    href: "https://example.com/tcs-hiring",
+    text: "Registration and JNF for TCS Hiring",
+  },
+  {
+    href: "https://example.com/vedanta",
+    text: "Registration and JNF For Vedanta",
+  },
+];
+
 const Hero = () => {
   return (
     <div>
@@ -16,7 +60,7 @@ const Hero = () => {
             data-bs-ride="carousel"
           >
             <div className="carousel-indicators">
-              {Array.from({ length: 6 }).map((_, index) => (
+              {carouselItems.map((_, index) => (
                 <button
                   key={index}
                   type="button"
@@ -29,91 +73,22 @@ const Hero = () => {
               ))}
             </div>
             <div className="carousel-inner">
-              <div className="carousel-item active" data-bs-interval="3000">
-                <img
-                  className="d-block carousel-img"
-                  src="assets/img/carousel/IPR.webp"
-                  alt="IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS"
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>
-                    IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO
-                    SPECIAL PATENTS AND START-UPS
-                  </h5>
+              {carouselItems.map((item, index) => (
+                <div
+                  key={index}
+                  className={`carousel-item ${index === 0 ? "active" : ""}`}
+                  data-bs-interval="3000"
+                >
+                  <img
+                    className="d-block carousel-img"
+                    src={item.src}
+                    alt={item.alt}
+                  />
+                  <div className="carousel-caption d-none d-md-block">
+                    <h5>{item.caption}</h5>
+                  </div>
                 </div>
-              </div>
-              {/* <div className="carousel-item" data-bs-interval="3000">
-                <img
-                  className="d-block w-100"
-                  src="assets/img/carousel/IPR2.webp"
-                  alt="IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS"
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>
-                    IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO
-                    SPECIAL PATENTS AND START-UPS
-                  </h5>
-                </div>
-              </div> */}
-
-              <div className="carousel-item " data-bs-interval="3000">
-                <img
-                  className="d-block w-100"
-                  src="assets/img/carousel/Faculties photo.webp"
-                  alt="MEETING WITH DEAN ACADEMIC OF IIT MADRAS"
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>
-                    NIT Mizoram T&P Officials visited IIT Madras on Students'
-                    Exchange and met the Dean (Academic)
-                  </h5>
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="3000">
-                <img
-                  className="d-block w-100"
-                  src="assets/img/carousel/UAE parliament.webp"
-                  alt="UNITED NATIONS MODEL CONFERENCE"
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>UNITED NATIONS MODEL CONFERENCE</h5>
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="3000">
-                <img
-                  className="d-block w-100"
-                  src="assets/img/carousel/Sports.webp"
-                  alt="bashant panchatmi"
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Sports Event</h5>
-                </div>
-              </div>
-
-              <div className="carousel-item" data-bs-interval="3000">
-                <img
-                  className="d-block w-100"
-                  src="assets/img/carousel/TCS_seminar.webp"
-                  alt="TCS SEMINAR"
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>TCS SEMINAR ON TCS NQT PROGRAM</h5>
-                </div>
-              </div>
-
-              <div className="carousel-item" data-bs-interval="3000">
-                <img
-                  className="d-block w-100"
-                  src="assets/img/carousel/IMG_20240316_163221.webp"
-                  alt="bashant panchatmi"
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>
-                    IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO
-                    SPECIAL PATENTS AND START-UPS
-                  </h5>
-                </div>
-              </div>
+              ))}
             </div>
             <button
               className="carousel-control-prev"
@@ -145,30 +120,20 @@ const Hero = () => {
 
       <section className="marquee">
         <div className="marquee-wrapper">
-          <div className="marquee-content-1">
-            <h6>
-              <a
-                href="https://example.com/tcs-hiring"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Registration and JNF for TCS Hiring
-                <span className="badge bg-success">New</span>
-              </a>
-            </h6>
-          </div>
-          <div className="marquee-content-2">
-            <h6>
-              <a
-                href="https://example.com/vedanta"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Registration and JNF For Vedanta
-                <span className="badge bg-success">New</span>
-              </a>
-            </h6>
-          </div>
+          {marqueeLinks.map((link, index) => (
+            <div key={index} className={`marquee-content-${index + 1}`}>
+              <h6>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.text}
+                  <span className="badge bg-success">New</span>
+                </a>
+              </h6>
+            </div>
+          ))}
         </div>
       </section>
     </div>
