@@ -17,7 +17,8 @@
     margin: auto;
     text-align: start;
     font-weight: 700;
-    padding: 25px 0 0 0;
+    padding: 25px 0 20px 0;
+    text-transform: uppercase;
 }
 
 .team-card-container {
@@ -28,7 +29,7 @@
     margin: 0 auto;
     justify-content: space-around;
     border-radius: 10px;
-    // background-color: antiquewhite;
+    background-color: rgb(245, 245, 245);
 }
 
 .team-card {
@@ -42,7 +43,8 @@
     background-repeat: no-repeat;
     background-position: bottom;
     border: 5px solid rgb(255, 255, 255);
-    // background-color: blueviolet;
+    background-color: blueviolet;
+    background-color: white;
 }
 
 .team-card-bottom {

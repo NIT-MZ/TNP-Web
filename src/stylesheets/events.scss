@@ -1,11 +1,11 @@
-.events-list{
+.events-list {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
 
-.events-title{
+.events-title {
     display: flex;
     justify-content: center;
     font-size: 32px;
@@ -17,88 +17,157 @@
     padding: 20px;
 }
 
-.events-subtitle{
+.events-subtitle {
     font-size: 28px;
     font-weight: bold;
-    // text-transform: uppercase;
     margin: 10px 0;
     padding-bottom: 0;
     color: #030303;
-    // padding: 20px;
-}
-.container{
-    height: auto;
-    width: 90%;
-    // padding: 50px;
-    // background-color: aqua;
 }
 
-.events-container{
+.container {
+    height: auto;
+    width: 90%;
+}
+
+.events-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.events-card{
+.events-card {
     height: auto;
     width: 300px;
-    // background-color: aquamarine;
     cursor: pointer;
     margin: 20px;
     border-radius: 10px;
-    // backdrop-filter: blur(5px);
-//     background: #22c1c3;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #ffdd76, #87ed33);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right, #ffdd76, #87ed33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    box-shadow: 0 8px 16px rgba(black, .45);
 }
 
-.event-image-container{
+.event-image-container {
     height: 200px;
     width: inherit;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 10px;
-    border: 5px solid rgb(147, 147, 147);
 }
 
-.events-bottom-container{
+.events-bottom-container {
     display: flex;
-    // align-items: center;
-    // vertical-align: middle;
-    // align-content: center;
-    // height: 10vh;
     width: 100%;
     height: auto;
     padding: 5px 5px;
-    /* From https://css.glass */
-
-border: 1px solid rgba(255, 255, 255, 0.3);
-    // background-color: antiquewhite;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.date-container{
+.date-container {
     text-transform: uppercase;
-    // border-bottom: 5px solid #87ed33;
     font-weight: bold;
     text-align: center;
     font-size: 1.1rem;
     margin-right: 5px;
 }
 
-  
-.day-underline{
+
+.day-underline {
     width: inherit;
     height: 3px;
-    background-color: #87ed33;
+    background-color: #7af813;
 }
-.title-container{
-    // height: 10vh;
-    // width: 100%;
+
+.title-container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     padding: 10px;
     font-size: 1.1rem;
     font-weight: 600;
     width: 100%;
+}
+
+.know-text {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #124265;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.no-upcoming-event-card{
+    display: flex;
+    align-items: center;
+}
+
+.lottie-container{
+    width: 600px;
+    height: 400px;
+    padding: 0;
+    // background-color: #124265;
+}
+
+.lottie-bottom-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.custom-carousel .carousel .slider-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    // height: 400px;
+    // object-fit: contain;
+  }
+  
+//   .custom-carousel .carousel .slider .slide {
+//     background: none !important;
+//     padding: 0 !important;
+//     margin: 0 !important;
+//     background-color: aquamarine;
+//   }
+  
+//   .custom-carousel .carousel .control-arrow {
+//     background: none !important;
+//     padding: 0 !important;
+//     margin: 0 !important;
+//     background-color: antiquewhite;
+//   }
+  
+//   .custom-carousel .carousel .control-dots .dot {
+//     background: none !important;
+//     padding: 0 !important;
+//     margin: 0 !important;
+//   }
+  
+.carousel-image {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+  }
+  
+  
+@media (max-width: 768px){
+    .no-upcoming-event-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .lottie-container{
+        width: auto;
+        height: auto;
+    }
+    .custom-carousel .carousel .slider-wrapper {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100%;
+        height: auto;
+      }
+      .carousel-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    
 }

@@ -126,7 +126,7 @@ const Team = () => {
       position: "Activity Coordinator",
       branch: "CE",
       linkedin: "",
-      image_name: "rahul_p.jpg",
+      image_name: "rahul_p_1.jpg",
     },
     {
       name: "Khushbu Kumari",
@@ -162,7 +162,7 @@ const Team = () => {
       position: "Activity Coordinator",
       branch: "MT CIR",
       linkedin: "https://www.linkedin.com/in/kishor-malakar-757045203",
-      image_name: "kishor_malakar.jpg",
+      image_name: "kishor_malakar_1.jpg",
     },
   ];
 
@@ -210,7 +210,7 @@ const Team = () => {
       position: "Executive Members",
       branch: "CSE",
       linkedin: "https://www.linkedin.com/in/jyoti-yadav-910441260/ ",
-      image_name: "jyoti.png",
+      image_name: "jyoti_1.png",
     },
     {
       name: "Prachi Gupta",
@@ -224,14 +224,14 @@ const Team = () => {
       position: "Executive Members",
       branch: "EE",
       linkedin: "https://www.linkedin.com/in/kanhaiya-kumar-586542248 ",
-      image_name: "kanahiya_kumar1.jpg",
+      image_name: "kanahiya_kumar2.jpg",
     },
     {
       name: "Shashank Kumar Singh",
       position: "Executive Members",
       branch: "ME",
       linkedin: "https://www.linkedin.com/in/shashank-kumar-singh-655432230 ",
-      image_name: "shashank_kumar1.jpg",
+      image_name: "shashank_kumar2.jpg",
     },
 
     {
@@ -263,7 +263,7 @@ const Team = () => {
       position: "Associate Members",
       branch: "ECE",
       linkedin: "",
-      image_name: "ashwini.jpg",
+      image_name: "ashwini_1.jpg",
     },
 
     {
@@ -271,7 +271,7 @@ const Team = () => {
       position: "Associate Members",
       branch: "EE",
       linkedin: " ",
-      image_name: "soundarya.jpg",
+      image_name: "soundarya_1.jpg",
     },
     {
       name: "Khushi Singh",
@@ -295,14 +295,14 @@ const Team = () => {
       position: "Media Members",
       branch: "CE",
       linkedin: "https://www.linkedin.com/in/sourabh-kumar-4960121b3 ",
-      image_name: "sourabh_kumar.png",
+      image_name: "sourabh_kumar_1.png",
     },
     {
       name: "Ayush Anand",
       position: "Media Members",
       branch: "CSE",
       linkedin: "www.linkedin.com/in/ayushanandd",
-      image_name: "ayush_anand.png",
+      image_name: "ayush_anand_1.png",
     },
 
     {
@@ -310,7 +310,7 @@ const Team = () => {
       position: "Media Members",
       branch: "EE",
       linkedin: "  ",
-      image_name: "priyanshu.jpg",
+      image_name: "priyanshu_1.jpg",
     },
     {
       name: "Anand Rao Bauddh",

@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import '../stylesheets/internships.scss';
 import AnimateValue from './AnimateValue';
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 const companies = [
   {
@@ -93,6 +95,7 @@ const companies = [
 ];
 
 const Internships = () => {
+  const [counterOn, setCounterOn] = useState(false);
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -136,38 +139,85 @@ const Internships = () => {
         ))}
       </div>
 
+      <ScrollTrigger
+        onEnter={() => setCounterOn(true)}
+        onExit={() => setCounterOn(false)}
+      >
       <section id="counts" className="counts section-bg ">
         <div className="container">
           <div className="row justify-content-end">
             <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
               <div className="count-box ">
                 <span className="animate-value-container">
-                  91 %
+                  {" "}
+                  {counterOn && (
+                    <CountUp
+                      start={0}
+                      end={91}
+                      duration={2}
+                      delay={0}
+                      suffix="%"
+                    ></CountUp>
+                  )}
                 </span>
                 <p>Students Joined Internship for 2024-2025 Batch</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
               <div className="count-box">
-                <span><AnimateValue start={0} end={30} duration={2000} /></span>
+                <span>
+                  {" "}
+                  {counterOn && (
+                    <CountUp
+                      start={0}
+                      end={30}
+                      duration={2}
+                      delay={0}
+                      suffix=" "
+                    ></CountUp>
+                  )}
+                </span>
                 <p>Students undergoing Research Internship at IITs</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
               <div className="count-box">
-                <span><AnimateValue start={0} end={7} duration={2000} /></span>
+                <span>
+                  {" "}
+                  {counterOn && (
+                    <CountUp
+                      start={0}
+                      end={7}
+                      duration={2}
+                      delay={0}
+                      suffix=" "
+                    ></CountUp>
+                  )}
+                </span>
                 <p>Students at IIT Madras under Direct PhD programme MoU</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
               <div className="count-box">
-                <span><AnimateValue start={0} end={30} duration={2000} /></span>
+                <span>
+                  {" "}
+                  {counterOn && (
+                    <CountUp
+                      start={0}
+                      end={30}
+                      duration={2}
+                      delay={0}
+                      suffix=" "
+                    ></CountUp>
+                  )}
+                </span>
                 <p>Students from Engineering Institutes all over India undergoing Internship at NIT Mizoram</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      </ScrollTrigger>
 
       <div className="tpo-testimonial-container">
         <div className="tpo-testimonial">

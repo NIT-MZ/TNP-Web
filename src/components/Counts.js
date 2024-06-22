@@ -53,7 +53,7 @@ const Counts = () => {
                     ></CountUp>
                   )}
                 </span>
-                <p>Students Completed their Internship & Summer Training</p>
+                <p>Students Completed their Internship & Summer Training (2024-25)</p>
               </div>
             </div>
 
