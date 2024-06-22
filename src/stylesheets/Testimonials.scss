@@ -71,7 +71,7 @@
   border-right: 20px solid transparent;
   border-left: 20px solid transparent;
   position: absolute;
-  bottom: -20px;
+  bottom: -10px;
   left: calc(50% - 20px);
 }
 
@@ -85,11 +85,11 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .slick-dots li button:before {
+  .slick-dots li button::before {
     font-size: 8px; /* Adjust size */
     color: black; /* Adjust color */
     opacity: 1;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 }
 
@@ -107,5 +107,6 @@
 @media only screen and (max-width: 798px) {
   .testimonials{
     padding: 50px 0;
+
   }
 }
