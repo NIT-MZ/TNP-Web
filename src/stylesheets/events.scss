@@ -150,6 +150,9 @@
   
   
 @media (max-width: 768px){
+    .events-list {
+        margin-top: 15vh;
+    }
     .no-upcoming-event-card{
         display: flex;
         flex-direction: column;

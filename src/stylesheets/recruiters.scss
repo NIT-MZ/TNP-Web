@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 15vh;
 }
 
 .recruitment-title{
@@ -101,6 +102,9 @@
 }
 
 @media (min-width: 1024px) {
+    .recruiters-container{
+        margin-top: 0;
+    }
     .recruitment-procedure-card{
         width: 90%;
         display: flex;

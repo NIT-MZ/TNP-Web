@@ -38,14 +38,19 @@ const Navbar = () => {
   }, [isOpen]);
 
   const handleNavigation = (path, anchor) => {
+    setIsOpen(false);
     navigate(path);
+  
     setTimeout(() => {
       const element = document.getElementById(anchor);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
       }
-    }, 100); // Slight delay to ensure the page has navigated before scrolling
+    }, 100); // Delay to ensure navigation completes
   };
+  
 
   return (
     <div className="navbar-container">
@@ -60,7 +65,7 @@ const Navbar = () => {
               />
             </div>
             <div className="lg:ml-24 items-center text-center -mt-9 lg:px-8 relative bottom-4 md:static">
-              <div className="md:justify-between w-full">
+              <div className="md:justify-between w-full mt-2 mb-2">
                 <p className="text-slate-600 lg:font-bold font-semibold md:font-bold font-md lg:text-xl 2xl:text-2xl md:text-xl sm:text-lg text-xs">
                   प्रशिक्षण एवं नियोजन कार्यालय
                 </p>

@@ -9,11 +9,13 @@ import EventsList from "./pages/Events.js";
 import Internships from "./pages/Internships.js";
 import ForRecruiters from "./pages/ForRecruiters.js";
 import Jaf from "./components/JAF.js";
+import ScrollToTop from "./components/MainComponent/ScrollToTop.js";
 
 function App() {
   return (
     <UserContextProvider>
       <BrowserRouter>
+      <ScrollToTop />
         <Navbar />       
         <Routes>
            <Route path="/" element={<HomePage />} /> 
