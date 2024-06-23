@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import './navbar.scss'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -220,18 +221,18 @@ const Navbar = () => {
 
       <nav>
         <div className=" hidden w-full md:flex md:items-center md:align-middle md:justify-between md:w-auto">
-          <div className="  w-full  justify-evenly text-white lg:font-normal  align-middle md:font-normal md:pt-2 text-[14px] lg:pt-4 lg:text-sm hover:text-md text-xs flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf] border-b-4  border-green-600 md:h-10 lg:h-14 flex-nowrap">
-            <Link to="/" className="hover:text-white hover:font-semibold">
-              <p className="mx-1 text-[1.6vw] md:text-sm lg:text-[22px] text-white\">
+          <div className=" w-full  justify-evenly text-white lg:font-normal  align-middle md:font-normal md:pt-2 text-[14px] lg:pt-4 lg:text-sm text-xs flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf] border-b-4  border-green-600 md:h-10 lg:h-14 flex-nowrap">
+            <Link to="/" className="nav-link-text">
+              <p className="mx-1 text-[1.6vw] md:text-sm lg:text-[22px]">
                 Home
               </p>
             </Link>
             <a
               href="#clients"
               onClick={() => handleNavigation("/", "clients")}
-              className="hover:font-semibold"
+              className="nav-link-text"
             >
-              <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
+              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
                 Past Recruiters
               </p>
             </a>
@@ -239,9 +240,9 @@ const Navbar = () => {
             <a
               href="#atAGlance"
               onClick={() => handleNavigation("/", "atAGlance")}
-              className="hover:font-semibold"
+              className="nav-link-text"
             >
-              <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
+              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
                 News and Notice
               </p>
             </a>
@@ -249,51 +250,51 @@ const Navbar = () => {
             <a
               href="#team"
               onClick={() => handleNavigation("/", "team")}
-              className="hover:font-semibold"
+              className="nav-link-text"
             >
-              <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px]">
+              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">
                 Office Team
               </p>
             </a>
 
             <Link
               to="/recruiters"
-              className="hover:text-pink-300 hover:font-semibold"
+              className="hover:text-pink-300 nav-link-text"
             >
-              <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
+              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">
                 For Recruiters
               </p>
             </Link>
             <Link
               to="/internship"
-              className="hover:text-pink-300 hover:font-semibold"
+              className="hover:text-pink-300 nav-link-text"
             >
-              <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px] ">
+              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">
                 Internships
               </p>
             </Link>
             <Link
               to="/events"
-              className="hover:text-pink-300 hover:font-semibold"
+              className="nav-link-text"
             >
-              <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px]">
+              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
                 Student Activities
               </p>
             </Link>
             <Link
               to="https://www.nitmz.ac.in/uploaded_files/NITMZ_brochure-revised.pdf"
-              className="hover:text-pink-300 hover:font-semibold"
+              className="nav-link-text"
             >
-              <p className="text-[1.6vw] md:text-sm text-white lg:text-[22px]">
+              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">
                 Brochure
               </p>
             </Link>
             <a
               href="#contact"
               onClick={() => handleNavigation("/", "contact")}
-              className="hover:text-green-200 hover:font-semibold"
+              className="nav-link-text"
             >
-              <p className=" text-[1.6vw] md:text-sm text-white lg:text-[22px]">
+              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
                 Contact Us{" "}
               </p>
             </a>
