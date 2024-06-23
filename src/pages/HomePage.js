@@ -16,7 +16,7 @@ import '../stylesheets/home.scss'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="home-page-container">
       <Hero />
       <div className="home-page-top-section">
         <DirectorsMessage />

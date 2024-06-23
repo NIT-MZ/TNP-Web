@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hero.scss";
+import "../stylesheets/Hero.scss";
 
 const carouselItems = [
   {
@@ -47,7 +47,7 @@ const marqueeLinks = [
 
 const Hero = () => {
   return (
-    <div>
+    <div className="hero-container">
       <section id="hero" className="d-flex align-items-center">
         <div
           className="container position-relative"

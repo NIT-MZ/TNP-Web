@@ -14,8 +14,7 @@ function App() {
   return (
     <UserContextProvider>
       <BrowserRouter>
-        <Navbar />
-       
+        <Navbar />       
         <Routes>
            <Route path="/" element={<HomePage />} /> 
            <Route path="/events" element={<EventsList />} /> 

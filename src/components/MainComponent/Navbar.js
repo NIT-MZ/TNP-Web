@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import './navbar.scss'
+import '../../stylesheets/navbar.scss'
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +59,7 @@ const Navbar = () => {
                 className="mt-2 2xl:w-44 2xl:h-44 lg:h-32 sm:h-38 sm:w-38 h-16 w-16 lg:ml-4"
               />
             </div>
-            <div className="lg:ml-24 items-center text-center mt-2  lg:mt-0 lg:px-8 relative bottom-4 md:static">
+            <div className="lg:ml-24 items-center text-center -mt-9 lg:px-8 relative bottom-4 md:static">
               <div className="md:justify-between w-full">
                 <p className="text-slate-600 lg:font-bold font-semibold md:font-bold font-md lg:text-xl 2xl:text-2xl md:text-xl sm:text-lg text-xs">
                   प्रशिक्षण एवं नियोजन कार्यालय
@@ -73,13 +75,13 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="relative bg-white">
+        <div className="bg-white">
           {isOpen && (
             <nav
               ref={menuRef}
-              className="md:hidden absolute inset-y-0 right-0 w-3/4  shadow-md rounded-l-lg transition-transform duration-300 z-50"
+              className="absolute inset-y-0 right-0 rounded-l-lg duration-300 z-50"
             >
-              <div className="bg-green-200 hover:bg-green-300 bg-opacity-100 px-2 py-4 space-y-2">
+              <div className="nav-menu px-2 py-4 space-y-2" data-aos="fade-left">
                 <Link
                   to="/"
                   onClick={toggleMenu}
@@ -150,27 +152,19 @@ const Navbar = () => {
           {/* Hamburger menu button - shown on mobile */}
           <div
             ref={buttonRef}
-            className="md:hidden absolute bottom-[75px] right-4 z-50  rounded-xl  border-green-300 p-[3px]"
+            className="md:hidden hamburger-icon z-50  rounded-xl  border-green-300 p-[3px]"
           >
             <button
               onClick={toggleMenu}
               className="block text-black text-bold text-xl hover:text-black focus:text-black focus:outline-none"
             >
-              <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 20 20">
-                {isOpen ? (
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M3 5h14a1 1 0 110 2H3a1 1 0 110-2zm0 6h14a1 1 0 110 2H3a1 1 0 110-2zm0 6h14a1 1 0 110 2H3a1 1 0 110-2z"
-                  />
-                ) : (
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M4 6h12v2H4V6zm0 5h12v2H4v-2zm0 5h12v2H4v-2z"
-                  />
-                )}
-              </svg>
+              {/* <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 20 20"> */}
+              {isOpen ? (
+                <CloseIcon sx={{fontSize: 40}} />
+              ) : (
+                <MenuIcon sx={{fontSize: 40}} />
+              )}
+              {/* </svg> */}
             </button>
           </div>
         </div>

@@ -1,0 +1,34 @@
+.navbar-container{
+    height: auto;
+    width: 100%;
+}
+
+.nav-link-text{
+    color: aliceblue;
+}
+
+.nav-link-text:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+.nav-menu{
+    width: 90vw;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 8px 16px rgba(black, .45);
+}
+
+.hamburger-icon{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+@media (max-width: 1023px) {
+    .navbar-container{
+        height: auto;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+}
