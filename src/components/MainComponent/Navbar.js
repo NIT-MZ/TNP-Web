@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import '../../stylesheets/navbar.scss'
-import CloseIcon from '@mui/icons-material/Close';
-import MenuIcon from '@mui/icons-material/Menu';
+import "../../stylesheets/navbar.scss";
+import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +40,7 @@ const Navbar = () => {
   const handleNavigation = (path, anchor) => {
     setIsOpen(false);
     navigate(path);
-  
+
     setTimeout(() => {
       const element = document.getElementById(anchor);
       if (element) {
@@ -50,7 +50,6 @@ const Navbar = () => {
       }
     }, 100); // Delay to ensure navigation completes
   };
-  
 
   return (
     <div className="navbar-container">
@@ -86,7 +85,10 @@ const Navbar = () => {
               ref={menuRef}
               className="absolute inset-y-0 right-0 rounded-l-lg duration-300 z-50"
             >
-              <div className="nav-menu px-2 py-4 space-y-2" data-aos="fade-left">
+              <div
+                className="nav-menu px-2 py-4 space-y-2"
+                data-aos="fade-left"
+              >
                 <Link
                   to="/"
                   onClick={toggleMenu}
@@ -165,9 +167,9 @@ const Navbar = () => {
             >
               {/* <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 20 20"> */}
               {isOpen ? (
-                <CloseIcon sx={{fontSize: 40}} />
+                <CloseIcon sx={{ fontSize: 40 }} />
               ) : (
-                <MenuIcon sx={{fontSize: 40}} />
+                <MenuIcon sx={{ fontSize: 40 }} />
               )}
               {/* </svg> */}
             </button>
@@ -272,10 +274,7 @@ const Navbar = () => {
                 Internships
               </p>
             </Link>
-            <Link
-              to="/events"
-              className="nav-link-text"
-            >
+            <Link to="/events" className="nav-link-text">
               <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
                 Student Activities
               </p>
@@ -284,9 +283,7 @@ const Navbar = () => {
               to="https://www.nitmz.ac.in/uploaded_files/NITMZ_brochure-revised.pdf"
               className="nav-link-text"
             >
-              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">
-                Brochure
-              </p>
+              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">Brochure</p>
             </Link>
             <a
               href="#contact"

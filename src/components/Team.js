@@ -67,7 +67,7 @@ const Team = () => {
       position: "Graduate Executive",
       branch: "ECE",
       phone: "+91-7254905694",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/ayush-raj-78b095189",
       image_name: "ayush_raj.png",
     },
   ];
@@ -84,7 +84,7 @@ const Team = () => {
       name: "Siddharth Bhatt",
       position: "Placement Coordinator",
       branch: "CSE",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/siddharth-bhatt-841300236",
       image_name: "siddharth_bhatt1.png",
     },
     {
@@ -106,7 +106,7 @@ const Team = () => {
       name: "Vikash Kumar",
       position: "Placement Coordinator",
       branch: "ME",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/vikash-sharma-284191230",
       image_name: "vikash_kumar.png",
       designation: "Team Lead",
     },
@@ -125,7 +125,7 @@ const Team = () => {
       name: "Rahul Kumar Prajapati ",
       position: "Activity Coordinator",
       branch: "CE",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/rahul-kumar-prajapati-b7030b258",
       image_name: "rahul_p_1.jpg",
     },
     {
@@ -140,7 +140,7 @@ const Team = () => {
       name: "Yazat Mishra",
       position: "Activity Cordinator",
       branch: "ECE",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/yazat-mishra-14a378246",
       image_name: "yazatmishra.png",
     },
     {
@@ -178,7 +178,7 @@ const Team = () => {
       name: "Md.Sibtain",
       position: "Activity Coordinator",
       branch: "CSE",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/md-sibtain",
       image_name: "md_sibtain1.png",
     },
     {
@@ -287,7 +287,7 @@ const Team = () => {
       name: "Dharmendra Chaudhry",
       position: "Media Team Lead",
       branch: "ECE",
-      linkedin: " ",
+      linkedin: "https://www.linkedin.com/in/dharmendra-choudhary-6aa656232",
       image_name: "Dharmendra.jpeg",
     },
     {
@@ -309,14 +309,14 @@ const Team = () => {
       name: "Priyanshu Ranjan",
       position: "Media Members",
       branch: "EE",
-      linkedin: "  ",
+      linkedin: "https://www.linkedin.com/in/priyanshu-ranjan-016p  ",
       image_name: "priyanshu_1.jpg",
     },
     {
       name: "Anand Rao Bauddh",
       position: "Media Members",
       branch: "ME",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/anand-rao-bauddh-ba2086271",
       image_name: "anand_b.jpg",
     },
   ];
