@@ -134,7 +134,7 @@ const Team = () => {
       branch: "CSE",
       designation: "Team-Lead",
       linkedin: "https://www.linkedin.com/in/khushbu-kumari-772543251",
-      image_name: "khushbu_kumari1.png",
+      image_name: "khushbu_k.png",
     },
     {
       name: "Yazat Mishra",
