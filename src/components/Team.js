@@ -262,7 +262,7 @@ const Team = () => {
       name: "Ashwini",
       position: "Associate Members",
       branch: "ECE",
-      linkedin: "",
+      linkedin: " https://www.linkedin.com/in/ashwini-goud-893b77312",
       image_name: "ashwini_1.jpg",
     },
 
@@ -270,7 +270,7 @@ const Team = () => {
       name: "Soundarya M.",
       position: "Associate Members",
       branch: "EE",
-      linkedin: " ",
+      linkedin: "https://www.linkedin.com/in/soundarya-m-503964288",
       image_name: "soundarya_1.jpg",
     },
     {
