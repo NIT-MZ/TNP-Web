@@ -219,6 +219,14 @@ const Internships = () => {
       </section>
       </ScrollTrigger>
 
+      <div className="interns-photo-container">
+      <img
+            className="interns-photo"
+            src="assets/img/internships/interns.png"
+            alt="Interns"
+          />
+      </div>
+
       <div className="tpo-testimonial-container">
         <div className="tpo-testimonial">
           <div className="tpo-image-container"><img

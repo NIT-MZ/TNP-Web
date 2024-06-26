@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="md:flex md:justify-between md:p-4 px-3 pt-1 lg:justify-around">
             <div className="md:pl-4">
               <img
-                src="https://www.vidyavision.com/CollegeUploads/Logos/2017-23-5-16-27-56_nit-mizoram-logo.png"
+                src="tnplogo2.png"
                 alt="NIT Mizoram Logo"
                 className="mt-2 2xl:w-44 2xl:h-44 lg:h-32 sm:h-38 sm:w-38 h-16 w-16 lg:ml-4"
               />
@@ -209,9 +209,9 @@ const Navbar = () => {
                 className="h-10 w-10 mr-4 lg:h-44 lg:flex lg:w-44 hidden"
               />
               <img
-                src="tnplogo.png"
+                src="tnplogo2.png"
                 alt="tnpLogo"
-                className="hidden md:flex self-center lg:mt-4 mt-12  md:mt-6 g:mx-4 lg:h-44 lg:w-44 pr-2 pb-2 h-16 w-16 sm:h-32 sm:w-32"
+                className="hidden md:flex self-center lg:mt-4 mt-12  md:mt-6 g:mx-4 lg:h-44 lg:w-44 pr-2 pb-2 h-32 w-32 sm:h-32 sm:w-32"
               />
             </div>
           </div>

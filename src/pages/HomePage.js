@@ -11,7 +11,7 @@ import TestimonialSection from "../components/Testimonial2Section";
 import CTAsection from "../components/CTAsection";
 import Contact from "../components/Contact";
 import Map from "../components/map";
-import '../stylesheets/home.scss'
+import '../stylesheets/home.scss';
 
 
 const HomePage = () => {
