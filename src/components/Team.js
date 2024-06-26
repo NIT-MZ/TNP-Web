@@ -349,19 +349,28 @@ const Team = () => {
                 <div>Phone: {member.phone}</div>
                 <div>Email: {member.email}</div>
               </div>
-              {/* <div className="align-middle">
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/img/team/linkedin.png"
-                    alt="LinkedIn"
-                    style={{ width: "20px", height: "20px", marginLeft: "10px" }}
-                  />
-                </a>
-              </div> */}
+
+              {index === 0 && member ? (
+                <div className="relative right-5">
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="assets/img/team/linkedin.png"
+                      alt="LinkedIn"
+                      style={{
+                        width: "24px",
+                        height: "24px",
+                        marginLeft: "10px",
+                      }}
+                    />
+                  </a>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         ))}
