@@ -10,7 +10,17 @@
 .nav-link-text:hover{
     color: rgb(0, 0, 0);
 }
-
+.nav-menu-full{
+    height: auto;
+    padding: 20px 0;
+}
+.brochure-button{
+    font-size: 22px;
+    // background-color: aqua;
+    margin: auto 0 auto 0;
+    // font-weight: 100;
+    cursor: pointer;
+}
 
 .nav-menu{
     width: 90vw;

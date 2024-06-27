@@ -1,8 +1,16 @@
 import React from "react";
 import "../stylesheets/Counts.scss";
-// import UserContext from "../context/UserContext";
 
 const CTAsection = () => {
+  const onButtonClick = () => {
+    const pdfUrl = "NIT_Mizoram_brochure.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "NIT_Mizoram_brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section id="cta" class="cta">
       <div class="container" data-aos="zoom-in">
@@ -10,8 +18,12 @@ const CTAsection = () => {
           <h3>Download Our Brochure</h3>
           <p>Know more about the University and the Training & Placement
             Cell</p>
-          <a class="cta-btn" href="https://www.nitmz.ac.in/uploaded_files/NITMZ_brochure-revised.pdf"
-            target="_blank" rel="noreferrer">Download Brochure</a>
+          <div
+            onClick={onButtonClick}
+            className="cta-btn"
+          >
+            Brochure
+          </div>
         </div>
       </div>
     </section>

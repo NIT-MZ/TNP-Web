@@ -51,6 +51,16 @@ const Navbar = () => {
     }, 100); // Delay to ensure navigation completes
   };
 
+  const onButtonClick = () => {
+    const pdfUrl = "NIT_Mizoram_brochure.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "NIT_Mizoram_brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="navbar-container">
       <div className="md:hidden shadow-md w-full bg-gradient-to-r from-[#ffdd76] to-[#87ed33] border-b-4 border-green-600">
@@ -138,13 +148,12 @@ const Navbar = () => {
                 >
                   Student Activities
                 </Link>
-                <a
-                  href="https://www.nitmz.ac.in/uploaded_files/NITMZ_brochure-revised.pdf"
-                  onClick={toggleMenu}
+                <div
+                  onClick={onButtonClick}
                   className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
                 >
                   Brochure
-                </a>
+                </div>
                 <a
                   href="#contact"
                   onClick={() => handleNavigation("/", "contact")}
@@ -222,7 +231,7 @@ const Navbar = () => {
 
       <nav>
         <div className=" hidden w-full md:flex md:items-center md:align-middle md:justify-between md:w-auto">
-          <div className=" w-full  justify-evenly text-white lg:font-normal  align-middle md:font-normal md:pt-2 text-[14px] lg:pt-4 lg:text-sm text-xs flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf] border-b-4  border-green-600 md:h-10 lg:h-14 flex-nowrap">
+          <div className="nav-menu-full w-full  justify-evenly text-white lg:font-normal  align-middle md:font-normal md:pt-2 text-[14px] lg:pt-4 lg:text-sm text-xs flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf] border-b-4  border-green-600 md:h-10 lg:h-14 flex-nowrap">
             <Link to="/" className="nav-link-text">
               <p className="mx-1 text-[1.6vw] md:text-sm lg:text-[22px]">
                 Home
@@ -279,12 +288,15 @@ const Navbar = () => {
                 Student Activities
               </p>
             </Link>
-            <Link
-              to="https://www.nitmz.ac.in/uploaded_files/NITMZ_brochure-revised.pdf"
-              className="nav-link-text"
+            <div
+              onClick={onButtonClick}
+              className="brochure-button nav-link-text"
             >
-              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">Brochure</p>
-            </Link>
+              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
+              Brochure
+              </p>
+              
+            </div>
             <a
               href="#contact"
               onClick={() => handleNavigation("/", "contact")}
