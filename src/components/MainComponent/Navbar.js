@@ -64,24 +64,24 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="md:hidden shadow-md w-full bg-gradient-to-r from-[#ffdd76] to-[#87ed33] border-b-4 border-green-600">
-        <div className="flex flex-col lg:justify-evenly">
-          <div className="md:flex md:justify-between md:p-4 px-3 pt-1 lg:justify-around">
-            <div className="md:pl-4">
+        <div className="flex flex-col ">
+          <div className="md:flex md:justify-between  px-2 pt-1 ">
+            <div className="mr-4">
               <img
                 src="tnplogo2.png"
-                alt="NIT Mizoram Logo"
-                className="mt-2 2xl:w-44 2xl:h-44 lg:h-32 sm:h-38 sm:w-38 h-16 w-16 lg:ml-4"
+                alt="tnp_Logo"
+                className="mt-2 sm:h-38 sm:w-38 h-16 w-16   "
               />
             </div>
-            <div className="lg:ml-24 items-center text-center -mt-9 lg:px-8 relative bottom-4 md:static">
-              <div className="md:justify-between w-full mt-2 mb-2">
-                <p className="text-slate-600 lg:font-bold font-semibold md:font-bold font-md lg:text-xl 2xl:text-2xl md:text-xl sm:text-lg text-xs">
+            <div className=" items-center text-center -mt-9  relative bottom-4 md:static">
+              <div className=" w-full mt-2 mb-2">
+                <p className="text-slate-600  font-semibold md:font-bold font-md   sm:text-lg text-xs">
                   प्रशिक्षण एवं नियोजन कार्यालय
                 </p>
-                <p className="text-slate-600 lg:font-bold font-semibold md:font-bold font-md lg:text-xl 2xl:text-2xl md:text-xl lg:text-md text-xs">
+                <p className="text-slate-600  font-semibold  font-md   text-xs">
                   Training And Placement Office
                 </p>
-                <p className="  lg:text-md text-10px font-semibold lg:font-bold md:font-semibold 2xl:text-2xl md:text-xl text-xs">
+                <p className="  text-10px font-semibold  text-xs">
                   National Institute of Technology, Mizoram
                 </p>
               </div>
