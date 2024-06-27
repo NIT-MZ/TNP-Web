@@ -7,7 +7,7 @@ const Team = () => {
     {
       name: "Dr. Sukanta Roy",
       position:
-        "Faculty In-charge (FIC), Training and Placement Office  Chairman <br/>, Training and Placement Committee",
+        "Faculty In-charge (FIC) Training and Placement Office  Chairman,Training and Placement Committee",
       phone: "+91-9035385841",
       email: "sukanta.me@nitmz.ac.in / tnp@nitmz.ac.in",
       linkedin: "https://www.linkedin.com/in/dr-sukanta-roy-75a9b13b",
@@ -343,15 +343,13 @@ const Team = () => {
             <div className="team-card-bottom-on-hover">
               <div>
                 <div>{member.name}</div>
-                <div
-                  dangerouslySetInnerHTML={{ __html: `${member.position}` }}
-                ></div>
+                <div style={{ whiteSpace: "pre-line" }}>{member.position}</div>
                 <div>Phone: {member.phone}</div>
                 <div>Email: {member.email}</div>
               </div>
 
               {index === 0 && member ? (
-                <div className="relative right-5">
+                <div className="relative right-1">
                   <a
                     href={member.linkedin}
                     target="_blank"
@@ -361,9 +359,9 @@ const Team = () => {
                       src="assets/img/team/linkedin.png"
                       alt="LinkedIn"
                       style={{
-                        width: "24px",
+                        width: "70px",
                         height: "24px",
-                        marginLeft: "10px",
+                        marginLeft: "0px",
                       }}
                     />
                   </a>
@@ -395,11 +393,7 @@ const Team = () => {
             <div className="team-card-bottom-on-hover">
               <div>
                 <div className="font-bold">{graduateexecutive.name}</div>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `${graduateexecutive.position}`,
-                  }}
-                ></div>
+                <div>{graduateexecutive.position}</div>
                 <div> {graduateexecutive.branch}</div>
                 <div> {graduateexecutive.designation}</div>
                 <div>Phone: {graduateexecutive.phone}</div>
@@ -445,11 +439,7 @@ const Team = () => {
             <div className="team-card-bottom-on-hover">
               <div>
                 <div className="font-bold">{placementcoordinator.name}</div>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `${placementcoordinator.position}`,
-                  }}
-                ></div>
+                <div>{placementcoordinator.position}</div>
                 <div> {placementcoordinator.branch}</div>
                 <div> {placementcoordinator.designation}</div>
               </div>
@@ -493,11 +483,7 @@ const Team = () => {
             <div className="team-card-bottom-on-hover">
               <div>
                 <div className="font-bold">{activityCoordinator.name}</div>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `${activityCoordinator.position}`,
-                  }}
-                ></div>
+                <div>{activityCoordinator.position}</div>
                 <div> {activityCoordinator.branch}</div>
                 <div> {activityCoordinator.designation}</div>
               </div>
@@ -542,11 +528,7 @@ const Team = () => {
             <div className="team-card-bottom-on-hover">
               <div>
                 <div className="font-bold">{activityCoordinator.name}</div>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `${activityCoordinator.position}`,
-                  }}
-                ></div>
+                <div>{activityCoordinator.position}</div>
                 <div> {activityCoordinator.branch}</div>
                 <div> {activityCoordinator.designation}</div>
               </div>
@@ -591,11 +573,7 @@ const Team = () => {
             <div className="team-card-bottom-on-hover">
               <div>
                 <div className="font-bold">{excutive.name}</div>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `${excutive.position}`,
-                  }}
-                ></div>
+                <div>{excutive.position}</div>
                 <div> {excutive.branch}</div>
                 <div> {excutive.designation}</div>
               </div>
@@ -641,11 +619,7 @@ const Team = () => {
             <div className="team-card-bottom-on-hover">
               <div>
                 <div className="font-bold">{excutive.name}</div>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `${excutive.position}`,
-                  }}
-                ></div>
+                <div>{excutive.position}</div>
                 <div> {excutive.branch}</div>
                 <div> {excutive.designation}</div>
               </div>
@@ -691,11 +665,7 @@ const Team = () => {
             <div className="team-card-bottom-on-hover">
               <div>
                 <div className="font-bold">{mediamember.name}</div>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `${mediamember.position}`,
-                  }}
-                ></div>
+                <div>{mediamember.position}</div>
                 <div> {mediamember.branch}</div>
                 <div> {mediamember.designation}</div>
               </div>
