@@ -39,7 +39,7 @@ const carouselItems = [
 
 const marqueeLinks = [
   {
-    href: "recruiters",
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSfQIM_lpZUUPnI-PsybRrOkaRqZlQ2wqtdE3xYGADj5mVMWxg/viewform?usp=sf_link",
     text: "Registration of Companies for 2025",
   },
   {
@@ -126,11 +126,7 @@ const Hero = () => {
           {marqueeLinks.map((link, index) => (
             <div key={index} className={`marquee-content-${index + 1}`}>
               <h6>
-                <a
-                  href={link.href}
-                  target={index === 0 ? "_self" : "_blank"}
-                  rel="noopener noreferrer"
-                >
+                <a href={link.href} target="_blank" rel="noopener noreferrer">
                   {link.text}
                   <span className="badge bg-success">New</span>
                 </a>
