@@ -52,10 +52,10 @@ const Navbar = () => {
   };
 
   const onButtonClick = () => {
-    const pdfUrl = "NIT_Mizoram_brochure.pdf";
+    const pdfUrl = "NITMZ_brochure.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "NIT_Mizoram_brochure.pdf";
+    link.download = "NITMZ_brochure.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
