@@ -48,7 +48,7 @@ const Navbar = () => {
       } else {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
-    }, 100); // Delay to ensure navigation completes
+    }, 100);
   };
 
   const onButtonClick = () => {
@@ -70,7 +70,9 @@ const Navbar = () => {
               <img
                 src="tnplogo2.png"
                 alt="tnp_Logo"
-                className="mt-2 sm:h-38 sm:w-38 h-16 w-16   "
+                className="mt-2 sm:h-38 sm:w-38 h-16 w-16"
+                onClick={() => handleNavigation("/", "home")}
+                style={{ cursor: "pointer" }}
               />
             </div>
             <div className=" items-center text-center -mt-9  relative bottom-4 md:static">
@@ -99,13 +101,13 @@ const Navbar = () => {
                 className="nav-menu px-2 py-4 space-y-2"
                 data-aos="fade-left"
               >
-                <Link
-                  to="/"
-                  onClick={toggleMenu}
+                <a
+                  href="#home"
+                  onClick={() => handleNavigation("/")}
                   className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
                 >
                   Home
-                </Link>
+                </a>
                 <a
                   href="#clients"
                   onClick={() => handleNavigation("/", "clients")}
@@ -165,7 +167,6 @@ const Navbar = () => {
             </nav>
           )}
 
-          {/* Hamburger menu button - shown on mobile */}
           <div
             ref={buttonRef}
             className="md:hidden hamburger-icon z-50  rounded-xl  border-green-300 p-[3px]"
@@ -174,13 +175,11 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="block text-black text-bold text-xl hover:text-black focus:text-black focus:outline-none"
             >
-              {/* <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 20 20"> */}
               {isOpen ? (
                 <CloseIcon sx={{ fontSize: 40 }} />
               ) : (
                 <MenuIcon sx={{ fontSize: 40 }} />
               )}
-              {/* </svg> */}
             </button>
           </div>
         </div>
@@ -194,6 +193,8 @@ const Navbar = () => {
                 src="https://www.vidyavision.com/CollegeUploads/Logos/2017-23-5-16-27-56_nit-mizoram-logo.png"
                 alt="NIT Mizoram Logo"
                 className="mt-2 2xl:w-44 2xl:h-44 lg:h-32 h-32 w-32 lg:ml-4"
+                onClick={() => handleNavigation("/", "home")}
+                style={{ cursor: "pointer" }}
               />
             </div>
             <div className="lg:ml-24 items-center text-center md:mt-8 mt-2 md:px-4  lg:mt-0 lg:px-8 relative bottom-4 md:static">
@@ -222,7 +223,9 @@ const Navbar = () => {
               <img
                 src="tnplogo2.png"
                 alt="tnpLogo"
-                className="hidden md:flex self-center lg:mt-4 mt-12  md:mt-6 g:mx-4 lg:h-44 lg:w-44 pr-2 pb-2 h-32 w-32 sm:h-32 sm:w-32"
+                className="hidden md:flex self-center lg:mt-4 mt-12 md:mt-6 lg:mx-4 lg:h-44 lg:w-44 pr-2 pb-2 h-32 w-32 sm:h-32 sm:w-32"
+                onClick={() => handleNavigation("/", "home")}
+                style={{ cursor: "pointer" }}
               />
             </div>
           </div>
@@ -293,9 +296,8 @@ const Navbar = () => {
               className="brochure-button nav-link-text"
             >
               <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
-              Brochure
+                Brochure
               </p>
-              
             </div>
             <a
               href="#contact"
@@ -303,7 +305,7 @@ const Navbar = () => {
               className="nav-link-text"
             >
               <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
-                Contact Us{" "}
+                Contact Us
               </p>
             </a>
           </div>

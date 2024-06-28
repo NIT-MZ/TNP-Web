@@ -70,6 +70,20 @@ const testimonials = [
       "Our College has provided us very enhanced and efficient platform for the exposure to the training and placement. I am very thankful to NIT Mizoram management for providing us the best of placement opportunities. Also, the pre-placement trainings have helped me a lot for campus placements.",
     img: "assets/img/testimonials/Sonu Kumar Meena.webp",
   },
+  {
+    name: "Akanksha",
+    company: "KEC International",
+    message:
+      "I am thrilled to share that I have been placed at KEC International, thanks to the exceptional education and support I received at NIT Mizoram. The institute's comprehensive curriculum, experienced faculty, and state-of-the-art facilities have equipped me with the necessary skills and knowledge to excel in the field of civil engineering. Additionally, the Training and Placement Cell played a pivotal role in guiding me through the placement process, providing invaluable resources and support. I am immensely grateful to NIT Mizoram for creating an environment that fosters growth and excellence, paving the way for my successful career.",
+    img: "assets/img/testimonials/akanksha.jpg",
+  },
+  {
+    name: "Rupesh Gupta",
+    company: "Pando AI",
+    message:
+      "This is Rupesh Gupta from ECE, NIT Mizoram. I am deeply grateful to everyone at NIT Mizoram for their support and guidance. The college has provided me with a strong foundation through its excellent academic programs and practical training. The placements cell has been outstanding, offering many opportunities and thoroughly preparing us for successful careers.",
+    img: "assets/img/testimonials/rupesh.jpg",
+  },
 ];
 
 export default function TestimonialSection() {
