@@ -28,11 +28,11 @@
     display: flex;
     flex-direction: column;
     // background-color: aqua;
-    padding: 10px 50px;
+    padding: 0px 50px;
 }
 
 .footer-col {
-    padding: 10px 50px;
+    padding: 0px 50px;
 }
 
 .footer-col li {
@@ -41,7 +41,7 @@
 
 .footer-socials {
     display: flex;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .footer-social-icon {
@@ -75,6 +75,7 @@
 .footer-list-item {
     // margin-bottom: 10px;
     position: relative;
+   
     // padding-left: 20px;
     color: #bbbbbb;
     /* Text color */
@@ -99,8 +100,8 @@
 }
 
 .footer-section-bottom {
-    padding: 15px 0;
+    padding: 5px 0;
     font-size: 1.2rem;
     text-align: center;
-    color: #444444;
+    color: #646464;
 }

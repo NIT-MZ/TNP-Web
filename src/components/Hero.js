@@ -5,12 +5,14 @@ const carouselItems = [
   {
     src: "assets/img/carousel/IPR.webp",
     alt: "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
-    caption: "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
+    caption:
+      "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
   },
   {
     src: "assets/img/carousel/Faculties photo.webp",
     alt: "MEETING WITH DEAN ACADEMIC OF IIT MADRAS",
-    caption: "NIT Mizoram T&P Officials visited IIT Madras on Students' Exchange and met the Dean (Academic)",
+    caption:
+      "NIT Mizoram T&P Officials visited IIT Madras on Students' Exchange and met the Dean (Academic)",
   },
   {
     src: "assets/img/carousel/UAE parliament.webp",
@@ -30,17 +32,18 @@ const carouselItems = [
   {
     src: "assets/img/carousel/IMG_20240316_163221.webp",
     alt: "bashant panchatmi",
-    caption: "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
+    caption:
+      "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
   },
 ];
 
 const marqueeLinks = [
   {
-    href: "https://example.com/tcs-hiring",
-    text: "Registration and JNF for TCS Hiring",
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSfQIM_lpZUUPnI-PsybRrOkaRqZlQ2wqtdE3xYGADj5mVMWxg/viewform?usp=sf_link",
+    text: "Registration of Companies for 2025",
   },
   {
-    href: "https://example.com/vedanta",
+    href: "https://vedanta.example.com/",
     text: "Registration and JNF For Vedanta",
   },
 ];
@@ -123,11 +126,7 @@ const Hero = () => {
           {marqueeLinks.map((link, index) => (
             <div key={index} className={`marquee-content-${index + 1}`}>
               <h6>
-                <a
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={link.href} target="_blank" rel="noopener noreferrer">
                   {link.text}
                   <span className="badge bg-success">New</span>
                 </a>
