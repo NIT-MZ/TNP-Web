@@ -6,6 +6,7 @@ const ListGroupItemClass =
 
 const items = [
   "Registration of Companies for 2025",
+  "Honda Motors plans to host a Placement Drive at NIT MIZORAM",
   "Sagacious IP conducted a placement drive at NIT Mizoram in June 2024.",
   "Vedanta conducted a placement drive at NIT Mizoram in June 2024.",
   "Proxelera has been running an ongoing recruitment drive at NIT Mizoram.",
