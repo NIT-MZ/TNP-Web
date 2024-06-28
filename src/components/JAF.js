@@ -62,7 +62,7 @@ const Jaf = () => {
   };
 
   return (
-    <div className="jaf-form-container">
+    <div className="jaf-form-container" id="jaf">
       <div className="jaf-title">JAF</div>
       <form className="jaf-form">
         <div className="jaf-subtitle">Company Details</div>

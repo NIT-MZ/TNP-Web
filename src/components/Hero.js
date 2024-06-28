@@ -39,7 +39,7 @@ const carouselItems = [
 
 const marqueeLinks = [
   {
-    href: "/jaf",
+    href: "recruiters",
     text: "Registration of Companies for 2025",
   },
   {
