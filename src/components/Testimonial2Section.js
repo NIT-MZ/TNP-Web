@@ -84,6 +84,13 @@ const testimonials = [
       "This is Rupesh Gupta from ECE, NIT Mizoram. I am deeply grateful to everyone at NIT Mizoram for their support and guidance. The college has provided me with a strong foundation through its excellent academic programs and practical training. The placements cell has been outstanding, offering many opportunities and thoroughly preparing us for successful careers.",
     img: "assets/img/testimonials/rupesh.jpg",
   },
+  {
+    name: "Priti Bharti",
+    company: "CDAC Noida",
+    message:
+      "Dear Training and Placement Cell, thank you for your guidance and support throughout my journey. I'm thrilled to have been placed in CDAC and grateful for your efforts in making it possible. Your dedication and encouragement have meant a lot to me, and I appreciate everything you've done to help me achieve my goal. Thanks, Priti Bharti.",
+    img: "assets/img/testimonials/priti.jpg",
+  },
 ];
 
 export default function TestimonialSection() {
