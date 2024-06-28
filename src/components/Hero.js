@@ -39,16 +39,45 @@ const carouselItems = [
 
 const marqueeLinks = [
   {
+    type: "link",
     href: "https://docs.google.com/forms/d/e/1FAIpQLSfQIM_lpZUUPnI-PsybRrOkaRqZlQ2wqtdE3xYGADj5mVMWxg/viewform?usp=sf_link",
     text: "Registration of Companies for 2025",
   },
   {
+    type: "link",
     href: "https://vedanta.example.com/",
     text: "Registration and JNF For Vedanta",
+  },
+  {
+    type: "alert",
+    text: "Honda Motors",
+  },
+  {
+    type: "alert",
+    text: "Nexturn",
+  },
+  {
+    type: "alert",
+    text: "Adani Wilmar",
+  },
+  {
+    type: "alert",
+    text: "BEL",
   },
 ];
 
 const Hero = () => {
+  const handleAlertClick = () => {
+    alert(
+      "Please check your official training & placement WhatsApp group for further process. Wishing you the best."
+    );
+  };
+
+  // Splitting marqueeLinks into two halves
+  const halfLength = Math.ceil(marqueeLinks.length / 2);
+  const firstHalf = marqueeLinks.slice(0, halfLength);
+  const secondHalf = marqueeLinks.slice(halfLength);
+
   return (
     <div className="hero-container">
       <section id="hero" className="d-flex align-items-center">
@@ -123,16 +152,64 @@ const Hero = () => {
 
       <section className="marquee">
         <div className="marquee-wrapper">
-          {marqueeLinks.map((link, index) => (
-            <div key={index} className={`marquee-content-${index + 1}`}>
-              <h6>
-                <a href={link.href} target="_blank" rel="noopener noreferrer">
-                  {link.text}
-                  <span className="badge bg-success">New</span>
-                </a>
-              </h6>
-            </div>
-          ))}
+          <div className="marquee-row move-right">
+            {firstHalf.map((link, index) => (
+              <div key={index} className={`marquee-content-${index + 1}`}>
+                <h6>
+                  {link.type === "link" ? (
+                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="hero-link-button">
+                      {link.text}
+                      <span className="badge bg-success">New</span>
+                    </a>
+                  ) : (
+                    <button
+                      onClick={handleAlertClick}
+                      className="alert-button"
+                      style={{
+                        background: "none",
+                        border: "none",
+                        cursor: "pointer",
+                        padding: 0,
+                        fontSize: "inherit",
+                      }}
+                    >
+                      {link.text}
+                      <span className="badge bg-success">New</span>
+                    </button>
+                  )}
+                </h6>
+              </div>
+            ))}
+          </div>
+          <div className="marquee-row move-left">
+            {secondHalf.map((link, index) => (
+              <div key={index} className={`marquee-content-${index + 1}`}>
+                <h6>
+                  {link.type === "link" ? (
+                    <a href={link.href} target="_blank" rel="noopener noreferrer">
+                      {link.text}
+                      <span className="badge bg-success">New</span>
+                    </a>
+                  ) : (
+                    <button
+                      onClick={handleAlertClick}
+                      className="alert-button"
+                      style={{
+                        background: "none",
+                        border: "none",
+                        cursor: "pointer",
+                        padding: 0,
+                        fontSize: "inherit",
+                      }}
+                    >
+                      {link.text}
+                      <span className="badge bg-success">New</span>
+                    </button>
+                  )}
+                </h6>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
