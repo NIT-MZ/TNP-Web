@@ -91,7 +91,11 @@ const TrainingandRecruitingPartners = () => {
               intern and work with best companies.
             </p>
           </div>
-          <div className="row recruiting-row" data-aos="fade-up" data-aos-delay="500">
+          <div
+            className="row recruiting-row"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <h3 style={{ padding: "30px" }}>
               <strong>COMPUTER SCIENCE AND ENGINEERING</strong>
             </h3>
