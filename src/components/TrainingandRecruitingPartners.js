@@ -35,33 +35,42 @@ const TrainingandRecruitingPartners = () => {
     "image19.webp",
   ];
   const ECImages = [
+    "image54.webp",
     "image23.webp",
+    "image2.webp",
     "image24.webp",
     "image25.webp",
+    "image8.webp",
     "image26.webp",
     "image27.webp",
     "image28.webp",
     "image29.webp",
     "image30.webp",
-
+    "image45.webp",
+    "image111.webp",
+    "image94.webp",
+    "image70.webp",
     "image22.webp",
     "image55.webp",
     "image56.webp",
   ];
 
   const MEImages = [
-    "image34.webp",
+    "image13.webp",
     "image39.webp",
     "image40.webp",
+    "image45.webp",
+    "image101.webp",
     "image57.webp",
-    "image58.webp",
-    "image31.webp",
+    "image2.webp",
+    "image23.webp",
     "image33.webp",
-    "image32.webp",
 
-    "image31.webp",
     "image39.webp",
     "image40.webp",
+    "image19.webp",
+    "image38.webp",
+    "image55.webp",
   ];
 
   const CEImages = [
@@ -73,7 +82,7 @@ const TrainingandRecruitingPartners = () => {
     "image44.webp",
     "image45.webp",
     "image46.webp",
-
+    "image107.webp",
     "image47.webp",
     "image48.webp",
     "image49.webp",
