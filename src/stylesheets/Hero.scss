@@ -1,4 +1,4 @@
-.hero-container{
+.hero-container {
   height: auto;
   width: 100%;
 }
@@ -24,8 +24,6 @@
   width: 100%;
 }
 
-
-
 .carousel-caption h5 {
   font-family: 'Baloo Bhai 2', cursive;
   font-size: 35px;
@@ -34,10 +32,111 @@
   text-shadow: 2px 2px #000;
 }
 
+.marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+  // background: #f8f9fa;
+  padding: 10px 0;
+  width: max-content;
+}
+
+.marquee-row {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.move-right {
+  animation-name: scroll-left;
+}
+
+.move-left {
+  animation-name: scroll-right;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  white-space: nowrap;
+  margin: 0 10px;
+}
+
+.marquee-content a,
+.marquee-content button {
+  color: #333;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.marquee-content a:hover,
+.marquee-content button:hover {
+  color: #007bff;
+}
+
+.hero-link-button{
+  width: max-content;
+}
+
+.alert-button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+}
+
+.badge {
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.bg-success {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 6px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+  }
+  .marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+    // background: #f8f9fa;
+    padding: 10px 0;
+    width: 100%;
   }
 }
 
@@ -68,49 +167,5 @@
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-  }
-  .carousel-img {
-    height: 30vh;
-    width: 100%;
-  }
-}
-
-
-.marquee-wrapper {
-  overflow: hidden;
-  position: relative;
-  // background: #f8f9fa;
-  padding: 10px 0;
-}
-
-.marquee-content-1 {
-  display: flex;
-  justify-content: space-around;
-  animation: scroll-left 20s linear infinite;
-}
-
-.marquee-content-2 {
-  display: flex;
-  justify-content: space-around;
-  animation: scroll-right 20s linear infinite;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(70%);
-  }
-
-  100% {
-    transform: translateX(-70%);
-  }
-}
-
-@keyframes scroll-right {
-  0% {
-    transform: translateX(-70%);
-  }
-
-  100% {
-    transform: translateX(70%);
   }
 }
