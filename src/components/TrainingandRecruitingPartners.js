@@ -40,6 +40,34 @@ const TrainingandRecruitingPartners = () => {
     "image2.webp",
     "image24.webp",
     "image25.webp",
+    "image1.webp",
+    "image8.webp",
+    "image26.webp",
+    "image27.webp",
+    "image28.webp",
+    "image29.webp",
+    "image30.webp",
+    "image53.webp",
+    "image67.webp",
+    "image111.webp",
+    "image94.webp",
+    "image70.webp",
+    "image66.webp",
+    "image22.webp",
+    "image40.webp",
+    "image55.webp",
+    "image56.webp",
+    "image55.webp",
+  ];
+
+  const EEImages = [
+    "image54.webp",
+    "image23.webp",
+    "image2.webp",
+    "image94.webp",
+    "image89.webp",
+    "image24.webp",
+    "image25.webp",
     "image8.webp",
     "image26.webp",
     "image27.webp",
@@ -49,10 +77,9 @@ const TrainingandRecruitingPartners = () => {
     "image45.webp",
     "image111.webp",
     "image94.webp",
+
     "image70.webp",
-    "image22.webp",
-    "image55.webp",
-    "image56.webp",
+    "image78.webp",
   ];
 
   const MEImages = [
@@ -82,6 +109,7 @@ const TrainingandRecruitingPartners = () => {
     "image44.webp",
     "image45.webp",
     "image46.webp",
+
     "image107.webp",
     "image47.webp",
     "image48.webp",
@@ -131,7 +159,7 @@ const TrainingandRecruitingPartners = () => {
               <h3 style={{ padding: "30px" }}>
                 <strong>ELECTRICAL ENGINEERING</strong>
               </h3>
-              {ECImages.map((image, index) => (
+              {EEImages.map((image, index) => (
                 <ImageComponent
                   key={index}
                   className="image-slide-in"
