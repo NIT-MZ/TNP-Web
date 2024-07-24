@@ -3,11 +3,23 @@ import "../stylesheets/Hero.scss";
 
 const carouselItems = [
   {
+    src: "assets/img/carousel/placement (2).jpg",
+    alt: "placement",
+    caption: "Placements Statistics 2023-2024",
+  },
+  {
     src: "assets/img/carousel/IPR.webp",
     alt: "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
     caption:
       "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
   },
+  {
+    src: "assets/img/carousel/b.jpg",
+    alt: "All NIT T&P Conclave 2024 (ANTPC 2024) held at NIT Trichy",
+    caption:
+      "Dr. Sukanta Roy, Chairman Training and Placement Committee of NIT Mizoram participated in the All NIT T&P Conclave 2024 (ANTPC 2024) held at NIT Trichy",
+  },
+
   {
     src: "assets/img/carousel/Faculties photo.webp",
     alt: "MEETING WITH DEAN ACADEMIC OF IIT MADRAS",
@@ -116,7 +128,7 @@ const Hero = () => {
                     src={item.src}
                     alt={item.alt}
                   />
-                  <div className="carousel-caption d-none d-md-block">
+                  <div className="carousel-caption d-none d-md-block ">
                     <h5>{item.caption}</h5>
                   </div>
                 </div>
@@ -157,7 +169,12 @@ const Hero = () => {
               <div key={index} className={`marquee-content-${index + 1}`}>
                 <h6>
                   {link.type === "link" ? (
-                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="hero-link-button">
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hero-link-button"
+                    >
                       {link.text}
                       <span className="badge bg-success">New</span>
                     </a>
@@ -186,7 +203,11 @@ const Hero = () => {
               <div key={index} className={`marquee-content-${index + 1}`}>
                 <h6>
                   {link.type === "link" ? (
-                    <a href={link.href} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {link.text}
                       <span className="badge bg-success">New</span>
                     </a>
