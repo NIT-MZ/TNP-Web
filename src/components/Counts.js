@@ -24,7 +24,7 @@ const Counts = () => {
                   {counterOn && (
                     <CountUp
                       start={0}
-                      end={86}
+                      end={90.7}
                       duration={2}
                       delay={0}
                       decimals={1}
@@ -53,7 +53,10 @@ const Counts = () => {
                     ></CountUp>
                   )}
                 </span>
-                <p>Students Completed their Internship & Summer Training (2024-25)</p>
+                <p>
+                  Students Completed their Internship & Summer Training
+                  (2024-25)
+                </p>
               </div>
             </div>
 
