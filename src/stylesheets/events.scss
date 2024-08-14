@@ -35,9 +35,18 @@
     flex-wrap: wrap;
 }
 
+.Upcomingevents-card{
+    height: auto;
+    width: 780px;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(black, .45);
+}
+
 .events-card {
     height: auto;
-    width: 300px;
+    width: 400px;
     cursor: pointer;
     margin: 20px;
     border-radius: 10px;
@@ -171,6 +180,16 @@
         width: 100%;
         height: auto;
         object-fit: cover;
+      }
+
+      .Upcomingevents-card{
+        width: 300px;
+        margin: 10px;
+      }
+      .events-card{
+        width:300px;
+        margin: 10px;
+
       }
     
 }
