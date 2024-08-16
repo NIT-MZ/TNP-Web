@@ -98,6 +98,17 @@ const events = [
       `${process.env.PUBLIC_URL}/assets/img/events/khush_amdeed_24.jpg`,
     ],
   },
+  {
+    id: 6,
+    title: "Celebrating 78th Independence Day",
+    date: "2024-08-15",
+    description:
+      "Students of NIT Mizoram celebrated Independence Day with great enthusiasm. The event featured vibrant performances, patriotic speeches, and a flag hoisting ceremony, reflecting the spirit of unity and pride in our nation's freedom. It was a memorable occasion that showcased the students' dedication to honoring India's rich history and culture.",
+    images: [
+      `${process.env.PUBLIC_URL}/assets/img/events/IMG_2603.JPG`,
+      `${process.env.PUBLIC_URL}/assets/img/events/independence.JPG`,
+    ],
+  },
 ];
 
 const formatDate = (dateString) => {
