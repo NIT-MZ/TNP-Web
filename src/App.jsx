@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage.js";
 import UserContextProvider from "./context/UserContextProvider.jsx";
 // import Hero from "./components/Hero.js";
 import FooterSection from "./components/FooterSection.js";
-import EventsList from "./pages/Events.js";
+import EventsList from "./pages/Events.jsx";
 import Internships from "./pages/Internships.js";
 import ForRecruiters from "./pages/ForRecruiters.js";
 import Jaf from "./components/JAF.js";
@@ -15,14 +15,14 @@ function App() {
   return (
     <UserContextProvider>
       <BrowserRouter>
-      <ScrollToTop />
-        <Navbar />       
+        <ScrollToTop />
+        <Navbar />
         <Routes>
-           <Route path="/" element={<HomePage />} /> 
-           <Route path="/events" element={<EventsList />} /> 
-           <Route path="/internship" element={<Internships />} /> 
-           <Route path="/recruiters" element={<ForRecruiters />} /> 
-           <Route path="/jaf" element={<Jaf />} /> 
+          <Route path="/" element={<HomePage />} />
+          <Route path="/events" element={<EventsList />} />
+          <Route path="/internship" element={<Internships />} />
+          <Route path="/recruiters" element={<ForRecruiters />} />
+          <Route path="/jaf" element={<Jaf />} />
         </Routes>
 
         <FooterSection />

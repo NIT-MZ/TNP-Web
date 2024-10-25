@@ -109,6 +109,22 @@ const events = [
       `${process.env.PUBLIC_URL}/assets/img/events/independence.JPG`,
     ],
   },
+  {
+    id: 7,
+    title: "Durga Pooja Celebrations",
+    date: "2024-10-02",
+    description:
+      "We are delighted to invite you to join us in celebrating Durga Puja boys hostel 1. It will be a joyous occasion to come together and enjoy the festivities. Please find the attached invitation for more details.",
+    images: [`${process.env.PUBLIC_URL}/assets/img/events/durgapooja.jpg`],
+  },
+  {
+    id: 8,
+    title: "Anunaad Cultural Fest & Freshers Party",
+    date: "2024-10-30",
+    description:
+      " We invite you to be a part of the unforgettable Anunaad Cultural Event and Fresher Party! Your presence and enthusiasm will make this evening truly special.  We look forward to witnessing your exceptional performances and making this a night to remember!        Date: 30 October 2024 \n Venue: Vanappa Hall Don't miss this opportunity to shine!",
+    images: [`${process.env.PUBLIC_URL}/assets/img/events/anunaad.jpg`],
+  },
 ];
 
 const formatDate = (dateString) => {
