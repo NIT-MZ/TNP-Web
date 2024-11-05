@@ -1,61 +1,65 @@
-
-
-
+/* General Hero Container Styling */
 .hero-container {
-  height: auto;
   width: 100%;
- 
+  overflow: hidden;
+  background-color: #f4f4f4;
 }
 
 #hero {
-  width: 100%;
-  height: 100vh;
   position: relative;
-}
-
-#hero:before {
-  content: "";
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #hero .container {
-  height: 100vh;
   width: 100%;
-  
   padding: 0;
 }
 
+/* Carousel Image Styling */
 .carousel-img {
-  height: auto;
   width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Ensures images cover the full height */
 }
 
-
-
+/* Carousel Caption Styling */
 .carousel-caption h5 {
   font-family: 'Baloo Bhai 2', cursive;
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 500;
-  color: #fff;
-  text-shadow: 2px 2px #000;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+ 
+  border-radius: 8px;
 }
 
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background for visibility */
+  border-radius: 50%;
+}
+
+/* Marquee Wrapper */
 .marquee-wrapper {
   overflow: hidden;
-  position: relative;
-  top: -2px;
-  // background: #f8f9fa;
+  width: 100%;
   padding: 10px 0;
-  width: max-content;
+  background-color: #f8f9fa;
+  position: relative;
 }
 
 .marquee-row {
-  width: auto;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  align-items: center;
+  gap: 20px;
 }
 
 .move-right {
@@ -66,42 +70,23 @@
   animation-name: scroll-right;
 }
 
+/* Keyframes for Marquee Animation */
 @keyframes scroll-left {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
 }
 
 @keyframes scroll-right {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.marquee-content {
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-  white-space: nowrap;
-  margin: 0 10px;
-  
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
 }
 
 .marquee-content a,
 .marquee-content button {
+  font-weight: bold;
   color: #333;
   text-decoration: none;
-  font-size: medium;
-  font-weight: bold;
-  padding: 5px;
+  font-size: 1rem;
 }
 
 .marquee-content a:hover,
@@ -109,75 +94,28 @@
   color: #007bff;
 }
 
-.hero-link-button{
-  width: max-content;
-}
+/* Responsive Design */
+@media (max-width: 1023px) {
+  #hero {
+    height: auto;
+  }
 
-.alert-button {
-  background: none;
-  border: none;
-  color: inherit;
-  cursor: pointer;
-  font-size: inherit;
-  padding: 0;
-}
+  .carousel-img {
+    height: auto;
+    object-fit: contain; /* Maintains image aspect ratio */
+  }
 
-.badge {
-  margin-left: 5px;
-  padding: 5px;
-}
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
 
-.bg-success {
-  background-color: #28a745;
-  color: white;
-  padding: 5px 6px;
-  font-size: 14px;
-  border-radius: 4px;
+  .marquee-wrapper {
+    padding: 5px 0;
+  }
 }
-
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
-  .marquee-wrapper {
-    overflow: hidden;
-    position: relative;
-    
-    // background: #f8f9fa;
-    padding: 10px 0;
-    width: 100%;
-  }
 }
-
-@media (max-width: 1023px) {
-  #hero .container {
-    height: auto;
-    width: 100%;
-    padding: 0;
-    margin-top:30px
-  }
-
-  .carousel-inner {
-    height: auto;
-  }
-
-  .carousel-item {
-    height: auto;
-  }
-
-  #hero {
-    height: auto;
-  }
-
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-

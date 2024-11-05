@@ -8,11 +8,16 @@ const carouselItems = [
     caption: "Placements Statistics 2023-2024",
   },
   {
-    src: "assets/img/carousel/IPR.webp",
+    src: "assets/img/carousel/NSD_2024NITMZ.png",
     alt: "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
-    caption:
-      "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
+    // caption:
+    //   "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
   },
+  {
+    src: "assets/img/carousel/yuvamathan1.png",
+    alt: "Yuvamanthan NIT Mizoram",
+  },
+
   {
     src: "assets/img/carousel/b.jpg",
     alt: "All NIT T&P Conclave 2024 (ANTPC 2024) held at NIT Trichy",
@@ -27,9 +32,20 @@ const carouselItems = [
       "NIT Mizoram T&P Officials visited IIT Madras on Students' Exchange and met the Dean (Academic)",
   },
   {
-    src: "assets/img/carousel/UAE parliament.webp",
-    alt: "UNITED NATIONS MODEL CONFERENCE",
-    caption: "UNITED NATIONS MODEL CONFERENCE",
+    src: "assets/img/carousel/Yuvamanthan.png",
+    alt: "YuvaManthan Model united states",
+  },
+  {
+    src: "assets/img/carousel/engineer_day.png",
+    alt: "Engineer Day NIT Mizoram",
+  },
+  {
+    src: "assets/img/carousel/semicon.png",
+    alt: "Semicon Company",
+  },
+  {
+    src: "assets/img/carousel/usconsulate.png",
+    alt: "US Consulate",
   },
   {
     src: "assets/img/carousel/Sports.webp",
