@@ -7,7 +7,7 @@ const Team = () => {
     {
       name: "Dr. Sukanta Roy",
       position:
-        "Faculty In-charge (FIC) Training and Placement Office  Chairman,Training and Placement Committee",
+        "Dean (Academic),Faculty In-charge Training and Placement Office Chairman,Training and Placement Committee",
       phone: "+91-9035385841",
       email: "sukanta.me@nitmz.ac.in / tnp@nitmz.ac.in",
       linkedin: "https://www.linkedin.com/in/dr-sukanta-roy-75a9b13b",
