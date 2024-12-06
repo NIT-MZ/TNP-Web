@@ -10,6 +10,9 @@ import Internships from "./pages/Internships.js";
 import ForRecruiters from "./pages/ForRecruiters.js";
 import Jaf from "./components/JAF.js";
 import ScrollToTop from "./components/MainComponent/ScrollToTop.js";
+import NewsIconPage from "./pages/NewsIconPage.js";
+import NewsDetailPage from "./pages/NewsDetailPage.js";
+import News from "./pages/News.js";
 
 function App() {
   return (
@@ -23,6 +26,11 @@ function App() {
           <Route path="/internship" element={<Internships />} />
           <Route path="/recruiters" element={<ForRecruiters />} />
           <Route path="/jaf" element={<Jaf />} />
+
+          <Route path="/NewsArcheive" element={<News />}>
+            <Route index element={<NewsIconPage />} />
+            <Route path=":id" element={<NewsDetailPage />} />
+          </Route>
         </Routes>
 
         <FooterSection />

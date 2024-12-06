@@ -120,7 +120,7 @@ const Navbar = () => {
                   onClick={() => handleNavigation("/", "atAGlance")}
                   className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
                 >
-                  News and Notice
+                  Notices
                 </a>
                 <a
                   href="#team"
@@ -142,6 +142,14 @@ const Navbar = () => {
                   className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
                 >
                   Internships
+                </Link>
+
+                <Link
+                  to="/newsArcheive"
+                  onClick={toggleMenu}
+                  className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
+                >
+                  News Archive
                 </Link>
                 <Link
                   to="/events"
@@ -255,9 +263,7 @@ const Navbar = () => {
               onClick={() => handleNavigation("/", "atAGlance")}
               className="nav-link-text"
             >
-              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
-                News and Notice
-              </p>
+              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">Notices</p>
             </a>
 
             <a
@@ -286,6 +292,16 @@ const Navbar = () => {
                 Internships
               </p>
             </Link>
+
+            <Link
+              to="/NewsArcheive"
+              className="hover:text-pink-300 nav-link-text"
+            >
+              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">
+                News Archive
+              </p>
+            </Link>
+
             <Link to="/events" className="nav-link-text">
               <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
                 Student Activities
