@@ -13,7 +13,7 @@ const WebTeam = () => {
       name: "Sharda Kumari",
       position: "Coordinator, Web Team",
       year: "ECE",
-      image_name: "sharda_web.jpg",
+      image_name: "Sharda_web.jpg",
     },
     {
       name: "Prachi Gupta",
@@ -76,7 +76,7 @@ const WebTeam = () => {
             <div
               className="web-team-card"
               style={{
-                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/webteam/${associate.image_name})`,
+                backgroundImage: `url(/assets/img/webteam/${associate.image_name})`,
               }}
             ></div>
             <div className="web-team-card-bottom">

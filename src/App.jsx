@@ -1,18 +1,18 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./components/MainComponent/Navbar.js";
-import HomePage from "./pages/HomePage.js";
+import Navbar from "./components/MainComponent/Navbar.jsx";
+import HomePage from "./pages/HomePage.jsx";
 import UserContextProvider from "./context/UserContextProvider.jsx";
-// import Hero from "./components/Hero.js";
-import FooterSection from "./components/FooterSection.js";
+// import Hero from "./components/Hero.jsx";
+import FooterSection from "./components/FooterSection.jsx";
 import EventsList from "./pages/Events.jsx";
-import Internships from "./pages/Internships.js";
-import ForRecruiters from "./pages/ForRecruiters.js";
-import Jaf from "./components/JAF.js";
-import ScrollToTop from "./components/MainComponent/ScrollToTop.js";
-import NewsIconPage from "./pages/NewsIconPage.js";
-import NewsDetailPage from "./pages/NewsDetailPage.js";
-import News from "./pages/News.js";
+import Internships from "./pages/Internships.jsx";
+import ForRecruiters from "./pages/ForRecruiters.jsx";
+import Jaf from "./components/JAF.jsx";
+import ScrollToTop from "./components/MainComponent/ScrollToTop.jsx";
+import NewsIconPage from "./pages/NewsIconPage.jsx";
+import NewsDetailPage from "./pages/NewsDetailPage.jsx";
+import News from "./pages/News.jsx";
 
 function App() {
   return (

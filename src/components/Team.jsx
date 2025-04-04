@@ -186,14 +186,14 @@ const Team = () => {
       position: "Activity Cordinator",
       branch: "ECE",
       linkedin: "https://www.linkedin.com/in/shashwatest ",
-      image_name: "Suman_kumar_Verma.png",
+      image_name: "Suman_Kumar_Verma.png",
     },
     {
       name: "Rohit Kumar Gupta ",
       position: "Activity Coordinator",
       branch: "EEE",
       linkedin: "https://www.linkedin.com/in/rohit-kumar-gupta-33719624b",
-      image_name: "Rohit_kumar.jpg",
+      image_name: "rohit_kumar.jpg",
     },
     {
       name: "Abhinav Gupta",
@@ -288,7 +288,7 @@ const Team = () => {
       position: "Media Team Lead",
       branch: "ECE",
       linkedin: "https://www.linkedin.com/in/dharmendra-choudhary-6aa656232",
-      image_name: "Dharmendra.jpeg",
+      image_name: "dharmendra.jpeg",
     },
     {
       name: "Sourabh Kumar ",
@@ -334,7 +334,7 @@ const Team = () => {
             className="team-card"
             key={index}
             style={{
-              backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/team/${member.image_name})`,
+              backgroundImage: `url(\/assets/img/team/${member.image_name})`,
             }}
           >
             <div className="team-card-bottom">
@@ -384,7 +384,7 @@ const Team = () => {
             className="team-card"
             key={index}
             style={{
-              backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/team/${graduateexecutive.image_name})`,
+              backgroundImage: `url(\/assets/img/team/${graduateexecutive.image_name})`,
             }}
           >
             <div className="team-card-bottom">
@@ -430,7 +430,7 @@ const Team = () => {
             className="team-card"
             key={index}
             style={{
-              backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/team/${placementcoordinator.image_name})`,
+              backgroundImage: `url(\/assets/img/team/${placementcoordinator.image_name})`,
             }}
           >
             <div className="team-card-bottom">
@@ -474,7 +474,7 @@ const Team = () => {
             className="team-card"
             key={index}
             style={{
-              backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/team/${activityCoordinator.image_name})`,
+              backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
             }}
           >
             <div className="team-card-bottom">
@@ -519,7 +519,7 @@ const Team = () => {
             className="team-card"
             key={index}
             style={{
-              backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/team/${activityCoordinator.image_name})`,
+              backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
             }}
           >
             <div className="team-card-bottom">
@@ -564,7 +564,7 @@ const Team = () => {
             className="team-card"
             key={index}
             style={{
-              backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/team/${excutive.image_name})`,
+              backgroundImage: `url(/assets/img/team/${excutive.image_name})`,
             }}
           >
             <div className="team-card-bottom">
@@ -610,7 +610,7 @@ const Team = () => {
             className="team-card"
             key={index}
             style={{
-              backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/team/${excutive.image_name})`,
+              backgroundImage: `url(/assets/img/team/${excutive.image_name})`,
             }}
           >
             <div className="team-card-bottom">
@@ -656,7 +656,7 @@ const Team = () => {
             className="team-card"
             key={index}
             style={{
-              backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/team/${mediamember.image_name})`,
+              backgroundImage: `url(/assets/img/team/${mediamember.image_name})`,
             }}
           >
             <div className="team-card-bottom">

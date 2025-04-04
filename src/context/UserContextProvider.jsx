@@ -1,5 +1,5 @@
 import React from "react";
-import UserContext from "./UserContext.js";
+import UserContext from "./UserContext.jsx";
 
 const UserContextProvider = ({ children }) => {
   // const [count, setCount] = useState(new Array(4).fill(0)); // Initialize count as an array

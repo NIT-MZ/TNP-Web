@@ -11,85 +11,85 @@ const companies = [
     name: "CDAC Noida",
     studentsPlaced: 14,
     images: [
-      `${process.env.PUBLIC_URL}/assets/img/internships/cdac.png`,
+      `/assets/img/internships/cdac.png`,
     ]
   },
   {
     name: "CDAC Kolkata",
     studentsPlaced: 7,
     images: [
-      `${process.env.PUBLIC_URL}/assets/img/internships/cdac.png`,
+      `/assets/img/internships/cdac.png`,
     ]
   },
   {
     name: "IOCL",
     studentsPlaced: 7,
     images: [
-      `${process.env.PUBLIC_URL}/assets/img/internships/iocl.png`,
+      `/assets/img/internships/iocl.png`,
     ]
   },
   {
     name: "L&T Construction",
     studentsPlaced: 6,
     images: [
-      `${process.env.PUBLIC_URL}/assets/img/internships/lnt.png`,
+      `/assets/img/internships/lnt.png`,
     ]
   },
   {
     name: "Hyundai",
     studentsPlaced: 6,
     images: [
-      `${process.env.PUBLIC_URL}/assets/img/internships/hyundai2.png`,
+      `/assets/img/internships/hyundai2.png`,
     ]
   },
   {
     name: "Tata Motors",
     studentsPlaced: 4,
     images: [
-      `${process.env.PUBLIC_URL}/assets/img/internships/tatamotors.png`,
+      `/assets/img/internships/tatamotors.png`,
     ]
   },
   {
     name: "NTPC, SAIL +",
     studentsPlaced: "12+",
     images: [
-      `${process.env.PUBLIC_URL}/assets/img/internships/ntpc.png`,
-      `${process.env.PUBLIC_URL}/assets/img/internships/sail.png`,
-      `${process.env.PUBLIC_URL}/assets/img/internships/tatasteel.png`,
-      `${process.env.PUBLIC_URL}/assets/img/internships/jindalpower.png`,
-      `${process.env.PUBLIC_URL}/assets/img/internships/centralrail.png`
+      `/assets/img/internships/ntpc.png`,
+      `/assets/img/internships/sail.png`,
+      `/assets/img/internships/tatasteel.png`,
+      `/assets/img/internships/jindalpower.png`,
+      `/assets/img/internships/centralrail.png`
     ]
   },
   {
     name: "IIT Madras",
     studentsPlaced: "10",
     images: [
-      `${process.env.PUBLIC_URL}/assets/img/internships/iitm.png`,
+      `/assets/img/internships/iitm.png`,
     ]
   },
   {
     name: "BIS",
     studentsPlaced: "9",
     images: [
-      `${process.env.PUBLIC_URL}/assets/img/internships/bis.png`,
+      `/assets/img/internships/bis.png`,
     ]
   },
   {
     name: "IIT Kanpur, Patna +",
     studentsPlaced: "20",
     images: [
-      `${process.env.PUBLIC_URL}/assets/img/internships/iitk.png`,
-      `${process.env.PUBLIC_URL}/assets/img/internships/iitp.png`,
-      `${process.env.PUBLIC_URL}/assets/img/internships/iitbhu.png`,
-      `${process.env.PUBLIC_URL}/assets/img/internships/iith.png`,
-      `${process.env.PUBLIC_URL}/assets/img/internships/iitr.png`
+      `/assets/img/internships/iitk.png`,
+      `/assets/img/internships/iitp.png`,
+      `/assets/img/internships/iitbhu.png`,
+      `/assets/img/internships/iith.png`,
+      `/assets/img/internships/iitr.png`
     ]
   },
   {
     name: "AAI",
     studentsPlaced: "10",
     images: [
-      `${process.env.PUBLIC_URL}/assets/img/internships/aai.png`,
+      `/assets/img/internships/aai.png`,
     ]
   },
 ];
