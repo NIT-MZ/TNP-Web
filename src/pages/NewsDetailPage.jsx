@@ -11,7 +11,7 @@ const NewsDetailPage = () => {
     const fetchNewsItem = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/news/getNews/${id}`
+          `https://geolocation-nokl.onrender.com/api/news/getnews/${id}`
         );
         setNewsItem(response.data.data);
       } catch (error) {

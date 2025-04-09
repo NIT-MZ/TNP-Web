@@ -13,6 +13,7 @@ import ScrollToTop from "./components/MainComponent/ScrollToTop.jsx";
 import NewsIconPage from "./pages/NewsIconPage.jsx";
 import NewsDetailPage from "./pages/NewsDetailPage.jsx";
 import News from "./pages/News.jsx";
+import EventForm from "./pages/AddEVents.jsx";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
             <Route index element={<NewsIconPage />} />
             <Route path=":id" element={<NewsDetailPage />} />
           </Route>
+
+          <Route path="/addEvent" element={<EventForm/>} />
         </Routes>
 
         <FooterSection />

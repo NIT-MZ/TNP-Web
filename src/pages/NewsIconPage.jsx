@@ -9,7 +9,7 @@ const NewsIconPage = () => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/news/getNews`
+          `https://geolocation-nokl.onrender.com/api/news/get-news`
         );
         setNews(response.data.data);
       } catch (error) {

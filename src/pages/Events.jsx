@@ -6,16 +6,18 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
 import Zoom from "@mui/material/Zoom";
+import { useEffect } from "react";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import axios from "axios";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-  return (
-    <Zoom in={true} ref={ref} {...props} style={{ transitionDelay: "500ms" }} />
-  );
+  return <Zoom in={true} ref={ref} {...props} style={{ transitionDelay: "500ms" }} />;
 });
 
-const events = [
+// Static events list
+const staticEvents = [
   {
     id: 1,
     title: "National Space Day",
@@ -130,14 +132,10 @@ const events = [
 const formatDate = (dateString) => {
   const date = new Date(dateString);
   const day = date.getDate();
-  const month = date
-    .toLocaleString("default", { month: "long" })
-    .substring(0, 3);
+  const month = date.toLocaleString("default", { month: "long" }).substring(0, 3);
   return (
     <div>
-      <div style={{ color: "orange", fontWeight: "bold", fontSize: "2rem" }}>
-        {day}
-      </div>
+      <div style={{ color: "orange", fontWeight: "bold", fontSize: "2rem" }}>{day}</div>
       <div>{month}</div>
       <div className="day-underline"></div>
     </div>
@@ -147,9 +145,7 @@ const formatDate = (dateString) => {
 const formatDateDialog = (dateString) => {
   const date = new Date(dateString);
   const day = date.getDate();
-  const month = date
-    .toLocaleString("default", { month: "short" })
-    .toUpperCase(); // Format month to three-letter abbreviation in uppercase
+  const month = date.toLocaleString("default", { month: "short" }).toUpperCase();
   const year = date.getFullYear();
   return `${day} ${month} ${year}`;
 };
@@ -158,13 +154,33 @@ const EventsList = () => {
   const currentDate = new Date().toISOString().split("T")[0];
   const [open, setOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
-  const sortedEvents = [...events].sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  );
-  const upcomingEvents = sortedEvents.filter(
-    (event) => event.date >= currentDate
-  );
-  const recentEvents = sortedEvents.filter((event) => event.date < currentDate);
+  const [mergedEvents, setMergedEvents] = useState([]);
+  const [refresh, setRefresh] = useState(false); // optional: trigger re-fetch after new event added
+
+  // Fetch backend events and merge with static
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const res = await axios.get("https://geolocation-nokl.onrender.com/api/events/get-events");
+        const backendEvents = res.data?.data || [];
+
+        // Convert backend events to match static structure (add images array)
+        const converted = backendEvents.map((e) => ({
+          ...e,
+          images: [e.photo],
+        }));
+
+        const combined = [...staticEvents, ...converted];
+        const sorted = combined.sort((a, b) => new Date(b.date) - new Date(a.date));
+        setMergedEvents(sorted);
+      } catch (error) {
+        console.error("Error fetching events from backend:", error);
+        setMergedEvents(staticEvents);
+      }
+    };
+
+    fetchEvents();
+  }, [refresh]);
 
   const handleClickOpen = (event) => {
     setSelectedEvent(event);
@@ -176,9 +192,13 @@ const EventsList = () => {
     setSelectedEvent(null);
   };
 
+  const upcomingEvents = mergedEvents.filter((event) => event.date >= currentDate);
+  const recentEvents = mergedEvents.filter((event) => event.date < currentDate);
+
   return (
     <div className="events-list">
       <div className="events-title">STUDENT ACTIVITIES</div>
+
       <div className="container">
         <h2 className="events-subtitle">Upcoming Activities</h2>
         <div className="events-container">
@@ -186,19 +206,17 @@ const EventsList = () => {
             upcomingEvents.map((event) => (
               <div
                 className="Upcomingevents-card"
-                key={event.id}
+                key={event._id || event.id}
                 onClick={() => handleClickOpen(event)}
               >
                 <div
                   className="event-image-container"
-                  style={{
-                    backgroundImage: `url(${event.images[0]})`,
-                  }}
+                  style={{ backgroundImage: `url(${event.images[0]})` }}
                 ></div>
                 <div className="events-bottom-container">
                   <div className="date-container">{formatDate(event.date)}</div>
                   <div className="title-container">
-                    <div className="">{event.title}</div>
+                    <div>{event.title}</div>
                     <div className="know-text">Know More</div>
                   </div>
                 </div>
@@ -217,7 +235,7 @@ const EventsList = () => {
               </div>
               <div className="lottie-bottom-container">
                 <div className="bold">No Upcoming Event at this time</div>
-                <div className="">Stay Tuned</div>
+                <div>Stay Tuned</div>
               </div>
             </div>
           )}
@@ -230,19 +248,17 @@ const EventsList = () => {
           {recentEvents.map((event) => (
             <div
               className="events-card"
-              key={event.id}
+              key={event._id || event.id}
               onClick={() => handleClickOpen(event)}
             >
               <div
-                className="event-image-container"
-                style={{
-                  backgroundImage: `url(${event.images[0]})`,
-                }}
+                className="event-image-container "
+                style={{ backgroundImage: `url(${event.images[0]})` }}
               ></div>
               <div className="events-bottom-container">
                 <div className="date-container">{formatDate(event.date)}</div>
                 <div className="title-container">
-                  <div className="">{event.title}</div>
+                  <div>{event.title}</div>
                   <div className="know-text">Know More</div>
                 </div>
               </div>
@@ -251,56 +267,29 @@ const EventsList = () => {
         </div>
       </div>
 
-      <Dialog
-        fullWidth={true}
-        maxWidth={"sm"}
-        open={open}
-        TransitionComponent={Transition}
-        onClose={handleClose}
-      >
-        <DialogContent
-          dividers
-          style={{ padding: "0", overflow: "hidden", height: "300px" }}
-        >
+      <Dialog fullWidth maxWidth={"sm"} open={open} TransitionComponent={Transition} onClose={handleClose}>
+        <DialogContent dividers style={{ padding: 0, overflow: "hidden", height: "300px" }}>
           {selectedEvent && (
-            <Carousel
-              autoPlay
-              interval={2000}
-              infiniteLoop
-              showThumbs={false}
-              showStatus={false}
-              className="custom-carousel"
-            >
-              {selectedEvent.images.map((image, index) => (
+            <Carousel autoPlay interval={2000} infiniteLoop showThumbs={false} showStatus={false}>
+              {selectedEvent.images.map((img, index) => (
                 <div key={index}>
-                  <img
-                    src={image}
-                    alt={selectedEvent.title}
-                    style={{ width: "100%" }}
-                    className="carousel-image"
-                  />
+                  <img src={img} alt={selectedEvent.title} className="carousel-image h-92 " />
                 </div>
               ))}
             </Carousel>
           )}
         </DialogContent>
-        <DialogContent
-          dividers
-          style={{ textAlign: "justify", backgroundColor: "#fff1c8" }}
-        >
+        <DialogContent dividers style={{ textAlign: "justify", backgroundColor: "#fff1c8" }}>
           <DialogTitle style={{ padding: 0, fontWeight: "bold" }}>
-            {selectedEvent ? selectedEvent.title : ""}
+            {selectedEvent?.title}
           </DialogTitle>
           <DialogTitle style={{ padding: 0, fontWeight: "bold" }}>
-            {selectedEvent ? formatDateDialog(selectedEvent.date) : ""}
+            {formatDateDialog(selectedEvent?.date)}
           </DialogTitle>
-          {selectedEvent ? selectedEvent.description : ""}
+          {selectedEvent?.description||selectedEvent?.paragraph}
         </DialogContent>
         <DialogActions style={{ backgroundColor: "#b7f484" }}>
-          <Button
-            style={{ color: "#24262b", fontWeight: "bold" }}
-            onClick={handleClose}
-          >
+          <Button onClick={handleClose} style={{ color: "#24262b", fontWeight: "bold" }}>
             Close
           </Button>
         </DialogActions>
