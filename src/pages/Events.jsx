@@ -161,7 +161,7 @@ const EventsList = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const res = await axios.get("https://geolocation-nokl.onrender.com/api/events/get-events");
+        const res = await axios.get("https://geolocation-nokl.onrender.com/api/events/get");
         const backendEvents = res.data?.data || [];
 
         // Convert backend events to match static structure (add images array)
