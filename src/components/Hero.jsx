@@ -10,8 +10,6 @@ const carouselItems = [
   {
     src: "assets/img/carousel/NSD_2024NITMZ.png",
     alt: "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
-    // caption:
-    //   "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
   },
   {
     src: "assets/img/carousel/yuvamathan1.png",

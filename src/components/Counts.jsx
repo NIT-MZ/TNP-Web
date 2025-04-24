@@ -65,7 +65,7 @@ const Counts = () => {
               align-items-md-stretch"
             >
               <div className="count-box">
-                <span>14.5</span>
+                <span>18</span>
                 <p>Highest Package of B.Tech. Students (in LPA)</p>
               </div>
             </div>
