@@ -73,7 +73,7 @@ const AdminPage = () => {
 
 
                     <Link
-                      to="//addEvent"
+                      to="/addEvent"
                       className="flex items-center text-gray-600 font-semibold hover:text-indigo-500 transition"
                     >
                       <FaUser className="text-purple-500 mr-2" />
