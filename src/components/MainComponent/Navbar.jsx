@@ -1,10 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../../stylesheets/navbar.scss";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
+import UserContext from "../../context/UserContext";
 
 const Navbar = () => {
+  const{userDetail}=useContext(UserContext)
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef();
   const buttonRef = useRef();
@@ -64,32 +66,36 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="md:hidden shadow-md w-full bg-gradient-to-r from-[#ffdd76] to-[#87ed33] border-b-4 border-green-600">
-        <div className="flex flex-col ">
-          <div className="md:flex md:justify-between  px-2 pt-1 ">
-            <div className="mr-4">
-              <img
-                src="tnplogo2.png"
-                alt="tnp_Logo"
-                className="mt-2 sm:h-38 sm:w-38 h-16 w-16"
-                onClick={() => handleNavigation("/", "home")}
-                style={{ cursor: "pointer" }}
-              />
-            </div>
-            <div className=" items-center text-center -mt-9  relative bottom-4 md:static">
-              <div className=" w-full mt-2 mb-2">
-                <p className="text-slate-600  font-semibold md:font-bold font-md   sm:text-lg text-xs">
-                  प्रशिक्षण एवं नियोजन कार्यालय
-                </p>
-                <p className="text-slate-600  font-semibold  font-md   text-xs">
-                  Training And Placement Office
-                </p>
-                <p className="  text-10px font-semibold  text-xs">
-                  National Institute of Technology, Mizoram
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="flex flex-col relative">
+  <div className="md:flex md:justify-between px-2 pt-1">
+    <div className="mr-4">
+      <img
+        src="tnplogo2.png"
+        alt="tnp_Logo"
+        className="mt-2 sm:h-38 sm:w-38 h-16 w-16"
+        onClick={() => handleNavigation("/", "home")}
+        style={{ cursor: "pointer" }}
+      />
+    </div>
+    <div className="items-center text-center -mt-9 relative bottom-4 md:static">
+      <div className="w-full mt-2 mb-2">
+        <p className="text-slate-600 font-semibold md:font-bold font-md sm:text-lg text-xs">
+          प्रशिक्षण एवं नियोजन कार्यालय
+        </p>
+        <p className="text-slate-600 font-semibold font-md text-xs">
+          Training And Placement Office
+        </p>
+        <p className="text-10px font-semibold text-xs">
+          National Institute of Technology, Mizoram
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* 🔵 Small Blue Icon in Bottom Right */}
+ 
+</div>
+
 
         <div className="bg-white">
           {isOpen && (
@@ -192,53 +198,74 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      <div className="shadow-md w-full bg-gradient-to-r from-[#ffdd76] to-[#87ed33]   hidden md:flex">
-        <div className="flex flex-col lg:justify-evenly">
-          <div className="md:flex md:justify-between md:p-4 p-3 lg:justify-around">
-            <div className="md:pl-4">
-              <img
-                src="https://www.vidyavision.com/CollegeUploads/Logos/2017-23-5-16-27-56_nit-mizoram-logo.png"
-                alt="NIT Mizoram Logo"
-                className="mt-2 2xl:w-44 2xl:h-44 lg:h-32 h-32 w-32 lg:ml-4"
-                onClick={() => handleNavigation("/", "home")}
-                style={{ cursor: "pointer" }}
-              />
-            </div>
-            <div className="lg:ml-24 items-center text-center md:mt-8 mt-2 md:px-4  lg:mt-0 lg:px-8 relative bottom-4 md:static">
-              <div className="md:justify-between w-full">
-                <p className="text-slate-600 lg:font-bold font-semibold md:font-bold font-md lg:text-xl 2xl:text-2xl md:text-xl sm:text-lg text-xs">
-                  प्रशिक्षण एवं नियोजन कार्यालय
-                </p>
-                <p className="text-slate-600 lg:font-bold font-semibold md:font-bold font-md lg:text-xl 2xl:text-2xl md:text-xl lg:text-md text-xs">
-                  Training And Placement Office
-                </p>
-                <p className="  lg:text-md text-10px font-semibold lg:font-bold md:font-semibold 2xl:text-2xl md:text-xl text-xs">
-                  National Institute of Technology, Mizoram
-                </p>
-                <p className="  text-black lg:font-medium text-8px lg:text-sm 2xl:text-lg md:text-sm lg:mt-2 mx-2 lg:mx-4 font-extralight text-[10px]">
-                  (An Institution of National Importance under the Ministry of
-                  Education, Govt. of India)
-                </p>
-              </div>
-            </div>
-            <div className="lg:flex lg:justify-end">
-              <img
-                src="g20.png"
-                alt="client"
-                className="h-10 w-10 mr-4 lg:h-44 lg:flex lg:w-44 hidden"
-              />
-              <img
-                src="tnplogo2.png"
-                alt="tnpLogo"
-                className="hidden md:flex self-center lg:mt-4 mt-12 md:mt-6 lg:mx-4 lg:h-44 lg:w-44 pr-2 pb-2 h-32 w-32 sm:h-32 sm:w-32"
-                onClick={() => handleNavigation("/", "home")}
-                style={{ cursor: "pointer" }}
-              />
-            </div>
-          </div>
+      <div className="shadow-md w-full bg-gradient-to-r from-[#ffdd76] to-[#87ed33] hidden md:flex relative">
+  <div className="flex flex-col lg:justify-evenly">
+    <div className="md:flex md:justify-between md:p-4 p-3 lg:justify-around">
+      <div className="md:pl-4">
+        <img
+          src="https://www.vidyavision.com/CollegeUploads/Logos/2017-23-5-16-27-56_nit-mizoram-logo.png"
+          alt="NIT Mizoram Logo"
+          className="mt-2 2xl:w-44 2xl:h-44 lg:h-32 h-32 w-32 lg:ml-4"
+          onClick={() => handleNavigation("/", "home")}
+          style={{ cursor: "pointer" }}
+        />
+      </div>
+      <div className="lg:ml-24 items-center text-center md:mt-8 mt-2 md:px-4  lg:mt-0 lg:px-8 relative bottom-4 md:static">
+        <div className="md:justify-between w-full">
+          <p className="text-slate-600 lg:font-bold font-semibold md:font-bold font-md lg:text-xl 2xl:text-2xl md:text-xl sm:text-lg text-xs">
+            प्रशिक्षण एवं नियोजन कार्यालय
+          </p>
+          <p className="text-slate-600 lg:font-bold font-semibold md:font-bold font-md lg:text-xl 2xl:text-2xl md:text-xl lg:text-md text-xs">
+            Training And Placement Office
+          </p>
+          <p className="lg:text-md text-10px font-semibold lg:font-bold md:font-semibold 2xl:text-2xl md:text-xl text-xs">
+            National Institute of Technology, Mizoram
+          </p>
+          <p className="text-black lg:font-medium text-8px lg:text-sm 2xl:text-lg md:text-sm lg:mt-2 mx-2 lg:mx-4 font-extralight text-[10px]">
+            (An Institution of National Importance under the Ministry of
+            Education, Govt. of India)
+          </p>
         </div>
       </div>
+      <div className="lg:flex lg:justify-end">
+        <img
+          src="g20.png"
+          alt="client"
+          className="h-10 w-10 mr-4 lg:h-44 lg:flex lg:w-44 hidden"
+        />
+        <img
+          src="tnplogo2.png"
+          alt="tnpLogo"
+          className="hidden md:flex self-center lg:mt-4 mt-12 md:mt-6 lg:mx-4 lg:h-44 lg:w-44 pr-2 pb-2 h-32 w-32 sm:h-32 sm:w-32"
+          onClick={() => handleNavigation("/", "home")}
+          style={{ cursor: "pointer" }}
+        />
+      </div>
+    </div>
+  </div>
+
+  {/* ✅ Blue login icon in bottom right */}
+  {userDetail?.data?.user?(
+      <Link
+      to="/adminPage"
+      className="absolute bottom-1 right-1 bg-blue-900 hover:bg-blue-600 text-white shadow-md md:block hidden"
+      title="Admin "page
+    >
+      AdminPage
+    </Link>
+
+  ):(
+
+  <Link
+    to="/login"
+    className="absolute bottom-1 right-1 bg-blue-900 hover:bg-blue-600 text-white shadow-md md:block hidden"
+    title="Admin Login"
+  >
+    Admin Login
+  </Link>
+  )}
+</div>
+
 
       <nav>
         <div className=" hidden w-full md:flex md:items-center md:align-middle md:justify-between md:w-auto">

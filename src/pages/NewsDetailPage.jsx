@@ -43,6 +43,8 @@ const NewsDetailPage = () => {
           src={newsItem.images?.[0] || "https://via.placeholder.com/800x400"}
           alt={newsItem.title}
           className="w-full h-64 object-cover"
+           loading="lazy"
+          
         />
         <div className="p-6">
           <h1 className="text-4xl font-bold mb-4 text-gray-800">

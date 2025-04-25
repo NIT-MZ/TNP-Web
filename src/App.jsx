@@ -13,7 +13,13 @@ import ScrollToTop from "./components/MainComponent/ScrollToTop.jsx";
 import NewsIconPage from "./pages/NewsIconPage.jsx";
 import NewsDetailPage from "./pages/NewsDetailPage.jsx";
 import News from "./pages/News.jsx";
-import EventForm from "./pages/AddEvents.jsx";
+import EventForm from "./components/Admin/AddEvents.jsx";
+import UserLogin from "./components/Admin/loginPage.jsx";
+
+import AdminPage from "./components/Admin/AdminDetails.jsx";
+import AddNews from "./components/Admin/AddNews.jsx";
+
+import Logout from "./components/Admin/logout.jsx";
 
 
 function App() {
@@ -28,6 +34,10 @@ function App() {
           <Route path="/internship" element={<Internships />} />
           <Route path="/recruiters" element={<ForRecruiters />} />
           <Route path="/jaf" element={<Jaf />} />
+          <Route path="/addNews" element={<AddNews/>}/>
+
+          <Route path="/login" element={<UserLogin/>}/>
+          <Route path="/logout" element={<Logout/>}/>
 
           <Route path="/NewsArcheive" element={<News />}>
             <Route index element={<NewsIconPage />} />
@@ -35,6 +45,8 @@ function App() {
           </Route>
 
           <Route path="/addEvent" element={<EventForm/>} />
+          <Route path="/adminPage" element={<AdminPage/>}/>
+
         </Routes>
 
         <FooterSection />

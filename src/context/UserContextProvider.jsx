@@ -1,45 +1,37 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import UserContext from "./UserContext.jsx";
 
 const UserContextProvider = ({ children }) => {
-  // const [count, setCount] = useState(new Array(4).fill(0)); // Initialize count as an array
-  // const list = [86, 96, 14.5, 19]; // List of target values
+const [userDetail, setUserDetail] = useState(
+  JSON.parse(localStorage.getItem("details")) || null
+);
+const getUserDetail = async (details) => {
+  if (details) {
+    setUserDetail(details);
+  } else {
+    console.error("Invalid details passed to getUserDetail");
+  }
+};
 
-  // useEffect(() => {
-  //   const timers = [];
+// Save user details to localStorage whenever there's a change in userDetail state.
+useEffect(() => {
+  localStorage.setItem("details", JSON.stringify(userDetail));
+}, [userDetail]);
 
-  //   list.forEach((value, index) => {
-  //     if (count[index] < value) {
-  //       const timer = setInterval(() => {
-  //         setCount(prevCount => {
-  //           const newCount = [...prevCount];
-  //           const step = value > 1 ? 1 : 0.1; // Determine the step size based on the value
-  //           newCount[index] = parseFloat((newCount[index] + step).toFixed(1)); // Increment and ensure one decimal place
 
-  //           // Check if reached or exceeded the target value, then clear the interval
-  //           if (newCount[index] >= value) {
-  //             clearInterval(timer);
-  //             newCount[index] = value; // Ensure exact target value
-  //           }
-
-  //           return newCount;
-  //         });
-  //       }, 20); // Adjust the interval as needed
-
-  //       timers.push(timer);
-  //     }
-  //   });
-
-  //   return () => timers.forEach(timer => clearInterval(timer)); // Clean up all intervals
-  // }, [count, list]);
-
- // <UserContext.Provider value={{ count }}>
 
   return (
-    <UserContext.Provider value={{  }}>
+    <UserContext.Provider value={{ 
+      setUserDetail,
+      getUserDetail,
+      userDetail
+     }}>
       {children}
     </UserContext.Provider>
   );
 };
+
+
+
 
 export default UserContextProvider;
