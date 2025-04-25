@@ -11,7 +11,7 @@ const NewsDetailPage = () => {
     const fetchNewsItem = async () => {
       try {
         const response = await axios.get(
-          `https://geolocation-nokl.onrender.com/api/news/getnews/${id}`
+          `${import.meta.env.VITE_API_BASE_URL}/api/news/getnews/${id}`
         );
         setNewsItem(response.data.data);
       } catch (error) {

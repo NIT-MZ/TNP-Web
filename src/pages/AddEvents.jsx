@@ -30,7 +30,7 @@ const EventForm = () => {
     data.append("photo", formData.photo);
 
     try {
-      const res = await axios.post("https://geolocation-nokl.onrender.com/api/events/create", data); // adjust API path if needed
+      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/events/create`, data); 
       setMessage(res.data.message);
     } catch (err) {
       setMessage(err.response?.data?.message || "Error creating event");
