@@ -6,15 +6,15 @@ const EventForm = () => {
     title: "",
     date: "",
     paragraph: "",
-    photo: null,
+    images: null,
   });
 
   const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
-    if (name === "photo") {
-      setFormData({ ...formData, photo: files[0] });
+    if (name === "images") {
+      setFormData({ ...formData, images: files[0] });
     } else {
       setFormData({ ...formData, [name]: value });
     }
@@ -27,10 +27,14 @@ const EventForm = () => {
     data.append("title", formData.title);
     data.append("date", formData.date);
     data.append("paragraph", formData.paragraph);
-    data.append("photo", formData.photo);
+    data.append("images", formData.images);
 
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/events/create`, data); 
+      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/events/create`, data,
+      { withCredentials: true }
+   
+      );
+      console.log(res);
       setMessage(res.data.message);
     } catch (err) {
       setMessage(err.response?.data?.message || "Error creating event");
@@ -69,7 +73,7 @@ const EventForm = () => {
       />
       <input
         type="file"
-        name="photo"
+        name="images"
         accept="image/*"
         className="w-full"
         onChange={handleChange}
