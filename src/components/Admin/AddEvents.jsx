@@ -6,15 +6,26 @@ const EventForm = () => {
     title: "",
     date: "",
     paragraph: "",
-    images: null,
+    images: [],
   });
 
+  const [previewImages, setPreviewImages] = useState([]);
   const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
     if (name === "images") {
-      setFormData({ ...formData, images: files[0] });
+      const newImages = Array.from(files);
+
+      // Append new images to existing ones
+      setFormData((prev) => ({
+        ...prev,
+        images: [...prev.images, ...newImages],
+      }));
+
+      // Also append previews
+      const newPreviews = newImages.map((file) => URL.createObjectURL(file));
+      setPreviewImages((prev) => [...prev, ...newPreviews]);
     } else {
       setFormData({ ...formData, [name]: value });
     }
@@ -27,15 +38,26 @@ const EventForm = () => {
     data.append("title", formData.title);
     data.append("date", formData.date);
     data.append("paragraph", formData.paragraph);
-    data.append("images", formData.images);
+
+    formData.images.forEach((image) => {
+      data.append("images", image); // sending multiple images
+    });
 
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/events/create`, data,
-      { withCredentials: true }
-   
+      const res = await axios.post(
+        `${import.meta.env.VITE_API_BASE_URL}/api/events/create`,
+        data,
+        { withCredentials: true }
       );
-      console.log(res);
+
       setMessage(res.data.message);
+      setFormData({
+        title: "",
+        date: "",
+        paragraph: "",
+        images: [],
+      });
+      setPreviewImages([]);
     } catch (err) {
       setMessage(err.response?.data?.message || "Error creating event");
     }
@@ -53,6 +75,7 @@ const EventForm = () => {
         name="title"
         placeholder="Title"
         className="w-full p-2 border rounded"
+        value={formData.title}
         onChange={handleChange}
         required
       />
@@ -60,6 +83,7 @@ const EventForm = () => {
         type="date"
         name="date"
         className="w-full p-2 border rounded"
+        value={formData.date}
         onChange={handleChange}
         required
       />
@@ -68,6 +92,7 @@ const EventForm = () => {
         placeholder="Event description"
         className="w-full p-2 border rounded"
         rows={4}
+        value={formData.paragraph}
         onChange={handleChange}
         required
       />
@@ -77,15 +102,33 @@ const EventForm = () => {
         accept="image/*"
         className="w-full"
         onChange={handleChange}
-        required
+        multiple
       />
+
+      {/* Preview selected images */}
+      {previewImages.length > 0 && (
+        <div className="grid grid-cols-2 gap-4 mt-4">
+          {previewImages.map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt={`preview-${index}`}
+              className="w-full h-32 object-cover rounded-lg border"
+            />
+          ))}
+        </div>
+      )}
+
       <button
         type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mt-4"
       >
         Create Event
       </button>
-      {message && <p className="text-center text-sm text-gray-700">{message}</p>}
+
+      {message && (
+        <p className="text-center text-sm text-gray-700 mt-4">{message}</p>
+      )}
     </form>
   );
 };
