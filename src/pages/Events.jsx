@@ -167,7 +167,7 @@ const EventsList = () => {
         // Convert backend events to match static structure (add images array)
         const converted = backendEvents.map((e) => ({
           ...e,
-          images: [e.photo],
+          images: Array.isArray(e.photos) ? e.photos : e.photo ? [e.photo] : [],
         }));
 
         const combined = [...staticEvents, ...converted];
