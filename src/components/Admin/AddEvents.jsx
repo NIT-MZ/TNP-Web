@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const EventForm = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,7 @@ const EventForm = () => {
     paragraph: "",
     images: [],
   });
+  const navigate=useNavigate();
 
   const [previewImages, setPreviewImages] = useState([]);
   const [message, setMessage] = useState("");
@@ -58,6 +60,7 @@ const EventForm = () => {
         images: [],
       });
       setPreviewImages([]);
+      navigate("/events")
     } catch (err) {
       setMessage(err.response?.data?.message || "Error creating event");
     }

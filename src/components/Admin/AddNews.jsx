@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const AddNews = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const AddNews = () => {
     paragraphContent: [""],
     tags: "",
   });
+  const navigate=useNavigate();
 
   const [images, setImages] = useState([]);
   const [imagePreviews, setImagePreviews] = useState([]);
@@ -70,7 +72,8 @@ const AddNews = () => {
         }
       );
       alert("News submitted successfully!");
-      console.log(res.data);
+      navigate("/NewsArcheive")
+    
     } catch (err) {
       console.error(err);
       alert("Failed to submit news");
