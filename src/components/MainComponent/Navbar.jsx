@@ -258,7 +258,7 @@ const Navbar = () => {
 
   <Link
     to="/login"
-    className="absolute bottom-1 right-1 bg-blue-900 hover:bg-blue-600 text-white shadow-md md:block hidden"
+    className="absolute top-1 right-1 bg-[#1E3A8A] hover:bg-green-900 text-white font-semibold p-1 rounded-md shadow-md md:block hidden"
     title="Admin Login"
   >
     Admin Login

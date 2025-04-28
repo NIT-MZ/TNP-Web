@@ -5,7 +5,28 @@ const ListGroupItemClass =
   "list-group-item d-flex justify-content-between align-items-center md:font-bold ";
 
 const items = [
-  
+
+"JUSPAY conducted a recruitment drive at NIT Mizoram in 2025.",
+
+"Ashok Leyland held a placement drive at NIT Mizoram in 2025.",
+
+"Fidelity International conducted a recruitment drive at NIT Mizoram in 2025.",
+"APL Apollo Tubes Ltd. held a placement drive at NIT Mizoram in 2025.",
+
+"Larsen & Toubro held a placement drive at NIT Mizoram in 2025.",
+"NVIDIA conducted an internship drive at NIT Mizoram in 2025",
+
+"Dayananda Sagar College of Engineering, BANGALORE conducted a recruitment drive at NIT Mizoram in 2025.",
+
+"eQ Technologic held a placement drive at NIT Mizoram in 2025.",
+
+"Bakliwal Tutorials Pvt Limited conducted a recruitment drive at NIT Mizoram in 2025.",
+
+"Digit Insurance conducted a placement drive at NIT Mizoram in  December 2024.",
+"Lumiq conducted a placement drive at NIT Mizoram in  October 2024.",
+"Delloite conducted a placement drive at NIT Mizoram in   2024.",
+
+"Larsen & Toubro held a placement drive at NIT Mizoram in 2025.",
   "MAQ Software held a placement drive at NIT Mizoram in March 2024.",
   "Ashok Leyland conducted a hiring event at NIT Mizoram in March 2024.",
   "Tutorials Point conducted a recruitment event at NIT Mizoram in March 2024.",
