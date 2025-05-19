@@ -197,7 +197,7 @@ const Team = () => {
       position: "Activity Coordinator",
       branch: "ECE",
       linkedin: "https://www.linkedin.com/in/shashwatest/",
-      image_name: "Suman Kumar Verma - Shashwat.png",
+      image_name: "Suman_Kumar_Verma.png",
     },
    
   ];
@@ -271,6 +271,13 @@ const Team = () => {
       image_name: "anand_b.jpg",
     },
     {
+      name: "Arman Kumar",
+      linkedin: "https://www.linkedin.com/in/arman-kumar-760043282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      position: "Website and Media Coordinator",
+      branch: "ECE",
+      image_name: "Arman_Kumar.jpg",
+    },
+    {
       name: "Saurabh Kumar Gupta",
       position: "Website and Media Coordinator",
       branch: "MA",
@@ -292,13 +299,6 @@ const Team = () => {
       image_name: "Uttkarsh_Tiwari.png",
     },
     {
-      name: "Uttkarsh Tiwari",
-      linkedin: "https://www.linkedin.com/in/uttkarsh-tiwari-60922a285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      position: "Website and Media Coordinator",
-      branch: "CSE",
-      image_name: "Uttkarsh_Tiwari.png",
-    },
-     {
       name: "Saurabh Verma",
       linkedin: "https://www.linkedin.com/in/saurabh-verma-2b87a9290/",
       position: "Website and Media Coordinator",
@@ -311,13 +311,6 @@ const Team = () => {
       position: "Website and Media Coordinator",
       branch: "ECE",
       image_name: "POOJA_KUMARI.jpg",
-    },
-    {
-      name: "Arman Kumar",
-      linkedin: "https://www.linkedin.com/in/arman-kumar-760043282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      position: "Website and Media Coordinator",
-      branch: "ECE",
-      image_name: "Arman_Kumar.jpg",
     },
     {
       name: "Paidi Upendar Sai",
