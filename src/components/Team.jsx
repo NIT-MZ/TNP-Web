@@ -565,6 +565,96 @@ const Team = () => {
       </div>
 
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
+        Student Activity Cordinators (2026 Batch){" "}
+      </h4>
+      <div className="team-card-container">
+        {/* Mapping over the teamMembers array to generate card elements */}
+        {studentActivityCoordinators2026.map((activityCoordinator, index) => (
+          <div
+            className="team-card"
+            key={index}
+            style={{
+              backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
+            }}
+          >
+            <div className="team-card-bottom">
+              <div>{activityCoordinator.name}</div>
+            </div>
+            <div className="team-card-bottom-on-hover">
+              <div>
+                <div className="font-bold">{activityCoordinator.name}</div>
+                <div>{activityCoordinator.position}</div>
+                <div> {activityCoordinator.branch}</div>
+                <div> {activityCoordinator.designation}</div>
+              </div>
+              <div className="align-middle">
+                <a
+                  href={activityCoordinator.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="assets/img/team/linkedin.png"
+                    alt="LinkedIn"
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      marginLeft: "10px",
+                    }}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
+        Website and Media Coordinators{" "}
+      </h4>
+      <div className="team-card-container">
+        {/* Mapping over the teamMembers array to generate card elements */}
+        {WebsiteAndMediaCoordinators.map((mediamember, index) => (
+          <div
+            className="team-card"
+            key={index}
+            style={{
+              backgroundImage: `url(/assets/img/team/${mediamember.image_name})`,
+            }}
+          >
+            <div className="team-card-bottom">
+              <div>{mediamember.name}</div>
+            </div>
+            <div className="team-card-bottom-on-hover">
+              <div>
+                <div className="font-bold">{mediamember.name}</div>
+                <div>{mediamember.position}</div>
+                <div> {mediamember.branch}</div>
+                <div> {mediamember.designation}</div>
+              </div>
+              <div className="align-middle">
+                <a
+                  href={mediamember.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="assets/img/team/linkedin.png"
+                    alt="LinkedIn"
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      marginLeft: "10px",
+                    }}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
         ASSISTANT STUDENT PLACEMENT COORDINATORS 2027
       </h4>
       <div className="team-card-container">
@@ -610,50 +700,6 @@ const Team = () => {
       </div>
 
 
-      <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        Student Activity Cordinators (2026 Batch){" "}
-      </h4>
-      <div className="team-card-container">
-        {/* Mapping over the teamMembers array to generate card elements */}
-        {studentActivityCoordinators2026.map((activityCoordinator, index) => (
-          <div
-            className="team-card"
-            key={index}
-            style={{
-              backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
-            }}
-          >
-            <div className="team-card-bottom">
-              <div>{activityCoordinator.name}</div>
-            </div>
-            <div className="team-card-bottom-on-hover">
-              <div>
-                <div className="font-bold">{activityCoordinator.name}</div>
-                <div>{activityCoordinator.position}</div>
-                <div> {activityCoordinator.branch}</div>
-                <div> {activityCoordinator.designation}</div>
-              </div>
-              <div className="align-middle">
-                <a
-                  href={activityCoordinator.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/img/team/linkedin.png"
-                    alt="LinkedIn"
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      marginLeft: "10px",
-                    }}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
 
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
         Assistant Student Activity Cordinators (2027 Batch){" "}
@@ -748,50 +794,7 @@ const Team = () => {
         {/* </div> */}
       </div>
 
-      <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        Website and Media Coordinators{" "}
-      </h4>
-      <div className="team-card-container">
-        {/* Mapping over the teamMembers array to generate card elements */}
-        {WebsiteAndMediaCoordinators.map((mediamember, index) => (
-          <div
-            className="team-card"
-            key={index}
-            style={{
-              backgroundImage: `url(/assets/img/team/${mediamember.image_name})`,
-            }}
-          >
-            <div className="team-card-bottom">
-              <div>{mediamember.name}</div>
-            </div>
-            <div className="team-card-bottom-on-hover">
-              <div>
-                <div className="font-bold">{mediamember.name}</div>
-                <div>{mediamember.position}</div>
-                <div> {mediamember.branch}</div>
-                <div> {mediamember.designation}</div>
-              </div>
-              <div className="align-middle">
-                <a
-                  href={mediamember.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/img/team/linkedin.png"
-                    alt="LinkedIn"
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      marginLeft: "10px",
-                    }}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+     
     </div>
   );
 };
