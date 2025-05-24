@@ -13,6 +13,16 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/dr-sukanta-roy-75a9b13b",
       image_name: "dr_sukanta_roy.png",
     },
+
+    {
+      name: "Dr. Rajkumar Shufen",
+      position: "Assistant TPO",
+      phone: "",
+      linkedin: "",
+      email: "rajkumar.me@nitmz.ac.in",
+      image_name: "Shufen_Sir.jpg",
+    },
+
     {
       name: "Dr. Ashish Singh Patel",
       position: "FIC, Alumni",
