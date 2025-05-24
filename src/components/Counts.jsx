@@ -32,7 +32,7 @@ const Counts = () => {
                     ></CountUp>
                   )}
                 </span>
-                <p>Students Placed in Session 2023-24</p>
+                <p>Students Placed in Session 2024-25</p>
               </div>
             </div>
 
