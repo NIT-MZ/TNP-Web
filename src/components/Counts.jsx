@@ -24,7 +24,7 @@ const Counts = () => {
                   {counterOn && (
                     <CountUp
                       start={0}
-                      end={90.7}
+                      end={92.1}
                       duration={2}
                       delay={0}
                       decimals={1}
@@ -32,7 +32,7 @@ const Counts = () => {
                     ></CountUp>
                   )}
                 </span>
-                <p>Students Placed in Session 2023-24</p>
+                <p>Students Placed in Session 2024-25</p>
               </div>
             </div>
 
@@ -65,7 +65,7 @@ const Counts = () => {
               align-items-md-stretch"
             >
               <div className="count-box">
-                <span>18</span>
+                <span>35</span>
                 <p>Highest Package of B.Tech. Students (in LPA)</p>
               </div>
             </div>

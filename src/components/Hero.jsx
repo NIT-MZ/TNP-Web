@@ -3,9 +3,9 @@ import "../stylesheets/Hero.scss";
 
 const carouselItems = [
   {
-    src: "assets/img/carousel/placement3.jpg",
+    src: "assets/img/carousel/placement4.png",
     alt: "placement",
-    caption: "Placements Statistics 2023-2024",
+    caption: "Placements Statistics 2024-2025",
   },
   {
     src: "assets/img/carousel/NSD_2024NITMZ.png",
