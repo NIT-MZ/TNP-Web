@@ -218,7 +218,7 @@ const Team = () => {
       position: "Activity Coordinator",
       branch: "CSE",
       linkedin: "https://www.linkedin.com/in/priyanshu-agrawal-0924aa319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "priyanshu_agrawal.png",
+      image_name: "priyanshu_agrawal.jpg",
     },
     {
       name: "Abhishek Kumar",
@@ -263,7 +263,7 @@ const Team = () => {
       position: "Website and Media Coordinator",
       branch: "ECE",
       linkedin: "https://www.linkedin.com/in/aditya-srivastav-125744276",
-      image_name: "Aditya_Srivastav.jpg",
+      image_name: "Aditya_Srivastav2.jpg",
       designation: "Team Lead",
     },
     {
@@ -299,21 +299,21 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/ayusharyanraj",
       position: "Website and Media Coordinator",
       branch: "EE",
-      image_name: "ayusharyan_raj.png",
+      image_name: "ayusharyan_raj.jpg",
     },
     {
       name: "Uttkarsh Tiwari",
       linkedin: "https://www.linkedin.com/in/uttkarsh-tiwari-60922a285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       position: "Website and Media Coordinator",
       branch: "CSE",
-      image_name: "Uttkarsh_Tiwari.png",
+      image_name: "Uttkarsh_Tiwari.jpg",
     },
     {
       name: "Saurabh Verma",
       linkedin: "https://www.linkedin.com/in/saurabh-verma-2b87a9290/",
       position: "Website and Media Coordinator",
       branch: "ECE",
-      image_name: "Saurabh_Verma.png",
+      image_name: "Saurabh_Verma.jpg",
     },
     {
       name: "Pooja Kumari",
