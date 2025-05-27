@@ -118,7 +118,7 @@ const Team = () => {
       position: "Placement Coordinator",
       branch: "ME",
       linkedin: "",
-      image_name: "",
+      image_name: "Kissan_Dalai.jpg",
     },
     
 
@@ -137,7 +137,7 @@ const Team = () => {
       position: "Assistant Placement Coordinator",
       branch: "MA",
       linkedin: "https://www.linkedin.com/in/rishabh-shukla-5a691930a/",
-      image_name: "Rishabh _Shukla.png",
+      image_name: "Rishabh_Shukla.jpg",
     },
     {
       name: "Ramu Yadav",
@@ -159,14 +159,14 @@ const Team = () => {
       position: "Assistant Placement Coordinator",
       branch: "CE",
       linkedin: "",
-      image_name: "",
+      image_name: "Abhij_Raj.jpg",
     },
     {
       name: "Aditya Mishra",
       position: "Assistant Placement Coordinator",
       branch: "ME",
       linkedin: "https://www.linkedin.com/in/aditya-mishra-36aa04345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "",
+      image_name: "Aditya_Mishra.jpg",
     },
 
 
@@ -186,14 +186,14 @@ const Team = () => {
       position: "Activity Coordinator",
       branch: "ME",
       linkedin: "",
-      image_name: "",
+      image_name: "Raghav_Jangir.jpg",
     },
     {
       name: "Priyanshu Bariyar",
       position: "Activity Cordinator",
       branch: "CSE",
       linkedin: "",
-      image_name: "",
+      image_name: "Priyanshu_Bariyar.jpg",
     },
     {
       name: "Mudavath Pooja",
@@ -361,7 +361,7 @@ const Team = () => {
       position: "Associate Members",
       branch: "CSE",
       linkedin: "",
-      image_name: "",
+      image_name: "Snehil_Verma.jpg",
     },
     {
       name: "Khushi Singh",
@@ -389,7 +389,7 @@ const Team = () => {
       position: "Associate Members",
       branch: "ME",
       linkedin: "",
-      image_name: "",
+      image_name: "Anshu.jpg",
     },
     {
       name: "Rayudu Pooja Amrutha",
