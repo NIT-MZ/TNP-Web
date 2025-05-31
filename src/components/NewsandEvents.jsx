@@ -9,7 +9,7 @@ const items = [
 
 "NVIDIA conducted a internship drive at NIT Mizoram in May 2025.",
 "Deloitte selected 2 students from Computer Science and 1 from ECE",
-"L&T recruited total 10 students 4 from Mechanical Engineering and 2 from ECE and 1 from CSE",
+"L&T recruited total 10 students 4 from Mechanical Engineering and 2 from ECE 3 from EEE and 1 from CSE",
 "Vedanta hired 3 students from Mechanical and 2 from Electrical Engineering",
 "Juspay offered placements to 2 students from Computer Science and 1 from ECE",
 "TATA Electronics placed 2 students from ECE ",
