@@ -27,7 +27,7 @@ const HomePage = () => {
       <Team />
       <TrainingandRecruitingPartners />
       <TestimonialSection />
-      <WebTeam />
+      {/* <WebTeam /> */}
       <CTAsection />
       <Contact />
       <Map />
