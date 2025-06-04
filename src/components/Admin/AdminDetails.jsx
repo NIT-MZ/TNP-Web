@@ -88,6 +88,14 @@ const AdminPage = () => {
                       Add News
                     </Link>
 
+                    <Link
+                      to="/updateEvents"
+                      className="flex items-center text-gray-600 font-semibold hover:text-indigo-500 transition"
+                    >
+                      <FaUser className="text-purple-500 mr-2" />
+                      Update Events
+                    </Link>
+
                    
 
 

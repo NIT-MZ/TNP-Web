@@ -20,6 +20,7 @@ import AdminPage from "./components/Admin/AdminDetails.jsx";
 import AddNews from "./components/Admin/AddNews.jsx";
 
 import Logout from "./components/Admin/logout.jsx";
+import UpdateEvents from "./components/Admin/UpdateEvents.jsx";
 
 
 function App() {
@@ -46,6 +47,11 @@ function App() {
 
           <Route path="/addEvent" element={<EventForm/>} />
           <Route path="/adminPage" element={<AdminPage/>}/>
+          <Route path="/updateEvents" element={<UpdateEvents/>}/>
+          
+
+
+
 
         </Routes>
 
