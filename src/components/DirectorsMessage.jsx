@@ -27,34 +27,44 @@ const DirectorsMessage = () => {
         </div>
         <div className="col-lg-9 col-md-6 director-message">
           <p style={{ textAlign: "justify" }}>
-            <i className="fa-solid fa-quote-left"></i> NIT Mizoram began its
-            journey in 2009 to achieve global renown in research and education.
-            Since 2009, the Institute has progressed rapidly. Presently, there
-            are about 850 students studying in various disciplines of
-            Engineering, Sciences, Humanities and Social Sciences. The Institute
-            is working untiringly to impart quality education that keeps pace
-            with the latest advances in research and development activities. The
-            year ’23-’24 saw 86% Campus Placements. 5 students from the present
-            3rd year BTechs are going to IIT Madras for their 4th year study and
-            PhD. 4 times increase in Sponsored projects and Consultancy observed
-            in ’23-’24. 100% Intern offer issued from top-notch companies and
-            IITs. Leading Professors from Germany and USA conducted workshop at
-            NIT Mizoram during ’23-’24 leading to faculty and student Exchange
-            and collaborations. Introduction of Minor stream with Regular BTechs
-            in Semiconductor & VLSI, AI&ML, Sustainable Electric Transportation
-            introduced. Dual-Degree for upgradation to MTech and PhD is
-            additional long take away. MoU with top public sectors like BIS,
-            AAI, Senses Dept, NITTTR, Mizoram Police, INAE, Institute of
-            Engineers opened up seamless opportunities for faculty and students.
-            At present NIT Mizoram is situated in a temporary campus at Aizawl.
-            With the support of the state govt, we are expecting the completion
-            of the partially completed permanent campus at Lengpui, Mizoram
-            within the next two years with best of the facilities for the
-            excellent academic ambience. The faculty, students and staff of NIT
-            Mizoram are working hard with utmost sincerity and dedication to
-            accept the challenge of making NIT Mizoram a preferred destination
-            for high-quality learning, research and innovation. Their new
-            initiatives will surely bear rich fruits during the years to come.{" "}
+            <i className="fa-solid fa-quote-left"></i>  NIT Mizoram began its journey in 2009 to achieve global renown in research
+ and education. Since 2009, the Institute has progressed rapidly. Presently,
+ there are about 850 students studying in various disciplines of Engineering,
+ Sciences, Humanities and Social Sciences. The Institute is working untiringly to
+ impart quality education that keeps pace with the latest advances in research
+ and development activities.
+ The year 2024–25 saw 93% campus placements. A 4-times increase in
+ sponsored projects and consultancy was observed in 2023–25. 100% internship
+ offers were issued from top-notch companies and IITs. 5 students from the
+ present 3rd year B.Tech batch are going to IIT Madras for their 4th year study
+ and Ph.D.Leading professors from Germany and the USA conducted
+ workshops at NIT Mizoram, leading to faculty and student exchange and
+ collaborations.
+ The introduction of Minor streams with regular B.Tech in Semiconductor & VLSI,
+ AI & ML, Sustainable Electric Transportation has been a significant milestone.
+ Dual-Degree programs for upgradation to M.Tech and Ph.D. is an additional
+ long-term takeaway. MoUs with top public sectors like BIS, AAI, Senses
+ Department, NITTTR, Mizoram Police, INAE, and The Institution of Engineers have
+ opened up seamless opportunities for faculty and students.
+
+ At present, NIT Mizoram is situated in a temporary campus at Aizawl. With the
+ support of the state government, we are expecting the completion of the
+ partially constructed permanent campus at Lengpui, Mizoram within the next
+ two years, which will offer the best of facilities and an excellent academic
+ ambience.
+ Students at NIT Mizoram now have the unique opportunity to enroll in the MBA
+ program at IIM Visakhapatnam without the requirement of the Common
+ Admission Test (CAT), starting in their third year of B.Tech. This enables them
+ to complete both B.Tech and MBA degrees in a total of five years (4+1) from
+ 2025. In the 2025 admission cycle, 14 students from NIT Mizoram secured
+ admission to this B.Tech–MBA program.
+ The Institute has earned a place of honor, securing its position in the 101–150
+ band in the National Institutional Ranking Framework (NIRF) in the current
+ year’s national ranking. This achievement underscores the Institute’s relentless
+ commitment to academic excellence and innovation, solidifying its reputation
+ as a beacon of quality education in the engineering and technology domains.
+ The Institute is actively pursuing its goal of being recognized as a premier
+ technical institution at both the national and international levels.{" "}
           </p>
           <p>
             Let's make this academic year memorable. Best Wishes...{" "}
