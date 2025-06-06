@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../stylesheets/events.scss";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -6,7 +6,6 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
 import Zoom from "@mui/material/Zoom";
-import { useEffect } from "react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -16,7 +15,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Zoom in={true} ref={ref} {...props} style={{ transitionDelay: "500ms" }} />;
 });
 
-// Static events list
+// Static events list (same as you provided)
 const staticEvents = [
   {
     id: 1,
@@ -111,8 +110,6 @@ const staticEvents = [
       `/assets/img/events/independence.JPG`,
     ],
   },
- 
-  
 ];
 
 const formatDate = (dateString) => {
@@ -143,7 +140,6 @@ const EventsList = () => {
   const [mergedEvents, setMergedEvents] = useState([]);
   const [refresh, setRefresh] = useState(false); // optional: trigger re-fetch after new event added
 
-  // Fetch backend events and merge with static
   useEffect(() => {
     const fetchEvents = async () => {
       try {
@@ -259,21 +255,34 @@ const EventsList = () => {
             <Carousel autoPlay interval={2000} infiniteLoop showThumbs={false} showStatus={false}>
               {selectedEvent.images.map((img, index) => (
                 <div key={index}>
-                  <img src={img} alt={selectedEvent.title} className="carousel-image h-92 " />
+                  <img src={img} alt={selectedEvent.title} className="carousel-image h-92" />
                 </div>
               ))}
             </Carousel>
           )}
         </DialogContent>
-        <DialogContent dividers style={{ textAlign: "justify", backgroundColor: "#fff1c8" }}>
-          <DialogTitle style={{ padding: 0, fontWeight: "bold" }}>
+
+        {/* Tailwind styled description area */}
+        <DialogContent
+          dividers
+          className="bg-yellow-50 px-6 pt-4 pb-6"
+        >
+          <h2 className="text-2xl font-bold text-gray-900 mb-1">
             {selectedEvent?.title}
-          </DialogTitle>
-          <DialogTitle style={{ padding: 0, fontWeight: "bold" }}>
+          </h2>
+          <p className="text-sm text-gray-600 mb-4 font-medium">
             {formatDateDialog(selectedEvent?.date)}
-          </DialogTitle>
-          {selectedEvent?.description||selectedEvent?.paragraph}
+          </p>
+
+          <div className="bg-white rounded-lg shadow-inner px-5 py-4 max-h-64 overflow-y-auto text-gray-800 text-sm leading-relaxed space-y-3">
+            {(selectedEvent?.description || selectedEvent?.paragraph || "")
+              .split("\n")
+              .map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+          </div>
         </DialogContent>
+
         <DialogActions style={{ backgroundColor: "#b7f484" }}>
           <Button onClick={handleClose} style={{ color: "#24262b", fontWeight: "bold" }}>
             Close
