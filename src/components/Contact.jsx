@@ -56,12 +56,11 @@ const Contact = () => {
           </div>
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-            <form
-              method="post"
-              className="php-email-form"
-              id="contact-form"
-              onSubmit={handleSubmit}
-            >
+          <form
+  action="https://formsubmit.co/tnp@nitmz.ac.in"
+  method="POST"
+  className="php-email-form"
+>
               <div className="row">
                 <div className="col-md-6 form-group mt-3">
                   <input
