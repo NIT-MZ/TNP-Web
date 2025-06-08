@@ -530,7 +530,7 @@ const Team = () => {
       </div>
 
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        STUDENT PLACEMENT COORDINATORS 2026
+        STUDENT PLACEMENT COORDINATORS 
       </h4>
       <div className="team-card-container">
         {/* Mapping over the teamMembers array to generate card elements */}
@@ -575,7 +575,7 @@ const Team = () => {
       </div>
 
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        Student Activity Cordinators (2026 Batch){" "}
+        Student Activity Cordinators{" "}
       </h4>
       <div className="team-card-container">
         {/* Mapping over the teamMembers array to generate card elements */}
@@ -665,7 +665,7 @@ const Team = () => {
       </div>
 
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        ASSISTANT STUDENT PLACEMENT COORDINATORS 2027
+        ASSISTANT STUDENT PLACEMENT COORDINATORS 
       </h4>
       <div className="team-card-container">
         {/* Mapping over the teamMembers array to generate card elements */}
@@ -712,7 +712,7 @@ const Team = () => {
 
 
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        Assistant Student Activity Cordinators (2027 Batch){" "}
+        Assistant Student Activity Cordinators{" "}
       </h4>
       <div className="team-card-container">
         {/* Mapping over the teamMembers array to generate card elements */}
