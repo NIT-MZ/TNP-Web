@@ -181,48 +181,35 @@ const EventsList = () => {
     <div className="events-list">
       <div className="events-title">STUDENT ACTIVITIES</div>
 
-      <div className="container">
-        <h2 className="events-subtitle">Upcoming Activities</h2>
-        <div className="events-container">
-          {upcomingEvents.length > 0 ? (
-            upcomingEvents.map((event) => (
-              <div
-                className="Upcomingevents-card"
-                key={event._id || event.id}
-                onClick={() => handleClickOpen(event)}
-              >
-                <div
-                  className="event-image-container"
-                  style={{ backgroundImage: `url(${event.images[0]})` }}
-                ></div>
-                <div className="events-bottom-container">
-                  <div className="date-container">{formatDate(event.date)}</div>
-                  <div className="title-container">
-                    <div>{event.title}</div>
-                    <div className="know-text">Know More</div>
-                  </div>
-                </div>
-              </div>
-            ))
-          ) : (
-            <div className="no-upcoming-event-card">
-              <div className="lottie-container">
-                <lottie-player
-                  src="https://lottie.host/ecbb1104-774f-4d5a-802c-755c563b54ea/aQAHbWN2rE.json"
-                  background="transparent"
-                  speed="1"
-                  loop
-                  autoplay
-                ></lottie-player>
-              </div>
-              <div className="lottie-bottom-container">
-                <div className="bold">No Upcoming Event at this time</div>
-                <div>Stay Tuned</div>
-              </div>
+      
+      {upcomingEvents.length > 0 && (
+  <div className="container">
+    <h2 className="events-subtitle">Upcoming Activities</h2>
+    <div className="events-container">
+      {upcomingEvents.map((event) => (
+        <div
+          className="Upcomingevents-card"
+          key={event._id || event.id}
+          onClick={() => handleClickOpen(event)}
+        >
+          <div
+            className="event-image-container"
+            style={{ backgroundImage: `url(${event.images[0]})` }}
+          ></div>
+          <div className="events-bottom-container">
+            <div className="date-container">{formatDate(event.date)}</div>
+            <div className="title-container">
+              <div>{event.title}</div>
+              <div className="know-text">Know More</div>
             </div>
-          )}
+          </div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+)}
+
+    
 
       <div className="container">
         <h2 className="events-subtitle">Recent Activities</h2>

@@ -46,7 +46,7 @@ const Counts = () => {
                   {counterOn && (
                     <CountUp
                       start={0}
-                      end={90}
+                      end={100}
                       duration={2}
                       delay={0}
                       suffix="%"

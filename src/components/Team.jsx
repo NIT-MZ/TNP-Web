@@ -17,8 +17,7 @@ const Team = () => {
     {
       name: "Dr. Rajkumar Shufen",
       position: "Assistant TPO",
-      phone: "",
-      linkedin: "",
+      phone: "+91 99542 46894",
       email: "rajkumar.me@nitmz.ac.in",
       image_name: "Shufen_Sir.jpg",
     },
@@ -72,14 +71,22 @@ const Team = () => {
   ];
 
   const graduateExecutives = [
-    {
+    
+     {
       name: "Ayush Raj",
       position: "Graduate Executive",
-      branch: "ECE",
       phone: "+91-7254905694",
       linkedin: "https://www.linkedin.com/in/ayush-raj-78b095189",
       image_name: "ayush_raj.png",
     },
+    {
+      name: "Vikash Sharma",
+      position: "Graduate Executive",
+      phone: "+91-95082 79514",
+      linkedin: "https://www.linkedin.com/in/vikash-sharma-284191230/",
+      image_name: "vikash_kumar.png",
+    },
+   
   ];
 
   const studentPlacementcordinators2026 = [
@@ -101,7 +108,7 @@ const Team = () => {
     {
       name: "Satvik Sharma",
       position: "Placement Coordinator",
-      branch: "EE",
+      branch: "EEE",
       linkedin: "https://www.linkedin.com/in/satviksharmaa/",
       image_name: "Satvik_Sharma.jpg",
     },
@@ -176,7 +183,7 @@ const Team = () => {
     {
       name: "Shivam Kumar Safi",
       position: "Activity Coordinator",
-      branch: "EE",
+      branch: "EEE",
       linkedin: "https://linkedin.com/in/shivam-kumar-safi",
       image_name: "Shivam_Kumar_Safi.jpg",
       designation: "Team Lead",
@@ -269,7 +276,7 @@ const Team = () => {
     {
       name: "Priyanshu Ranjan",
       position: "Website and Media Coordinator",
-      branch: "EE",
+      branch: "EEE",
       linkedin: "https://www.linkedin.com/in/priyanshu-ranjan-016p?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       image_name: "Priyanshu_Ranjan.jpg",
     },
