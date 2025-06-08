@@ -66,7 +66,7 @@ const carouselItems = [
 const marqueeLinks = [
   {
     type: "link",
-    href: "https://docs.google.com/forms/d/e/1FAIpQLSfQIM_lpZUUPnI-PsybRrOkaRqZlQ2wqtdE3xYGADj5mVMWxg/viewform?usp=sf_link",
+    href: "https://forms.gle/LeYQhi8EJeDCAVBF7",
     text: "Registration of Companies for 2025",
   },
   
