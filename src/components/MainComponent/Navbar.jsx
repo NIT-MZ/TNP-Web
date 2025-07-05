@@ -54,10 +54,10 @@ const Navbar = () => {
   };
 
   const onButtonClick = () => {
-    const pdfUrl = "NITMZ_brochure.pdf";
+    const pdfUrl = "Training and Placement Brochure 2025-26.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "NITMZ_brochure.pdf";
+    link.download = "Training and Placement Brochure 2025-26.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -246,13 +246,15 @@ const Navbar = () => {
 
   {/* ✅ Blue login icon in bottom right */}
   {userDetail?.data?.user?(
-      <Link
-      to="/adminPage"
-      className="absolute bottom-1 right-1 bg-blue-900 hover:bg-blue-600 text-white shadow-md md:block hidden"
-      title="Admin "page
-    >
-      AdminPage
-    </Link>
+   <Link
+  to="/adminPage"
+  className="absolute top-1 right-1 text-blue-900 underline decoration-white hover:bg-blue-600 hover:text-white md:block hidden px-2 py-1 rounded"
+  title="Admin page"
+>
+  AdminPage
+</Link>
+
+  
 
   ):(
 

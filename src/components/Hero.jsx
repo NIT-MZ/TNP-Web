@@ -66,30 +66,17 @@ const carouselItems = [
 const marqueeLinks = [
   {
     type: "link",
-    href: "https://docs.google.com/forms/d/e/1FAIpQLSfQIM_lpZUUPnI-PsybRrOkaRqZlQ2wqtdE3xYGADj5mVMWxg/viewform?usp=sf_link",
+    href: "https://forms.gle/LeYQhi8EJeDCAVBF7",
     text: "Registration of Companies for 2025",
   },
-  {
-    type: "link",
-    href: "https://vedanta.example.com/",
-    text: "Registration and JNF For Vedanta",
-  },
+  
   {
     type: "alert",
-    text: "Honda Motors",
+    text: "NVIDIA",
   },
-  {
-    type: "alert",
-    text: "Nexturn",
-  },
-  {
-    type: "alert",
-    text: "Adani Wilmar",
-  },
-  {
-    type: "alert",
-    text: "BEL",
-  },
+  
+ 
+ 
 ];
 
 const Hero = () => {

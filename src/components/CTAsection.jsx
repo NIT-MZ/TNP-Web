@@ -3,10 +3,10 @@ import "../stylesheets/Counts.scss";
 
 const CTAsection = () => {
   const onButtonClick = () => {
-    const pdfUrl = "NITMZ_brochure.pdf";
+    const pdfUrl = "Training and Placement Brochure 2025-26.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "NITMZ_brochure.pdf";
+    link.download = "Training and Placement Brochure 2025-26.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

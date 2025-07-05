@@ -6,47 +6,29 @@ const ListGroupItemClass =
 
 const items = [
 
-"JUSPAY conducted a recruitment drive at NIT Mizoram in 2025.",
 
-"Ashok Leyland held a placement drive at NIT Mizoram in 2025.",
-
-"Fidelity International conducted a recruitment drive at NIT Mizoram in 2025.",
-"APL Apollo Tubes Ltd. held a placement drive at NIT Mizoram in 2025.",
-
-"Larsen & Toubro held a placement drive at NIT Mizoram in 2025.",
-"NVIDIA conducted an internship drive at NIT Mizoram in 2025",
-
-"Dayananda Sagar College of Engineering, BANGALORE conducted a recruitment drive at NIT Mizoram in 2025.",
-
-"eQ Technologic held a placement drive at NIT Mizoram in 2025.",
-
-"Bakliwal Tutorials Pvt Limited conducted a recruitment drive at NIT Mizoram in 2025.",
-
-"Digit Insurance conducted a placement drive at NIT Mizoram in  December 2024.",
-"Lumiq conducted a placement drive at NIT Mizoram in  October 2024.",
-"Delloite conducted a placement drive at NIT Mizoram in   2024.",
-
-"Larsen & Toubro held a placement drive at NIT Mizoram in 2025.",
-  "MAQ Software held a placement drive at NIT Mizoram in March 2024.",
-  "Ashok Leyland conducted a hiring event at NIT Mizoram in March 2024.",
-  "Tutorials Point conducted a recruitment event at NIT Mizoram in March 2024.",
-  "Tech Mahindra conducted a placement drive at NIT Mizoram in March 2024.",
-  "Talent Serve conducted a recruitment drive at NIT Mizoram in March 2024.",
-  "Fitjee conducted campus placements at NIT Mizoram in January 2024.",
-  "Mahindra & Mahindra conducted a placement event at NIT Mizoram in January 2024.",
-  "Physics Wallah facilitated a recruitment session at NIT Mizoram in January 2024.",
-  "Shadow Fax conducted a placement drive at NIT Mizoram in January 2024.",
-  "MYways.ai conducted a hiring event at NIT Mizoram in January 2024.",
-  "KEC International organized a placement drive at NIT Mizoram in January 2024.",
-  "Nvidia (For Girls) conducted a placement event at NIT Mizoram in January 2024.",
-  "SLB held a hiring event at NIT Mizoram in January 2024.",
-  "Infosys conducted a placement drive at NIT Mizoram in January 2024.",
-  "Go Digit conducted a hiring event at NIT Mizoram in January 2024.",
-  "Apollo International held a placement drive at NIT Mizoram in January 2024.",
-  "221 Baker Street conducted a recruitment drive at NIT Mizoram in January 2024.",
-  
- 
- 
+"NVIDIA conducted a internship drive at NIT Mizoram in May 2025.",
+"Deloitte selected 2 students from Computer Science and 1 from ECE",
+"L&T recruited total 10 students 4 from Mechanical Engineering and 2 from ECE 3 from EEE and 1 from CSE",
+"Vedanta hired 3 students from Mechanical and 2 from Electrical Engineering",
+"Juspay offered placements to 2 students from Computer Science and 1 from ECE",
+"TATA Electronics placed 2 students from ECE ",
+"TCS  hired  1 student from ECE",
+"TCS selected 1 student from Computer Science",
+"Capgemini hired 1 student from Computer Science",
+"Ashok Leyland recruited 1 student from ECE",
+"Fidelity International selected 2 students from Computer Science",
+"BT placed 3 students — one each from Computer Science, ECE, and Electrical Engineering",
+"Kalpa Taru hired 3 students, from Civil Engineering",
+"Dayanand Sagar University offered placements to 3 students from M.Tech",
+"Adani Wilmar placed 2 students from Electrical and 1 from Mechanical Engineering",
+"Apollo Steel Pipes selected 2 students from Mechanical Engineering",
+"Techno DCS Services hired 1 student from Civil Engineering and 2 from Electrical & Mechanical Engineering",
+"eQ Technologic recruited 1 student from ECE",
+"Digit hired 3 students, all from Computer Science",
+"Lumiq AI selected 1 student from Computer Science",
+"NexTurn placed 12 students.",
+"mu Sigma selected 1 student from Computer Science."
 ];
 
 const NewsandEvents = () => {

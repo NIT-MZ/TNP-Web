@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../stylesheets/events.scss";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -6,7 +6,6 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
 import Zoom from "@mui/material/Zoom";
-import { useEffect } from "react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -16,7 +15,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Zoom in={true} ref={ref} {...props} style={{ transitionDelay: "500ms" }} />;
 });
 
-// Static events list
+// Static events list (same as you provided)
 const staticEvents = [
   {
     id: 1,
@@ -111,22 +110,6 @@ const staticEvents = [
       `/assets/img/events/independence.JPG`,
     ],
   },
-  {
-    id: 7,
-    title: "Durga Pooja Celebrations",
-    date: "2024-10-02",
-    description:
-      "We are delighted to invite you to join us in celebrating Durga Puja boys hostel 1. It will be a joyous occasion to come together and enjoy the festivities. Please find the attached invitation for more details.",
-    images: [`/assets/img/events/durgapooja.jpg`],
-  },
-  {
-    id: 8,
-    title: "Anunaad Cultural Fest & Freshers Party",
-    date: "2024-10-30",
-    description:
-      " We invite you to be a part of the unforgettable Anunaad Cultural Event and Fresher Party! Your presence and enthusiasm will make this evening truly special.  We look forward to witnessing your exceptional performances and making this a night to remember!        Date: 30 October 2024 \n Venue: Vanappa Hall Don't miss this opportunity to shine!",
-    images: [`/assets/img/events/anunaad.jpg`],
-  },
 ];
 
 const formatDate = (dateString) => {
@@ -157,7 +140,6 @@ const EventsList = () => {
   const [mergedEvents, setMergedEvents] = useState([]);
   const [refresh, setRefresh] = useState(false); // optional: trigger re-fetch after new event added
 
-  // Fetch backend events and merge with static
   useEffect(() => {
     const fetchEvents = async () => {
       try {
@@ -199,48 +181,35 @@ const EventsList = () => {
     <div className="events-list">
       <div className="events-title">STUDENT ACTIVITIES</div>
 
-      <div className="container">
-        <h2 className="events-subtitle">Upcoming Activities</h2>
-        <div className="events-container">
-          {upcomingEvents.length > 0 ? (
-            upcomingEvents.map((event) => (
-              <div
-                className="Upcomingevents-card"
-                key={event._id || event.id}
-                onClick={() => handleClickOpen(event)}
-              >
-                <div
-                  className="event-image-container"
-                  style={{ backgroundImage: `url(${event.images[0]})` }}
-                ></div>
-                <div className="events-bottom-container">
-                  <div className="date-container">{formatDate(event.date)}</div>
-                  <div className="title-container">
-                    <div>{event.title}</div>
-                    <div className="know-text">Know More</div>
-                  </div>
-                </div>
-              </div>
-            ))
-          ) : (
-            <div className="no-upcoming-event-card">
-              <div className="lottie-container">
-                <lottie-player
-                  src="https://lottie.host/ecbb1104-774f-4d5a-802c-755c563b54ea/aQAHbWN2rE.json"
-                  background="transparent"
-                  speed="1"
-                  loop
-                  autoplay
-                ></lottie-player>
-              </div>
-              <div className="lottie-bottom-container">
-                <div className="bold">No Upcoming Event at this time</div>
-                <div>Stay Tuned</div>
-              </div>
+      
+      {upcomingEvents.length > 0 && (
+  <div className="container">
+    <h2 className="events-subtitle">Upcoming Activities</h2>
+    <div className="events-container">
+      {upcomingEvents.map((event) => (
+        <div
+          className="Upcomingevents-card"
+          key={event._id || event.id}
+          onClick={() => handleClickOpen(event)}
+        >
+          <div
+            className="event-image-container"
+            style={{ backgroundImage: `url(${event.images[0]})` }}
+          ></div>
+          <div className="events-bottom-container">
+            <div className="date-container">{formatDate(event.date)}</div>
+            <div className="title-container">
+              <div>{event.title}</div>
+              <div className="know-text">Know More</div>
             </div>
-          )}
+          </div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+)}
+
+    
 
       <div className="container">
         <h2 className="events-subtitle">Recent Activities</h2>
@@ -273,21 +242,34 @@ const EventsList = () => {
             <Carousel autoPlay interval={2000} infiniteLoop showThumbs={false} showStatus={false}>
               {selectedEvent.images.map((img, index) => (
                 <div key={index}>
-                  <img src={img} alt={selectedEvent.title} className="carousel-image h-92 " />
+                  <img src={img} alt={selectedEvent.title} className="carousel-image h-92" />
                 </div>
               ))}
             </Carousel>
           )}
         </DialogContent>
-        <DialogContent dividers style={{ textAlign: "justify", backgroundColor: "#fff1c8" }}>
-          <DialogTitle style={{ padding: 0, fontWeight: "bold" }}>
+
+        {/* Tailwind styled description area */}
+        <DialogContent
+          dividers
+          className="bg-yellow-50 px-6 pt-4 pb-6"
+        >
+          <h2 className="text-2xl font-bold text-gray-900 mb-1">
             {selectedEvent?.title}
-          </DialogTitle>
-          <DialogTitle style={{ padding: 0, fontWeight: "bold" }}>
+          </h2>
+          <p className="text-sm text-gray-600 mb-4 font-medium">
             {formatDateDialog(selectedEvent?.date)}
-          </DialogTitle>
-          {selectedEvent?.description||selectedEvent?.paragraph}
+          </p>
+
+          <div className="bg-white rounded-lg shadow-inner px-5 py-4 max-h-64 overflow-y-auto text-gray-800 text-sm leading-relaxed space-y-3">
+            {(selectedEvent?.description || selectedEvent?.paragraph || "")
+              .split("\n")
+              .map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+          </div>
         </DialogContent>
+
         <DialogActions style={{ backgroundColor: "#b7f484" }}>
           <Button onClick={handleClose} style={{ color: "#24262b", fontWeight: "bold" }}>
             Close

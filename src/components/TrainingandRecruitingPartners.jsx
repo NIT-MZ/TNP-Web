@@ -9,7 +9,26 @@ const TrainingandRecruitingPartners = () => {
     AOS.init({ offset, disable: "up" });
   }, []);
 
-  const CSimages = [
+  const images = [
+    "juspay.png",
+    "nvidia.png",
+    "siemens.png",
+    "tata.jpeg",
+    "l&t.jpeg",
+    "vedanta.jpeg",
+    "client-6.webp",
+    "ashok.png",
+    "eq.jpeg",
+    "powergrid.png",
+    "adobe.jpeg",
+    "adani.png",
+    "f.jpeg",
+    "volvo.png",
+    "skoda.jpeg",
+    "kala.jpeg",
+    "ey.png",
+    "cubastion.png",
+
     "image1.webp",
     "image51.webp",
     "image52.webp",
@@ -19,7 +38,6 @@ const TrainingandRecruitingPartners = () => {
     "image5.webp",
     "image6.webp",
     "image7.webp",
-    "image8.webp",
     "image9.webp",
     "image10.webp",
     "image11.webp",
@@ -33,86 +51,45 @@ const TrainingandRecruitingPartners = () => {
     "image17.webp",
     "image18.webp",
     "image19.webp",
-  ];
-  const ECImages = [
-    "image54.webp",
-    "image23.webp",
-    "image2.webp",
     "image24.webp",
     "image25.webp",
-    "image1.webp",
-    "image8.webp",
     "image26.webp",
     "image27.webp",
     "image28.webp",
     "image29.webp",
     "image30.webp",
-    "image53.webp",
     "image67.webp",
-    "image111.webp",
+  
     "image94.webp",
     "image70.webp",
     "image66.webp",
     "image22.webp",
-    "image40.webp",
     "image55.webp",
     "image56.webp",
     "image55.webp",
-  ];
 
-  const EEImages = [
-    "image54.webp",
-    "image23.webp",
-    "image2.webp",
-    "image94.webp",
     "image89.webp",
     "image24.webp",
     "image25.webp",
     "image8.webp",
     "image26.webp",
-    "image27.webp",
-    "image28.webp",
-    "image29.webp",
-    "image30.webp",
-    "image45.webp",
-    "image111.webp",
-    "image94.webp",
-
     "image70.webp",
     "image78.webp",
-  ];
-
-  const MEImages = [
-    "image13.webp",
-    "image39.webp",
     "image40.webp",
     "image45.webp",
     "image101.webp",
     "image57.webp",
-    "image2.webp",
     "image23.webp",
     "image33.webp",
-
-    "image39.webp",
-    "image40.webp",
-    "image19.webp",
-    "image38.webp",
-    "image55.webp",
-  ];
-
-  const CEImages = [
     "image59.webp",
     "image60.webp",
     "image39.webp",
     "image42.webp",
     "image43.webp",
     "image44.webp",
-    "image45.webp",
     "image46.webp",
-
     "image107.webp",
     "image47.webp",
-    "image48.webp",
     "image49.webp",
   ];
 
@@ -134,63 +111,16 @@ const TrainingandRecruitingPartners = () => {
             data-aos-delay="500"
           >
             <h3 style={{ padding: "30px" }}>
-              <strong>COMPUTER SCIENCE AND ENGINEERING</strong>
+             
             </h3>
-            {CSimages.map((image, index) => (
+            {images.map((image, index) => (
               <ImageComponent
                 key={index}
                 className="image-slide-in"
                 src={`assets/img/clients/3_Top Recruiters_Images_Super_Tool/${image}`}
               />
             ))}{" "}
-            <div className="row " data-aos="fade-up" data-aos-delay="500">
-              <h3 style={{ padding: "30px" }}>
-                <strong>ELECTRONICS AND COMMUNICATION ENGINEERING</strong>
-              </h3>
-              {ECImages.map((image, index) => (
-                <ImageComponent
-                  key={index}
-                  className="image-slide-in"
-                  src={`assets/img/clients/3_Top Recruiters_Images_Super_Tool/${image}`}
-                />
-              ))}{" "}
-            </div>
-            <div className="row" data-aos="fade-up" data-aos-delay="500">
-              <h3 style={{ padding: "30px" }}>
-                <strong>ELECTRICAL ENGINEERING</strong>
-              </h3>
-              {EEImages.map((image, index) => (
-                <ImageComponent
-                  key={index}
-                  className="image-slide-in"
-                  src={`assets/img/clients/3_Top Recruiters_Images_Super_Tool/${image}`}
-                />
-              ))}{" "}
-            </div>
-            <div className="row" data-aos="fade-up" data-aos-delay="500">
-              <h3 style={{ padding: "30px" }}>
-                <strong>MECHANICAL ENGINEERING</strong>
-              </h3>
-              {MEImages.map((image, index) => (
-                <ImageComponent
-                  key={index}
-                  className="image-slide-in"
-                  src={`assets/img/clients/3_Top Recruiters_Images_Super_Tool/${image}`}
-                />
-              ))}{" "}
-            </div>
-            <div className="row" data-aos="fade-up" data-aos-delay="500">
-              <h3 style={{ padding: "30px" }}>
-                <strong>CIVIL ENGINEERING</strong>
-              </h3>
-              {CEImages.map((image, index) => (
-                <ImageComponent
-                  key={index}
-                  className="image-slide-in"
-                  src={`assets/img/clients/3_Top Recruiters_Images_Super_Tool/${image}`}
-                />
-              ))}{" "}
-            </div>
+           
           </div>
         </div>
       </section>

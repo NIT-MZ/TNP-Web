@@ -153,14 +153,14 @@ const Internships = () => {
                   {counterOn && (
                     <CountUp
                       start={0}
-                      end={91}
+                      end={100}
                       duration={2}
                       delay={0}
                       suffix="%"
                     ></CountUp>
                   )}
                 </span>
-                <p>Students Joined Internship for 2024-2025 Batch</p>
+                <p>Students Joined Internship for 2025-2026 Batch</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
@@ -187,7 +187,7 @@ const Internships = () => {
                   {counterOn && (
                     <CountUp
                       start={0}
-                      end={7}
+                      end={8}
                       duration={2}
                       delay={0}
                       suffix=" "

@@ -14,7 +14,7 @@ const ForRecruiters = () => {
             </ul>
           </div>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfQIM_lpZUUPnI-PsybRrOkaRqZlQ2wqtdE3xYGADj5mVMWxg/viewform?usp=sf_link"
+            href="https://forms.gle/LeYQhi8EJeDCAVBF7"
             target="_blank"
             rel="noopener noreferrer"
             className=""
