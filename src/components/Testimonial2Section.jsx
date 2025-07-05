@@ -8,6 +8,27 @@ import "../stylesheets/Testimonials.scss";
 
 const testimonials = [
   {
+    name: "Vikash Kumar",
+    company: "Larsen & Toubro",
+    message:
+      "I wanted to express my heartfelt gratitude for providing me with a platform that led to me receiving 3 excellent job offers - 2 through campus placements and 1 off-campus. I'm thrilled to share that I've received offers from esteemed companies like L&T, Reliance Industries, and Vedanta. Thank you to the entire placement team, and especially to Dr. Sukanta Sir, Chairman of the TNP office, for their invaluable support and guidance throughout the recruitment process. Your efforts played a significant role in my success",
+    img: "/assets/img/team/vikash_kumar.png",
+  },
+  {
+    name: "Gulshan Raj",
+    company: "Tata Electronics",
+    message:
+      "My placement at Tata Electronics is a testament to the exceptional support system at our institution. I extend my deepest gratitude to the entire T&P team and especially to our FIC T&P, Dr. Sukanta Roy. Their relentless efforts in training us and bringing in esteemed companies like Tata provided me with the perfect platform to launch my career. I am incredibly thankful for their guidance and belief in me.",
+    img: "assets/img/testimonials/Gulshan_Raj.jpg",
+  },
+  {
+    name: "Ayush Anand",
+    company: "Juspay",
+    message:
+      "I feel happy to be part of NIT Mizoram. The student coordinators are very helpful, and the personalised placement block really helps students during group discussions and other activities. All the teachers are supportive and are helping students in every possible way.",
+    img: "assets/img/testimonials/Ayush_Anand.jpg",
+  },
+  {
     name: "Raj Kumar",
     company: "Larsen & Toubro",
     message:
