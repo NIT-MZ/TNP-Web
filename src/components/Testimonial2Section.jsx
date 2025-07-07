@@ -32,7 +32,7 @@ const testimonials = [
     name: "Khusbu Kumari ",
     company: "Delloite",
     message:
-      "My placement at Tata Electronics is a testament to the exceptional support system at our institution. I extend my deepest gratitude to the entire T&P team and especially to our FIC T&P, Dr. Sukanta Roy. Their relentless efforts in training us and bringing in esteemed companies like Tata provided me with the perfect platform to launch my career. I am incredibly thankful for their guidance and belief in me.",
+      "I am incredibly grateful to have been placed at Deloitte through our college placement program. This opportunity would not have been possible without the continuous support and guidance of our faculty and the Training and Placement Cell. The rigorous academic curriculum, combined with the various workshops and mock interview sessions organized by the department, truly helped me prepare for this moment. I feel proud to be a part of NIT Mizoram and excited to begin this new chapter of my career..",
     img: "assets/img/testimonials/khushbu_k.png",
   },
   {
