@@ -3,9 +3,13 @@ import "../stylesheets/Hero.scss";
 
 const carouselItems = [
   {
-    src: "assets/img/carousel/tnp2025.png",
+    src: "assets/img/carousel/TnP_2024-25.png",
     alt: "placement",
     caption: "Placements Statistics 2024-2025",
+  },
+  {
+    src: "assets/img/carousel/TnP_farewell_2024-25.jpg",
+    alt: "Prof. S. Sundar, Director of NIT Mizoram, and Dr. Sukanta Roy, Dean (Academic) of NIT Mizoram with the student coordinators (2024-2025) of the Training and Placement Office",
   },
   {
     src: "assets/img/carousel/NSD_2024NITMZ.png",
