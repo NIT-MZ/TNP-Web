@@ -3,17 +3,17 @@ import "../stylesheets/Hero.scss";
 
 const carouselItems = [
   {
-    src: "assets/img/carousel/TnP_2024-25.png",
+    src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075670/zztybdulubv4pktvosxs.png",
     alt: "placement",
     caption: "Placements Statistics 2024-2025",
   },
   {
-    src: "assets/img/carousel/TnP_farewell_2024-25.jpg",
+    src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075760/p3fo42ly0tfthxwtlyun.jpg",
     alt: "Prof. S. Sundar, Director of NIT Mizoram, and Dr. Sukanta Roy, Dean (Academic) of NIT Mizoram with the student coordinators (2024-2025) of the Training and Placement Office",
   },
   {
-    src: "assets/img/carousel/NSD_2024NITMZ.png",
-    alt: "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
+    src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075896/vg5vfgkfkbd1kmcrt5yv.png",
+    alt: "National Space Day 2025",
   },
   {
     src: "assets/img/carousel/yuvamathan1.png",
