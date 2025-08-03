@@ -54,11 +54,7 @@ const carouselItems = [
     alt: "bashant panchatmi",
     caption: "Sports Event",
   },
-  {
-    src: "assets/img/carousel/TCS_seminar.webp",
-    alt: "TCS SEMINAR",
-    caption: "TCS SEMINAR ON TCS NQT PROGRAM",
-  },
+  
   {
     src: "assets/img/carousel/IMG_20240316_163221.webp",
     alt: "bashant panchatmi",
