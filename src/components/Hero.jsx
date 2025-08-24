@@ -2,11 +2,18 @@ import React from "react";
 import "../stylesheets/Hero.scss";
 
 const carouselItems = [
+
   {
     src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075670/zztybdulubv4pktvosxs.png",
     alt: "placement",
     caption: "Placements Statistics 2024-2025",
   },
+  {
+    src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1756053332/tzjuolouey8gxdiozxfw.png",
+    alt: "placement",
+    caption: "Bootcamp cum workshop on Drone Technologies and it’s Applications was conducted during 25-29 August 2025 in NIT Mizoram in collaboration with NIT Silchar and MietY",
+  },
+
   {
     src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075760/p3fo42ly0tfthxwtlyun.jpg",
     alt: "Prof. S. Sundar, Director of NIT Mizoram, and Dr. Sukanta Roy, Dean (Academic) of NIT Mizoram with the student coordinators (2024-2025) of the Training and Placement Office",
@@ -125,9 +132,10 @@ const Hero = () => {
                   data-bs-interval="3000"
                 >
                   <img
-                    className="d-block carousel-img"
+                    className="d-block carousel-img "
                     src={item.src}
                     alt={item.alt}
+
                   />
                   <div className="carousel-caption d-none d-md-block ">
                     <h5>{item.caption}</h5>
