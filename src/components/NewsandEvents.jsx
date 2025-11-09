@@ -8,7 +8,7 @@ const items = [
 
   "4 students placed in Physics Wallah (PW)",
   "1 student secured a landmark internship at NVIDIA  — first ever from NIT Mizoram.",
-  "Students  5 placed in ENTNT.",
+  "5 Students placed in ENTNT.",
   "6 students placed in Edu-versity during the campus placement drive.",
   "1 student secured a full-time placement at Schneider Electric .",
   "1 student placed in Siemens .",
