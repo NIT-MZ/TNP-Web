@@ -6,6 +6,20 @@ const ListGroupItemClass =
 
 const items = [
 
+  "4 students placed in Physics Wallah (PW)",
+  "1 student secured a landmark internship at NVIDIA  — first ever from NIT Mizoram.",
+  "Students  5 placed in ENTNT.",
+  "6 students placed in Edu-versity during the campus placement drive.",
+  "1 student secured a full-time placement at Schneider Electric .",
+  "1 student placed in Siemens .",
+  "2 students placed in ORC Engineering Pvt. Ltd. (Telecom domain).",
+  "1 student placed in Wissen Technology.",
+  "5 students placed in Deloitte .",
+  "2 students placed in eQ Technologic across different drives.",
+  "1 student got internship opportunity at BNP Paribas.",
+
+
+
 
 "NVIDIA conducted a internship drive at NIT Mizoram in May 2025.",
 "Deloitte selected 2 students from Computer Science and 1 from ECE",
@@ -24,11 +38,7 @@ const items = [
 "Adani Wilmar placed 2 students from Electrical and 1 from Mechanical Engineering",
 "Apollo Steel Pipes selected 2 students from Mechanical Engineering",
 "Techno DCS Services hired 1 student from Civil Engineering and 2 from Electrical & Mechanical Engineering",
-"eQ Technologic recruited 1 student from ECE",
-"Digit hired 3 students, all from Computer Science",
-"Lumiq AI selected 1 student from Computer Science",
-"NexTurn placed 12 students.",
-"mu Sigma selected 1 student from Computer Science."
+
 ];
 
 const NewsandEvents = () => {

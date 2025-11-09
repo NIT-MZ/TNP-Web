@@ -5,7 +5,6 @@ import NewsandEvents from "../components/NewsandEvents";
 import About from "../components/About";
 import DirectorsMessage from "../components/DirectorsMessage";
 import Counts from "../components/Counts";
-import WebTeam from "../components/WebTeamMember";
 import TrainingandRecruitingPartners from "../components/TrainingandRecruitingPartners";
 import TestimonialSection from "../components/Testimonial2Section";
 import CTAsection from "../components/CTAsection";
