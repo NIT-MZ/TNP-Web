@@ -98,6 +98,13 @@ const Team = () => {
       image_name: "sai_vivek.jpg",
       designation: "Team Lead",
     },
+      {
+      name: "Suman Kumar Verma",
+      position: "Activity Coordinator",
+      branch: "ECE",
+      linkedin: "https://www.linkedin.com/in/shashwatest/",
+      image_name: "Suman_Kumar_Verma.png",
+    },
     {
       name: "Nalam Deepika",
       position: "Placement Coordinator",
@@ -119,6 +126,13 @@ const Team = () => {
       branch: "CE",
       linkedin: "https://www.linkedin.com/in/paras-gupta-243333260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       image_name: "Paras_Gupta.jpg",
+    },
+     {
+      name: "Mudavath Pooja",
+      position: "Activity Coordinator",
+      branch: "CE",
+      linkedin: "https://www.linkedin.com/in/mudavathpooja",
+      image_name: "Mudavath_Pooja.jpg",
     },
     {
       name: "Kissan Dalai",
@@ -202,20 +216,8 @@ const Team = () => {
       linkedin: "",
       image_name: "Priyanshu_Bariyar.jpg",
     },
-    {
-      name: "Mudavath Pooja",
-      position: "Activity Coordinator",
-      branch: "CE",
-      linkedin: "https://www.linkedin.com/in/mudavathpooja",
-      image_name: "Mudavath_Pooja.jpg",
-    },
-    {
-      name: "Suman Kumar Verma",
-      position: "Activity Coordinator",
-      branch: "ECE",
-      linkedin: "https://www.linkedin.com/in/shashwatest/",
-      image_name: "Suman_Kumar_Verma.png",
-    },
+   
+  
    
   ];
 
