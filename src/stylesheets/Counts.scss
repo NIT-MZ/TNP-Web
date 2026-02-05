@@ -1,73 +1,205 @@
 .counts {
-    padding: 60px 0;
-    width: 90%;
-    margin: 0 auto;
+  padding: 80px 0;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+  }
+}
+
+.counts .count-box {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #22c55e, #fbbf24);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.counts .count-box span {
+  font-size: 56px;
+  line-height: 1.2;
+  display: block;
+  font-weight: 800;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 auto 16px;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.3s ease;
+  text-shadow: none;
+  
+  &:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #124265 0%, #1e6ca6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.counts .count-box p {
+  padding: 8px 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1e6ca6;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  
+  &:hover {
+    color: #22c55e;
+    transform: translateY(-2px);
+  }
+}
+
+.cta {
+  background: linear-gradient(135deg, #2487ce 0%, #1e6ca6 100%);
+  background-size: cover;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+  }
+}
+
+.cta h3 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cta p {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.cta .cta-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 20px;
+  border: 3px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    z-index: -1;
+  }
+  
+  &:hover {
+    color: #2487ce;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    
+    &::before {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .counts {
+    padding: 50px 0;
   }
   
   .counts .count-box {
-    width: 100%;
-    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
   }
   
   .counts .count-box span {
-    font-size: 48px;
-    line-height: 48px;
-    display: block;
-    font-weight: 700;
-    color: #43920D;
-    margin-left: 80px;
-    margin: auto;
-    text-shadow: 1px 1px #000;
-  }
-  .counts .count-box span:hover{
-    color: #124265;
+    font-size: 42px;
   }
   
   .counts .count-box p {
-    padding: 8px 0 0 0;
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
     font-size: 14px;
-    color: #1e6ca6;
   }
-  .counts .count-box p:hover{
-    color: #43920D;
-  }
-
+  
   .cta {
-    background: #2487ce;
-    background-size: cover;
-    padding: 60px 0;
+    padding: 50px 0;
   }
   
   .cta h3 {
-    color: #fff;
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 24px;
   }
   
   .cta p {
-    color: #fff;
+    font-size: 16px;
   }
   
   .cta .cta-btn {
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
+    padding: 12px 30px;
     font-size: 14px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 35px;
-    border-radius: 5px;
-    transition: 0.5s;
-    margin-top: 10px;
-    border: 2px solid #fff;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
   }
-  
-  .cta .cta-btn:hover {
-    background-color: #fff;
-    color: black;
-  }
-  
+}

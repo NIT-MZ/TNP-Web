@@ -1,51 +1,132 @@
-
-
-
 .hero-container {
   height: auto;
   width: 100%;
- 
+  position: relative;
 }
 
 #hero {
   width: 100%;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 #hero:before {
   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+  z-index: 1;
 }
 
 #hero .container {
   height: 100vh;
   width: 100%;
-  
   padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-inner {
+  border-radius: 0 0 24px 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-item {
+  transition: transform 0.8s ease-in-out;
 }
 
 .carousel-img {
   height: auto;
   width: 100%;
+  object-fit: cover;
+  filter: brightness(0.95);
+  transition: filter 0.3s ease;
 }
 
+.carousel-item:hover .carousel-img {
+  filter: brightness(1);
+}
 
+.carousel-caption {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 30px 20px 20px;
+  border-radius: 12px;
+}
 
 .carousel-caption h5 {
-  font-family: 'Baloo Bhai 2', cursive;
-  font-size: 35px;
-  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
   color: #fff;
-  text-shadow: 2px 2px #000;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+  background-color: #22c55e;
+  border-color: white;
+  transform: scale(1.2);
+}
+
+.marquee {
+  background: linear-gradient(135deg, #f0fdf4 0%, #fffbeb 100%);
+  border-top: 3px solid #22c55e;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 10;
 }
 
 .marquee-wrapper {
   overflow: hidden;
   position: relative;
-  top: -2px;
-  // background: #f8f9fa;
-  padding: 10px 0;
-  width: max-content;
+  padding: 16px 0;
+  width: 100%;
 }
 
 .marquee-row {
@@ -53,9 +134,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  animation-duration: 30s;
+  animation-duration: 35s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  gap: 40px;
 }
 
 .move-right {
@@ -70,7 +152,6 @@
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -80,73 +161,101 @@
   0% {
     transform: translateX(-100%);
   }
-
   100% {
     transform: translateX(100%);
   }
 }
 
-.marquee-content {
+.marquee-content-1,
+.marquee-content-2,
+.marquee-content-3,
+.marquee-content-4,
+.marquee-content-5 {
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 20px;
   white-space: nowrap;
-  margin: 0 10px;
-  
 }
 
-.marquee-content a,
-.marquee-content button {
-  color: #333;
+.marquee-content-1 h6,
+.marquee-content-2 h6,
+.marquee-content-3 h6,
+.marquee-content-4 h6,
+.marquee-content-5 h6 {
+  margin: 0;
+}
+
+.marquee-content-1 a,
+.marquee-content-2 a,
+.marquee-content-3 a,
+.marquee-content-4 a,
+.marquee-content-5 a,
+.alert-button {
+  color: #166534;
   text-decoration: none;
-  font-size: medium;
-  font-weight: bold;
-  padding: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.marquee-content a:hover,
-.marquee-content button:hover {
-  color: #007bff;
+.marquee-content-1 a:hover,
+.marquee-content-2 a:hover,
+.marquee-content-3 a:hover,
+.marquee-content-4 a:hover,
+.marquee-content-5 a:hover,
+.alert-button:hover {
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+  transform: translateY(-2px);
 }
 
-.hero-link-button{
+.hero-link-button {
   width: max-content;
 }
 
 .alert-button {
   background: none;
   border: none;
-  color: inherit;
   cursor: pointer;
-  font-size: inherit;
-  padding: 0;
+  font-family: inherit;
 }
 
 .badge {
-  margin-left: 5px;
-  padding: 5px;
+  margin-left: 8px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+  animation: pulse 2s infinite;
 }
 
 .bg-success {
-  background-color: #28a745;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
   color: white;
-  padding: 5px 6px;
-  font-size: 14px;
-  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
 }
 
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
-  .marquee-wrapper {
-    overflow: hidden;
-    position: relative;
-    
-    // background: #f8f9fa;
-    padding: 10px 0;
-    width: 100%;
+  
+  .carousel-caption h5 {
+    font-size: 36px;
   }
 }
 
@@ -155,11 +264,12 @@
     height: auto;
     width: 100%;
     padding: 0;
-    margin-top:30px
+    margin-top: 30px;
   }
 
   .carousel-inner {
     height: auto;
+    border-radius: 0 0 16px 16px;
   }
 
   .carousel-item {
@@ -170,14 +280,31 @@
     height: auto;
   }
 
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+  .carousel-caption h5 {
+    font-size: 18px;
   }
 
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel-control-prev {
+    left: 10px;
+  }
+
+  .carousel-control-next {
+    right: 10px;
+  }
+
+  .marquee-content-1 a,
+  .marquee-content-2 a,
+  .marquee-content-3 a,
+  .marquee-content-4 a,
+  .marquee-content-5 a,
+  .alert-button {
+    font-size: 14px;
+    padding: 6px 12px;
   }
 }
-
