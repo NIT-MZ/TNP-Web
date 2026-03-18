@@ -71,14 +71,6 @@ const Team = () => {
   ];
 
   const graduateExecutives = [
-    
-     {
-      name: "Ayush Raj",
-      position: "Graduate Executive",
-      phone: "+91-7254905694",
-      linkedin: "https://www.linkedin.com/in/ayush-raj-78b095189",
-      image_name: "ayush_raj.png",
-    },
     {
       name: "Vikash Sharma",
       position: "Graduate Executive",

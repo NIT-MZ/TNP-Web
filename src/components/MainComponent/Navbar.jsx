@@ -245,7 +245,7 @@ const Navbar = () => {
   </div>
 
   {/* ✅ Blue login icon in bottom right */}
-  {userDetail?.data?.user?(
+  {/* {userDetail?.data?.user?(
    <Link
   to="/adminPage"
   className="absolute top-1 right-1 text-blue-900 underline decoration-white hover:bg-blue-600 hover:text-white md:block hidden px-2 py-1 rounded"
@@ -265,7 +265,7 @@ const Navbar = () => {
   >
     Admin Login
   </Link>
-  )}
+  )} */}
 </div>
 
 
