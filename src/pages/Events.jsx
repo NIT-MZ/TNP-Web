@@ -14,6 +14,43 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Zoom in={true} ref={ref} {...props} style={{ transitionDelay: "500ms" }} />;
 });
 
+// Cache configuration
+const CACHE_KEY = "events_cache";
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes in milliseconds
+
+// Cache utility functions
+const getCache = () => {
+  try {
+    const cached = localStorage.getItem(CACHE_KEY);
+    if (!cached) return null;
+    
+    const { data, timestamp } = JSON.parse(cached);
+    const now = Date.now();
+    
+    // Check if cache is still valid
+    if (now - timestamp > CACHE_DURATION) {
+      localStorage.removeItem(CACHE_KEY);
+      return null;
+    }
+    
+    return data;
+  } catch (error) {
+    console.error("Error reading cache:", error);
+    return null;
+  }
+};
+
+const setCache = (data) => {
+  try {
+    localStorage.setItem(CACHE_KEY, JSON.stringify({
+      data,
+      timestamp: Date.now(),
+    }));
+  } catch (error) {
+    console.error("Error writing cache:", error);
+  }
+};
+
 // Static events list (same as you provided)
 const staticEvents = [
   {
@@ -136,32 +173,108 @@ const EventsList = () => {
   const currentDate = new Date().toISOString().split("T")[0];
   const [open, setOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
-  const [mergedEvents, setMergedEvents] = useState([]);
-  const [refresh, setRefresh] = useState(false); // optional: trigger re-fetch after new event added
+  const [allEvents, setAllEvents] = useState([]);
+  const [displayedEvents, setDisplayedEvents] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [isLoading, setIsLoading] = useState(true);
+  const [hasMore, setHasMore] = useState(true);
+  const [isInitialized, setIsInitialized] = useState(false);
+  const EVENTS_PER_PAGE = 12;
 
+  // Memoized sorting function - only sorts when data changes
+  const sortedStaticEvents = React.useMemo(() => {
+    return staticEvents.sort((a, b) => new Date(b.date) - new Date(a.date));
+  }, []);
+
+  // Show static events immediately on mount (non-blocking)
   useEffect(() => {
-    const fetchEvents = async () => {
+    setAllEvents(sortedStaticEvents);
+    setDisplayedEvents(sortedStaticEvents.slice(0, EVENTS_PER_PAGE));
+    setHasMore(sortedStaticEvents.length > EVENTS_PER_PAGE);
+    setIsInitialized(true);
+  }, [sortedStaticEvents]);
+
+  // Fetch API data in background (non-blocking)
+  useEffect(() => {
+    const fetchAllEvents = async () => {
       try {
+        // Check cache first
+        const cachedEvents = getCache();
+        if (cachedEvents) {
+          console.log("Using cached events");
+          setAllEvents(cachedEvents);
+          setCurrentPage(1);
+          setDisplayedEvents(cachedEvents.slice(0, EVENTS_PER_PAGE));
+          setHasMore(cachedEvents.length > EVENTS_PER_PAGE);
+          setIsLoading(false);
+          return;
+        }
+
+        // Fetch from API if cache is empty or expired
+        console.log("Fetching events from API");
         const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/events/get`);
         const backendEvents = res.data?.data || [];
 
-        // Convert backend events to match static structure (add images array)
+        // Convert backend events to match static structure
         const converted = backendEvents.map((e) => ({
           ...e,
           images: Array.isArray(e.photos) ? e.photos : e.photo ? [e.photo] : [],
         }));
 
-        const combined = [...staticEvents, ...converted];
+        const combined = [...sortedStaticEvents, ...converted];
         const sorted = combined.sort((a, b) => new Date(b.date) - new Date(a.date));
-        setMergedEvents(sorted);
+        
+        // Save to cache
+        setCache(sorted);
+        
+        setAllEvents(sorted);
+        setCurrentPage(1);
+        setDisplayedEvents(sorted.slice(0, EVENTS_PER_PAGE));
+        setHasMore(sorted.length > EVENTS_PER_PAGE);
       } catch (error) {
         console.error("Error fetching events from backend:", error);
-        setMergedEvents(staticEvents);
+        // Keep showing static events on error
+      } finally {
+        setIsLoading(false);
       }
     };
 
-    fetchEvents();
-  }, [refresh]);
+    // Only fetch if initialized with static events
+    if (isInitialized) {
+      fetchAllEvents();
+    }
+  }, [isInitialized, sortedStaticEvents]);
+
+  // Load more events when user scrolls
+  const loadMoreEvents = () => {
+    const nextPage = currentPage + 1;
+    const startIndex = currentPage * EVENTS_PER_PAGE;
+    const endIndex = nextPage * EVENTS_PER_PAGE;
+    const newEvents = allEvents.slice(startIndex, endIndex);
+    
+    setDisplayedEvents((prev) => [...prev, ...newEvents]);
+    setCurrentPage(nextPage);
+    setHasMore(endIndex < allEvents.length);
+  };
+
+  // Infinite scroll observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && hasMore && !isLoading) {
+          loadMoreEvents();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    const sentinel = document.getElementById("load-more-sentinel");
+    if (sentinel) observer.observe(sentinel);
+
+    return () => {
+      if (sentinel) observer.unobserve(sentinel);
+    };
+  }, [hasMore, isLoading, currentPage, allEvents]);
 
   const handleClickOpen = (event) => {
     setSelectedEvent(event);
@@ -173,13 +286,20 @@ const EventsList = () => {
     setSelectedEvent(null);
   };
 
-  const upcomingEvents = mergedEvents.filter((event) => event.date >= currentDate);
-  const recentEvents = mergedEvents.filter((event) => event.date < currentDate);
+  const upcomingEvents = displayedEvents.filter((event) => event.date >= currentDate);
+  const recentEvents = displayedEvents.filter((event) => event.date < currentDate);
 
   return (
     <div className="events-list">
       <div className="events-title">STUDENT ACTIVITIES</div>
 
+      {/* Loading Indicator */}
+      {isLoading && (
+        <div className="loading-indicator">
+          <div className="spinner"></div>
+          <p>Updating events...</p>
+        </div>
+      )}
       
       {upcomingEvents.length > 0 && (
   <div className="container">
@@ -234,6 +354,13 @@ const EventsList = () => {
           ))}
         </div>
       </div>
+
+      {/* Load More Sentinel */}
+      {hasMore && (
+        <div id="load-more-sentinel" style={{ height: "20px", margin: "20px 0" }}>
+          {isLoading && <div style={{ textAlign: "center", padding: "20px" }}>Loading more events...</div>}
+        </div>
+      )}
 
       <Dialog fullWidth maxWidth={"sm"} open={open} TransitionComponent={Transition} onClose={handleClose}>
         <DialogContent dividers style={{ padding: 0, overflow: "hidden", height: "300px" }}>

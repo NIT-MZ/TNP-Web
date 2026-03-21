@@ -156,7 +156,37 @@
     height: 300px;
     object-fit: fill;
   }
-  
+
+/* Loading Indicator */
+.loading-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 15px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #124265;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-indicator p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    font-weight: 500;
+}
   
 @media (max-width: 768px){
     .events-list {
