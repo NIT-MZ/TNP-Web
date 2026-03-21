@@ -5,39 +5,35 @@ const ListGroupItemClass =
   "list-group-item d-flex justify-content-between align-items-center md:font-bold ";
 
 const items = [
+  "12 students placed at Accenture (first-ever hiring at NIT Mizoram).",
+  "5 students placed at HSBC (first-ever hiring).",
+  "1 student secured internship at NVIDIA (first-ever milestone).",
+  "2 student placed at Siemens during Campus Placement 2025–26.",
+  "5 students placed at Deloitte.",
+  "22 students placed at Larsen & Toubro (highest recruiter of the season).",
+  "2 students placed at eQ Technologic.",
+  "1 student placed at Schneider Electric.",
+  "1 student secured internship at Accenture.",
+  "3 students placed at Reliance Industries Limited through off-campus drive.",
+  "2 students placed at Tata Power during Campus Placement 2025–26.",
+  "1 student placed at Infosys (first-ever hiring).",
+  "9 students placed at NexTurn during Campus Placement 2025–26.",
+  "2 students placed at Wakefit and 1 internship secured.",
+  "3 students placed at Tata Consulting Engineers Limited.",
+  "17 students secured internships at Nandighosh Roadx Motors.",
+  "1 student placed at APL Apollo Tubes Ltd.",
+  "1 student secured internship at Visa (Batch 2027 milestone).",
+  "1 student placed at Siemens.",
+  "1 student placed at Cubastion Consulting.",
+  "3 students placed at Mechartés.",
+  "2 students placed at AMI.",
+  "4 students placed at Physics Wallah (PW).",
+  "1 student secured internship at BNP Paribas.",
+  "4 students placed at ENTNT.",
+  "2 students placed at ORC Engineering Pvt. Ltd.",
+  "1 student placed at Wissen Technology.",
+  
 
-  "4 students placed in Physics Wallah (PW)",
-  "1 student secured a landmark internship at NVIDIA  — first ever from NIT Mizoram.",
-  "5 Students placed in ENTNT.",
-  "6 students placed in Edu-versity during the campus placement drive.",
-  "1 student secured a full-time placement at Schneider Electric .",
-  "1 student placed in Siemens .",
-  "2 students placed in ORC Engineering Pvt. Ltd. (Telecom domain).",
-  "1 student placed in Wissen Technology.",
-  "5 students placed in Deloitte .",
-  "2 students placed in eQ Technologic across different drives.",
-  "1 student got internship opportunity at BNP Paribas.",
-
-
-
-
-"NVIDIA conducted a internship drive at NIT Mizoram in May 2025.",
-"Deloitte selected 2 students from Computer Science and 1 from ECE",
-"L&T recruited total 10 students 4 from Mechanical Engineering and 2 from ECE 3 from EEE and 1 from CSE",
-"Vedanta hired 3 students from Mechanical and 2 from Electrical Engineering",
-"Juspay offered placements to 2 students from Computer Science and 1 from ECE",
-"TATA Electronics placed 2 students from ECE ",
-"TCS  hired  1 student from ECE",
-"TCS selected 1 student from Computer Science",
-"Capgemini hired 1 student from Computer Science",
-"Ashok Leyland recruited 1 student from ECE",
-"Fidelity International selected 2 students from Computer Science",
-"BT placed 3 students — one each from Computer Science, ECE, and Electrical Engineering",
-"Kalpa Taru hired 3 students, from Civil Engineering",
-"Dayanand Sagar University offered placements to 3 students from M.Tech",
-"Adani Wilmar placed 2 students from Electrical and 1 from Mechanical Engineering",
-"Apollo Steel Pipes selected 2 students from Mechanical Engineering",
-"Techno DCS Services hired 1 student from Civil Engineering and 2 from Electrical & Mechanical Engineering",
 
 ];
 
