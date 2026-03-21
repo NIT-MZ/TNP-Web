@@ -146,7 +146,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  to="/newsArcheive"
+                  to="/NewsArcheive"
                   onClick={toggleMenu}
                   className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
                 >
