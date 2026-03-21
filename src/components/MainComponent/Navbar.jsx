@@ -66,61 +66,56 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="md:hidden shadow-md w-full bg-gradient-to-r from-[#ffdd76] to-[#87ed33] border-b-4 border-green-600">
-      <div className="flex flex-col relative">
-  <div className="md:flex md:justify-between px-2 pt-1">
-    <div className="mr-4">
-      <img
-        src="tnplogo2.png"
-        alt="tnp_Logo"
-        className="mt-2 sm:h-38 sm:w-38 h-16 w-16"
-        onClick={() => handleNavigation("/", "home")}
-        style={{ cursor: "pointer" }}
-      />
-    </div>
-    <div className="items-center text-center -mt-9 relative bottom-4 md:static">
-      <div className="w-full mt-2 mb-2">
-        <p className="text-slate-600 font-semibold md:font-bold font-md sm:text-lg text-xs">
-          प्रशिक्षण एवं नियोजन कार्यालय
-        </p>
-        <p className="text-slate-600 font-semibold font-md text-xs">
-          Training And Placement Office
-        </p>
-        <p className="text-10px font-semibold text-xs">
-          National Institute of Technology, Mizoram
-        </p>
-      </div>
-    </div>
-  </div>
+        <div className="flex flex-col relative">
+          <div className="md:flex md:justify-between px-2 py-1">
+            <div className="mr-2">
+              <img
+                src="tnplogo2.png"
+                alt="tnp_Logo"
+                className="mt-1 sm:h-38 sm:w-38 h-14 w-14"
+                onClick={() => handleNavigation("/", "home")}
+                style={{ cursor: "pointer" }}
+              />
+            </div>
+            <div className="items-center text-center md:static">
+              <div className="w-full mt-1 mb-1">
+                <p className="text-slate-600 font-semibold md:font-bold font-md sm:text-lg text-xs leading-tight">
+                  प्रशिक्षण एवं नियोजन कार्यालय
+                </p>
+                <p className="text-slate-600 font-semibold font-md text-xs leading-tight">
+                  Training And Placement Office
+                </p>
+                <p className="text-10px font-semibold text-xs leading-tight">
+                  National Institute of Technology, Mizoram
+                </p>
+              </div>
+            </div>
+          </div>
 
-  {/* 🔵 Small Blue Icon in Bottom Right */}
- 
-</div>
-
-
-        <div className="bg-white">
-          {isOpen && (
-            <nav
-              ref={menuRef}
-              className="absolute inset-y-0 right-0 rounded-l-lg duration-300 z-50"
-            >
-              <div
-                className="nav-menu px-2 py-4 space-y-2"
-                data-aos="fade-left"
+          <div className="bg-white">
+            {isOpen && (
+              <nav
+                ref={menuRef}
+                className="absolute inset-y-0 right-0 rounded-l-lg duration-300 z-50"
               >
-                <a
-                  href="#home"
-                  onClick={() => handleNavigation("/")}
-                  className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
+                <div
+                  className="nav-menu px-2 py-2 space-y-1"
+                  data-aos="fade-left"
                 >
-                  Home
-                </a>
-                <a
-                  href="#clients"
-                  onClick={() => handleNavigation("/", "clients")}
-                  className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
-                >
-                  Past recruiters
-                </a>
+                  <a
+                    href="#home"
+                    onClick={() => handleNavigation("/")}
+                    className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="#clients"
+                    onClick={() => handleNavigation("/", "clients")}
+                    className="block rounded-md text-black text-sm font-medium hover:bg-green-500 hover:text-white px-4 py-2"
+                  >
+                    Past recruiters
+                  </a>
                 <a
                   href="#atAGlance"
                   onClick={() => handleNavigation("/", "atAGlance")}
@@ -198,6 +193,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      </div>
       <div className="shadow-md w-full bg-gradient-to-r from-[#ffdd76] to-[#87ed33] hidden md:flex relative">
   <div className="flex flex-col lg:justify-evenly">
     <div className="md:flex md:justify-between md:p-4 p-3 lg:justify-around">
@@ -271,9 +267,9 @@ const Navbar = () => {
 
       <nav>
         <div className=" hidden w-full md:flex md:items-center md:align-middle md:justify-between md:w-auto">
-          <div className="nav-menu-full w-full  justify-evenly text-white lg:font-normal  align-middle md:font-normal md:pt-2 text-[14px] lg:pt-4 lg:text-sm text-xs flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf] border-b-4  border-green-600 md:h-10 lg:h-14 flex-nowrap">
+          <div className="nav-menu-full w-full  justify-evenly text-white lg:font-normal  align-middle md:font-normal md:pt-2 text-[8px] lg:pt-4 lg:text-xs text-xs flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf] border-b-4  border-green-600 md:h-10 lg:h-14 flex-nowrap">
             <Link to="/" className="nav-link-text">
-              <p className="mx-1 text-[1.6vw] md:text-sm lg:text-[22px]">
+              <p className="mx-1 text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 Home
               </p>
             </Link>
@@ -282,7 +278,7 @@ const Navbar = () => {
               onClick={() => handleNavigation("/", "clients")}
               className="nav-link-text"
             >
-              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
+              <p className=" text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 Past Recruiters
               </p>
             </a>
@@ -292,7 +288,7 @@ const Navbar = () => {
               onClick={() => handleNavigation("/", "atAGlance")}
               className="nav-link-text"
             >
-              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">Notices</p>
+              <p className=" text-[1.2vw] md:text-sm lg:text-lg font-semibold">Notices</p>
             </a>
 
             <a
@@ -300,56 +296,56 @@ const Navbar = () => {
               onClick={() => handleNavigation("/", "team")}
               className="nav-link-text"
             >
-              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">
+              <p className="text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 Office Team
               </p>
             </a>
 
             <Link
               to="/recruiters"
-              className="hover:text-pink-300 nav-link-text"
+              className="hover:text-green-200 nav-link-text"
             >
-              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">
+              <p className="text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 For Recruiters
               </p>
             </Link>
             <Link
               to="/internship"
-              className="hover:text-pink-300 nav-link-text"
+              className="hover:text-green-200 nav-link-text"
             >
-              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">
+              <p className="text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 Internships
               </p>
             </Link>
 
             <Link
               to="/NewsArcheive"
-              className="hover:text-pink-300 nav-link-text"
+              className="hover:text-green-200 nav-link-text"
             >
-              <p className="text-[1.6vw] md:text-sm lg:text-[22px]">
+              <p className="text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 News Archive
               </p>
             </Link>
 
-            <Link to="/events" className="nav-link-text">
-              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
+            <Link to="/events" className="hover:text-green-200 nav-link-text">
+              <p className="text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 Student Activities
               </p>
             </Link>
             <div
               onClick={onButtonClick}
-              className="brochure-button nav-link-text"
+              className="brochure-button hover:text-green-200 nav-link-text"
             >
-              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
+              <p className="text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 Brochure
               </p>
             </div>
             <a
               href="#contact"
               onClick={() => handleNavigation("/", "contact")}
-              className="nav-link-text"
+              className="nav-link-text hover:text-green-200"
             >
-              <p className=" text-[1.6vw] md:text-sm lg:text-[22px]">
+              <p className="text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 Contact Us
               </p>
             </a>

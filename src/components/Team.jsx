@@ -117,7 +117,7 @@ const Team = () => {
       position: "Placement Coordinator",
       branch: "CE",
       linkedin: "https://www.linkedin.com/in/paras-gupta-243333260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Paras_Gupta.jpg",
+      image_name: "paras-gupta-tnp.jpeg",
     },
      {
       name: "Mudavath Pooja",
