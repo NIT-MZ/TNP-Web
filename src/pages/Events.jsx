@@ -3,7 +3,6 @@ import "../stylesheets/events.scss";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
 import Zoom from "@mui/material/Zoom";
 
@@ -242,7 +241,7 @@ const EventsList = () => {
             <Carousel autoPlay interval={2000} infiniteLoop showThumbs={false} showStatus={false}>
               {selectedEvent.images.map((img, index) => (
                 <div key={index}>
-                  <img src={img} alt={selectedEvent.title} className="carousel-image h-92" />
+                  <img src={img} alt={selectedEvent.title} className="carousel-image h-92 l" loading="lazy" />
                 </div>
               ))}
             </Carousel>

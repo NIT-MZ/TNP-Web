@@ -224,6 +224,7 @@ const Internships = () => {
             className="interns-photo"
             src="assets/img/internships/interns.png"
             alt="Interns"
+            loading="lazy"
           />
       </div>
 

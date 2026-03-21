@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import Slider from "react-slick";
 import "aos/dist/aos.css";
@@ -168,6 +168,7 @@ export default function TestimonialSection() {
                   src={testimonial.img}
                   className="testimonial-img"
                   alt={testimonial.name}
+                  loading="lazy"
                 />
                 <h3 className="h3">{testimonial.name}</h3>
                 <h4 className="text-xs text-slate-600">

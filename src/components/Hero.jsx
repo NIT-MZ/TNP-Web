@@ -150,7 +150,8 @@ const Hero = () => {
                     className="d-block carousel-img "
                     src={item.src}
                     alt={item.alt}
-
+                    loading={index === 0 ? "eager" : "lazy"}
+                    decoding="async"
                   />
                   <div className="carousel-caption d-none d-md-block ">
                     <h5>{item.caption}</h5>

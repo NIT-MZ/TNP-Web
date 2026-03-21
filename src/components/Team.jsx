@@ -1,4 +1,3 @@
-import React from "react";
 import "../stylesheets/team.scss";
 
 const Team = () => {
@@ -436,10 +435,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            style={{
-              backgroundImage: `url(\/assets/img/team/${member.image_name})`,
-            }}
+            // style={{
+            //   backgroundImage: `url(\/assets/img/team/${member.image_name})`,
+            // }}
           >
+                  <img
+    src={`/assets/img/team/${member.image_name}`}
+    alt={teamMembers.name}
+    className="team-card-img"
+    loading="lazy"
+    decoding="async"
+  />
             <div className="team-card-bottom">
               <div>{member.name}</div>
             </div>
@@ -486,10 +492,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            style={{
-              backgroundImage: `url(\/assets/img/team/${graduateexecutive.image_name})`,
-            }}
+            // style={{
+            //   backgroundImage: `url(\/assets/img/team/${graduateexecutive.image_name})`,
+            // }}
           >
+                  <img
+    src={`/assets/img/team/${graduateexecutive.image_name}`}
+    alt={graduateExecutives.name}
+    className="team-card-img"
+    loading="lazy"
+    decoding="async"
+  />
             <div className="team-card-bottom">
               <div>{graduateexecutive.name}</div>
             </div>
@@ -532,10 +545,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            style={{
-              backgroundImage: `url(\/assets/img/team/${placementcoordinator.image_name})`,
-            }}
+            // style={{
+            //   backgroundImage: `url(\/assets/img/team/${placementcoordinator.image_name})`,
+            // }}
           >
+                  <img
+    src={`/assets/img/team/${placementcoordinator.image_name}`}
+    alt={studentPlacementcordinators2026.name}
+    className="team-card-img"
+    loading="lazy"
+    decoding="async"
+  />
             <div className="team-card-bottom">
               <div>{placementcoordinator.name}</div>
             </div>
@@ -577,10 +597,18 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            style={{
-              backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
-            }}
+            // style={{
+            //   backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
+            // }}
           >
+                  <img
+    src={`/assets/img/team/${activityCoordinator.image_name}`}
+    alt={studentActivityCoordinators2026.name}
+    className="team-card-img"
+    loading="lazy"
+    decoding="async"
+  />
+
             <div className="team-card-bottom">
               <div>{activityCoordinator.name}</div>
             </div>
@@ -622,10 +650,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            style={{
-              backgroundImage: `url(/assets/img/team/${mediamember.image_name})`,
-            }}
+            // style={{
+            //   backgroundImage: `url(/assets/img/team/${mediamember.image_name})`,
+            // }}
           >
+                  <img
+    src={`/assets/img/team/${mediamember.image_name}`}
+    alt={WebsiteAndMediaCoordinators.name}
+    className="team-card-img"
+    loading="lazy"
+    decoding="async"
+  />
             <div className="team-card-bottom">
               <div>{mediamember.name}</div>
             </div>
@@ -667,10 +702,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            style={{
-              backgroundImage: `url(\/assets/img/team/${placementcoordinator.image_name})`,
-            }}
+            // style={{
+            //   backgroundImage: `url(\/assets/img/team/${placementcoordinator.image_name})`,
+            // }}
           >
+                  <img
+    src={`/assets/img/team/${placementcoordinator.image_name}`}
+    alt={AssistantStudentPlacementcordinators2027.name}
+    className="team-card-img"
+    loading="lazy"
+    decoding="async"
+  />
             <div className="team-card-bottom">
               <div>{placementcoordinator.name}</div>
             </div>
@@ -714,10 +756,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            style={{
-              backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
-            }}
+            // style={{
+            //   backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
+            // }}
           >
+              <img
+    src={`/assets/img/team/${activityCoordinator.image_name}`}
+    alt={activityCoordinator.name}
+    className="team-card-img"
+    loading="lazy"
+    decoding="async"
+  />
             <div className="team-card-bottom">
               <div>{activityCoordinator.name}</div>
             </div>
@@ -761,10 +810,18 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            style={{
-              backgroundImage: `url(/assets/img/team/${excutive.image_name})`,
-            }}
+            // style={{
+            //   backgroundImage: `url(/assets/img/team/${excutive.image_name})`,
+            // }}
           >
+    <img
+    src={`/assets/img/team/${excutive.image_name}`}
+    alt={associateMembers.name}
+    className="team-card-img"
+    loading="lazy"
+    decoding="async"
+  />
+
             <div className="team-card-bottom">
               <div>{excutive.name}</div>
             </div>
