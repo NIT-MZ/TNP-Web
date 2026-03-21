@@ -6,10 +6,11 @@
 
 .clients img {
   max-width: 65%;
+  aspect-ratio: 1 / 1;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 10px 0;
-  // background-color: aqua;
+  object-fit: contain;
 }
 
 .clients img:hover {
