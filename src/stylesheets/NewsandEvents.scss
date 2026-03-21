@@ -125,7 +125,7 @@ overflow-y: hidden;
 
   @keyframes scrollBottomToTop {
    0%{
-    transform:translateY(0%);
+    transform:translateY(10%);
    }
    100%{
     transform: translateY(-50%);
@@ -138,17 +138,33 @@ overflow-y: hidden;
     position: relative;
   }
   
-  .news-ticker-vertical-content {
-    display: flex;
-    flex-direction: column;
-    animation: scrollBottomToTop 40s linear infinite;
-  }
+  // .news-ticker-vertical-content {
+  //   display: flex;
+  //   flex-direction: column;
+  //   animation: scrollBottomToTop 40s linear infinite;
+  // }
   
   .news-ticker-vertical-content ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
+
+  .news-ticker-vertical-content {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards, scrollBottomToTop 40s linear infinite;
+  animation-delay: 0s, 1s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
   
   .news-ticker-vertical-content .gap {
     height: 15vh /* Adjust this value for the desired gap size */

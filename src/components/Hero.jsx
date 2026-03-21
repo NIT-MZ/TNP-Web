@@ -74,13 +74,32 @@ const marqueeLinks = [
   {
     type: "link",
     href: "https://forms.gle/LeYQhi8EJeDCAVBF7",
-    text: "Registration of Companies for 2025",
+    text: "Registration of Companies for 2025-2026",
   },
-  
+
+   {
+    type: "alert",
+    text: "ICICI",
+  },
+
   {
     type: "alert",
-    text: "NVIDIA",
+    text: "UST",
   },
+    {
+    type: "alert",
+    text: "Bakliwal Tutorials",
+  },
+   {
+    type: "alert",
+    text: "JP Morgan Chase",
+  },
+     {
+    type: "alert",
+    text: "TCS",
+  }
+   
+
   
  
  
@@ -89,7 +108,7 @@ const marqueeLinks = [
 const Hero = () => {
   const handleAlertClick = () => {
     alert(
-      "Please check your official training & placement WhatsApp group for further process. Wishing you the best."
+      "Please contact Tranining and Placement Office for more Information. Wishing you the best."
     );
   };
 
