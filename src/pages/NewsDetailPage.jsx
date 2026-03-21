@@ -47,9 +47,9 @@ const NewsDetailPage = () => {
           
         />
         <div className="p-6">
-          <h1 className="text-4xl font-bold mb-4 text-gray-800">
+        {newsItem.title?.trim() &&  <h1 className="text-4xl font-bold mb-4 text-gray-800">
             {newsItem.title}
-          </h1>
+          </h1> }
           <p className="text-gray-600 mb-6">{newsItem.content}</p>
           <div className="flex items-center justify-between text-sm text-gray-500 mb-8">
             <span>

@@ -170,7 +170,7 @@ export default function TestimonialSection() {
                   alt={testimonial.name}
                   loading="lazy"
                 />
-                <h3 className="h3">{testimonial.name}</h3>
+              {testimonial.name?.trim() && <h3 className="h3">{testimonial.name}</h3>}
                 <h4 className="text-xs text-slate-600">
                   {testimonial.company}
                 </h4>

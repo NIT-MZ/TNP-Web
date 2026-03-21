@@ -380,9 +380,11 @@ const EventsList = () => {
           dividers
           className="bg-yellow-50 px-6 pt-4 pb-6"
         >
-          <h2 className="text-2xl font-bold text-gray-900 mb-1">
+
+        {selectedEvent?.title?.trim() &&  <h2 className="text-2xl font-bold text-gray-900 mb-1">
             {selectedEvent?.title}
-          </h2>
+          </h2> }
+          
           <p className="text-sm text-gray-600 mb-4 font-medium">
             {formatDateDialog(selectedEvent?.date)}
           </p>

@@ -3,7 +3,7 @@ import React from "react";
 const ImageComponent = ({ src }) => {
   return (
     <div className="col-lg-2 col-4 d-flex align-items-center justify-content-center ">
-      <img src={src} className="img-fluid " alt=""  loading="lazy"/>
+      <img src={src} className="img-fluid " alt="Image"  loading="lazy"/>
     </div>
   );
 };

@@ -38,9 +38,11 @@ const NewsIconPage = () => {
                     className="w-12 h-12 lg:w-16 lg:h-16 object-cover rounded-md shadow-sm"
                   />
                   <div>
+                    {item.title?.trim() &&
                     <h3 className="text-sm lg:text-lg font-medium text-gray-900">
                       {item.title}
                     </h3>
+}
                   </div>
                 </div>
               </Link>
@@ -63,9 +65,10 @@ const NewsIconPage = () => {
                     className="w-full sm:w-1/3 lg:w-52 h-40 object-cover rounded-md shadow-sm"
                   />
                   <div className="flex flex-col">
-                    <h3 className="text-lg lg:text-2xl font-semibold text-gray-900 mb-2">
+                {item.title?.trim() &&  <h3 className="text-lg lg:text-2xl font-semibold text-gray-900 mb-2">
                       {item.title}
                     </h3>
+}
                     <p className="text-sm lg:text-base text-gray-700">
                       {item.content
                         ? `${item.content.substring(0, 100)}...`

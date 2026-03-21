@@ -441,7 +441,7 @@ const Team = () => {
           >
                   <img
     src={`/assets/img/team/${member.image_name}`}
-    alt={teamMembers.name}
+    alt={member.name}
     className="team-card-img"
     loading="lazy"
     decoding="async"
@@ -498,7 +498,7 @@ const Team = () => {
           >
                   <img
     src={`/assets/img/team/${graduateexecutive.image_name}`}
-    alt={graduateExecutives.name}
+    alt={graduateexecutive.name}
     className="team-card-img"
     loading="lazy"
     decoding="async"
@@ -551,7 +551,7 @@ const Team = () => {
           >
                   <img
     src={`/assets/img/team/${placementcoordinator.image_name}`}
-    alt={studentPlacementcordinators2026.name}
+    alt={placementcoordinator.name}
     className="team-card-img"
     loading="lazy"
     decoding="async"
@@ -603,7 +603,7 @@ const Team = () => {
           >
                   <img
     src={`/assets/img/team/${activityCoordinator.image_name}`}
-    alt={studentActivityCoordinators2026.name}
+    alt={activityCoordinator.name}
     className="team-card-img"
     loading="lazy"
     decoding="async"
@@ -656,7 +656,7 @@ const Team = () => {
           >
                   <img
     src={`/assets/img/team/${mediamember.image_name}`}
-    alt={WebsiteAndMediaCoordinators.name}
+    alt={mediamember.name}
     className="team-card-img"
     loading="lazy"
     decoding="async"
@@ -708,7 +708,7 @@ const Team = () => {
           >
                   <img
     src={`/assets/img/team/${placementcoordinator.image_name}`}
-    alt={AssistantStudentPlacementcordinators2027.name}
+    alt={placementcoordinator.name}
     className="team-card-img"
     loading="lazy"
     decoding="async"
@@ -816,7 +816,7 @@ const Team = () => {
           >
     <img
     src={`/assets/img/team/${excutive.image_name}`}
-    alt={associateMembers.name}
+    alt={excutive.name}
     className="team-card-img"
     loading="lazy"
     decoding="async"
