@@ -70,7 +70,7 @@ const Navbar = () => {
           <div className="md:flex md:justify-between px-2 py-1">
             <div className="mr-2">
               <img
-                src="tnplogo2.png"
+                src="https://res.cloudinary.com/dwo3wa6k3/image/upload/f_auto,q_auto/v1774089497/tnplogo2_m7uw1r.png"
                 alt="tnp_Logo"
                 className="mt-1 sm:h-38 sm:w-38 h-14 w-14"
                 onClick={() => handleNavigation("/", "home")}
@@ -230,7 +230,7 @@ const Navbar = () => {
           className="h-10 w-10 mr-4 lg:h-44 lg:flex lg:w-44 hidden"
         />
         <img
-          src="tnplogo2.png"
+          src="https://res.cloudinary.com/dwo3wa6k3/image/upload/f_auto,q_auto/v1774089497/tnplogo2_m7uw1r.png"
           alt="tnpLogo"
           className="hidden md:flex self-center lg:mt-4 mt-12 md:mt-6 lg:mx-4 lg:h-44 lg:w-44 pr-2 pb-2 h-32 w-32 sm:h-32 sm:w-32"
           onClick={() => handleNavigation("/", "home")}
@@ -268,7 +268,7 @@ const Navbar = () => {
       <nav>
         <div className=" hidden w-full md:flex md:items-center md:align-middle md:justify-between md:w-auto">
           <div className="nav-menu-full w-full  justify-evenly text-white lg:font-normal  align-middle md:font-normal md:pt-2 text-[8px] lg:pt-4 lg:text-xs text-xs flex bg-gradient-to-r  to-[#f1c130d6]  from-[#4a930edf] border-b-4  border-green-600 md:h-10 lg:h-14 flex-nowrap">
-            <Link to="/" className="nav-link-text">
+            <Link to="/" className="nav-link-text hover:text-green-200">
               <p className="mx-1 text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 Home
               </p>
@@ -276,7 +276,7 @@ const Navbar = () => {
             <a
               href="#clients"
               onClick={() => handleNavigation("/", "clients")}
-              className="nav-link-text"
+              className="nav-link-text hover:text-green-200"
             >
               <p className=" text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 Past Recruiters
@@ -286,7 +286,7 @@ const Navbar = () => {
             <a
               href="#atAGlance"
               onClick={() => handleNavigation("/", "atAGlance")}
-              className="nav-link-text"
+              className="nav-link-text hover:text-green-200"
             >
               <p className=" text-[1.2vw] md:text-sm lg:text-lg font-semibold">Notices</p>
             </a>
@@ -294,7 +294,7 @@ const Navbar = () => {
             <a
               href="#team"
               onClick={() => handleNavigation("/", "team")}
-              className="nav-link-text"
+              className="nav-link-text hover:text-green-200"
             >
               <p className="text-[1.2vw] md:text-sm lg:text-lg font-semibold">
                 Office Team

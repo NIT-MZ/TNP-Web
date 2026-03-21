@@ -8,11 +8,7 @@ const carouselItems = [
     alt: "placement",
     caption: "Placements Statistics 2024-2025",
   },
-  {
-    src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1756053332/tzjuolouey8gxdiozxfw.png",
-    alt: "placement",
-    caption: "Bootcamp cum workshop on Drone Technologies and it’s Applications was conducted during 25-29 August 2025 in NIT Mizoram in collaboration with NIT Silchar and MietY",
-  },
+
 
   {
     src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075760/p3fo42ly0tfthxwtlyun.jpg",
