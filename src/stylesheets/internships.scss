@@ -94,7 +94,6 @@
     position: absolute;
     width: 100px;
     height: 100px;
-    aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
     border-radius: 50px;
@@ -102,7 +101,6 @@
     box-shadow: 0 4px 6px rgb(0, 0, 0);
     transition: transform 0.3s ease;
     z-index: 10;
-    object-fit: cover;
 }
 
 .internship-company-image:nth-child(1) {
@@ -193,16 +191,13 @@
 .tpo-image-container {
     height: 150px;
     width: 150px;
-    aspect-ratio: 1 / 1;
     border-radius: 75px;
-    overflow: hidden;
 }
 
 .tpo-image {
-    height: 100%;
-    width: 100%;
+    height: inherit;
+    width: inherit;
     border-radius: inherit;
-    object-fit: cover;
 }
 
 .tpo-statement {

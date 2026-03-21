@@ -34,14 +34,17 @@
 
 .team-card {
     position: relative;
+    height: 300px;
     width: 250px;
-    aspect-ratio: 1 / 1.2;
     border-radius: 10px;
     margin: 30px 15px;
+    // background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
     border: 5px solid rgb(255, 255, 255);
     background-color: white;
     box-shadow: 0 8px 16px rgba(black, .45);
-    overflow: hidden;
 }
 
 .team-card-img {
