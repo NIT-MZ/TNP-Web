@@ -88,8 +88,8 @@ const FooterSection = () => {
         </div>
       </div>
       <div className="footer-section-bottom">
-        Copyright © 2024. All Right Reserved. Designed & Developed by NITMZ TnP
-        Web Team
+        Copyright © 2024-{new Date().getFullYear()}. All Rights Reserved. Designed & Developed by NITMZ TnP
+        Media and Website Team
       </div>
     </div>
   );
