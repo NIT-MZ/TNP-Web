@@ -10,11 +10,16 @@ const TrainingandRecruitingPartners = () => {
   }, []);
 
   const images = [
+    "IBM.png",
+    "HSBC.png",
     "juspay.png",
     "nvidia.png",
+    "visa.PNG",
     "siemens.png",
     "tata.jpeg",
     "l&t.jpeg",
+    "ICICI.png",
+    "Scheneider.png",
     "vedanta.jpeg",
     "client-6.webp",
     "ashok.png",
@@ -25,6 +30,7 @@ const TrainingandRecruitingPartners = () => {
     "f.jpeg",
     "volvo.png",
     "skoda.jpeg",
+    "PW.jpg",
     "kala.jpeg",
     "ey.png",
     "cubastion.png",
