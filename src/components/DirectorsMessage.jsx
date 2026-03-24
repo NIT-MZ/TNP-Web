@@ -33,7 +33,7 @@ const DirectorsMessage = () => {
  Sciences, Humanities and Social Sciences. The Institute is working untiringly to
  impart quality education that keeps pace with the latest advances in research
  and development activities.
- The year 2024–25 saw 93% campus placements with more than 90
+ The year 2024–25 saw 97% campus placements with more than 90
  companies visited for the placements. 100% internship offers were received
  from top-notch companies and IITs. A total of 8 current B.Tech students are
  undergoing Internships at IIT Madras, out of which some will continue their 4th

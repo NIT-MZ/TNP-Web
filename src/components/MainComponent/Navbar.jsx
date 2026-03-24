@@ -65,138 +65,144 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
-      <div className="md:hidden shadow-md w-full bg-[#3e6db5]  border-b-4 border-[#1e3a6e]">
-        <div className="flex flex-col relative">
-          <div className="md:flex md:justify-between px-2 py-1">
-            <div className="mr-2">
-              <img
-                src="https://res.cloudinary.com/dwo3wa6k3/image/upload/f_auto,q_auto/v1774089497/tnplogo2_m7uw1r.png"
-                alt="tnp_Logo"
-                className="mt-1 sm:h-38 sm:w-38 h-14 w-14"
-                onClick={() => handleNavigation("/", "home")}
-                style={{ cursor: "pointer" }}
-              />
-            </div>
-            <div className="items-center text-center md:static">
-              <div className="w-full mt-1 mb-1">
-                <p className="text-white font-semibold md:font-bold font-md sm:text-lg text-xs leading-tight">
-                  प्रशिक्षण एवं नियोजन कार्यालय
-                </p>
-                <p className="text-white font-semibold font-md text-xs leading-tight">
-                  Training And Placement Office
-                </p>
-                <p className="text-blue-100 text-10px font-semibold text-xs leading-tight">
-                  National Institute of Technology, Mizoram
-                </p>
-              </div>
-            </div>
-          </div>
+     <div className="md:hidden w-full bg-[#3e6db5] border-b-2 border-[#264b83] shadow-md relative">
 
-          <div className="bg-white">
-            {isOpen && (
-              <nav
-                ref={menuRef}
-                className="absolute inset-y-0 right-0 rounded-l-lg duration-300 z-50"
-              >
-                <div
-                  className="nav-menu px-2 py-2 space-y-1"
-                  data-aos="fade-left"
-                >
-                  <a
-                    href="#home"
-                    onClick={() => handleNavigation("/")}
-                    className="block rounded-md text-black text-sm font-medium hover:bg-[#3e6db5] hover:text-white px-4 py-2"
-                  >
-                    Home
-                  </a>
-                  <a
-                    href="#clients"
-                    onClick={() => handleNavigation("/", "clients")}
-                    className="block rounded-md text-black text-sm font-medium hover:bg-[#3e6db5] hover:text-white px-4 py-2"
-                  >
-                    Past recruiters
-                  </a>
-                <a
-                  href="#atAGlance"
-                  onClick={() => handleNavigation("/", "atAGlance")}
-                  className="block rounded-md text-black text-sm font-medium hover:bg-[#3e6db5] hover:text-white px-4 py-2"
-                >
-                  Notices
-                </a>
-                <Link
-                  to="/team"
-                  onClick={toggleMenu}
-                  className="block rounded-md text-black text-sm font-medium hover:bg-[#3e6db5] hover:text-white px-4 py-2"
-                >
-                  Team
-                </Link>
-                <Link
-                  to="/recruiters"
-                  onClick={toggleMenu}
-                  className="block rounded-md text-black text-sm font-medium hover:bg-[#3e6db5] hover:text-white px-4 py-2"
-                >
-                  For Recruiters
-                </Link>
-                <Link
-                  to="/internship"
-                  onClick={toggleMenu}
-                  className="block rounded-md text-black text-sm font-medium hover:bg-[#3e6db5] hover:text-white px-4 py-2"
-                >
-                  Internships
-                </Link>
+  {/* TOP ROW (Logo + Menu) */}
+  <div className="flex items-center justify-between px-3 py-2">
+    
+    {/* LOGO */}
+    <img
+      src="https://res.cloudinary.com/dwo3wa6k3/image/upload/f_auto,q_auto/v1774089497/tnplogo2_m7uw1r.png"
+      alt="tnp_logo"
+      className="h-10 w-10 object-contain flex-shrink-0"
+      onClick={() => handleNavigation("/", "home")}
+      style={{ cursor: "pointer" }}
+    />
 
-                <Link
-                  to="/NewsArcheive"
-                  onClick={toggleMenu}
-                  className="block rounded-md text-black text-sm font-medium hover:bg-[#3e6db5] hover:text-white px-4 py-2"
-                >
-                  News Archive
-                </Link>
-                <Link
-                  to="/events"
-                  onClick={toggleMenu}
-                  className="block rounded-md text-black text-sm font-medium hover:bg-[#3e6db5] hover:text-white px-4 py-2"
-                >
-                  Student Activities
-                </Link>
-                <div
-                  onClick={onButtonClick}
-                  className="block rounded-md text-black text-sm font-medium hover:bg-[#3e6db5] hover:text-white px-4 py-2"
-                >
-                  Brochure
-                </div>
-                <a
-                  href="#contact"
-                  onClick={() => handleNavigation("/", "contact")}
-                  className="block rounded-md text-black text-sm font-medium hover:bg-[#3e6db5] hover:text-white px-4 py-2"
-                >
-                  Contact Us
-                </a>
-              </div>
-            </nav>
-          )}
+    {/* HAMBURGER BUTTON */}
+    <button
+      ref={buttonRef}
+      onClick={toggleMenu}
+      className="text-white focus:outline-none z-50"
+      aria-label="Toggle menu"
+    >
+      {isOpen ? (
+        <CloseIcon sx={{ fontSize: 30 }} />
+      ) : (
+        <MenuIcon sx={{ fontSize: 30 }} />
+      )}
+    </button>
+  </div>
 
-          <div
-            ref={buttonRef}
-            className="md:hidden hamburger-icon z-50  rounded-xl  border-blue-300 p-[3px]"
-          >
-            <button
-              onClick={toggleMenu}
-              className="block text-white text-bold text-xl hover:text-blue-200 focus:text-white focus:outline-none"
-            >
-              {isOpen ? (
-                <CloseIcon sx={{ fontSize: 40 }} />
-              ) : (
-                <MenuIcon sx={{ fontSize: 40 }} />
-              )}
-            </button>
-          </div>
+  {/* TEXT SECTION (CLEAN + COMPACT) */}
+  <div className="text-center px-4 pb-2 space-y-[2px]">
+    
+    <p className="text-white text-sm font-semibold leading-tight">
+      Training & Placement Office
+    </p>
+
+    <p className="text-blue-100 text-xs leading-tight">
+      National Institute of Technology, Mizoram
+    </p>
+
+  </div>
+
+  {/* DROPDOWN MENU */}
+  {isOpen && (
+    <nav
+      ref={menuRef}
+      className="absolute top-full right-0 z-50 w-[220px] bg-white shadow-lg rounded-l-lg overflow-hidden"
+    >
+      <div className="px-2 py-2 space-y-1">
+
+        <a
+          href="#home"
+          onClick={() => handleNavigation("/")}
+          className="block px-4 py-2 text-sm text-black font-medium hover:bg-[#3e6db5] hover:text-white rounded-md"
+        >
+          Home
+        </a>
+
+        <a
+          href="#clients"
+          onClick={() => handleNavigation("/", "clients")}
+          className="block px-4 py-2 text-sm text-black font-medium hover:bg-[#3e6db5] hover:text-white rounded-md"
+        >
+          Past Recruiters
+        </a>
+
+        <a
+          href="#atAGlance"
+          onClick={() => handleNavigation("/", "atAGlance")}
+          className="block px-4 py-2 text-sm text-black font-medium hover:bg-[#3e6db5] hover:text-white rounded-md"
+        >
+          Notices
+        </a>
+
+        <Link
+          to="/team"
+          onClick={toggleMenu}
+          className="block px-4 py-2 text-sm text-black font-medium hover:bg-[#3e6db5] hover:text-white rounded-md"
+        >
+          Team
+        </Link>
+
+        <Link
+          to="/recruiters"
+          onClick={toggleMenu}
+          className="block px-4 py-2 text-sm text-black font-medium hover:bg-[#3e6db5] hover:text-white rounded-md"
+        >
+          For Recruiters
+        </Link>
+
+        <Link
+          to="/internship"
+          onClick={toggleMenu}
+          className="block px-4 py-2 text-sm text-black font-medium hover:bg-[#3e6db5] hover:text-white rounded-md"
+        >
+          Internships
+        </Link>
+
+        <Link
+          to="/NewsArcheive"
+          onClick={toggleMenu}
+          className="block px-4 py-2 text-sm text-black font-medium hover:bg-[#3e6db5] hover:text-white rounded-md"
+        >
+          News Archive
+        </Link>
+
+        <Link
+          to="/events"
+          onClick={toggleMenu}
+          className="block px-4 py-2 text-sm text-black font-medium hover:bg-[#3e6db5] hover:text-white rounded-md"
+        >
+          Student Activities
+        </Link>
+
+        <div
+          onClick={onButtonClick}
+          className="block px-4 py-2 text-sm text-black font-medium hover:bg-[#3e6db5] hover:text-white rounded-md cursor-pointer"
+        >
+          Brochure
         </div>
+
+        <a
+          href="#contact"
+          onClick={() => handleNavigation("/", "contact")}
+          className="block px-4 py-2 text-sm text-black font-medium hover:bg-[#3e6db5] hover:text-white rounded-md"
+        >
+          Contact Us
+        </a>
+
       </div>
-      </div>
+    </nav>
+  )}
+
+</div>
+
       <div className="shadow-md w-full bg-[#3e6db5]  hidden md:flex relative">
   <div className="flex flex-col lg:justify-evenly">
-    <div className="md:flex md:justify-between md:p-4 p-3 lg:justify-around">
+    <div className="md:flex md:justify-between md:items-center md:p-4 p-3 lg:justify-around">
       <div className="md:pl-4">
         <img
           src="https://www.vidyavision.com/CollegeUploads/Logos/2017-23-5-16-27-56_nit-mizoram-logo.png"
@@ -233,7 +239,7 @@ const Navbar = () => {
         <img
           src="https://res.cloudinary.com/dwo3wa6k3/image/upload/f_auto,q_auto/v1774089497/tnplogo2_m7uw1r.png"
           alt="tnpLogo"
-          className="hidden md:flex self-center lg:mt-4 mt-12 md:mt-6 lg:mx-4 lg:h-36 lg:w-36 pr-2 pb-2 h-32 w-32 sm:h-32 sm:w-32 2xl:w-44 2xl:h-44"
+          className="hidden md:flex self-center lg:mt-4 mt-12 md:mt-6 lg:mx-4 lg:h-36 lg:w-36  h-32 w-32 sm:h-32 sm:w-32 2xl:w-44 2xl:h-44"
           onClick={() => handleNavigation("/", "home")}
           style={{ cursor: "pointer" }}
         />

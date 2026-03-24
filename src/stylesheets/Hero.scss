@@ -152,6 +152,7 @@
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -161,6 +162,7 @@
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(100%);
   }
@@ -241,9 +243,12 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
@@ -253,7 +258,7 @@
   #hero {
     background-attachment: fixed;
   }
-  
+
   .carousel-caption h5 {
     font-size: 36px;
   }
@@ -278,6 +283,7 @@
 
   #hero {
     height: auto;
+    margin-top: 80px;
   }
 
   .carousel-caption h5 {
@@ -307,4 +313,33 @@
     font-size: 14px;
     padding: 6px 12px;
   }
+}
+
+@media (max-width: 768px) {
+
+  .marquee-wrapper {
+    padding: 6px 0;
+  }
+
+  .marquee-row {
+    gap: 15px;
+    animation-duration: 18s;
+  }
+
+  .marquee-content-1 a,
+  .marquee-content-2 a,
+  .marquee-content-3 a,
+  .marquee-content-4 a,
+  .marquee-content-5 a,
+  .alert-button {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+
+  .badge {
+    font-size: 8px;
+    padding: 2px 6px;
+  }
+
 }
