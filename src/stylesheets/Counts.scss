@@ -34,7 +34,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #22c55e, #fbbf24);
+    background: linear-gradient(90deg, #3e6db5, #264b83);
     transform: scaleX(0);
     transition: transform 0.4s ease;
   }
@@ -54,7 +54,7 @@
   line-height: 1.2;
   display: block;
   font-weight: 800;
-  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  background: linear-gradient(135deg, #3e6db5 0%, #264b83 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -82,7 +82,7 @@
   letter-spacing: 0.5px;
   
   &:hover {
-    color: #22c55e;
+    color: #3e6db5;
     transform: translateY(-2px);
   }
 }

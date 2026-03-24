@@ -7,9 +7,10 @@ const ListGroupItemClass =
 const items = [
   "12 students placed at Accenture (first-ever hiring at NIT Mizoram).",
   "5 students placed at HSBC (first-ever hiring).",
-  "1 student secured internship at NVIDIA (first-ever milestone).",
-  "3 students placed at Siemens during Campus Placement 2025–26.",
   "5 students placed at Deloitte.",
+  "1 student secured internship at NVIDIA (first-ever milestone).",
+  "9 Students placed at ICICI Bank (First Ever Hiring).",
+  "3 students placed at Siemens during Campus Placement 2025–26.",
   "22 students placed at Larsen & Toubro (highest recruiter of the season).",
   "2 students placed at eQ Technologic.",
   "1 student placed at Schneider Electric.",
@@ -51,8 +52,8 @@ const NewsandEvents = () => {
         </div>
         <div className="card-group text-center">
           <div className="card mb-3">
-            <div className="card-header sticky-top bg-gradient-to-r from-[#f3c031] to-[#43920d]">
-              <h4 className="card-title text-lg">News & Notice</h4>
+            <div className="card-header sticky-top bg-[#264b83]">
+              <h4 className="card-title text-lg font-semibold">News & Notice</h4>
             </div>
             <div className="card-body">
               <p className="card-text">

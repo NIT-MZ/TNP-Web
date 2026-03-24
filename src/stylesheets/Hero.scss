@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(62, 109, 181, 0.05) 0%, rgba(38, 75, 131, 0.05) 100%);
   z-index: 1;
 }
 
@@ -109,14 +109,14 @@
 }
 
 .carousel-indicators button.active {
-  background-color: #22c55e;
+  background-color: #3e6db5;
   border-color: white;
   transform: scale(1.2);
 }
 
 .marquee {
-  background: linear-gradient(135deg, #f0fdf4 0%, #fffbeb 100%);
-  border-top: 3px solid #22c55e;
+  background: linear-gradient(135deg, #eef3fb 0%, #e8eef8 100%);
+  border-top: 3px solid #3e6db5;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
   position: relative;
   z-index: 10;
@@ -191,7 +191,7 @@
 .marquee-content-4 a,
 .marquee-content-5 a,
 .alert-button {
-  color: #166534;
+  color: #1e3a6e;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -209,8 +209,8 @@
 .marquee-content-4 a:hover,
 .marquee-content-5 a:hover,
 .alert-button:hover {
-  color: #22c55e;
-  background: rgba(34, 197, 94, 0.1);
+  color: #3e6db5;
+  background: rgba(62, 109, 181, 0.1);
   transform: translateY(-2px);
 }
 
@@ -235,9 +235,9 @@
 }
 
 .bg-success {
-  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  background: linear-gradient(135deg, #3e6db5 0%, #264b83 100%);
   color: white;
-  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+  box-shadow: 0 2px 8px rgba(62, 109, 181, 0.3);
 }
 
 @keyframes pulse {

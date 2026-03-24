@@ -4,7 +4,7 @@ const Team = () => {
   // Array containing information for each team member
   const teamMembers = [
     {
-      name: "Dr. Sukanta Roy",
+      name: "Prof. Sukanta Roy",
       position:
         "Dean (Academic),Faculty In-charge Training and Placement Office Chairman,Training and Placement Committee",
       phone: "+91-9035385841",

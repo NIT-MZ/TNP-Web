@@ -12,6 +12,7 @@ import Jaf from "./components/JAF.jsx";
 import ScrollToTop from "./components/MainComponent/ScrollToTop.jsx";
 import NewsIconPage from "./pages/NewsIconPage.jsx";
 import NewsDetailPage from "./pages/NewsDetailPage.jsx";
+import TeamPage from "./pages/TeamPage.jsx";
 import News from "./pages/News.jsx";
 import EventForm from "./components/Admin/AddEvents.jsx";
 import UserLogin from "./components/Admin/loginPage.jsx";
@@ -35,6 +36,7 @@ function App() {
           <Route path="/internship" element={<Internships />} />
           <Route path="/recruiters" element={<ForRecruiters />} />
           <Route path="/jaf" element={<Jaf />} />
+          <Route path="/team" element={<TeamPage />} />
           <Route path="/addNews" element={<AddNews/>}/>
 
           <Route path="/login" element={<UserLogin/>}/>

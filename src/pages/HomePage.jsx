@@ -1,5 +1,4 @@
 import React from "react";
-import Team from "../components/Team";
 import Hero from "../components/Hero";
 import NewsandEvents from "../components/NewsandEvents";
 import About from "../components/About";
@@ -23,7 +22,6 @@ const HomePage = () => {
       </div>
       <About />
       <Counts />
-      <Team />
       <TrainingandRecruitingPartners />
       <TestimonialSection />
       {/* <WebTeam /> */}
