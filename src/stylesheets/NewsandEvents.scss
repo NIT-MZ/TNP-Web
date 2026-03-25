@@ -216,8 +216,12 @@ section {
 }
 
 @media (max-width: 600px) {
+  #atAGlance .card {
+    height: 400px;
+  }
+
   .news-ticker-vertical {
-    height: 70vh;
+    height: calc(400px - 56px);
   }
 
   .news-ticker-vertical-content .gap {
