@@ -201,12 +201,12 @@ section {
   }
 
   #atAGlance .card {
-    height: 80vh;
+    height: 400px;
     border-radius: 8px;
   }
 
   .news-ticker-vertical {
-    height: calc(80vh - 56px);
+    height: calc(400px - 56px);
   }
 
   #atAGlance .card-body .card-text ul li {
@@ -217,11 +217,11 @@ section {
 
 @media (max-width: 600px) {
   #atAGlance .card {
-    height: 400px;
+    height: 250px;
   }
 
   .news-ticker-vertical {
-    height: calc(400px - 56px);
+    height: calc(250px - 56px);
   }
 
   .news-ticker-vertical-content .gap {
