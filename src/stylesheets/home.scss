@@ -1,6 +1,6 @@
 .home-page-container {
   height: auto;
-  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 50%, #ffffff 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
   position: relative;
   overflow-x: hidden;
 }
@@ -8,95 +8,100 @@
 .home-page-top-section {
   display: flex;
   width: 90%;
+  max-width: 1280px;
   margin: 0 auto;
-  gap: 30px;
+  gap: 32px;
   padding: 60px 0;
   position: relative;
   align-items: flex-start;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #e5e7eb, transparent);
-  }
 }
 
-// Add smooth section transitions
-section {
-  position: relative;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
-  }
+.home-page-top-section> :first-child {
+  flex: 2;
 }
 
-// Modern section spacing
-.home-page-container > * {
-  margin-bottom: 80px;
-  
-  &:last-child {
-    margin-bottom: 0;
-  }
+/* NewsandEvents → less width */
+.home-page-top-section> :last-child {
+  flex: 1;
 }
 
-@media (max-width: 768px) {
-  .home-page-container {
-    height: auto;
-    margin-top: 0;
-    padding-top: 0;
-  }
-  
-  .home-page-top-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 30px;
-    padding: 40px 0;
-    
-    &::before {
-      display: none;
-    }
-  }
-  
-  .home-page-container > * {
-    margin-bottom: 50px;
-  }
+.home-page-top-section::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3e6db5, #264b83, #3e6db5, transparent);
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
-  .home-page-container {
-    margin-top: 0;
-  }
-  
-  .home-page-top-section {
-    gap: 35px;
-    padding: 50px 0;
-  }
+.home-page-container>* {
+  margin-bottom: 0;
 }
 
-// Add fade-in animation for sections
+.home-page-container>*:not(:first-child)::before {
+  content: '';
+  display: block;
+  width: 60%;
+  max-width: 400px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d1d5db, transparent);
+  margin: 0 auto 0;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(24px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.home-page-container section {
+.home-page-container section,
+.home-page-container .about-container,
+.home-page-container .home-page-top-section {
   animation: fadeInUp 0.6s ease-out;
+}
+
+@media (max-width: 1023px) {
+  .home-page-container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .home-page-top-section {
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+    padding: 48px 0;
+  }
+
+  .home-page-top-section>* {
+    flex: unset;
+    /* 🔥 important */
+    width: 100%;
+    /* full width */
+  }
+
+  .home-page-top-section> :last-child {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page-top-section {
+    gap: 24px;
+    padding: 32px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-page-top-section {
+    align-items: stretch;
+  }
 }

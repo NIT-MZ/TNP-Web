@@ -6,7 +6,11 @@ import "../stylesheets/Clients.scss";
 const TrainingandRecruitingPartners = () => {
   useEffect(() => {
     const offset = window.innerWidth < 768 ? 50 : 200; // adjust values as needed
-    AOS.init({ offset, disable: "up" });
+AOS.init({
+  offset,
+  duration: 800,
+  once: true
+});
   }, []);
 
   const images = [

@@ -1,50 +1,314 @@
-.navbar-container{
-    height: auto;
-    width: 100%;
+/* ===== GLOBAL NAVBAR CONTAINER ===== */
+.navbar-container {
+  width: 100%;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.nav-link-text{
-    color: aliceblue;
+.navbar-scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.nav-link-text:hover{
-    color: rgb(0, 0, 0);
-}
-.nav-menu-full{
-    height: auto;
-    padding: 20px 0;
-}
-.brochure-button{
-    font-size: 22px;
-    // background-color: aqua;
-    margin: auto 0 auto 0;
-    // font-weight: 100;
-    cursor: pointer;
+/* ===== MOBILE NAVBAR ===== */
+.navbar-mobile {
+  display: none;
+  flex-direction: column;
+  background: linear-gradient(135deg, #3e6db5 0%, #264b83 100%);
+  border-bottom: 3px solid #1e3a6e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
-.nav-menu{
-    width: 90vw;
-    background-color: rgb(245, 245, 245);
-    box-shadow: 0 8px 16px rgba(black, .45);
+.navbar-mobile-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  gap: 12px;
 }
 
-.hamburger-icon{
-    position: absolute;
-    right: 10px;
-    top: 20px;
+.navbar-mobile-logo {
+  height: 52px;
+  width: 52px;
+  object-fit: contain;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
 }
 
-.tnp-logo{
-    height: 50px;
-    width: 50px;
-    background-color: aqua;
+.navbar-mobile-logo:hover {
+  transform: scale(1.05);
 }
 
+.navbar-mobile-title {
+  flex: 1;
+  text-align: center;
+  min-width: 0;
+}
+
+.navbar-mobile-title-main {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.navbar-mobile-title-sub {
+  color: #bdd4f0;
+  font-size: 11px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.navbar-mobile-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-mobile-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Mobile dropdown menu */
+.navbar-mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-mobile-menu-open {
+  max-height: 600px;
+  opacity: 1;
+}
+
+.navbar-mobile-link {
+  display: block;
+  padding: 12px 24px;
+  color: #1e3a6e;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.navbar-mobile-link:hover,
+.navbar-mobile-link:focus {
+  background-color: #eef3fb;
+  color: #3e6db5;
+  border-left-color: #3e6db5;
+}
+
+/* ===== DESKTOP NAVBAR ===== */
+.navbar-desktop {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-desktop-header {
+  background: linear-gradient(135deg, #3e6db5 0%, #264b83 100%);
+  padding: 28px 0;
+}
+
+.navbar-desktop-header-inner {
+  max-width: 1280px;
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.navbar-desktop-nit-logo {
+  height: 115px;
+  width: 115px;
+  object-fit: contain;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.navbar-desktop-nit-logo:hover {
+  transform: scale(1.05);
+}
+
+.navbar-desktop-text {
+  flex: 1;
+  text-align: center;
+  min-width: 0;
+}
+
+.navbar-desktop-text-hindi {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 2px 0;
+  font-family: 'Baloo Bhai 2', sans-serif;
+}
+
+.navbar-desktop-text-main {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 4px 0;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.navbar-desktop-text-institute {
+  color: #bdd4f0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 2px 0;
+}
+
+.navbar-desktop-text-tagline {
+  color: #8ab4e0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.navbar-desktop-logos {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.navbar-desktop-g20 {
+  height: 95px;
+  width: 95px;
+  object-fit: contain;
+  filter: brightness(1.3) contrast(1.1);
+}
+
+.navbar-desktop-tnp-logo {
+  height: 105px;
+  width: 105px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.navbar-desktop-tnp-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Desktop Nav Links Row */
+.navbar-desktop-nav {
+  background: linear-gradient(135deg, #1e3a6e 0%, #264b83 50%, #3e6db5 100%);
+  border-bottom: 3px solid #152a52;
+}
+
+.navbar-desktop-nav-inner {
+  max-width: 1280px;
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+
+.navbar-desktop-link {
+  color: #e8eef8;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+  position: relative;
+  letter-spacing: 0.3px;
+}
+
+.navbar-desktop-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px 2px 0 0;
+  transition: width 0.25s ease;
+}
+
+.navbar-desktop-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-desktop-link:hover::after {
+  width: 60%;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 1023px) {
-    .navbar-container{
-        height: auto;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-    }
+  .navbar-mobile { display: flex; }
+  .navbar-desktop { display: none; }
+}
+
+@media (min-width: 1024px) {
+  .navbar-mobile { display: none; }
+  .navbar-desktop { display: flex; }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .navbar-desktop-nit-logo { height: 90px; width: 90px; }
+  .navbar-desktop-text-hindi { font-size: 16px; }
+  .navbar-desktop-text-main { font-size: 18px; }
+  .navbar-desktop-text-institute { font-size: 14px; }
+  .navbar-desktop-g20 { height: 75px; width: 75px; }
+  .navbar-desktop-tnp-logo { height: 85px; width: 85px; }
+  .navbar-desktop-link { font-size: 12px; padding: 12px 10px; }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .navbar-desktop-link { font-size: 13px; padding: 14px 14px; }
+}
+
+@media (min-width: 1536px) {
+  .navbar-desktop-nit-logo { height: 135px; width: 135px; }
+  .navbar-desktop-text-hindi { font-size: 22px; }
+  .navbar-desktop-text-main { font-size: 24px; }
+  .navbar-desktop-text-institute { font-size: 18px; }
+  .navbar-desktop-text-tagline { font-size: 14px; }
+  .navbar-desktop-g20 { height: 115px; width: 115px; }
+  .navbar-desktop-tnp-logo { height: 125px; width: 125px; }
+  .navbar-desktop-link { font-size: 15px; padding: 16px 18px; }
 }

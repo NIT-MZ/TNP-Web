@@ -4,6 +4,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import XIcon from "@mui/icons-material/X";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
   // const col1items = [
@@ -88,8 +89,15 @@ const FooterSection = () => {
         </div>
       </div>
       <div className="footer-section-bottom">
-        Copyright © 2024-{new Date().getFullYear()}. All Rights Reserved. Designed & Developed by NITMZ TnP
-        Media and Website Team
+        <div>
+          Copyright © 2024-{new Date().getFullYear()}. All Rights Reserved. Designed & Developed by NITMZ TnP
+          Media and Website Team
+        </div>
+        <div className="footer-admin-link">
+          <Link to="/login" style={{ color: "#bdd4f0", textDecoration: "none", fontSize: "14px", transition: "color 0.2s" }} onMouseOver={(e) => e.target.style.color = "#fff"} onMouseOut={(e) => e.target.style.color = "#bdd4f0"}>
+            Admin Login
+          </Link>
+        </div>
       </div>
     </div>
   );

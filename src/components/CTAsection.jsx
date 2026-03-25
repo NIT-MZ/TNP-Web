@@ -12,9 +12,9 @@ const CTAsection = () => {
     document.body.removeChild(link);
   };
   return (
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-        <div class="text-center">
+    <section id="cta" className="cta">
+      <div className="container" data-aos="zoom-in">
+        <div className="text-center">
           <h3>Download Our Brochure</h3>
           <p>Know more about the University and the Training & Placement
             Cell</p>

@@ -1,205 +1,122 @@
+/* ===== COUNTS SECTION ===== */
 .counts {
-  padding: 80px 0;
+  padding: 64px 0;
   width: 90%;
+  max-width: 1280px;
   margin: 0 auto;
-  position: relative;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
-  }
+}
+
+.counts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
 }
 
 .counts .count-box {
   width: 100%;
   text-align: center;
-  padding: 30px;
-  background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 32px 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #3e6db5, #264b83);
-    transform: scaleX(0);
-    transition: transform 0.4s ease;
-  }
-  
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-    
-    &::before {
-      transform: scaleX(1);
-    }
-  }
+  border: 1px solid #eef3fb;
 }
 
+.counts .count-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3e6db5, #264b83);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.counts .count-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  border-color: transparent;
+}
+
+.counts .count-box:hover::before { transform: scaleX(1); }
+
 .counts .count-box span {
-  font-size: 56px;
-  line-height: 1.2;
-  display: block;
-  font-weight: 800;
+  font-size: 48px; line-height: 1.2; display: block; font-weight: 800;
   background: linear-gradient(135deg, #3e6db5 0%, #264b83 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin: 0 auto 16px;
-  font-family: 'Raleway', sans-serif;
-  transition: all 0.3s ease;
-  text-shadow: none;
-  
-  &:hover {
-    transform: scale(1.1);
-    background: linear-gradient(135deg, #124265 0%, #1e6ca6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; margin: 0 auto 12px; font-family: 'Raleway', sans-serif;
 }
 
 .counts .count-box p {
-  padding: 8px 0 0 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: #1e6ca6;
-  transition: all 0.3s ease;
-  letter-spacing: 0.5px;
-  
-  &:hover {
-    color: #3e6db5;
-    transform: translateY(-2px);
-  }
+  padding: 0; font-family: "Poppins", sans-serif; font-weight: 500;
+  font-size: 14px; color: #4b5563; line-height: 1.5; margin: 0;
 }
 
+.counts .count-box a { text-decoration: none; color: inherit; }
+
+/* ===== CTA SECTION ===== */
 .cta {
-  background: linear-gradient(135deg, #2487ce 0%, #1e6ca6 100%);
-  background-size: cover;
-  padding: 80px 0;
-  position: relative;
-  overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
-    opacity: 0.3;
-  }
+  background: linear-gradient(135deg, #264b83 0%, #3e6db5 50%, #1e3a6e 100%);
+  padding: 80px 0; position: relative; overflow: hidden;
 }
+
+.cta::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(255,255,255,0.08) 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.05) 0%, transparent 50%);
+}
+
+.cta .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
 
 .cta h3 {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 700;
-  font-family: 'Raleway', sans-serif;
-  position: relative;
-  z-index: 1;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff; font-size: 32px; font-weight: 700; font-family: 'Raleway', sans-serif;
+  position: relative; z-index: 1; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); margin-bottom: 12px;
 }
 
-.cta p {
-  color: #fff;
-  position: relative;
-  z-index: 1;
-  font-size: 18px;
-  line-height: 1.6;
-}
+.cta p { color: rgba(255, 255, 255, 0.85); position: relative; z-index: 1; font-size: 16px; line-height: 1.6; }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 14px 40px;
-  border-radius: 50px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 20px;
-  border: 3px solid #fff;
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: #fff;
-    transform: translate(-50%, -50%);
-    transition: width 0.4s ease, height 0.4s ease;
-    z-index: -1;
-  }
-  
-  &:hover {
-    color: #2487ce;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    
-    &::before {
-      width: 300px;
-      height: 300px;
-    }
-  }
+  font-family: "Poppins", sans-serif; font-weight: 600; font-size: 15px;
+  letter-spacing: 0.5px; display: inline-block; padding: 14px 40px;
+  border-radius: 50px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 20px; border: 2px solid rgba(255, 255, 255, 0.8);
+  color: #fff; text-decoration: none; cursor: pointer; position: relative;
+  z-index: 1; overflow: hidden; background: transparent;
 }
 
+.cta .cta-btn::before {
+  content: ''; position: absolute; top: 50%; left: 50%;
+  width: 0; height: 0; border-radius: 50%; background: #fff;
+  transform: translate(-50%, -50%); transition: width 0.4s ease, height 0.4s ease; z-index: -1;
+}
+
+.cta .cta-btn:hover {
+  color: #264b83; border-color: #fff; transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cta .cta-btn:hover::before { width: 300px; height: 300px; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1023px) { .counts-grid { grid-template-columns: repeat(2, 1fr); } }
+
 @media (max-width: 768px) {
-  .counts {
-    padding: 50px 0;
-  }
-  
-  .counts .count-box {
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .counts .count-box span {
-    font-size: 42px;
-  }
-  
-  .counts .count-box p {
-    font-size: 14px;
-  }
-  
-  .cta {
-    padding: 50px 0;
-  }
-  
-  .cta h3 {
-    font-size: 24px;
-  }
-  
-  .cta p {
-    font-size: 16px;
-  }
-  
-  .cta .cta-btn {
-    padding: 12px 30px;
-    font-size: 14px;
-  }
+  .counts { padding: 40px 0; }
+  .counts .count-box { padding: 24px 16px; }
+  .counts .count-box span { font-size: 36px; }
+  .counts .count-box p { font-size: 13px; }
+  .cta { padding: 48px 0; }
+  .cta h3 { font-size: 24px; }
+  .cta p { font-size: 14px; }
+  .cta .cta-btn { padding: 12px 32px; font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .counts-grid { grid-template-columns: 1fr; gap: 16px; }
+  .counts .count-box span { font-size: 32px; }
 }

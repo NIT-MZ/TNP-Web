@@ -3,11 +3,9 @@ import "../stylesheets/About.scss";
 
 const About = () => {
   return (
-    // <section id="about" className="about">
     <div className="about-container" data-aos="fade-up">
-      {/* <div className="section-title"> */}
       <div className="message">
-        <h2 style={{ paddingTop: "35px" }}>
+        <h2>
           MESSAGE FROM TRAINING & PLACEMENT OFFICE
         </h2>
         <div className="row">
@@ -50,7 +48,7 @@ const About = () => {
               inviolable rules. Student coordinators and members are closely
               co-opted in implementing these policy decisions. I am confident
               that our students will prove themselves and contribute immensely
-              toward pursuing the organization’s ambitions with a ray of hope
+              toward pursuing the organization's ambitions with a ray of hope
               that our indigenous and global industries will offer internships
               and jobs to our students at our campus. Further, this relationship
               will go beyond other engagements and mutual benefits. I sincerely
@@ -70,15 +68,13 @@ const About = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div className="about-member">
-              <div
-                className="member-img"
-                style={{ border: "2px solid #ccc", padding: "10px" }}
-              >
+            <div className="about-member p-6 md:p-8 lg:p-[20px]">
+              <div className="member-img">
                 <img
-                  className="w-[250px] h-auto"
+                  className="lg:w-[250px] lg:h-auto md:w-[150px] md:h-[150px] h-[140px] w-[140px]"
                   src="assets/img/tnp_team/image1.webp"
                   alt="TPO'S"
+                  style={{ borderRadius: '8px' }}
                 />
               </div>
               <div className="member-info">
@@ -96,9 +92,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </div>
-    // </section>
   );
 };
 
