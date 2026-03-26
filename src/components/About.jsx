@@ -78,7 +78,7 @@ const About = () => {
                 />
               </div>
               <div className="member-info">
-                <h4>Dr. Sukanta Roy</h4>
+                <h4>Prof. Sukanta Roy</h4>
                 <span>
                   Faculty In-charge (FIC), Training and Placement Office
                   Chairman <br />

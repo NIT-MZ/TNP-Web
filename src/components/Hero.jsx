@@ -12,7 +12,7 @@ const carouselItems = [
 
   {
     src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075760/p3fo42ly0tfthxwtlyun.jpg",
-    alt: "Prof. S. Sundar, Director of NIT Mizoram, and Dr. Sukanta Roy, Dean (Academic) of NIT Mizoram with the student coordinators (2024-2025) of the Training and Placement Office",
+    alt: "Prof. S. Sundar, Director of NIT Mizoram, and Prof. Sukanta Roy, Dean (Academic) of NIT Mizoram with the student coordinators (2024-2025) of the Training and Placement Office",
   },
   {
     src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075896/vg5vfgkfkbd1kmcrt5yv.png",
@@ -27,7 +27,7 @@ const carouselItems = [
     src: "assets/img/carousel/b.jpg",
     alt: "All NIT T&P Conclave 2024 (ANTPC 2024) held at NIT Trichy",
     caption:
-      "Dr. Sukanta Roy, Chairman Training and Placement Committee of NIT Mizoram participated in the All NIT T&P Conclave 2024 (ANTPC 2024) held at NIT Trichy",
+      "Prof. Sukanta Roy, Chairman Training and Placement Committee of NIT Mizoram participated in the All NIT T&P Conclave 2024 (ANTPC 2024) held at NIT Trichy",
   },
 
   {
