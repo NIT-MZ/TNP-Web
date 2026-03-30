@@ -77,7 +77,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/vikash-sharma-284191230/",
       image_name: "vikash_kumar.png",
     },
-   
+
   ];
 
   const studentPlacementcordinators2026 = [
@@ -89,12 +89,12 @@ const Team = () => {
       image_name: "sai_vivek.jpg",
       designation: "Team Lead",
     },
-      {
+    {
       name: "Suman Kumar Verma",
       position: "Placement Coordinator",
       branch: "ECE",
       linkedin: "https://www.linkedin.com/in/shashwatest/",
-      image_name: "Suman_Kumar_Verma.png",
+      image_name: "Suman_Verma.png",
     },
     {
       name: "Nalam Deepika",
@@ -118,7 +118,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/paras-gupta-243333260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       image_name: "paras-gupta-tnp.jpeg",
     },
-     {
+    {
       name: "Mudavath Pooja",
       position: "Placement Coordinator",
       branch: "CE",
@@ -132,7 +132,7 @@ const Team = () => {
       linkedin: "",
       image_name: "Kissan_Dalai.jpg",
     },
-    
+
 
   ];
 
@@ -207,9 +207,9 @@ const Team = () => {
       linkedin: "",
       image_name: "Priyanshu_Bariyar.jpg",
     },
-   
-  
-   
+
+
+
   ];
 
   const AssistantStudentActivityCoordinators2027 = [
@@ -278,7 +278,7 @@ const Team = () => {
       position: "Website and Media Coordinator",
       branch: "ME",
       linkedin: "https://in.linkedin.com/in/anand-rao-bauddh-ba2086271",
-      image_name: "anand_b.jpg",
+      image_name: "nandu_tnp.png",
     },
     {
       name: "Arman Kumar",
@@ -435,17 +435,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            // style={{
-            //   backgroundImage: `url(\/assets/img/team/${member.image_name})`,
-            // }}
+          // style={{
+          //   backgroundImage: `url(\/assets/img/team/${member.image_name})`,
+          // }}
           >
-                  <img
-    src={`/assets/img/team/${member.image_name}`}
-    alt={member.name}
-    className="team-card-img"
-    loading="lazy"
-    decoding="async"
-  />
+            <img
+              src={`/assets/img/team/${member.image_name}`}
+              alt={member.name}
+              className="team-card-img"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="team-card-bottom">
               <div>{member.name}</div>
             </div>
@@ -492,17 +492,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            // style={{
-            //   backgroundImage: `url(\/assets/img/team/${graduateexecutive.image_name})`,
-            // }}
+          // style={{
+          //   backgroundImage: `url(\/assets/img/team/${graduateexecutive.image_name})`,
+          // }}
           >
-                  <img
-    src={`/assets/img/team/${graduateexecutive.image_name}`}
-    alt={graduateexecutive.name}
-    className="team-card-img"
-    loading="lazy"
-    decoding="async"
-  />
+            <img
+              src={`/assets/img/team/${graduateexecutive.image_name}`}
+              alt={graduateexecutive.name}
+              className="team-card-img"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="team-card-bottom">
               <div>{graduateexecutive.name}</div>
             </div>
@@ -537,7 +537,7 @@ const Team = () => {
       </div>
 
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        STUDENT PLACEMENT COORDINATORS 
+        STUDENT PLACEMENT COORDINATORS
       </h4>
       <div className="team-card-container">
         {/* Mapping over the teamMembers array to generate card elements */}
@@ -545,17 +545,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            // style={{
-            //   backgroundImage: `url(\/assets/img/team/${placementcoordinator.image_name})`,
-            // }}
+          // style={{
+          //   backgroundImage: `url(\/assets/img/team/${placementcoordinator.image_name})`,
+          // }}
           >
-                  <img
-    src={`/assets/img/team/${placementcoordinator.image_name}`}
-    alt={placementcoordinator.name}
-    className="team-card-img"
-    loading="lazy"
-    decoding="async"
-  />
+            <img
+              src={`/assets/img/team/${placementcoordinator.image_name}`}
+              alt={placementcoordinator.name}
+              className="team-card-img"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="team-card-bottom">
               <div>{placementcoordinator.name}</div>
             </div>
@@ -597,17 +597,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            // style={{
-            //   backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
-            // }}
+          // style={{
+          //   backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
+          // }}
           >
-                  <img
-    src={`/assets/img/team/${activityCoordinator.image_name}`}
-    alt={activityCoordinator.name}
-    className="team-card-img"
-    loading="lazy"
-    decoding="async"
-  />
+            <img
+              src={`/assets/img/team/${activityCoordinator.image_name}`}
+              alt={activityCoordinator.name}
+              className="team-card-img"
+              loading="lazy"
+              decoding="async"
+            />
 
             <div className="team-card-bottom">
               <div>{activityCoordinator.name}</div>
@@ -641,7 +641,7 @@ const Team = () => {
         ))}
       </div>
 
-       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
+      <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
         Website and Media Coordinators{" "}
       </h4>
       <div className="team-card-container">
@@ -650,17 +650,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            // style={{
-            //   backgroundImage: `url(/assets/img/team/${mediamember.image_name})`,
-            // }}
+          // style={{
+          //   backgroundImage: `url(/assets/img/team/${mediamember.image_name})`,
+          // }}
           >
-                  <img
-    src={`/assets/img/team/${mediamember.image_name}`}
-    alt={mediamember.name}
-    className="team-card-img"
-    loading="lazy"
-    decoding="async"
-  />
+            <img
+              src={`/assets/img/team/${mediamember.image_name}`}
+              alt={mediamember.name}
+              className="team-card-img"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="team-card-bottom">
               <div>{mediamember.name}</div>
             </div>
@@ -694,7 +694,7 @@ const Team = () => {
       </div>
 
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        ASSISTANT STUDENT PLACEMENT COORDINATORS 
+        ASSISTANT STUDENT PLACEMENT COORDINATORS
       </h4>
       <div className="team-card-container">
         {/* Mapping over the teamMembers array to generate card elements */}
@@ -702,17 +702,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            // style={{
-            //   backgroundImage: `url(\/assets/img/team/${placementcoordinator.image_name})`,
-            // }}
+          // style={{
+          //   backgroundImage: `url(\/assets/img/team/${placementcoordinator.image_name})`,
+          // }}
           >
-                  <img
-    src={`/assets/img/team/${placementcoordinator.image_name}`}
-    alt={placementcoordinator.name}
-    className="team-card-img"
-    loading="lazy"
-    decoding="async"
-  />
+            <img
+              src={`/assets/img/team/${placementcoordinator.image_name}`}
+              alt={placementcoordinator.name}
+              className="team-card-img"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="team-card-bottom">
               <div>{placementcoordinator.name}</div>
             </div>
@@ -756,17 +756,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            // style={{
-            //   backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
-            // }}
+          // style={{
+          //   backgroundImage: `url(/assets/img/team/${activityCoordinator.image_name})`,
+          // }}
           >
-              <img
-    src={`/assets/img/team/${activityCoordinator.image_name}`}
-    alt={activityCoordinator.name}
-    className="team-card-img"
-    loading="lazy"
-    decoding="async"
-  />
+            <img
+              src={`/assets/img/team/${activityCoordinator.image_name}`}
+              alt={activityCoordinator.name}
+              className="team-card-img"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="team-card-bottom">
               <div>{activityCoordinator.name}</div>
             </div>
@@ -810,17 +810,17 @@ const Team = () => {
           <div
             className="team-card"
             key={index}
-            // style={{
-            //   backgroundImage: `url(/assets/img/team/${excutive.image_name})`,
-            // }}
+          // style={{
+          //   backgroundImage: `url(/assets/img/team/${excutive.image_name})`,
+          // }}
           >
-    <img
-    src={`/assets/img/team/${excutive.image_name}`}
-    alt={excutive.name}
-    className="team-card-img"
-    loading="lazy"
-    decoding="async"
-  />
+            <img
+              src={`/assets/img/team/${excutive.image_name}`}
+              alt={excutive.name}
+              className="team-card-img"
+              loading="lazy"
+              decoding="async"
+            />
 
             <div className="team-card-bottom">
               <div>{excutive.name}</div>
@@ -855,7 +855,7 @@ const Team = () => {
         {/* </div> */}
       </div>
 
-     
+
     </div>
   );
 };
