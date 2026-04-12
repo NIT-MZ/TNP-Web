@@ -6,7 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import UserContext from "../../context/UserContext";
 
 const Navbar = () => {
-  const{userDetail}=useContext(UserContext)
+  const { userDetail } = useContext(UserContext)
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef();
@@ -186,7 +186,7 @@ const Navbar = () => {
         <div className="navbar-desktop-header">
           <div className="navbar-desktop-header-inner">
             <img
-              src="https://www.vidyavision.com/CollegeUploads/Logos/2017-23-5-16-27-56_nit-mizoram-logo.png"
+              src="https://res.cloudinary.com/dwo3wa6k3/image/upload/v1775980269/tnp_logo_ls9uzk.png"
               alt="NIT Mizoram Logo"
               className="navbar-desktop-nit-logo"
               onClick={() => handleNavigation("/", "home")}

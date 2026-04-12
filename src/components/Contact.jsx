@@ -56,11 +56,11 @@ const Contact = () => {
           </div>
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-          <form
-  action="https://formsubmit.co/tnp@nitmz.ac.in"
-  method="POST"
-  className="php-email-form"
->
+            <form
+              action="https://formsubmit.co/861b5c421dd6b4118746920651fe0ed1"
+              method="POST"
+              className="php-email-form"
+            >
               <div className="row">
                 <div className="col-md-6 form-group mt-3">
                   <input
