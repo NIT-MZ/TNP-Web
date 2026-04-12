@@ -1,13 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import "../stylesheets/contact.scss";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import SmartphoneOutlinedIcon from "@mui/icons-material/SmartphoneOutlined";
+import { Snackbar, Alert, CircularProgress } from "@mui/material";
 
 const Contact = () => {
-  const handleSubmit = (event) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState("");
+  const [snackbarSeverity, setSnackbarSeverity] = useState("success");
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleCloseSnackbar = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenSnackbar(false);
+  };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log("Form submitted");
+    setLoading(true);
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/ajax/861b5c421dd6b4118746920651fe0ed1",// 
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        setSnackbarSeverity("success");
+        setSnackbarMessage("Thank you! We will reach out to you shortly.");
+        setOpenSnackbar(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setSnackbarSeverity("error");
+        setSnackbarMessage("Something went wrong. Please try again.");
+        setOpenSnackbar(true);
+      }
+    } catch (error) {
+      setSnackbarSeverity("error");
+      setSnackbarMessage("Something went wrong. Please try again.");
+      setOpenSnackbar(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -56,16 +113,14 @@ const Contact = () => {
           </div>
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-            <form
-              action="https://formsubmit.co/861b5c421dd6b4118746920651fe0ed1"
-              method="POST"
-              className="php-email-form"
-            >
+            <form onSubmit={handleSubmit} className="php-email-form">
               <div className="row">
                 <div className="col-md-6 form-group mt-3">
                   <input
                     type="text"
                     name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     className="form-control"
                     id="name"
                     placeholder="Your Name"
@@ -77,6 +132,8 @@ const Contact = () => {
                     type="email"
                     className="form-control"
                     name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     id="email"
                     placeholder="Your Email"
                     required
@@ -88,6 +145,8 @@ const Contact = () => {
                   type="text"
                   className="form-control"
                   name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   id="subject"
                   placeholder="Subject"
                   required
@@ -97,18 +156,37 @@ const Contact = () => {
                 <textarea
                   className="form-control"
                   name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   rows="5"
                   placeholder="Message"
                   required
                 ></textarea>
               </div>
               <div className="text-center">
-                <button type="submit">Send Message</button>
+                <button type="submit" disabled={loading}>
+                  {loading ? <CircularProgress size={24} color="inherit" /> : "Send Message"}
+                </button>
               </div>
             </form>
           </div>
         </div>
       </div>
+      <Snackbar
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={handleCloseSnackbar}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <Alert
+          onClose={handleCloseSnackbar}
+          severity={snackbarSeverity}
+          sx={{ width: "100%" }}
+          variant="filled"
+        >
+          {snackbarMessage}
+        </Alert>
+      </Snackbar>
     </section>
   );
 };
