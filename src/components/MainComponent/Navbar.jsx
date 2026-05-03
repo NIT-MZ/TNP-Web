@@ -79,7 +79,7 @@ const Navbar = () => {
     { label: "Office Team", type: "route", to: "/team" },
     { label: "For Recruiters", type: "route", to: "/recruiters" },
     { label: "Internships", type: "route", to: "/internship" },
-    { label: "News Archive", type: "route", to: "/NewsArcheive" },
+    // { label: "News Archive", type: "route", to: "/NewsArcheive" },
     { label: "Student Activities", type: "route", to: "/events" },
     { label: "Brochure", type: "action", action: onButtonClick },
     { label: "Contact Us", type: "anchor", anchor: "contact" },

@@ -5,6 +5,9 @@ const ListGroupItemClass =
   "list-group-item d-flex justify-content-between align-items-center md:font-bold ";
 
 const items = [
+  "3 Students placed at Vedanta Group.",
+  "4 students placed at HCL Technologies.",
+  "1 student placed at Renew Power .",
   "12 students placed at Accenture (first-ever hiring at NIT Mizoram).",
   "5 students placed at HSBC (first-ever hiring).",
   "5 students placed at Deloitte.",
@@ -23,6 +26,7 @@ const items = [
   "3 students placed at Tata Consulting Engineers Limited.",
   "17 students secured internships at Nandighosh Roadx Motors.",
   "1 student placed at APL Apollo Tubes Ltd.",
+  "1 student placed at Bakliwal Tutorials.",
   "1 student secured internship at Visa (Batch 2027 milestone).",
   "1 student placed at Siemens.",
   "8 students placed at UNLOX",
