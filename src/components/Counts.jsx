@@ -19,7 +19,7 @@ const Counts = () => {
               {counterOn && (
                 <CountUp
                   start={0}
-                  end={97.1}
+                  end={91.9}
                   duration={2}
                   delay={0}
                   decimals={1}
@@ -27,7 +27,7 @@ const Counts = () => {
                 ></CountUp>
               )}
             </span>
-            <p>Students Placed in Session 2024-25</p>
+            <p>Students Placed in Session 2025-26</p>
           </div>
 
           <div className="count-box">
@@ -45,18 +45,18 @@ const Counts = () => {
             </span>
             <p>
               Students Completed their Internship & Summer Training
-              (2024-25)
+              (2025-26)
             </p>
           </div>
 
           <div className="count-box">
-            <span>35</span>
+            <span>16.10</span>
             <p>Highest Package of B.Tech. Students (in LPA)</p>
           </div>
 
           <div className="count-box">
             <span>19</span>
-            <a href="https://NIT Mizoram.ac.in/mous/">
+            <a href="https://nitmz.ac.in/mous-of-nit-mizoram/" target="_blank" rel="noopener noreferrer">
               <p>MoU & Training Programs Signed with Other Institutions</p>
             </a>
           </div>

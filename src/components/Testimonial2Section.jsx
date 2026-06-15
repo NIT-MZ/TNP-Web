@@ -30,7 +30,7 @@ const testimonials = [
   // },
    {
     name: "Khusbu Kumari ",
-    company: "Delloite",
+    company: "Deloitte",
     message:
       "I am incredibly grateful to have been placed at Deloitte through our college placement program. This opportunity would not have been possible without the continuous support and guidance of our faculty and the Training and Placement Cell. The rigorous academic curriculum, combined with the various workshops and mock interview sessions organized by the department, truly helped me prepare for this moment. I feel proud to be a part of NIT Mizoram and excited to begin this new chapter of my career..",
     img: "assets/img/testimonials/khushbu_k.png",

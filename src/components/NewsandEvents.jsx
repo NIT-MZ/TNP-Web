@@ -60,7 +60,7 @@ const NewsandEvents = () => {
               <h4 className="card-title text-lg font-semibold">News & Notice</h4>
             </div>
             <div className="card-body">
-              <p className="card-text">
+              <div className="card-text">
                 <div className="news-ticker-vertical">
                   <div className="news-ticker-vertical-content">
                     <ul className="list-group list-group-flush ">
@@ -81,7 +81,7 @@ const NewsandEvents = () => {
                     </ul>
                   </div>
                 </div>
-              </p>
+              </div>
             </div>
           </div>
         </div>

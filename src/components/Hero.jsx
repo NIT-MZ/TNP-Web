@@ -57,7 +57,7 @@ const carouselItems = [
     alt: "bashant panchatmi",
     caption: "Sports Event",
   },
-  
+
   {
     src: "assets/img/carousel/IMG_20240316_163221.webp",
     alt: "bashant panchatmi",
@@ -70,10 +70,10 @@ const marqueeLinks = [
   {
     type: "link",
     href: "https://forms.gle/LeYQhi8EJeDCAVBF7",
-    text: "Registration of Companies for 2025-2026",
+    text: "Registration of Companies for 2026-2027",
   },
 
-   {
+  {
     type: "alert",
     text: "ICICI",
   },
@@ -82,23 +82,23 @@ const marqueeLinks = [
     type: "alert",
     text: "UST",
   },
-    {
+  {
     type: "alert",
     text: "Bakliwal Tutorials",
   },
-   {
+  {
     type: "alert",
     text: "JP Morgan Chase",
   },
-     {
+  {
     type: "alert",
     text: "TCS",
   }
-   
 
-  
- 
- 
+
+
+
+
 ];
 
 const Hero = () => {

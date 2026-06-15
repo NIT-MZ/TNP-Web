@@ -33,7 +33,7 @@ const DirectorsMessage = () => {
  Sciences, Humanities and Social Sciences. The Institute is working untiringly to
  impart quality education that keeps pace with the latest advances in research
  and development activities.
- The year 2024–25 saw 97% campus placements with more than 90
+ The year 2025–26 saw 91.9% campus placements with more than 112
  companies visited for the placements. 100% internship offers were received
  from top-notch companies and IITs. A total of 8 current B.Tech students are
  undergoing Internships at IIT Madras, out of which some will continue their 4th
@@ -48,10 +48,6 @@ The introduction of Minor streams with regular B.Tech, in Semiconductor & VLSI,
  public sectors like BIS, AAI, Senses Department, NITTTR, Mizoram Police, INAE,
  and The Institution of Engineers have opened up seamless opportunities for
  faculty and students.
-www.nitmz.ac.in
- Training and Placement Office
- FROM
- DIRECTOR’S DESK
  At present, NIT Mizoram is situated in a temporary campus at Aizawl. With the
  support of the state government, we are expecting the completion of the
  partially constructed permanent campus at Lengpui, Mizoram within the next

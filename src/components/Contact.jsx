@@ -105,7 +105,7 @@ const Contact = () => {
                   <SmartphoneOutlinedIcon />
                 </i>
                 <h4>Call:</h4>
-                <a href="tel:0389-2391236">
+                <a href="tel:+91-9035385841">
                   <p>+91-9035385841 </p>
                 </a>
               </div>
