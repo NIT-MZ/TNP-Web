@@ -22,6 +22,7 @@ import AddNews from "./components/Admin/AddNews.jsx";
 
 import Logout from "./components/Admin/logout.jsx";
 import UpdateEvents from "./components/Admin/UpdateEvents.jsx";
+import ProtectedRoute from "./components/Admin/ProtectedRoute.jsx";
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
           <Route path="/recruiters" element={<ForRecruiters />} />
           <Route path="/jaf" element={<Jaf />} />
           <Route path="/team" element={<TeamPage />} />
-          <Route path="/addNews" element={<AddNews/>}/>
+          <Route path="/addNews" element={<ProtectedRoute><AddNews/></ProtectedRoute>}/>
 
           <Route path="/login" element={<UserLogin/>}/>
           <Route path="/logout" element={<Logout/>}/>
@@ -47,9 +48,9 @@ function App() {
             <Route path=":id" element={<NewsDetailPage />} />
           </Route>
 
-          <Route path="/addEvent" element={<EventForm/>} />
-          <Route path="/adminPage" element={<AdminPage/>}/>
-          <Route path="/updateEvents" element={<UpdateEvents/>}/>
+          <Route path="/addEvent" element={<ProtectedRoute><EventForm/></ProtectedRoute>} />
+          <Route path="/adminPage" element={<ProtectedRoute><AdminPage/></ProtectedRoute>}/>
+          <Route path="/updateEvents" element={<ProtectedRoute><UpdateEvents/></ProtectedRoute>}/>
           
 
 

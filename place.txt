@@ -1,0 +1,79 @@
+updating ways to update image in student activity details
+Note: We can update the events and images by logging into the website (admin panel).
+
+### Updates in Home page
+
+Here are the details on how to update various sections on the Home Page after every placement session year:
+
+1. **Home Page Images (Hero Section Slider):**
+   - **File:** `src/components/Hero.jsx`
+   - **Where:** Update the `carouselItems` array at the top of the file. You can provide new Cloudinary links or use local images placed in `public/assets/img/carousel/`.
+   - **Marquee Text:** You can also update the scrolling text links under the images by editing the `marqueeLinks` array in the same file.
+
+2. **Director's Message & Photo:**
+   - **File:** `src/components/DirectorsMessage.jsx`
+   - **Where:** Edit the text directly inside this file. The photo is loaded from `public/assets/img/tnp_team/Director.webp`.
+
+3. **T&P Office Message & Photo:**
+   - **File:** `src/components/About.jsx`
+   - **Where:** Edit the text paragraphs inside this file. The photo is loaded from `public/assets/img/tnp_team/image1.webp`.
+
+4. **Brochure Link (PDF Download):**
+   - **Files:** `src/components/MainComponent/Navbar.jsx` AND `src/components/CTAsection.jsx`
+   - **Where:** Find the `pdfUrl` variable and update the file name (e.g., change `"Training and Placement Brochure 2025-26.pdf"` to the new one).
+   - **Note:** Make sure to upload the new PDF file directly into the `public/` folder of your project.
+
+5. **Company Logos (Past Recruiters):**
+   - **File:** `src/components/TrainingandRecruitingPartners.jsx`
+   - **Where:** Update the array of image file names at the top of the file (like `"client-1.webp"`, etc.).
+   - **Note:** The actual logo images need to be placed inside the `public/assets/img/clients/3_Top Recruiters_Images_Super_Tool/` folder.
+
+6. **News & Notices (Home Page Scrolling Ticker):**
+   - **File:** `src/components/NewsandEvents.jsx`
+   - **Where:** Open this file and look for the `items` array near the top (around line 7). 
+   - **Note:** The text here is hardcoded. You can simply edit, add, or remove the text lines (e.g., `"3 Students placed at Vedanta Group."`) and it will automatically update the vertical scrolling marquee on the Home Page.
+
+7. **Placement Highlights (Student Testimonials Slider):**
+   - **File:** `src/components/Testimonial2Section.jsx`
+   - **Where:** Find the `testimonials` array near the top of the file (around line 9).
+   - **Note:** You can add, edit, or remove the student messages, names, and companies here. Make sure to place the student's photo in the `public/assets/img/testimonials/` folder and link it in the `img` field.
+
+8. **Placement Statistics / Key Numbers (e.g., 97.1%, 35 LPA):**
+   - **File:** `src/components/Counts.jsx`
+   - **Where:** Look for the `CountUp` components and `<span>` tags throughout this file.
+   - **How to Update:** 
+     - For the percentages (like 97.1 and 100), update the `end={97.1}` and `end={100}` values inside the `<CountUp>` tags.
+     - For static numbers (like 35 and 19), simply change the text inside the `<span>35</span>` or `<span>19</span>` tags.
+     - You can also update the session years (e.g., changing "2024-25" to "2025-26") in the `<p>` tags below the numbers.
+
+9. **Other Yearly Session Updates (Teams, Links, and Internships):**
+   - **TNP Team (Student Coordinators):** Open `src/components/Team.jsx` and `src/components/WebTeamMember.jsx`. You will see arrays like `studentPlacementcordinators2026`, `AssistantStudentPlacementcordinators2027`, etc. You need to update the names, roles, and images (`public/assets/img/team/`) for the new session's student committee.
+   - **Registration Links:** In `src/components/Hero.jsx` (under `marqueeLinks`), update the text like `"Registration of Companies for 2025-2026"`.
+   - **Internship Page Stats:** In `src/pages/Internships.jsx`, there are text headings like `"Students Joined Internship for 2025-2026 Batch"` that should be updated to the current year.
+
+---
+
+### Team Work Distribution Plan (For 4 People - Home & Event Pages Only)
+
+To make sure the update process is fast and fair, here is an equal division of the Home Page and Events Page updates across 4 team members:
+
+** Dilip's work  : The Events & Announcements Manager**
+*Focus: Managing dynamic events and notices.*
+- Log into the Admin Panel to upload and manage new **Student Activities & Events**.
+- Open `NewsandEvents.jsx` to update the **News & Notices** scrolling ticker text.
+
+** Aditya's work  : The Visuals & Branding Coordinator**
+*Focus: Updating large images and recruiter logos.*
+- Open `Hero.jsx` to update the **Home Page Slider Images & Marquee Text**.
+- Gather, crop, upload, and link the new **Company Logos** for Past Recruiters in `TrainingandRecruitingPartners.jsx`.
+
+** Jeevan 's work : The Official Comms & Documents Lead**
+*Focus: Official messages and the placement brochure.*
+- Open `DirectorsMessage.jsx` to update the **Director's Message**.
+- Open `About.jsx` to update the **T&P Office Message **.
+- Upload the new **Placement Brochure PDF** and update its links in `Navbar.jsx` & `CTAsection.jsx`.
+
+** Karthik's work ->  The Placement Success Coordinator**
+*Focus: Highlighting the achievements of the recent batch.*
+- Gather quotes and photos to update the **Placement Highlights / Testimonials Slider** in `Testimonial2Section.jsx`.
+- Update the animated **Placement Statistics / Key Numbers** (e.g., 97.1%, 35 LPA) in `Counts.jsx`.
