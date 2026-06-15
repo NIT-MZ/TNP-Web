@@ -62,7 +62,7 @@ const companies = [
   },
   {
     name: "IIT Madras",
-    studentsPlaced: "10",
+    studentsPlaced: "15",
     images: [
       `/assets/img/internships/iitm.png`,
     ]
