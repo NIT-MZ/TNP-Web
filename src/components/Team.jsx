@@ -61,6 +61,14 @@ const Team = () => {
       image_name: "dr_ramesh.png",
     },
     {
+  name: "Dr. Nikhil Srivastava",
+  position: "TPO, MA",
+  phone: "+91-78382 35745",
+  email: "nikhil.math@nitmz.ac.in",
+  image_name: "Dr_Nikhil.jpeg",
+},
+   
+    {
       name: "Dr. Vijay Mandal",
       position: "TPO, ME",
       phone: "+91-9661164031",
@@ -77,6 +85,21 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/vikash-sharma-284191230/",
       image_name: "vikash_kumar.png",
     },
+    {
+      name: "Tata Sai Vivek Vardhan",
+      position: "Graduate Executive",
+      phone: "+91-63036 49750",
+      linkedin: "https://www.linkedin.com/in/sai-vivek-tata-049210280",
+      image_name: "sai_vivek.jpg",
+    },
+    {
+      name: "Satvik Sharma",
+      position: "Graduate Executive",
+      phone: "+91-93043 37688",
+      linkedin: "https://www.linkedin.com/in/satviksharmaa/",
+      image_name: "Satvik_Sharma.jpg",
+    },
+
 
   ];
 
@@ -136,49 +159,49 @@ const Team = () => {
 
   ];
 
-  const AssistantStudentPlacementcordinators2027 = [
+  const AssistantStudentPlacementcordinators2028 = [
     {
-      name: "Tiya Jaman",
+      name: "Aratrika Pandey",
       position: "Assistant Placement Coordinator",
-      branch: "ECE",
-      linkedin: "http://linkedin.com/in/tiya-6b0386283",
-      image_name: "tiya.jpeg",
+      branch: "CE",
+      linkedin: "https://www.linkedin.com/in/aratrika-pandey-340009324",
+      image_name: "aratrika_pandey.jpeg",
     },
     {
-      name: "Rishabh Shukla",
-      position: "Assistant Placement Coordinator",
-      branch: "MA",
-      linkedin: "https://www.linkedin.com/in/rishabh-shukla-5a691930a/",
-      image_name: "Rishabh_Shukla.jpg",
-    },
-    {
-      name: "Ramu Yadav",
+      name: "Naman Shukla",
       position: "Assistant Placement Coordinator",
       branch: "CSE",
-      linkedin: "http://www.linkedin.com/in/mrkhiladi123",
-      image_name: "Ramu_Yadav.png",
+      linkedin: "https://www.linkedin.com/in/naman-shukla-11baa4328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      image_name: "Naman_shukla.jpeg",
+    },
+    {
+      name: "Aman Kumar",
+      position: "Assistant Placement Coordinator",
+      branch: "EE",
+      linkedin: "https://www.linkedin.com/in/aman-kumar-nitmz?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      image_name: "Aman_Kumar.png",
     },
 
     {
-      name: "Shubham Kumar",
-      position: "Assistant Placement Coordinator",
-      branch: "EE",
-      linkedin: "https://www.linkedin.com/in/shubham-kumar-68a31b262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Shubham_kumar_ee.jpg",
-    },
-    {
-      name: "Abhijeet Raj",
-      position: "Assistant Placement Coordinator",
-      branch: "CE",
-      linkedin: "",
-      image_name: "Abhij_Raj.jpg",
-    },
-    {
-      name: "Aditya Mishra",
+      name: "Vansh Kailwal",
       position: "Assistant Placement Coordinator",
       branch: "ME",
-      linkedin: "https://www.linkedin.com/in/aditya-mishra-36aa04345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Aditya_Mishra.jpg",
+      linkedin: "https://www.linkedin.com/in/vansh-kailwal-09124938b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      image_name: "Vansh_Kailwal.jpg",
+    },
+    {
+      name: "Abhishek Yadav",
+      position: "Assistant Placement Coordinator",
+      branch: "MA",
+      linkedin: "https://www.linkedin.com/in/abhishekyadav59859/",
+      image_name: "Abhishek_Yadav.jpeg",
+    },
+    {
+      name: "Sai Shubham Bishal",
+      position: "Assistant Placement Coordinator",
+      branch: "ECE",
+      linkedin: "https://www.linkedin.com/in/sai-shubham-biswal-8a2461305",
+      image_name: "Sai_Shubham_Biswal.jpg",
     },
 
 
@@ -212,49 +235,85 @@ const Team = () => {
 
   ];
 
-  const AssistantStudentActivityCoordinators2027 = [
+  const AssistantStudentActivityCoordinators2028 = [
     {
-      name: "Priyanshu Agrawal",
+      name: "Mahak Singh",
       position: "Activity Coordinator",
       branch: "CSE",
-      linkedin: "https://www.linkedin.com/in/priyanshu-agrawal-0924aa319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "priyanshu_agrawal.jpg",
+      linkedin: "https://www.linkedin.com/in/mahaksingh1295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      image_name: "Mahak_Singh.jpg",
     },
     {
-      name: "Abhishek Kumar",
+      name: "Routhu Devavarshini",
       position: "Activity Coordinator",
-      branch: "EE",
-      linkedin: "https://www.linkedin.com/in/abhikumar24?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Abhishek_Kumar.jpg",
+      branch: "CSE",
+      linkedin: "https://www.linkedin.com/in/deva-varshini-routhu-ba0b97376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      image_name: "Devavarshini.jpg",
     },
     {
-      name: "Neha Kumari",
-      position: "Activity Cordinator",
-      branch: "ME",
-      linkedin: "https://www.linkedin.com/in/neha-kumari-a31a992ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Neha_Garg.jpg",
-    },
-    {
-      name: "Pragya Tripathi",
-      position: "Activity Coordinator",
-      branch: "MA",
-      linkedin: "http://www.linkedin.com/in/pragya-tripathi-767489288",
-      image_name: "PRAGYA_TRIPATHI.jpg",
-    },
-    {
-      name: "Rohan Agrahari",
-      linkedin: "https://www.linkedin.com/in/rohan-agrahari-964478329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      position: "Activity Cordinator",
-      branch: "CE",
-      image_name: "Rohan_Agrahari.jpg",
-    },
-    {
-      name: "Vishal Kumar Vaibhav",
-      linkedin: "https://www.linkedin.com/in/vishal-kumar-vaibhav-68542a336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      name: "Shreya Dharmatma",
       position: "Activity Cordinator",
       branch: "ECE",
-      image_name: "Vishal_Kumar_Vaibhav.jpg",
+      linkedin: "https://www.linkedin.com/in/shreya-dharmatma-1635b333b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      image_name: "Shreya_Dharmatma.jpg",
     },
+    {
+      name: "Vanapalli Vyshnavi",
+      position: "Activity Coordinator",
+      branch: "ECE",
+      linkedin: "https://www.linkedin.com/in/vanapalli-vyshnavi-04a179345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      image_name: "Vanapalli_Vyshnavi.jpg",
+    },
+    {
+      name: "Saurav Kumar",
+      linkedin: "https://www.linkedin.com/in/saurav-kumar-aba944314 ",
+      position: "Activity Cordinator",
+      branch: "CE",
+      image_name: "Saurav_Kumar28.jpg",
+    },
+    {
+      name: "Ruchi Jha",
+      linkedin: "https://www.linkedin.com/in/ruchi-jha-8462312a3?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      position: "Activity Cordinator",
+      branch: "CE",
+      image_name: "Ruchi_Jha.jpg",
+    },
+    {
+      name: "Sakcham Kumar",
+      linkedin: "https://www.linkedin.com/in/sakcham-kumar-077066332?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      position: "Activity Cordinator",
+      branch: "EE",
+      image_name: "Sakcham_Kumar.jpg",
+    },
+    {
+      name: "Ridima Raj",
+      linkedin: "https://www.linkedin.com/in/ridima-raj-373b7125a",
+      position: "Activity Cordinator",
+      branch: "EE",
+      image_name: "Ridima_Raj.png",
+    },
+    {
+      name: "Ayush Kumar",
+      linkedin: "https://www.linkedin.com/in/ayush-kumar-7697a734b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      position: "Activity Cordinator",
+      branch: "ME",
+      image_name: "Ayush_Kumar28.jpg",
+    },
+    {
+      name: "Rana Abhshek",
+      linkedin: "https://www.linkedin.com/in/rana-abhishek-b-tech-44710a3ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      position: "Activity Cordinator",
+      branch: "ME",
+      image_name: "Rana_Abhishek.png",
+    },
+     {
+      name: "Himanshu Choudhury",
+      linkedin: "https://www.linkedin.com/in/himanshu-chaudhary-018b09389?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      position: "Activity Cordinator",
+      branch: "ECE",
+      image_name: "Himanshu_Chaudhary.jpg",
+    },
+
   ];
 
   const WebsiteAndMediaCoordinators = [
@@ -316,6 +375,7 @@ const Team = () => {
       image_name: "Saurabh_Verma.jpg",
     },
     {
+
       name: "Pooja Kumari",
       linkedin: "https://www.linkedin.com/in/pooja-kumari-nitmz/",
       position: "Website and Media Coordinator",
@@ -698,7 +758,7 @@ const Team = () => {
       </h4>
       <div className="team-card-container">
         {/* Mapping over the teamMembers array to generate card elements */}
-        {AssistantStudentPlacementcordinators2027.map((placementcoordinator, index) => (
+        {AssistantStudentPlacementcordinators2028.map((placementcoordinator, index) => (
           <div
             className="team-card"
             key={index}
@@ -752,7 +812,7 @@ const Team = () => {
       </h4>
       <div className="team-card-container">
         {/* Mapping over the teamMembers array to generate card elements */}
-        {AssistantStudentActivityCoordinators2027.map((activityCoordinator, index) => (
+        {AssistantStudentActivityCoordinators2028.map((activityCoordinator, index) => (
           <div
             className="team-card"
             key={index}
