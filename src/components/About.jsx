@@ -5,62 +5,22 @@ const About = () => {
   return (
     <div className="about-container" data-aos="fade-up">
       <div className="message">
-        <h2>
-          MESSAGE FROM TRAINING & PLACEMENT OFFICE
-        </h2>
+        <h2>MESSAGE FROM TRAINING & PLACEMENT OFFICE</h2>
         <div className="row">
           <div className="col-lg-9 col-md-6 mb-4">
-            <p style={{ textAlign: "justify" }}>
-              <i className="fa-solid fa-quote-left"></i> Greetings from the
-              Training & Placement (T&P) Office, National Institute of
-              Technology Mizoram (NIT Mizoram), an Institution of National
-              Importance under the Ministry of Education, Govt. of India! Being
-              one of the premier institutes of the country, NIT Mizoram, under
-              the Directorship of Prof. S. Sundar, is working determinedly to
-              impart quality education to its BTech, MTech, and Ph.D. courses in
-              engineering and sciences that keep pace with the latest advances
-              in research and development activities and committed to serving
-              the societal and industrial needs of the country. The institute is
-              situated in the scenic beauty of Mizoram, wrapped between clouds
-              and mountains. The T&P Office, NIT Mizoram, facilitates the
-              placement process of students passing out from the Institute,
-              besides collaborating with leading organizations and institutes to
-              set up student internship and training programs. The office
-              liaises with various industrial establishments, corporate houses,
-              etc., which conduct campus interviews and select graduate and
-              post-graduate students from all disciplines. Besides catering to
-              other logistics, the T&P Office provides infrastructural
-              facilities to conduct group discussions, tests, and interviews.
-              The office makes every effort each day to bridge the gap between
-              the dreams and capabilities of our students through training
-              programs to enhance the soft skills and overall personality of
-              students in association with industry and academic experts. The
-              placement season runs throughout the year, from July through to
-              June. Pre-placement talks are also conducted in this regard as per
-              mutual convenience between the industries and the institute. Job
-              offers, dates of interviews, selection of candidates, etc., are
-              announced through the T&P Office. The Placement Office is assisted
-              by a Faculty T&P Committee comprising faculty members from each
-              department. Student coordinators and members from various
-              undergraduate and post-graduate engineering streams support the
-              office via core, executive, and associate team members. The
-              committee evolves a broad policy framework yearly besides a set of
-              inviolable rules. Student coordinators and members are closely
-              co-opted in implementing these policy decisions. I am confident
-              that our students will prove themselves and contribute immensely
-              toward pursuing the organization's ambitions with a ray of hope
-              that our indigenous and global industries will offer internships
-              and jobs to our students at our campus. Further, this relationship
-              will go beyond other engagements and mutual benefits. I sincerely
-              appreciate our industry partners who have recognized the depth of
-              our rich and diverse talent pool and accorded valuable
-              opportunities. More information about the institute and various
-              courses offered to the students is available in the placement
-              brochure. Please feel free to contact the T&P Office, NIT Mizoram,
-              in case of any queries at tnp@nitmz.ac.in. I look forward to a
-              fruitful and mutually beneficial relationship with your esteemed
-              organization.
-              <i className="fa-solid fa-quote-right"></i>
+            <p style={{ textAlign: "justify", marginBottom: "16px" }}>
+              <i className="fa-solid fa-quote-left" style={{ marginRight: "8px" }}></i>
+              Greetings from the Training & Placement (T&P) Office, National Institute of Technology Mizoram! Our office operates as the primary gateway connecting young technical intellects with leading corporate and industrial organizations. Functioning under a structured administrative framework, the cell is managed by senior faculty leadership, departmental faculty placement officers, and a dedicated team of student coordinators who oversee the daily logistics, database management, and ground operations of our recruitment drives.
+            </p>
+            <p style={{ textAlign: "justify", marginBottom: "16px" }}>
+              To meet the demands of rapidly shifting global industries, the institute has integrated highly specialized minor streams into our traditional B.Tech curriculum, offering students targeted expertise in cutting-edge domains such as Artificial Intelligence & Machine Learning, Semiconductor & VLSI Design, and Green Energy & Sustainability. Furthermore, our strategic academic collaborations allow top-performing undergraduate students a unique pathway to complete their final year of study and transition directly into advanced research tracks at premier institutions like the Indian Institute of Technology (IIT) Madras.
+            </p>
+            <p style={{ textAlign: "justify", marginBottom: "16px" }}>
+              The industrial readiness and versatile engineering talent cultivated at our institute are clearly proven by the exceptional performance parameters of our ongoing 2025–2026 placement drive. The recruitment cell has already achieved an outstanding 91.9% overall placement rate for the graduating class, welcoming 117 esteemed recruiting organizations to our campus. This has yielded a strong average package of 9.56 LPA, a highest individual package of 16.10 LPA, and a perfect 100% summer internship conversion rate across all streams. This competitive drive highlights excellent talent distribution, with Computer Science and Engineering securing a 96.2% placement rate, Electronics and Communication Engineering achieving 96.0%, Mechanical standing strong at 93.3%, Civil recording a robust 83.3%, and Electrical Engineering tracking firmly at 81.0%.
+            </p>
+            <p style={{ textAlign: "justify", marginBottom: "16px" }}>
+              All recruitment workflows, pre-placement talks, online technical evaluations, and multi-tier interviews are managed seamlessly through our centralized digital and physical infrastructure located at Academic Block-11 in Chaltlang. We cordially invite our corporate partners to engage with our day-one-ready talent pool. Please feel free to contact the T&P Office at tnp@nitmz.ac.in for any queries. I look forward to a fruitful and mutually beneficial relationship with your esteemed organization.
+              <i className="fa-solid fa-quote-right" style={{ marginLeft: "8px" }}></i>
             </p>
           </div>
           <div
@@ -73,8 +33,8 @@ const About = () => {
                 <img
                   className="lg:w-[250px] lg:h-auto md:w-[150px] md:h-[150px] h-[140px] w-[140px]"
                   src="assets/img/tnp_team/image1.webp"
-                  alt="TPO'S"
-                  style={{ borderRadius: '8px' }}
+                  alt="Faculty In-charge T&P"
+                  style={{ borderRadius: "8px" }}
                 />
               </div>
               <div className="member-info">
@@ -83,9 +43,11 @@ const About = () => {
                   Faculty In-charge (FIC), Training and Placement Office
                   Chairman <br />
                 </span>
-                <span>
-                  Email: sukanta.me@nitmz.ac.in / tnp@nitmz.ac.in
-                  <br /> Contact: +91-9035385841{" "}
+                <span style={{ display: "block", marginTop: "8px" }}>
+                  Email: sukanta.me@nitmz.ac.in <br />
+                  tnp@nitmz.ac.in
+                  <br />
+                  Contact: +91-9035385841{" "}
                 </span>
               </div>
             </div>

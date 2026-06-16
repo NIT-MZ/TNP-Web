@@ -11,16 +11,16 @@ const carouselItems = [
 
 
   {
-    src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075760/p3fo42ly0tfthxwtlyun.jpg",
-    alt: "Prof. S. Sundar, Director of NIT Mizoram, and Prof. Sukanta Roy, Dean (Academic) of NIT Mizoram with the student coordinators (2024-2025) of the Training and Placement Office",
+    src: "https://res.cloudinary.com/drdmzhyzm/image/upload/v1781524785/TeamTNP2025_q11ss2.jpg",
+    caption: "Prof. S. Sundar, Director of NIT Mizoram, and Prof. Sukanta Roy, Dean (Academic) of NIT Mizoram with the student coordinators (2025-2026) of the Training and Placement Office",
   },
   {
     src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075896/vg5vfgkfkbd1kmcrt5yv.png",
-    alt: "National Space Day 2025",
+    caption: "National Space Day 2025",
   },
   {
     src: "assets/img/carousel/yuvamathan1.png",
-    alt: "Yuvamanthan NIT Mizoram",
+    caption: "Yuvamanthan NIT Mizoram",
   },
 
   {
@@ -149,7 +149,7 @@ const Hero = () => {
                   <img
                     className="d-block carousel-img "
                     src={item.src}
-                    alt={item.alt}
+                    alt={item.alt || item.caption}
                     loading={index === 0 ? "eager" : "lazy"}
                     decoding="async"
                   />
