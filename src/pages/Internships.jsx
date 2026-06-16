@@ -9,14 +9,14 @@ import ScrollTrigger from "react-scroll-trigger";
 const companies = [
   {
     name: "CDAC Noida",
-    studentsPlaced: 14,
+    studentsPlaced: 6,
     images: [
       `/assets/img/internships/cdac.png`,
     ]
   },
   {
-    name: "CDAC Kolkata",
-    studentsPlaced: 7,
+    name: "CDAC Kolkata, Pune +",
+    studentsPlaced: 3,
     images: [
       `/assets/img/internships/cdac.png`,
     ]
@@ -30,9 +30,16 @@ const companies = [
   },
   {
     name: "L&T Construction",
-    studentsPlaced: 6,
+    studentsPlaced: "3+",
     images: [
       `/assets/img/internships/lnt.png`,
+    ]
+  },
+  {
+    name: "NVIDIA",
+    studentsPlaced: 1,
+    images: [
+      `/assets/img/internships/nvidia.png`,
     ]
   },
   {
@@ -50,7 +57,7 @@ const companies = [
     ]
   },
   {
-    name: "NTPC, SAIL +",
+    name: "NTPC, BEL, SAIL +",
     studentsPlaced: "12+",
     images: [
       `/assets/img/internships/ntpc.png`,
@@ -69,14 +76,14 @@ const companies = [
   },
   {
     name: "BIS",
-    studentsPlaced: "9",
+    studentsPlaced: "5",
     images: [
       `/assets/img/internships/bis.png`,
     ]
   },
   {
     name: "IIT Kanpur, Patna +",
-    studentsPlaced: "20",
+    studentsPlaced: "30",
     images: [
       `/assets/img/internships/iitk.png`,
       `/assets/img/internships/iitp.png`,

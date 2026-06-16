@@ -61,13 +61,12 @@ const Team = () => {
       image_name: "dr_ramesh.png",
     },
     {
-  name: "Dr. Nikhil Srivastava",
-  position: "TPO, MA",
-  phone: "+91-78382 35745",
-  email: "nikhil.math@nitmz.ac.in",
-  image_name: "Dr_Nikhil.jpeg",
-},
-   
+      name: "Dr. Nikhil Srivastava",
+      position: "TPO, MA",
+      phone: "+91-78382 35745",
+      email: "nikhil.math@nitmz.ac.in",
+      image_name: "Dr_Nikhil.jpeg",
+    },
     {
       name: "Dr. Vijay Mandal",
       position: "TPO, ME",
@@ -78,13 +77,6 @@ const Team = () => {
   ];
 
   const graduateExecutives = [
-    {
-      name: "Vikash Sharma",
-      position: "Graduate Executive",
-      phone: "+91-95082 79514",
-      linkedin: "https://www.linkedin.com/in/vikash-sharma-284191230/",
-      image_name: "vikash_kumar.png",
-    },
     {
       name: "Tata Sai Vivek Vardhan",
       position: "Graduate Executive",
@@ -197,7 +189,7 @@ const Team = () => {
       image_name: "Abhishek_Yadav.jpeg",
     },
     {
-      name: "Sai Shubham Bishal",
+      name: "Sai Shubham Biswal",
       position: "Assistant Placement Coordinator",
       branch: "ECE",
       linkedin: "https://www.linkedin.com/in/sai-shubham-biswal-8a2461305",
@@ -300,14 +292,14 @@ const Team = () => {
       image_name: "Ayush_Kumar28.jpg",
     },
     {
-      name: "Rana Abhshek",
+      name: "Rana Abhishek",
       linkedin: "https://www.linkedin.com/in/rana-abhishek-b-tech-44710a3ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       position: "Activity Cordinator",
       branch: "ME",
       image_name: "Rana_Abhishek.png",
     },
-     {
-      name: "Himanshu Choudhury",
+    {
+      name: "Himanshu Chaudhary",
       linkedin: "https://www.linkedin.com/in/himanshu-chaudhary-018b09389?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       position: "Activity Cordinator",
       branch: "ECE",
@@ -391,97 +383,6 @@ const Team = () => {
     },
 
   ];
-
-
-  const associateMembers = [
-    {
-      name: "Suman Singh",
-      position: "Associate Members",
-      branch: "ECE",
-      linkedin: "https://www.linkedin.com/in/suman-singh-99a1911a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Suman_Singh.jpg",
-    },
-    {
-      name: "Priti Sinha",
-      position: "Associate Members",
-      branch: "CSE",
-      linkedin: "http://www.linkedin.com/in/priti-sinha-341359260",
-      image_name: "Priti_Sinha.jpg",
-    },
-    {
-      name: "Ashwini",
-      position: "Associate Members",
-      branch: "ECE",
-      linkedin: "https://www.linkedin.com/in/ashwini-undefined-0956502b6",
-      image_name: "ashwini_1.jpg",
-    },
-
-    {
-      name: "Snehil Verma",
-      position: "Associate Members",
-      branch: "CSE",
-      linkedin: "",
-      image_name: "Snehil_Verma.jpg",
-    },
-    {
-      name: "Khushi Singh",
-      position: "Associate Members",
-      branch: "ME",
-      linkedin: "https://www.linkedin.com/in/khushi-singh-a298ab1b1",
-      image_name: "khushi_singh.png",
-    },
-    {
-      name: "Masirapa Vijay Vardhan",
-      position: "Associate Members",
-      branch: "ECE",
-      linkedin: "https://www.linkedin.com/in/masirapa-vijay-vardhan/",
-      image_name: "Masirapa_Vijayvardhan.jpg",
-    },
-    {
-      name: "Pravinder",
-      position: "Associate Members",
-      branch: "EE",
-      linkedin: "",
-      image_name: "Pravinder_Dwarka.jpg",
-    },
-    {
-      name: "Anshu",
-      position: "Associate Members",
-      branch: "ME",
-      linkedin: "",
-      image_name: "Anshu.jpg",
-    },
-    {
-      name: "Rayudu Pooja Amrutha",
-      position: "Associate Members",
-      branch: "EE",
-      linkedin: "https://www.linkedin.com/in/pooja-amrutha-rayudu-1999332b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Rayudu_Pooja_Amrutha.jpg",
-    },
-    {
-      name: "Shubham Kumar",
-      position: "Associate Members",
-      branch: "ME",
-      linkedin: "https://www.linkedin.com/in/shubham-kumar-41a821365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Shubham_Kumar.jpg",
-    },
-    {
-      name: "Piyush Dev",
-      position: "Associate Members",
-      branch: "CSE",
-      linkedin: "https://www.linkedin.com/in/piyush-dev-bb9838319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Piyush_Dev.jpg",
-    },
-    {
-      name: "Manvi Chauhan",
-      position: "Associate Members",
-      branch: "MA",
-      linkedin: "https://www.linkedin.com/in/manvi-chauhan-613840327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Manvi_Chauhan.jpg",
-    },
-
-  ];
-
 
   return (
     <div className="team-container" id="team">
