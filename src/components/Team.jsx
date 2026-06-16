@@ -759,64 +759,6 @@ const Team = () => {
           </div>
         ))}
       </div>
-
-
-      <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        Associate Members{" "}
-      </h4>
-      <div className="team-card-container">
-        {/* Mapping over the teamMembers array to generate card elements */}
-        {/* <div> */}
-        {associateMembers.map((excutive, index) => (
-          <div
-            className="team-card"
-            key={index}
-          // style={{
-          //   backgroundImage: `url(/assets/img/team/${excutive.image_name})`,
-          // }}
-          >
-            <img
-              src={`/assets/img/team/${excutive.image_name}`}
-              alt={excutive.name}
-              className="team-card-img"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div className="team-card-bottom">
-              <div>{excutive.name}</div>
-            </div>
-            <div className="team-card-bottom-on-hover">
-              <div>
-                <div className="font-bold">{excutive.name}</div>
-                <div>{excutive.position}</div>
-                <div> {excutive.branch}</div>
-                <div> {excutive.designation}</div>
-              </div>
-              <div className="align-middle">
-                <a
-                  href={excutive.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/img/team/linkedin.png"
-                    alt="LinkedIn"
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      marginLeft: "10px",
-                    }}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-        {/* </div> */}
-      </div>
-
-
     </div>
   );
 };
