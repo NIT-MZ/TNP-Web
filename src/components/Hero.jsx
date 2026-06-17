@@ -9,7 +9,7 @@ const carouselItems = [
     caption: "Placements Statistics 2025-2026",
   },
   {
-    src: "https://res.cloudinary.com/drdmzhyzm/image/upload/v1781524785/TeamTNP2025_q11ss2.jpg",
+    src: "assets/img/carousel/tnpteam2025.png",
     caption: "Prof. S. Sundar, Director of NIT Mizoram, and Prof. Sukanta Roy, Dean (Academic) of NIT Mizoram with the student coordinators (2025-2026) of the Training and Placement Office",
   },
   {
@@ -63,10 +63,12 @@ const carouselItems = [
        caption:
          "NIT Mizoram T&P Officials visited IIT Madras on Students' Exchange and met the Dean (Academic)",
      },
-     {
-       src: "assets/img/carousel/Yuvamanthan.png",
-       alt: "YuvaManthan Model united states",
-     },
+  */
+  {
+    src: "assets/img/carousel/Yuvamanthan.png",
+    alt: "YuvaManthan Model united states",
+  },
+  /*
      {
        src: "assets/img/carousel/engineer_day.png",
        alt: "Engineer Day NIT Mizoram",
