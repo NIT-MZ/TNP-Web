@@ -97,14 +97,6 @@ const Team = () => {
 
   const studentPlacementcordinators2026 = [
 {
-name: "Tiya Jaman",
-position: "Placement Coordinator",
-branch: "ECE",
-linkedin: "https://www.linkedin.com/in/tiya-6b0386283/",
-image_name: "Tiya_Jaman.jpg",
-designation: "Team Lead",
-},
-{
 name: "Ramu Yadav",
 position: "Placement Coordinator",
 branch: "CSE",
@@ -112,6 +104,15 @@ linkedin: "https://www.linkedin.com/in/mrkhiladi123/",
 image_name: "Ramu_Yadav.jpg",
 designation: "Team Lead",
 },
+{
+name: "Tiya Jaman",
+position: "Placement Coordinator",
+branch: "ECE",
+linkedin: "https://www.linkedin.com/in/tiya-6b0386283/",
+image_name: "Tiya_Jaman.jpg",
+designation: "Team Lead",
+},
+
 {
 name: "Vishal Kumar Vaibhav",
 position: "Placement Coordinator",
