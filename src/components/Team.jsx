@@ -146,7 +146,7 @@ const Team = () => {
       position: "Placement Coordinator",
       branch: "CE",
       linkedin: "https://www.linkedin.com/in/kamal-nayan-16a592345/",
-      image_name: "",
+      image_name: "Kamal_Nayan.jpeg",
     },
     {
       name: "Piyush Dev",
@@ -276,7 +276,7 @@ const Team = () => {
       position: "Activity Coordinator",
       branch: "MA",
       linkedin: "https://www.linkedin.com/in/sreelekha-nampally/",
-      image_name: "",
+      image_name: "Sreelekha.png",
     },
     {
       name: "K. Sai Vardhan Royal",
@@ -397,7 +397,7 @@ const Team = () => {
       position: "Website and Media Coordinator",
       branch: "CE",
       linkedin: "",
-      image_name: "",
+      image_name: "Odgyan.jpeg",
     },
     {
       name: "Aditya Verma",
