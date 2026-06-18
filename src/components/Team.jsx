@@ -247,7 +247,7 @@ const Team = () => {
       position: "Activity Coordinator",
       branch: "EE",
       linkedin: "https://www.linkedin.com/in/shubham-kumar-68a31b262/",
-      image_name: "Shubham_Kumar27.jpg",
+      image_name: "Shubham_Kumar_EE27.jpeg",
       designation: "Team Lead",
     },
     {
