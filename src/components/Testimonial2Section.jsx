@@ -65,11 +65,11 @@ const testimonials = [
   },
 
   {
-    name: " Nalam Deepika",
-    company: "Wakefit",
+    name: "Vijay Vardhan Masirapa",
+    company: "Infosys",
     message:
-       "I am overjoyed and deeply grateful to announce that I have received a placement offer from Wakefit, one of India's most innovative and fast-growing consumer tech companies. This achievement is a direct result of the outstanding support and preparation provided by the Training & Placement office at NIT Mizoram. Prof. Sukanta Roy Sir and the entire TNP team were always available to guide us, answer our questions, and ensure we were fully prepared for every round of the recruitment process. The confidence I gained through mock interviews and training sessions at NIT Mizoram made a tremendous difference. I am excited to begin this new chapter and forever grateful to my institution.",
-    img: "assets/img/testimonials/Nalam Deepika.jpg",
+       "I am overjoyed and deeply grateful to announce that I have received a placement offer from Infosys, one of India's most innovative and fast-growing consumer tech companies. This achievement is a direct result of the outstanding support and preparation provided by the Training & Placement office at NIT Mizoram. Prof. Sukanta Roy Sir and the entire TNP team were always available to guide us, answer our questions, and ensure we were fully prepared for every round of the recruitment process. The confidence I gained through mock interviews and training sessions at NIT Mizoram made a tremendous difference. I am excited to begin this new chapter and forever grateful to my institution.",
+    img: "assets/img/testimonials/Vijay Vardhan Masirapa.jpg",
   },
 
   {
@@ -87,11 +87,11 @@ const testimonials = [
     img: "assets/img/testimonials/Shreya Singh.jpg",
   },
   {
-    name: "Blinty S",
-    company: "Deloitte USI",
+    name: "Sai Vivek Tata",
+    company: "Deloitte",
     message:
-      "Getting placed during the college is a dream for all the students and this dream came to reality when I got placed in Deloitte USI. My decision of joining NIT Mizoram proved right when I got opportunity to work for Deloitte USI. I and my parents are really thankful to the management and college authorities for making my dream come into reality.",
-    img: "assets/img/testimonials/Blinty S.jpg",
+      "Getting placed during the college is a dream for all the students and this dream came to reality when I got placed in Deloitte. My decision of joining NIT Mizoram proved right when I got opportunity to work for Deloitte. I and my parents are really thankful to the management and college authorities for making my dream come into reality.",
+    img: "assets/img/testimonials/Sai Vivek Tata.jpg",
   },
   {
     name: "Aditya Raj Mangalam",
@@ -103,11 +103,11 @@ const testimonials = [
  
  
   {
-    name: "Nirbhay Singh",
-    company: "Capgemini",
+    name: "Paras Gupta",
+    company: "ICICI Bank",
     message:
-      "Every student’s dream is to get an opportunity to start their career with well-known MNC, and I got placed in Capgemini. Thanks to Training & Placement department for providing this opportunity. I am looking forward for an excellent career.",
-    img: "assets/img/testimonials/Nirbhay Singh.jpg",
+      "I wanted to express my heartfelt gratitude to the Training & Placement office at NIT Mizoram for providing me with the platform and confidence to achieve this incredible milestone. I am thrilled to share that I have received an offer from ICICI Bank, one of India's leading and most trusted financial institutions. Special thanks to Prof. Sukanta Roy Sir, Chairman of the TNP office, and the entire placement team for their unwavering support and guidance throughout the recruitment process. The aptitude training, mock interviews, and constant motivation provided by the college played a significant role in helping me crack this opportunity. I am deeply grateful to NIT Mizoram for shaping me into the professional I am today.",
+    img: "assets/img/testimonials/Paras Gupta.jpg",
   },
 
   
