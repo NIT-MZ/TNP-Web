@@ -131,7 +131,7 @@ const Team = () => {
       name: "Abhishek Kumar",
       position: "Placement Coordinator",
       branch: "EE",
-      linkedin: "https://www.linkedin.com/in/pooja-amrutha-1999332b3/",
+      linkedin: "https://www.linkedin.com/in/abhikumar24/",
       image_name: "Abhishek_Kumar.jpg",
     },
     {
@@ -439,7 +439,7 @@ const Team = () => {
       position: "Website and Media Coordinator",
       branch: "ME",
       linkedin: "https://www.linkedin.com/in/satarupa-maitra-063898413/",
-      image_name: "Satarupa_Maitra.jpg",
+      image_name: "Satarupa_Maitra_28.JPG",
     },
     {
       name: "Kavala Teja Ramya Sri",
