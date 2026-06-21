@@ -146,7 +146,7 @@ const Team = () => {
       position: "Placement Coordinator",
       branch: "CE",
       linkedin: "https://www.linkedin.com/in/kamal-nayan-16a592345/",
-      image_name: "Kamal_Nayan.jpeg",
+      image_name: "Kamal_Nayan.jpg",
     },
     {
       name: "Piyush Dev",
@@ -167,7 +167,7 @@ const Team = () => {
       position: "Placement Coordinator",
       branch: "MA",
       linkedin: "https://www.linkedin.com/in/saurabh-kumar-gupta-3ba26b315?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      image_name: "Saurabh_Gupta.jpg",
+      image_name: "Saurabh_Gupta.jpeg",
     },
     {
       name: "Aditya Mishra",
