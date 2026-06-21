@@ -139,3 +139,6 @@ dist
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/node
+
+# Exclude heavy PDF that exceeds GitHub 100MB limit
+public/Training and Placement Brochure 2026-2027 NIT MIZORAM.pdf
