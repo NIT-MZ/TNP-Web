@@ -97,59 +97,101 @@ const Team = () => {
 
   const studentPlacementcordinators2026 = [
     {
-      name: "Tata Sai Vivek Vardhan",
+      name: "Ramu Yadav",
       position: "Placement Coordinator",
       branch: "CSE",
-      linkedin: "https://www.linkedin.com/in/sai-vivek-tata-049210280",
-      image_name: "sai_vivek.jpg",
+      linkedin: "https://www.linkedin.com/in/mrkhiladi123/",
+      image_name: "Ramu_Yadav_CS.jpeg",
       designation: "Team Lead",
     },
     {
-      name: "Suman Kumar Verma",
+      name: "Tiya Jaman",
       position: "Placement Coordinator",
       branch: "ECE",
-      linkedin: "https://www.linkedin.com/in/shashwatest/",
-      image_name: "Suman_Verma.png",
-    },
-    {
-      name: "Nalam Deepika",
-      position: "Placement Coordinator",
-      branch: "ECE",
-      linkedin: "https://www.linkedin.com/in/deepika-nalam-37a260365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Nalam_Deepika.jpg",
-    },
-    {
-      name: "Satvik Sharma",
-      position: "Placement Coordinator",
-      branch: "EEE",
-      linkedin: "https://www.linkedin.com/in/satviksharmaa/",
-      image_name: "Satvik_Sharma.jpg",
+      linkedin: "https://www.linkedin.com/in/tiya-6b0386283/",
+      image_name: "Tiya_Jaman.jpg",
+      designation: "Team Lead",
     },
 
     {
-      name: "Paras Gupta",
+      name: "Vishal Kumar Vaibhav",
       position: "Placement Coordinator",
-      branch: "CE",
-      linkedin: "https://www.linkedin.com/in/paras-gupta-243333260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "paras-gupta-tnp.jpeg",
+      branch: "ECE",
+      linkedin: "https://www.linkedin.com/in/vishal-kumar-vaibhav-68542a336",
+      image_name: "Vishal_Kumar_Vaibhav.jpg",
     },
     {
-      name: "Mudavath Pooja",
+      name: "Rayudu Pooja Amrutha",
       position: "Placement Coordinator",
-      branch: "CE",
-      linkedin: "https://www.linkedin.com/in/mudavathpooja",
-      image_name: "Mudavath_Pooja.jpg",
+      branch: "EE",
+      linkedin: "https://www.linkedin.com/in/pooja-amrutha-1999332b3/",
+      image_name: "POOJA27.jpg",
     },
     {
-      name: "Kissan Dalai",
+      name: "Abhishek Kumar",
+      position: "Placement Coordinator",
+      branch: "EE",
+      linkedin: "https://www.linkedin.com/in/abhikumar24/",
+      image_name: "Abhishek_Kumar.jpg",
+    },
+    {
+      name: "Anmol Kumar",
+      position: "Placement Coordinator",
+      branch: "CE",
+      linkedin: "https://www.linkedin.com/in/anmol-kumar-53941b290/",
+      image_name: "Anmol_Kumar.jpg",
+    },
+    {
+      name: "Kamal Nayan",
+      position: "Placement Coordinator",
+      branch: "CE",
+      linkedin: "https://www.linkedin.com/in/kamal-nayan-16a592345/",
+      image_name: "Kamal_Nayan.jpeg",
+    },
+    {
+      name: "Piyush Dev",
+      position: "Placement Coordinator",
+      branch: "CSE",
+      linkedin: "https://www.linkedin.com/in/piyush-dev-nitmz/",
+      image_name: " Piyush_Dev.jpeg",
+    },
+    {
+      name: "Manvi Chauhan",
+      position: "Placement Coordinator",
+      branch: "MA",
+      linkedin: "https://www.linkedin.com/in/manvi-chauhan-a16382283/",
+      image_name: "Manvi_Chauhan.jpg",
+    },
+    {
+      name: "Saurabh Kumar Gupta",
+      position: "Placement Coordinator",
+      branch: "MA",
+      linkedin: "https://www.linkedin.com/in/saurabh-kumar-gupta-3ba26b315?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      image_name: "Saurabh_Gupta.jpg",
+    },
+    {
+      name: "Aditya Mishra",
       position: "Placement Coordinator",
       branch: "ME",
-      linkedin: "",
-      image_name: "Kissan_Dalai.jpg",
+      linkedin: "https://www.linkedin.com/in/aditya-mishra-36aa04345/",
+      image_name: "Aditya_Mishra27.jpg",
     },
-
-
+    {
+      name: "Neha Kumari",
+      position: "Placement Coordinator",
+      branch: "ME",
+      linkedin: "https://www.linkedin.com/in/neha-kumari-a31a992ab/",
+      image_name: "Neha_Kumari.png",
+    },
+    {
+      name: "Amrita Vani",
+      position: "Placement Coordinator",
+      branch: "ECE",
+      linkedin: "https://www.linkedin.com/in/amrita-vani-512a86214/",
+      image_name: "Amrita_Vani.jpg",
+    },
   ];
+
 
   const AssistantStudentPlacementcordinators2028 = [
     {
@@ -201,31 +243,57 @@ const Team = () => {
 
   const studentActivityCoordinators2026 = [
     {
-      name: "Shivam Kumar Safi",
+      name: "Shubham Kumar",
       position: "Activity Coordinator",
-      branch: "EEE",
-      linkedin: "https://linkedin.com/in/shivam-kumar-safi",
-      image_name: "Shivam_Kumar_Safi.jpg",
+      branch: "EE",
+      linkedin: "https://www.linkedin.com/in/shubham-kumar-68a31b262/",
+      image_name: "Shubham_Kumar_EE27.jpeg",
       designation: "Team Lead",
     },
     {
-      name: "Raghav Jangir",
+      name: "Grace Lalchawimawii",
       position: "Activity Coordinator",
-      branch: "ME",
-      linkedin: "",
-      image_name: "Raghav_Jangir.jpg",
+      branch: "CE",
+      linkedin: "https://www.linkedin.com/in/grace-lalchawimawii-517ba02a3/",
+      image_name: "Grace_Lalchawimawii.jpg",
     },
     {
-      name: "Priyanshu Bariyar",
-      position: "Activity Cordinator",
+      name: "Uttkarsh Tiwari",
+      position: "Activity Coordinator",
       branch: "CSE",
-      linkedin: "",
-      image_name: "Priyanshu_Bariyar.jpg",
+      linkedin: "https://www.linkedin.com/in/uttkarsh-tiwari-60922a285/",
+      image_name: "Uttkarsh_Tiwari27.png",
     },
-
-
-
+    {
+      name: "Saurabh Verma",
+      position: "Activity Coordinator",
+      branch: "ECE",
+      linkedin: "https://www.linkedin.com/in/saurabh-verma-2b87a9290/",
+      image_name: "Saurabh_Verma.jpg",
+    },
+    {
+      name: "Namapally Sreelekha",
+      position: "Activity Coordinator",
+      branch: "MA",
+      linkedin: "https://www.linkedin.com/in/sreelekha-nampally/",
+      image_name: "Sreelekha.png",
+    },
+    {
+      name: "K. Sai Vardhan Royal",
+      position: "Activity Coordinator",
+      branch: "ME",
+      linkedin: "https://www.linkedin.com/in/k-sai-vardhan-royal-389875413/",
+      image_name: "Sai_Vardhan_Royal.jpg",
+    },
+    {
+      name: "Vinay Tiwari",
+      position: "Activity Coordinator",
+      branch: "CSE",
+      linkedin: "https://www.linkedin.com/in/vinay-tiwari-19910b228/",
+      image_name: "Vinay_Tiwari.png",
+    },
   ];
+
 
   const AssistantStudentActivityCoordinators2028 = [
     {
@@ -310,79 +378,78 @@ const Team = () => {
 
   const WebsiteAndMediaCoordinators = [
     {
-      name: "Aditya Srivastav",
+      name: "Paidi Upender Sai",
       position: "Website and Media Coordinator",
-      branch: "ECE",
-      linkedin: "https://www.linkedin.com/in/aditya-srivastav-125744276",
-      image_name: "Aditya_Srivastav2.jpg",
+      branch: "ME",
+      linkedin: "https://www.linkedin.com/in/paidi-upender-sai-a63946300/",
+      image_name: "Paidi_Upender_Sai.png",
       designation: "Team Lead",
     },
     {
-      name: "Priyanshu Ranjan",
-      position: "Website and Media Coordinator",
-      branch: "EEE",
-      linkedin: "https://www.linkedin.com/in/priyanshu-ranjan-016p?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Priyanshu_Ranjan.jpg",
-    },
-    {
-      name: "Anand Rao Bauddh",
-      position: "Website and Media Coordinator",
-      branch: "ME",
-      linkedin: "https://in.linkedin.com/in/anand-rao-bauddh-ba2086271",
-      image_name: "nandu_tnp.png",
-    },
-    {
       name: "Arman Kumar",
-      linkedin: "https://www.linkedin.com/in/arman-kumar-760043282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       position: "Website and Media Coordinator",
       branch: "ECE",
-      image_name: "Arman_Kumar.jpg",
+      linkedin: "https://www.linkedin.com/in/arman-kumar-760043282/",
+      image_name: "Arman_Kumar27.png",
     },
     {
-      name: "Saurabh Kumar Gupta",
+      name: "Stanzin Odgyan",
       position: "Website and Media Coordinator",
-      branch: "MA",
-      linkedin: "https://www.linkedin.com/in/saurabh-kumar-gupta-3ba26b315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image_name: "Saurabh_Kumar_Gupta.jpg",
+      branch: "CE",
+      linkedin: "",
+      image_name: "Odgyan.jpeg",
     },
     {
-      name: "Ayush Raj",
-      linkedin: "https://www.linkedin.com/in/ayusharyanraj",
-      position: "Website and Media Coordinator",
-      branch: "EE",
-      image_name: "ayusharyan_raj.jpg",
-    },
-    {
-      name: "Uttkarsh Tiwari",
-      linkedin: "https://www.linkedin.com/in/uttkarsh-tiwari-60922a285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      name: "Aditya Verma",
       position: "Website and Media Coordinator",
       branch: "CSE",
-      image_name: "Uttkarsh_Tiwari.jpg",
+      linkedin: "https://www.linkedin.com/in/aditya-verma-38931b369/",
+      image_name: "Aditya_Verma.jpg",
     },
     {
-      name: "Saurabh Verma",
-      linkedin: "https://www.linkedin.com/in/saurabh-verma-2b87a9290/",
+      name: "Anshul Singh",
+      position: "Website and Media Coordinator",
+      branch: "CSE",
+      linkedin: "https://www.linkedin.com/in/anshul-singh-b69652331/",
+      image_name: "Anshul_Singh.jpeg",
+    },
+    {
+      name: "Pasham Laxmi",
       position: "Website and Media Coordinator",
       branch: "ECE",
-      image_name: "Saurabh_Verma.jpg",
+      linkedin: "https://www.linkedin.com/in/pasham-laxmi-7b42b3411?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      image_name: "Pasham_Laxmi.jpg",
     },
     {
-
-      name: "Pooja Kumari",
-      linkedin: "https://www.linkedin.com/in/pooja-kumari-nitmz/",
+      name: "Dilip Sahu",
       position: "Website and Media Coordinator",
-      branch: "ECE",
-      image_name: "POOJA_KUMARI.jpg",
+      branch: "CSE",
+      linkedin: "https://www.linkedin.com/in/dilip-sahu-7b8789324/",
+      image_name: "Dilip_Sahu.jpg",
     },
     {
-      name: "Paidi Upendar Sai",
-      linkedin: "https://www.linkedin.com/in/paidi-upender-sai-a63946300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      name: "Vasudev Suthar",
       position: "Website and Media Coordinator",
       branch: "ME",
-      image_name: "Paidi_Upender_Sai.jpg",
+      linkedin: "https://www.linkedin.com/in/vasudev-suthar-9a9384316/",
+      image_name: "Vasudev_Suthar.jpg",
     },
-
+    {
+      name: "Satarupa Maitra",
+      position: "Website and Media Coordinator",
+      branch: "ME",
+      linkedin: "https://www.linkedin.com/in/satarupa-maitra-063898413/",
+      image_name: "Satarupa_Maitra_28.JPG",
+    },
+    {
+      name: "Kavala Teja Ramya Sri",
+      position: "Website and Media Coordinator",
+      branch: "ME",
+      linkedin: "https://www.linkedin.com/in/teja-ramya-sri-kavala-76b6a737a/",
+      image_name: "Ramya_Kavala.jpg",
+    },
   ];
+
 
   return (
     <div className="team-container" id="team">

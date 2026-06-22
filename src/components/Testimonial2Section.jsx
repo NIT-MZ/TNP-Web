@@ -8,18 +8,18 @@ import "../stylesheets/Testimonials.scss";
 
 const testimonials = [
   {
-    name: "Vikash Kumar",
-    company: "Larsen & Toubro",
+    name: "Pallavi Pandey",
+    company: "Bharat Electronics Limited (BEL)",
     message:
-      "I wanted to express my heartfelt gratitude for providing me with a platform that led to me receiving 3 excellent job offers. I'm thrilled to share that I've received offers from esteemed companies like L&T, Reliance Industries, and Vedanta. Thank you to the entire placement team, and especially to Dr. Sukanta Sir, Chairman of the TNP office, for their invaluable support and guidance throughout the recruitment process. Your efforts played a significant role in my success",
-    img: "/assets/img/team/vikash_kumar.png",
+      "I wanted to express my heartfelt gratitude to the Training & Placement office at NIT Mizoram for providing me with an incredible platform that led to this wonderful opportunity. I am thrilled to share that I have received an offer from Bharat Electronics Limited, one of India's most prestigious defence and electronics companies. Special thanks to Prof. Sukanta Roy Sir, Chairman of the TNP office, for his invaluable support and guidance throughout the recruitment process. The preparation sessions, mock interviews, and constant encouragement from the entire placement team played a significant role in building my confidence. This achievement would not have been possible without the unwavering support of this great institution.",
+    img: "/assets/img/testimonials/Pallavi_Pandey.jpg",
   },
   {
-    name: "Gulshan Raj",
-    company: "Tata Electronics",
+    name: "Anshuman Bhardwaj",
+    company: "Accenture",
     message:
-      "My placement at Tata Electronics is a testament to the exceptional support system at our institution. I extend my deepest gratitude to the entire T&P team and especially to our FIC T&P, Dr. Sukanta Roy. Their relentless efforts in training us and bringing in esteemed companies like Tata provided me with the perfect platform to launch my career. I am incredibly thankful for their guidance and belief in me.",
-    img: "assets/img/testimonials/Gulshan_Raj.jpg",
+      "I am deeply grateful to the Training & Placement office at NIT Mizoram for their relentless efforts in connecting us with top companies and preparing us for the competitive recruitment process. I am overjoyed to announce that I have received a placement offer from Accenture, a global leader in technology and consulting services. Prof. Sukanta Roy Sir and the entire TNP team worked tirelessly behind the scenes to ensure every student had a fair chance at success. Their dedication, guidance, and belief in our potential made all the difference. I am proud to begin my professional journey with Accenture and forever grateful to NIT Mizoram for making this dream a reality.",
+    img: "assets/img/testimonials/Anshuman_Bhardwaj.jpg",
   },
   //  {
   //   name: "Ashish Gupta",
@@ -29,95 +29,95 @@ const testimonials = [
   //   img: "assets/img/testimonials/Gulshan_Raj.jpg",
   // },
    {
-    name: "Khusbu Kumari ",
-    company: "Deloitte",
+    name: "Sandhya Shalini",
+    company: " Schneider Electric",
     message:
-      "I am incredibly grateful to have been placed at Deloitte through our college placement program. This opportunity would not have been possible without the continuous support and guidance of our faculty and the Training and Placement Cell. The rigorous academic curriculum, combined with the various workshops and mock interview sessions organized by the department, truly helped me prepare for this moment. I feel proud to be a part of NIT Mizoram and excited to begin this new chapter of my career..",
-    img: "assets/img/testimonials/khushbu_k.png",
+      "I wanted to take a moment to express my heartfelt thanks to the Training & Placement office at NIT Mizoram for their extraordinary support during the placement season. I am beyond happy to share that I have secured an offer from Schneider Electric, a global leader in energy management and automation. Prof. Sukanta Roy Sir and the TNP team were always there to guide us, motivate us, and ensure we were thoroughly prepared for every stage of the process. The training sessions and industry exposure provided by the college gave me the edge I needed to succeed. This achievement is a reflection of the incredible environment that NIT Mizoram has created for its students.",
+    img: "assets/img/testimonials/Sandhya Shalini.jpg",
   },
   {
-    name: "Ayush Anand",
-    company: "Juspay",
+    name: "Utkarsh Singh",
+    company: "HCL Tech",
     message:
-      "I feel happy to be part of NIT Mizoram. The student coordinators are very helpful, and the personalised placement block really helps students during group discussions and other activities. All the teachers are supportive and are helping students in every possible way.",
-    img: "assets/img/testimonials/Ayush_Anand.jpg",
+      "I am filled with immense joy and gratitude as I share the wonderful news of my placement at HCL Tech, one of India's leading technology companies. The Training & Placement cell at NIT Mizoram deserves tremendous credit for this achievement. Prof. Sukanta Roy Sir and the entire TNP office put in extraordinary efforts to bring top companies to campus and ensure every student was well prepared. The aptitude training, group discussion sessions, and technical preparation provided by the college were extremely helpful throughout the process. I am proud to represent NIT Mizoram at HCL Tech and deeply thankful to everyone who supported me on this journey.",
+    img: "assets/img/testimonials/Utkarsh singh.jpg",
   },
    {
-    name: " Chandni Kumari",
-    company: "Mahindra & Mahindra Limited",
-    message:
-      "I am truly grateful to the Training and Placement Cell of NIT Mizoram for their continuous support and dedicated efforts in shaping our career paths. I feel proud to share that I have been placed at Mahindra & Mahindra Limited, and this achievement would not have been possible without the guidance and encouragement provided by our faculty and the T&P Cell. I sincerely thank Dr. Sukanta Roy and the entire placement team for creating valuable opportunities and building a strong platform that connects students with esteemed organizations.",
-    img: "assets/img/testimonials/chandni_kumari.png",
-  },
-   {
-    name: "Shubham Kumar",
-    company: "Saint Goblin",
-    message:
-      "I am honored to have received placement offers from Saint-Gobain and DCS Techno Service Pvt. Ltd. This accomplishment reflects the unwavering support and structured guidance provided by the Training and Placement Cell at NIT Mizoram. In my capacity as a Training & Placement Coordinator, I have closely observed the team's commitment to student success. I would like to extend my heartfelt gratitude to the faculty and, in particular, to Dr. Sukanta Roy, Chairman of the T&P Cell, for his exceptional leadership, mentorship, and dedication throughout the placement process.",
-    img: "assets/img/testimonials/shubham_kumar.png",
-  },
-  {
-    name: "Kanhaiya Kumar",
-    company: "Larsen & Toubro",
-    message:
-      "I am pleased to share that I have been placed at Larsen & Toubro (L&T). This achievement is the result of the dedicated efforts of the Training and Placement Cell at NIT Mizoram. As a member of the Executive Team of the T&P Cell, I have gained valuable experience while contributing to the placement process. I extend my sincere gratitude to the faculty members, especially to Dr. Sukanta Roy, Chairman of the T&P Cell, and to the Head of the Department, Electrical Engineering, for their continuous support and encouragement. ",
-    img: "assets/img/testimonials/kanahiya_kumar2.jpg",
-  },
-
-  {
-    name: "Raj Kumar",
-    company: "Larsen & Toubro",
-    message:
-      "NIT Mizoram is a wonderful place for all the students seeking the right career. My college has given me and all my friends a lot of opportunities to get the right job. The staff at NIT Mizoram is very supportive and really takes a lot of pain to develop the students. I am thankful to my faculties, staff and management of NIT Mizoram for my success.",
-    img: "assets/img/testimonials/Raj Kumar.webp",
-  },
-
-  {
-    name: "Shristi Sharma",
-    company: "Deloitte",
-    message:
-      "This side Shristi from EEE, NIT Mizoram. I am really grateful to everyone at NIT Mizoram for nurturing my career and giving me the right platform to develop the right skills for the corporate world. My stay at NIT Mizoram has been filled with lot of academic inputs from my faculties clubbed with technical and behavioral trainings from external agencies.",
-    img: "assets/img/testimonials/Shristi Sharma.webp",
-  },
-  {
-    name: "Sharda Kumari",
-    company: "Sagacious IP",
-    message:
-      "Kudos to the Faculty and Placement Cell of NIT Mizoram. The College has always provided me with every assistance that I have always wanted to. I was able to refine my overall Performances and build- on my Soft & Hard Skills.. I will always be grateful to them for providing me a platform of practical learning and preparing me for the corporate life.",
-    img: "assets/img/testimonials/Sharda Kumari.webp",
-  },
-  {
-    name: "Sanskar Sharma",
-    company: "Adobe",
-    message:
-      "Getting placed during the college is a dream for all the students and this dream came to reality when I got placed in Adobe. My decision of joining NIT Mizoram proved right when I got opportunity to work for Adobe. I and my parents are really thankful to the management and college authorities for making my dream come into reality.",
-    img: "assets/img/testimonials/Sanskar Sharma.webp",
-  },
-  {
-    name: "Charishma Barla",
-    company: "Ashok Leyland",
-    message:
-      "I am very happy to be placed with Ashok Leyland. For every student it’s a dream to get job during their studies and I was lucky to get one. NIT Mizoram takes a lot of pain to develop their students for the corporate world throughout four years at the campus. I would recommend NIT Mizoram to any student who is looking for a fruitful career.",
-    img: "assets/img/testimonials/Charishma Barla.webp",
-  },
- 
- 
-  {
-    name: "Palli Chanikya",
+    name: " Satvik Sharma",
     company: "Vedanta",
     message:
-      "Every student’s dream is to get an opportunity to start their career with well-known MNC, and I got placed in Vedanta. Thanks to Training & Placement department for providing this opportunity. I am looking forward for an excellent career.",
-    img: "assets/img/testimonials/Palli chanikya.webp",
+      "I am overwhelmed with gratitude as I announce that I have received a placement offer from Vedanta, one of India's largest and most respected natural resources companies. This milestone would not have been possible without the tireless support of the Training & Placement office at NIT Mizoram. Prof. Sukanta Roy Sir and the TNP team went above and beyond to ensure every student was industry-ready and well-prepared for campus placements. Their constant encouragement during the most challenging phases of the recruitment process kept me motivated and focused. I thank the entire NIT Mizoram family from the bottom of my heart for this life-changing opportunity.",
+    img: "assets/img/testimonials/Satvik Sharma.jpg",
+  },
+   {
+    name: "Aditya Raj",
+    company: "Reliance Industries Limited",
+    message:
+      "I wanted to express my heartfelt gratitude for the incredible platform provided by NIT Mizoram that ultimately led to this outstanding achievement. I am thrilled to share that I have received an offer from Reliance Industries Limited, one of India's most iconic and prestigious corporations. Special thanks to Prof. Sukanta Roy Sir, Chairman of the TNP office, and the entire placement team for their invaluable guidance and support throughout the recruitment process. Their efforts in organizing campus drives and preparing students for industry-level interviews were truly commendable. This achievement fills me with immense pride and I look forward to making NIT Mizoram proud.",
+    img: "assets/img/testimonials/Aditya Raj.jpg",
+  },
+  {
+    name: "Shivam Kumar Safi",
+    company: "Tata Power",
+    message:
+      "I am incredibly happy and grateful to share that I have secured a placement offer from Tata Power, one of India's largest and most trusted power companies. The Training & Placement office at NIT Mizoram played an absolutely pivotal role in this achievement. Prof. Sukanta Roy Sir and the dedicated TNP team worked day and night to prepare us for campus placements and connect us with industry-leading companies. The structured training programs, technical workshops, and consistent support provided by the placement cell were instrumental in my success. I am proud to join Tata Power and deeply thankful to NIT Mizoram for giving me this incredible opportunity.",
+    img: "assets/img/testimonials/Shivam Kumar Safi.jpg",
+  },
+
+  {
+    name: "Vijay Vardhan Masirapa",
+    company: "Infosys",
+    message:
+       "I am overjoyed and deeply grateful to announce that I have received a placement offer from Infosys, one of India's most innovative and fast-growing consumer tech companies. This achievement is a direct result of the outstanding support and preparation provided by the Training & Placement office at NIT Mizoram. Prof. Sukanta Roy Sir and the entire TNP team were always available to guide us, answer our questions, and ensure we were fully prepared for every round of the recruitment process. The confidence I gained through mock interviews and training sessions at NIT Mizoram made a tremendous difference. I am excited to begin this new chapter and forever grateful to my institution.",
+    img: "assets/img/testimonials/Vijay Vardhan Masirapa.jpg",
+  },
+
+  {
+    name: " Vinay Patel",
+    company: "HSBC",
+    message:
+       "I wanted to express my heartfelt gratitude to the entire Training & Placement team at NIT Mizoram for their incredible support throughout the recruitment process. I am delighted to announce that I have received an offer from HSBC, one of the world's largest and most respected banking and financial services organizations. Prof. Sukanta Roy Sir and the TNP office worked relentlessly to bring prestigious companies to our campus and prepare students for every aspect of the selection process. Their dedication and the belief they showed in every student were truly motivating and made a significant impact on my journey. I am proud to carry the name of NIT Mizoram as I step into this exciting new chapter of my career.",
+    img: "assets/img/testimonials/Vinay Patel.jpg",
+  },
+  {
+    name: "Shreya Singh",
+    company: "HSBC",
+    message:
+      "Kudos to the Faculty and Placement Cell of NIT Mizoram. The College has always provided me with every assistance that I have always wanted to. I was able to refine my overall Performances and build- on my Soft & Hard Skills.. I will always be grateful to them for providing me a platform of practical learning and preparing me for the corporate life.",
+    img: "assets/img/testimonials/Shreya Singh.jpg",
+  },
+  {
+    name: "Sai Vivek Tata",
+    company: "Deloitte",
+    message:
+      "Getting placed during the college is a dream for all the students and this dream came to reality when I got placed in Deloitte. My decision of joining NIT Mizoram proved right when I got opportunity to work for Deloitte. I and my parents are really thankful to the management and college authorities for making my dream come into reality.",
+    img: "assets/img/testimonials/Sai Vivek Tata.jpg",
+  },
+  {
+    name: "Aditya Raj Mangalam",
+    company: "Infosys",
+    message:
+      "I am very happy to be placed with Infosys. For every student it’s a dream to get job during their studies and I was lucky to get one. NIT Mizoram takes a lot of pain to develop their students for the corporate world throughout four years at the campus. I would recommend NIT Mizoram to any student who is looking for a fruitful career.",
+    img: "assets/img/testimonials/Aditya Raj Mangalam.jpg",
+  },
+ 
+ 
+  {
+    name: "Paras Gupta",
+    company: "ICICI Bank",
+    message:
+      "I wanted to express my heartfelt gratitude to the Training & Placement office at NIT Mizoram for providing me with the platform and confidence to achieve this incredible milestone. I am thrilled to share that I have received an offer from ICICI Bank, one of India's leading and most trusted financial institutions. Special thanks to Prof. Sukanta Roy Sir, Chairman of the TNP office, and the entire placement team for their unwavering support and guidance throughout the recruitment process. The aptitude training, mock interviews, and constant motivation provided by the college played a significant role in helping me crack this opportunity. I am deeply grateful to NIT Mizoram for shaping me into the professional I am today.",
+    img: "assets/img/testimonials/Paras Gupta.jpg",
   },
 
   
  
   {
-    name: "Priti Bharti",
-    company: "CDAC Noida",
+    name: "Prakash Jha",
+    company: "Ashok Leyland",
     message:
-      "Dear Training and Placement Cell, thank you for your guidance and support throughout my journey. I'm thrilled to have been placed in CDAC and grateful for your efforts in making it possible. Your dedication and encouragement have meant a lot to me, and I appreciate everything you've done to help me achieve my goal. Thanks, Priti Bharti.",
-    img: "assets/img/testimonials/priti.jpg",
+      "Dear Training and Placement Cell, thank you for your guidance and support throughout my journey. I'm thrilled to have been placed in Ashok Leyland and grateful for your efforts in making it possible. Your dedication and encouragement have meant a lot to me, and I appreciate everything you've done to help me achieve my goal.",
+    img: "assets/img/testimonials/Prakash jha.jpg",
   },
 ];
 

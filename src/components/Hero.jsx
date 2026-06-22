@@ -8,62 +8,92 @@ const carouselItems = [
     alt: "placement",
     caption: "Placements Statistics 2025-2026",
   },
-
-
   {
-    src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075760/p3fo42ly0tfthxwtlyun.jpg",
-    alt: "Prof. S. Sundar, Director of NIT Mizoram, and Prof. Sukanta Roy, Dean (Academic) of NIT Mizoram with the student coordinators (2024-2025) of the Training and Placement Office",
+    src: "assets/img/carousel/tnpteam2025.png",
+    caption: "Prof. S. Sundar, Director of NIT Mizoram, and Prof. Sukanta Roy, Dean (Academic) of NIT Mizoram with the student coordinators (2025-2026) of the Training and Placement Office",
   },
   {
-    src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075896/vg5vfgkfkbd1kmcrt5yv.png",
-    alt: "National Space Day 2025",
+    src: "assets/img/carousel/3dayregionalmentoringPMShree.png",
+    alt: "Three-day Regional Mentoring Session (RMS) on Innovation for Teachers and Students of PM SHRI Schools",
+    caption: "Three-day Regional Mentoring Session (RMS) on Innovation for Teachers and Students of PM SHRI Schools",
   },
   {
-    src: "assets/img/carousel/yuvamathan1.png",
-    alt: "Yuvamanthan NIT Mizoram",
+    src: "assets/img/carousel/aluminimeet_2025.png",
+    alt: "Alumni Meet NIT MZ 2025",
+    caption: "Alumni Meet NIT MZ 2025",
   },
-
   {
-    src: "assets/img/carousel/b.jpg",
-    alt: "All NIT T&P Conclave 2024 (ANTPC 2024) held at NIT Trichy",
-    caption:
-      "Prof. Sukanta Roy, Chairman Training and Placement Committee of NIT Mizoram participated in the All NIT T&P Conclave 2024 (ANTPC 2024) held at NIT Trichy",
+    src: "assets/img/carousel/convoction_9th.png",
+    alt: "9th Convocation",
+    caption: "9th Convocation",
   },
-
   {
-    src: "assets/img/carousel/Faculties photo.webp",
-    alt: "MEETING WITH DEAN ACADEMIC OF IIT MADRAS",
-    caption:
-      "NIT Mizoram T&P Officials visited IIT Madras on Students' Exchange and met the Dean (Academic)",
+    src: "assets/img/carousel/spic_macay.png",
+    alt: "Spic Macay 2025",
+    caption: "Spic Macay 2025",
   },
+  {
+    src: "assets/img/carousel/workshop.png",
+    alt: "Workshop",
+    caption: "Workshop at NIT Mizoram",
+  },
+  {
+    src: "assets/img/carousel/sports2026.png",
+    alt: "Sports Day 2026",
+    caption: "Sports Day 2026",
+  },
+  /* {
+     src: "https://res.cloudinary.com/duk9saozt/image/upload/f_auto,q_auto/v1754075896/vg5vfgkfkbd1kmcrt5yv.png",
+     caption: "National Space Day 2025",
+   },
+   {
+     src: "assets/img/carousel/yuvamathan1.png",
+     caption: "Yuvamanthan NIT Mizoram",
+   },
+     {
+       src: "assets/img/carousel/b.jpg",
+       alt: "All NIT T&P Conclave 2024 (ANTPC 2024) held at NIT Trichy",
+       caption:
+         "Prof. Sukanta Roy, Chairman Training and Placement Committee of NIT Mizoram participated in the All NIT T&P Conclave 2024 (ANTPC 2024) held at NIT Trichy",
+     },
+   
+     {
+       src: "assets/img/carousel/Faculties photo.webp",
+       alt: "MEETING WITH DEAN ACADEMIC OF IIT MADRAS",
+       caption:
+         "NIT Mizoram T&P Officials visited IIT Madras on Students' Exchange and met the Dean (Academic)",
+     },
+  */
   {
     src: "assets/img/carousel/Yuvamanthan.png",
     alt: "YuvaManthan Model united states",
   },
-  {
-    src: "assets/img/carousel/engineer_day.png",
-    alt: "Engineer Day NIT Mizoram",
-  },
-  {
-    src: "assets/img/carousel/semicon.png",
-    alt: "Semicon Company",
-  },
-  {
-    src: "assets/img/carousel/usconsulate.png",
-    alt: "US Consulate",
-  },
-  {
-    src: "assets/img/carousel/Sports.webp",
-    alt: "bashant panchatmi",
-    caption: "Sports Event",
-  },
-
-  {
-    src: "assets/img/carousel/IMG_20240316_163221.webp",
-    alt: "bashant panchatmi",
-    caption:
-      "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
-  },
+  /*
+     {
+       src: "assets/img/carousel/engineer_day.png",
+       alt: "Engineer Day NIT Mizoram",
+     },
+     {
+       src: "assets/img/carousel/semicon.png",
+       alt: "Semicon Company",
+     },
+     {
+       src: "assets/img/carousel/usconsulate.png",
+       alt: "US Consulate",
+     },
+     {
+       src: "assets/img/carousel/Sports.webp",
+       alt: "bashant panchatmi",
+       caption: "Sports Event",
+     },
+   
+     {
+       src: "assets/img/carousel/IMG_20240316_163221.webp",
+       alt: "bashant panchatmi",
+       caption:
+         "IPR AWARENESS AND SKILL DEVELOPMENT WITH REFERENCE TO SPECIAL PATENTS AND START-UPS",
+     },
+     */
 ];
 
 const marqueeLinks = [
@@ -149,7 +179,7 @@ const Hero = () => {
                   <img
                     className="d-block carousel-img "
                     src={item.src}
-                    alt={item.alt}
+                    alt={item.alt || item.caption}
                     loading={index === 0 ? "eager" : "lazy"}
                     decoding="async"
                   />

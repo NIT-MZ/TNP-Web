@@ -63,10 +63,10 @@ const Navbar = () => {
   };
 
   const onButtonClick = () => {
-    const pdfUrl = "Training and Placement Brochure 2026.pdf";
+    const pdfUrl = "Training and Placement Brochure 2026-2027 NIT MIZORAM_.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Training and Placement Brochure 2026.pdf";
+    link.download = "Training and Placement Brochure 2026-2027 NIT MIZORAM_.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

@@ -16,7 +16,7 @@ const DirectorsMessage = () => {
               <img
                 className="director-img"
                 src="assets/img/tnp_team/Director.webp"
-                alt="Director's"
+                alt="Director"
               />
             </div>
             <div className="member-info">
@@ -26,51 +26,21 @@ const DirectorsMessage = () => {
           </div>
         </div>
         <div className="col-lg-9 col-md-6 director-message">
-          <p style={{ textAlign: "justify" }}>
-            <i className="fa-solid fa-quote-left"></i>   NIT Mizoram began its journey in 2009 to achieve global renown in research
- and education. Since 2009, the Institute has progressed rapidly. Presently,
- there are about 850 students studying in various disciplines of Engineering,
- Sciences, Humanities and Social Sciences. The Institute is working untiringly to
- impart quality education that keeps pace with the latest advances in research
- and development activities.
- The year 2025–26 saw 91.9% campus placements with more than 112
- companies visited for the placements. 100% internship offers were received
- from top-notch companies and IITs. A total of 8 current B.Tech students are
- undergoing Internships at IIT Madras, out of which some will continue their 4th
- year study and Ph.D. at IIT Madras. Leading professors from Germany and the
- USA conducted workshops at NIT Mizoram, leading to faculty and student
- exchange and collaborations. A 4-times increase in sponsored projects and
- consultancy was observed in 2023–25.  
-The introduction of Minor streams with regular B.Tech, in Semiconductor & VLSI,
- AI & ML, Green Energy and Sustainability has been a significant milestone.
- Dual-Degree programs for upgradation to M.Tech and Ph.D. are additional
- long-term takeaway in the advanced fields of engineering. MoUs with top
- public sectors like BIS, AAI, Senses Department, NITTTR, Mizoram Police, INAE,
- and The Institution of Engineers have opened up seamless opportunities for
- faculty and students.
- At present, NIT Mizoram is situated in a temporary campus at Aizawl. With the
- support of the state government, we are expecting the completion of the
- partially constructed permanent campus at Lengpui, Mizoram within the next
- two years, which will offer the best of facilities and an excellent academic
- ambience.
- Students at NIT Mizoram now have the unique opportunity to enroll in the
- Diploma in Business Management (DBM) and Master’s in Business
- Administration (MBA) program at IIM Visakhapatnam without the requirement
- of the Common Admission Test (CAT), starting in their third year of B.Tech. This
- enables them to complete the DBM within B.Tech duration, followed by an MBA
- degree in a total of five years (4+1) from 2025. In the 2025 admission cycle, 14
- students from NIT Mizoram secured admission to this B.Tech–MBA program.
- The Institute has earned a place of honor, securing its position in the 101–150
- band in the National Institutional Ranking Framework (NIRF) in the current
- year’s national ranking. This achievement underscores the Institute’s relentless
- commitment to academic excellence and innovation, solidifying its reputation
- as a beacon of quality education in the engineering and technology domains.
- The Institute is actively pursuing its goal of being recognized as a premier
- technical institution at both the national and international levels.{" "}
+          <p style={{ textAlign: "justify", marginBottom: "16px" }}>
+            <i className="fa-solid fa-quote-left" style={{ marginRight: "8px" }}></i>
+            Since its inception in 2010 under the aegis of the Ministry of Education, Government of India, National Institute of Technology Mizoram has rapidly progressed as an institution of national importance. We are working untiringly to impart quality, multidisciplinary education that keeps pace with contemporary research and industrial advancements. Presently, we host a vibrant community of over 850 students studying across various disciplines of Engineering, Sciences, Humanities, and Social Sciences. As we operate from our temporary campus in Aizawl, we are actively supported by the state government and eagerly anticipate the completion of our permanent campus at Lengpui within the next two years, which will offer world-class facilities and an excellent academic ambience.
           </p>
-          <p>
-            Let's make this academic year memorable. Best Wishes...{" "}
-            <i className="fa-solid fa-quote-right"></i>
+          <p style={{ textAlign: "justify", marginBottom: "16px" }}>
+            Our rigorous academic curriculum is continuously upgraded and strengthened by industry-aligned minor streams in Artificial Intelligence & Machine Learning, Semiconductor & VLSI, and Green Energy & Sustainability. These advanced specializations are complemented by elite academic pathways, including our dual-degree B.Tech–MBA program in collaboration with IIM Visakhapatnam—which saw 14 of our students secure admission this cycle—and direct transition opportunities into premier research ecosystems like IIT Madras for 4th-year studies and Ph.D. programs. Furthermore, a remarkable four-fold increase in sponsored projects, alongside strategic MoUs with organizations like BIS, AAI, NITTTR, INAE, and The Institution of Engineers, has opened seamless opportunities for innovation, ensuring our graduates are highly competent, versatile, and day-one ready for the global corporate landscape.
+          </p>
+          <p style={{ textAlign: "justify", marginBottom: "16px" }}>
+            The stellar performance of our ongoing 2025–2026 placement drive stands as a direct reflection of this institutional resilience. With over 112 companies visiting, we have secured a phenomenal 91.9% overall placement rate, yielding a strong average package of 9.56 LPA, a highest package of 16.10 LPA, and a perfect 100% summer internship conversion rate. This commitment to professional excellence is further underscored by our position in the 101–150 band in the National Institutional Ranking Framework (NIRF). We warmly invite our corporate partners, public sector undertakings, and industry leaders to engage with our bright, energetic student community through our synchronized offline and online evaluation processes at Academic Block-11. We are confident that our students will bring immense analytical value and innovative technical expertise to your esteemed organizations.
+          </p>
+          <p style={{ textAlign: "justify", marginTop: "24px", fontWeight: "600" }}>
+            Best Wishes, <br />
+            Prof. S. Sundar <br />
+            Director, National Institute of Technology Mizoram
+            <i className="fa-solid fa-quote-right" style={{ marginLeft: "8px", fontWeight: "normal" }}></i>
           </p>
         </div>
       </div>
