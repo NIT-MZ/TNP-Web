@@ -58,7 +58,7 @@ const companies = [
   },
   {
     name: "NTPC, BEL, SAIL +",
-    studentsPlaced: "12+",
+    studentsPlaced: "15 +",
     images: [
       `/assets/img/internships/ntpc.png`,
       `/assets/img/internships/sail.png`,
@@ -167,7 +167,7 @@ const Internships = () => {
                     ></CountUp>
                   )}
                 </span>
-                <p>Students Joined Internship for 2025-2026 Batch</p>
+                <p>Students Joined Internship for 2026-2027 Batch</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
