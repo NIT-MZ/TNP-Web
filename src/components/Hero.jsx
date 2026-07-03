@@ -13,6 +13,11 @@ const carouselItems = [
     caption: "Prof. S. Sundar, Director of NIT Mizoram, and Prof. Sukanta Roy, Dean (Academic) of NIT Mizoram with the student coordinators (2025-2026) of the Training and Placement Office",
   },
   {
+    src: "assets/img/carousel/Written and Online Test Facilities.png",
+    alt: "tnp facilities",
+    caption: "Written and Online Test Facilities",
+  },
+  {
     src: "assets/img/carousel/3dayregionalmentoringPMShree.png",
     alt: "Three-day Regional Mentoring Session (RMS) on Innovation for Teachers and Students of PM SHRI Schools",
     caption: "Three-day Regional Mentoring Session (RMS) on Innovation for Teachers and Students of PM SHRI Schools",
