@@ -4,7 +4,7 @@ import "../stylesheets/Hero.scss";
 const carouselItems = [
 
   {
-    src: "https://res.cloudinary.com/drdmzhyzm/image/upload/v1781511640/Resize_image_project_-_15_June_2026_at_13.42.01_a5ur7z.png",
+    src: "assets/img/carousel/tnpplacement2025-26.png",
     alt: "placement",
     caption: "Placements Statistics 2025-2026",
   },
