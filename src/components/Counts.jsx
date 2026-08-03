@@ -19,7 +19,7 @@ const Counts = () => {
               {counterOn && (
                 <CountUp
                   start={0}
-                  end={91.9}
+                  end={92.1}
                   duration={2}
                   delay={0}
                   decimals={1}
@@ -50,7 +50,7 @@ const Counts = () => {
           </div>
 
           <div className="count-box">
-            <span>16.10</span>
+            <span>24.80</span>
             <p>Highest Package of B.Tech. Students (in LPA)</p>
           </div>
 
