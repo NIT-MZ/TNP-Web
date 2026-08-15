@@ -8,6 +8,13 @@ import "../stylesheets/Testimonials.scss";
 
 const testimonials = [
   {
+    name: "Suman Singh",
+    company: "NVIDIA",
+    message:
+      "I am deeply grateful to the Training and Placement Cell and the faculty of NIT Mizoram for their constant support and guidance. As a student of the Electronics and Communication Engineering (2025–26 batch), I am thrilled to share that I have been selected as a System Software Development Engineer at NVIDIA after successfully completing a 6-month internship through an off-campus drive. The foundation and encouragement provided by the institute were instrumental in helping me achieve this milestone. Thank you, NIT Mizoram, for helping me turn my dreams into reality!",
+    img: "/assets/img/testimonials/suman-singh-nvidi.jpeg",
+  },
+  {
     name: "Pallavi Pandey",
     company: "Bharat Electronics Limited (BEL)",
     message:

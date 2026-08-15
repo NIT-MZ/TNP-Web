@@ -2,7 +2,6 @@ import React from "react";
 import "../stylesheets/Hero.scss";
 
 const carouselItems = [
-
   {
     src: "assets/img/carousel/tnpplacement2025-26.png",
     alt: "placement",

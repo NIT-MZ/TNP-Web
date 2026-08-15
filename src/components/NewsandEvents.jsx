@@ -5,10 +5,11 @@ const ListGroupItemClass =
   "list-group-item d-flex justify-content-between align-items-center md:font-bold ";
 
 const items = [
+  "Suman Singh, Department of Electronics and Communication Engineering, 2025–26 batch, has been selected as a System Software Development Engineer at NVIDIA after successfully completing a 6-month internship with the organization through off campus drive.",
   // --- LATEST VERIFIED 2025-26 PLACEMENT HIGHLIGHTS (Source: ANI News) ---
-  "Outstanding overall placement rate of 91.9% achieved for the 2025-26 graduating class.",
+  "Outstanding overall placement rate of 92.1% achieved for the 2025-26 graduating class.",
   "117 companies participated in the placement drive, reflecting strong and diverse industry demand.",
-  "The highest package offered stands at 16.10 LPA, with an impressive average package of 9.56 LPA.",
+  "The highest package offered stands at 24.80 LPA, with an impressive average package of 9.56 LPA.",
   "More than 50% of students secured multiple job offers during the placement season.",
   "Computer Science and Engineering (CSE) led with an outstanding 96.2% placement rate and an average package of 10.41 LPA.",
   "Electronics and Communication Engineering (ECE) recorded 96.0% placements with an average package of 9.86 LPA.",
