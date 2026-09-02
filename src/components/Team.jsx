@@ -114,11 +114,11 @@ const Team = () => {
     },
 
     {
-      name: "Vishal Kumar Vaibhav",
+      name: "Vishal Sana",
       position: "Placement Coordinator",
       branch: "ECE",
-      linkedin: "https://www.linkedin.com/in/vishal-kumar-vaibhav-68542a336",
-      image_name: "Vishal_Kumar_Vaibhav.jpg",
+      linkedin: "https://www.linkedin.com/in/vishalsana",
+      image_name: "Vishal Sana.jpg",
     },
     {
       name: "Rayudu Pooja Amrutha",
@@ -142,11 +142,11 @@ const Team = () => {
       image_name: "Anmol_Kumar.jpg",
     },
     {
-      name: "Kamal Nayan",
+      name: "Aman Kumar",
       position: "Placement Coordinator",
       branch: "CE",
-      linkedin: "https://www.linkedin.com/in/kamal-nayan-16a592345/",
-      image_name: "Kamal_Nayan.jpeg",
+      linkedin: "https://www.linkedin.com/in/aman-kumar-823160356?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      image_name: "aman kumar_page-0001.JPG",
     },
     {
       name: "Piyush Dev",
@@ -189,6 +189,13 @@ const Team = () => {
       branch: "ECE",
       linkedin: "https://www.linkedin.com/in/amrita-vani-512a86214/",
       image_name: "Amrita_Vani.jpg",
+    },
+     {
+      name: "Vinay Tiwari",
+      position: "Placement Coordinator",
+      branch: "CSE",
+      linkedin: "https://www.linkedin.com/in/vinay-tiwari-19910b228/",
+      image_name: "Vinay Tiwari.png",
     },
   ];
 
@@ -286,12 +293,13 @@ const Team = () => {
       image_name: "Sai_Vardhan_Royal.jpg",
     },
     {
-      name: "Vinay Tiwari",
+      name: "Ayush Raj",
       position: "Activity Coordinator",
       branch: "CSE",
-      linkedin: "https://www.linkedin.com/in/vinay-tiwari-19910b228/",
-      image_name: "Vinay_Tiwari.png",
-    },
+      linkedin: "https://www.linkedin.com/in/ayushraj7292?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      image_name: "Ayush Raj.jpeg",
+    }
+   
   ];
 
 
