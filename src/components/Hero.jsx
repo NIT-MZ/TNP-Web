@@ -3,7 +3,7 @@ import "../stylesheets/Hero.scss";
 
 const carouselItems = [
   {
-    src: "assets/img/carousel/Overall Placement 92.9% (1).png",
+    src: "assets/img/carousel/tnpplacement2025-26.png",
     alt: "placement",
     caption: "Placements Statistics 2025-2026",
   },
