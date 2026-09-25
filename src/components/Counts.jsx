@@ -19,7 +19,7 @@ const Counts = () => {
               {counterOn && (
                 <CountUp
                   start={0}
-                  end={92.1}
+                  end={92.9}
                   duration={2}
                   delay={0}
                   decimals={1}
