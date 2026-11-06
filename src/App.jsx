@@ -43,7 +43,7 @@ function App() {
           <Route path="/login" element={<UserLogin/>}/>
           <Route path="/logout" element={<Logout/>}/>
 
-          <Route path="/NewsArcheive" element={<News />}>
+          <Route path="/NewsArchive" element={<News />}>
             <Route index element={<NewsIconPage />} />
             <Route path=":id" element={<NewsDetailPage />} />
           </Route>

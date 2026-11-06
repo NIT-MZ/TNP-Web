@@ -119,7 +119,7 @@ const AdminPage = () => {
           <div className="text-center text-white">
             <h2 className="text-lg font-bold">You are not logged in</h2>
             <Link
-              to="/userLogin"
+              to="/login"
               className="block py-2 mt-4 bg-purple-600 px-4 text-center text-white rounded hover:bg-indigo-500 transition"
             >
               Log In

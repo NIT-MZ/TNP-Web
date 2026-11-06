@@ -37,7 +37,7 @@ const testimonials = [
   // },
    {
     name: "Sandhya Shalini",
-    company: " Schneider Electric",
+    company: "Schneider Electric",
     message:
       "I wanted to take a moment to express my heartfelt thanks to the Training & Placement office at NIT Mizoram for their extraordinary support during the placement season. I am beyond happy to share that I have secured an offer from Schneider Electric, a global leader in energy management and automation. Prof. Sukanta Roy Sir and the TNP team were always there to guide us, motivate us, and ensure we were thoroughly prepared for every stage of the process. The training sessions and industry exposure provided by the college gave me the edge I needed to succeed. This achievement is a reflection of the incredible environment that NIT Mizoram has created for its students.",
     img: "assets/img/testimonials/Sandhya Shalini.jpg",
@@ -50,7 +50,7 @@ const testimonials = [
     img: "assets/img/testimonials/Utkarsh singh.jpg",
   },
    {
-    name: " Satvik Sharma",
+    name: "Satvik Sharma",
     company: "Vedanta",
     message:
       "I am overwhelmed with gratitude as I announce that I have received a placement offer from Vedanta, one of India's largest and most respected natural resources companies. This milestone would not have been possible without the tireless support of the Training & Placement office at NIT Mizoram. Prof. Sukanta Roy Sir and the TNP team went above and beyond to ensure every student was industry-ready and well-prepared for campus placements. Their constant encouragement during the most challenging phases of the recruitment process kept me motivated and focused. I thank the entire NIT Mizoram family from the bottom of my heart for this life-changing opportunity.",
@@ -80,7 +80,7 @@ const testimonials = [
   },
 
   {
-    name: " Vinay Patel",
+    name: "Vinay Patel",
     company: "HSBC",
     message:
        "I wanted to express my heartfelt gratitude to the entire Training & Placement team at NIT Mizoram for their incredible support throughout the recruitment process. I am delighted to announce that I have received an offer from HSBC, one of the world's largest and most respected banking and financial services organizations. Prof. Sukanta Roy Sir and the TNP office worked relentlessly to bring prestigious companies to our campus and prepare students for every aspect of the selection process. Their dedication and the belief they showed in every student were truly motivating and made a significant impact on my journey. I am proud to carry the name of NIT Mizoram as I step into this exciting new chapter of my career.",
@@ -90,7 +90,7 @@ const testimonials = [
     name: "Shreya Singh",
     company: "HSBC",
     message:
-      "Kudos to the Faculty and Placement Cell of NIT Mizoram. The College has always provided me with every assistance that I have always wanted to. I was able to refine my overall Performances and build- on my Soft & Hard Skills.. I will always be grateful to them for providing me a platform of practical learning and preparing me for the corporate life.",
+      "Kudos to the Faculty and Placement Cell of NIT Mizoram. The College has always provided me with every assistance that I have always wanted to. I was able to refine my overall Performances and build on my Soft & Hard Skills. I will always be grateful to them for providing me a platform of practical learning and preparing me for the corporate life.",
     img: "assets/img/testimonials/Shreya Singh.jpg",
   },
   {

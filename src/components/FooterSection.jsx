@@ -41,7 +41,7 @@ const FooterSection = () => {
     {
       name: "LinkedIn",
       icon: LinkedInIcon,
-      href: "https://www.linkedin.com/company/training-and-placement-cell-nit-mizoram/ ",
+      href: "https://www.linkedin.com/company/training-and-placement-cell-nit-mizoram/",
     },
   ];
 

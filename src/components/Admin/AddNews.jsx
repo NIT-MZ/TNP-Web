@@ -72,7 +72,7 @@ const AddNews = () => {
         }
       );
       alert("News submitted successfully!");
-      navigate("/NewsArcheive")
+      navigate("/NewsArchive")
     
     } catch (err) {
       console.error(err);

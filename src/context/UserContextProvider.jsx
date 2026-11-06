@@ -6,11 +6,7 @@ const [userDetail, setUserDetail] = useState(
   JSON.parse(localStorage.getItem("details")) || null
 );
 const getUserDetail = async (details) => {
-  if (details) {
-    setUserDetail(details);
-  } else {
-    console.error("Invalid details passed to getUserDetail");
-  }
+  setUserDetail(details);
 };
 
 // Save user details to localStorage whenever there's a change in userDetail state.

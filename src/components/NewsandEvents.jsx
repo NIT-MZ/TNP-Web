@@ -7,7 +7,7 @@ const ListGroupItemClass =
 const items = [
   "Suman Singh, Department of Electronics and Communication Engineering, 2025–26 batch, has been selected as a System Software Development Engineer at NVIDIA after successfully completing a 6-month internship with the organization through off campus drive.",
   // --- LATEST VERIFIED 2025-26 PLACEMENT HIGHLIGHTS (Source: ANI News) ---
-  "Outstanding overall placement rate of 92.1% achieved for the 2025-26 graduating class.",
+  "Outstanding overall placement rate of 92.9% achieved for the 2025-26 graduating class.",
   "117 companies participated in the placement drive, reflecting strong and diverse industry demand.",
   "The highest package offered stands at 24.80 LPA, with an impressive average package of 9.56 LPA.",
   "More than 50% of students secured multiple job offers during the placement season.",
@@ -20,11 +20,11 @@ const items = [
   "Students secured coveted global internships at multinational corporations including Nvidia, Accenture, Visa, L&T, Tata Steel, Adani Power, and Titan.",
   // --- INTERNSHIP HIGHLIGHTS (2025-2026 Batch) ---
   "15 students joined research internships at IIT Madras, including selections under the Direct Ph.D. programme MoU.",
-  "20 students secured prestigious research internships at premier institutes including IIT Kanpur and IIT Patna.",
-  "14 students joined CDAC Noida and 7 students joined CDAC Kolkata for advanced technical internships.",
-  "Public Sector Undertaking (PSU) milestones: 10 students joined the Airports Authority of India (AAI) and 9 students joined the Bureau of Indian Standards (BIS).",
+  "30 students secured prestigious research internships at premier institutes including IIT Kanpur and IIT Patna.",
+  "6 students joined CDAC Noida and 3 students joined CDAC Kolkata for advanced technical internships.",
+  "Public Sector Undertaking (PSU) milestones: 10 students joined the Airports Authority of India (AAI) and 5 students joined the Bureau of Indian Standards (BIS).",
   "12+ students secured internships at major government and public sector organizations including NTPC and SAIL.",
-  "Core engineering internship highlights include 7 students at IOCL, 6 at L&T Construction, 6 at Hyundai, and 4 at Tata Motors.",
+  "Core engineering internship highlights include 7 students at IOCL, 3+ at L&T Construction, 6 at Hyundai, and 4 at Tata Motors.",
   "NIT Mizoram successfully hosted its inward summer internship program, welcoming a massive number of applicants from engineering institutes all over India.",
 
   /* 

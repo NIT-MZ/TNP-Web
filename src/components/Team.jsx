@@ -56,7 +56,7 @@ const Team = () => {
       name: "Dr. Ramesh Kumar",
       position: "TPO, EEE",
       phone: "+91-8822097049",
-      linkedin: "ttps://www.linkedin.com/in/dr-ramesh-kumar-40590646",
+      linkedin: "https://www.linkedin.com/in/dr-ramesh-kumar-40590646",
       email: "ramesh.ee@nitmz.ac.in",
       image_name: "dr_ramesh.png",
     },
@@ -320,7 +320,7 @@ const Team = () => {
     },
     {
       name: "Shreya Dharmatma",
-      position: "Activity Cordinator",
+      position: "Activity Coordinator",
       branch: "ECE",
       linkedin: "https://www.linkedin.com/in/shreya-dharmatma-1635b333b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       image_name: "Shreya_Dharmatma.jpg",
@@ -335,49 +335,49 @@ const Team = () => {
     {
       name: "Saurav Kumar",
       linkedin: "https://www.linkedin.com/in/saurav-kumar-aba944314 ",
-      position: "Activity Cordinator",
+      position: "Activity Coordinator",
       branch: "CE",
       image_name: "Saurav_Kumar28.jpg",
     },
     {
       name: "Ruchi Jha",
       linkedin: "https://www.linkedin.com/in/ruchi-jha-8462312a3?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      position: "Activity Cordinator",
+      position: "Activity Coordinator",
       branch: "CE",
       image_name: "Ruchi_Jha.jpg",
     },
     {
       name: "Sakcham Kumar",
       linkedin: "https://www.linkedin.com/in/sakcham-kumar-077066332?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      position: "Activity Cordinator",
+      position: "Activity Coordinator",
       branch: "EE",
       image_name: "Sakcham_Kumar.jpg",
     },
     {
       name: "Ridima Raj",
       linkedin: "https://www.linkedin.com/in/ridima-raj-373b7125a",
-      position: "Activity Cordinator",
+      position: "Activity Coordinator",
       branch: "EE",
       image_name: "Ridima_Raj.png",
     },
     {
       name: "Ayush Kumar",
       linkedin: "https://www.linkedin.com/in/ayush-kumar-7697a734b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      position: "Activity Cordinator",
+      position: "Activity Coordinator",
       branch: "ME",
       image_name: "Ayush_Kumar28.jpg",
     },
     {
       name: "Rana Abhishek",
       linkedin: "https://www.linkedin.com/in/rana-abhishek-b-tech-44710a3ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      position: "Activity Cordinator",
+      position: "Activity Coordinator",
       branch: "ME",
       image_name: "Rana_Abhishek.png",
     },
     {
       name: "Himanshu Chaudhary",
       linkedin: "https://www.linkedin.com/in/himanshu-chaudhary-018b09389?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      position: "Activity Cordinator",
+      position: "Activity Coordinator",
       branch: "ECE",
       image_name: "Himanshu_Chaudhary.jpg",
     },
@@ -625,7 +625,7 @@ const Team = () => {
       </div>
 
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        Student Activity Cordinators{" "}
+        Student Activity Coordinators{" "}
       </h4>
       <div className="team-card-container">
         {/* Mapping over the teamMembers array to generate card elements */}
@@ -784,7 +784,7 @@ const Team = () => {
 
 
       <h4 className="team-container-sub-title lg:text-2xl md:text-xl text-md">
-        Assistant Student Activity Cordinators{" "}
+        Assistant Student Activity Coordinators{" "}
       </h4>
       <div className="team-card-container">
         {/* Mapping over the teamMembers array to generate card elements */}

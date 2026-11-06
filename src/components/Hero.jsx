@@ -138,7 +138,7 @@ const marqueeLinks = [
 const Hero = () => {
   const handleAlertClick = () => {
     alert(
-      "Please contact Tranining and Placement Office for more Information. Wishing you the best."
+      "Please contact Training and Placement Office for more Information. Wishing you the best."
     );
   };
 

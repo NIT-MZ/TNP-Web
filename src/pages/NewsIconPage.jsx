@@ -30,7 +30,7 @@ const NewsIconPage = () => {
           </h2>
           <div className="space-y-4">
             {news.map((item) => (
-              <Link to={`/NewsArcheive/${item._id}`} key={item._id}>
+              <Link to={`/NewsArchive/${item._id}`} key={item._id}>
                 <div className="flex items-center gap-4 border-b-2 pb-4 mb-4 border-gray-300">
                   <img
                     src={item.images[0]}
@@ -57,7 +57,7 @@ const NewsIconPage = () => {
           </h2>
           <div className="grid grid-cols-1 gap-6">
             {news.map((item) => (
-              <Link to={`/NewsArcheive/${item._id}`} key={item._id}>
+              <Link to={`/NewsArchive/${item._id}`} key={item._id}>
                 <div className="flex flex-col sm:flex-row gap-4 bg-white p-3 rounded-lg shadow-lg border border-gray-300">
                   <img
                     src={item.images[0]}

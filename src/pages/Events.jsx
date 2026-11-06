@@ -58,7 +58,7 @@ const staticEvents = [
     title: "National Space Day",
     date: "2024-08-23",
     description:
-      "NIT  Mizoram is thrilled to celebrate National Space Day with students from various colleges and a distinguished ISRO speaker. The event will feature talks, quizzes, and interactive sessions exploring India's space journey and achievements. Don’t miss this unique opportunity to learn, engage, and network with pioneers shaping India's future in space and technology. Stay tuned for more details!",
+      "NIT Mizoram is thrilled to celebrate National Space Day with students from various colleges and a distinguished ISRO speaker. The event will feature talks, quizzes, and interactive sessions exploring India's space journey and achievements. Don’t miss this unique opportunity to learn, engage, and network with pioneers shaping India's future in space and technology. Stay tuned for more details!",
     images: [
       `/assets/img/events/national-space-day.webp`,
     ],
@@ -77,7 +77,7 @@ const staticEvents = [
   {
     id: 3,
     title: "Farewell, Celebrating our Seniors of 2024",
-    date: "2024-05-1",
+    date: "2024-05-01",
     description:
       "In a touching and memorable ceremony, NIT Mizoram bid adieu to the graduating class of 2024. This farewell event was a heartfelt tribute to the seniors who have contributed immensely to our college and are now ready to embark on new journeys. The farewell event was not just a ceremony; it was a celebration of the bonds formed, the challenges overcome, and the milestones achieved. It was a night filled with laughter, tears, and applause, creating memories that will be cherished forever. While this farewell marks the end of an era, it also heralds the beginning of lifelong connections. We encourage our graduates to stay in touch, sharing their successes and experiences with the NIT Mizoram family.",
     images: [
@@ -90,7 +90,7 @@ const staticEvents = [
   {
     id: 4,
     title: "NIT Mizoram Shines at the G20 Event in Guwahati",
-    date: "2023-02-3",
+    date: "2023-02-03",
     description:
       "In an impressive showcase of talent and intellect, students from NIT Mizoram had the honor of participating in the prestigious G20 Event held in Guwahati. This significant occasion provided a platform for our students to engage with global leaders, share innovative ideas, and represent our institution on an international stage. Participation in the G20 Event was a proud moment for NIT Mizoram, reflecting the high caliber of our students and the quality of education they receive. It was an acknowledgment of their hard work, dedication, and the institution's commitment to fostering global leaders. The experiences and insights gained from the G20 Event will undoubtedly inspire and motivate our students as they continue their academic and professional journeys. We are confident that they will leverage this experience to contribute positively to global challenges and innovations. NIT Mizoram remains dedicated to providing opportunities for our students to excel and make their mark on the global stage. We look forward to more such participations, where our students can continue to shine and make us proud.",
     images: [

@@ -364,7 +364,7 @@ const Jaf = () => {
                   name="cse"
                 />
               }
-              label="Computer Science Engineering"
+              label="Computer Science & Engineering"
             />
 
             <FormControlLabel
@@ -395,7 +395,7 @@ const Jaf = () => {
                   name="mechanical"
                 />
               }
-              label="Mechanical"
+              label="Mechanical Engineering"
             />
           </FormGroup>
         </FormControl>

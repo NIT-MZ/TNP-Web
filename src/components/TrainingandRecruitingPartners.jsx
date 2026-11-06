@@ -105,9 +105,9 @@ AOS.init({
           <div className="section-title">
             <h2>Our Training & Recruiting Partners</h2>
             <p>
-              We tied-up with the industry experts and leader across vast
+              We have tied up with industry experts and leaders across vast
               domains to provide the best hands-on opportunities to learn,
-              intern and work with best companies.
+              intern and work with top companies.
             </p>
           </div>
           <div

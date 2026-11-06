@@ -50,7 +50,18 @@ const Counts = () => {
           </div>
 
           <div className="count-box">
-            <span>24.80</span>
+            <span>
+              {" "}
+              {counterOn && (
+                <CountUp
+                  start={0}
+                  end={24.8}
+                  duration={2}
+                  delay={0}
+                  decimals={2}
+                ></CountUp>
+              )}
+            </span>
             <p>Highest Package of B.Tech. Students (in LPA)</p>
           </div>
 
